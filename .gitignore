@@ -2,6 +2,7 @@ raw/nielsen/
 input/rms_upc_month_level/
 input/rms_all_info/
 input/ncp_upc_month_level/
+input/full_*.RData
 troubleshoot*
 *.aux
 *.log
