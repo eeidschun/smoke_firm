@@ -86,25 +86,39 @@ rebuilt by `build_cart_counts_t2.R`.
 
 ## Rebuild order
 
-Run from the project root. Required R packages include `tidyverse`, `lubridate`, and
-`readxl` (the current core path mostly uses the first two).
+> **2026-08-27 reorg.** `pr/` is now `smoke_firm_dir/`, and `code/` is split into
+> `fxns/ build/ analysis/ manual_refinement/ archive/` with each file numbered by
+> run order. Raw `full_*` files live in `smoke_firm_dir/raw/cleaned_RMS/`. Every
+> script is run from the repo root and self-locates via
+> `source("smoke_firm_dir/code/fxns/1_paths.R")`. See `smoke_firm_dir/code/README.md`
+> for the full map. The commands below are updated to the new paths.
+
+Run from the repository root (the folder containing `smoke_firm_dir/`). Required R
+packages: `tidyverse`, `lubridate`, `readxl`, `data.table`, `fixest`, `patchwork`.
 
 ```bash
-Rscript pr/build_t2_panel_niccorr.R
-Rscript pr/upc_audit.R
-Rscript pr/decompose_t2.R
-Rscript pr/hhi_concentration_t2.R
-Rscript pr/tracked_volume_t2.R
-Rscript pr/disposable_share_vs_cdc_t2.R
-Rscript pr/build_cart_counts_t2.R
-Rscript pr/disposable_share_cdc_standardized.R
-Rscript pr/investment_proxy_t2.R
-Rscript pr/brand_nicotine_trajectories_t2.R
+Rscript smoke_firm_dir/code/build/3_build_t2_panel_niccorr.R      # canonical panel
+Rscript smoke_firm_dir/code/build/4_build_cart_counts_t2.R
+Rscript smoke_firm_dir/code/build/5_build_upc_month_niccorr.R     # UPC-month panel
+Rscript smoke_firm_dir/code/manual_refinement/2_upc_audit.R       # optional audit
+Rscript smoke_firm_dir/code/analysis/1_decompose_t2.R
+Rscript smoke_firm_dir/code/analysis/2_hhi_concentration_t2.R
+Rscript smoke_firm_dir/code/analysis/3_tracked_volume_t2.R
+Rscript smoke_firm_dir/code/analysis/4_disposable_share_vs_cdc_t2.R
+Rscript smoke_firm_dir/code/analysis/5_disposable_share_cdc_standardized.R
+Rscript smoke_firm_dir/code/analysis/6_investment_proxy_t2.R
+Rscript smoke_firm_dir/code/analysis/7_brand_nicotine_trajectories_t2.R
+Rscript smoke_firm_dir/code/analysis/8_rebuild_corrected_requested_figures.R
+Rscript smoke_firm_dir/code/analysis/9_ecig_type_schematics.R
+Rscript smoke_firm_dir/code/analysis/10_ebe_diagnostics.R
 ```
 
-`build_t2_panel_niccorr.R`, `upc_audit.R`, and `build_cart_counts_t2.R` read all eleven
-raw files and may take several minutes each. The other scripts run quickly from the
-corrected panel.
+`build/3`, `build/4`, `build/5` and `manual_refinement/2` read all eleven raw files
+and take several minutes each. The `analysis/` scripts run quickly from the built
+panels. `build/2_impute_missing_mL.R` only needs re-running if the imputation logic
+changes — the map it writes (`input/missing_mL_imputation_map.rds`) is committed.
+`build/1_clean_RMS_from_raw_to_most_detailed.R` runs on the BU SCC only; its output
+is the pre-supplied `full_*` set.
 
 ## Latest validated results
 

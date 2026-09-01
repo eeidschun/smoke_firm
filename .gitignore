@@ -3,6 +3,8 @@ input/rms_upc_month_level/
 input/rms_all_info/
 input/ncp_upc_month_level/
 input/full_*.RData
+full_*_7467_*.RData
+smoke_firm_dir/raw/cleaned_RMS/
 troubleshoot*
 *.aux
 *.log
