@@ -1,7 +1,7 @@
 ---
 title: "Firm-Dynamics Diagnostics for the E-Cigarette Supply-Side Model"
 subtitle: "Pre-specification cuts from the Nielsen RMS panel — items 7.1, 7.2, 7.4, 7.5 of the Aug 27 model note (7.3 and 7.6 deferred). Companion to the two 08_05_2026 notes."
-date: "August 27, 2026"
+date: "August 27, 2026 (revised September 1, 2026 — see Appendix note on the UNKNOWN reclassification)"
 geometry: margin=1in
 fontsize: 11pt
 ---
@@ -25,7 +25,7 @@ turnover) are deferred and are not addressed here.
 Everything is national and monthly (§6.5 of the model note), built from the
 corrected-nicotine panel — `bt_month_t2_niccorr_from_full.RData` for the
 brand-month series (7.1, 7.2, 7.4) and a matching UPC-month build for 7.5. The
-`UNKNOWN` residual bucket (~1.9% of tracked mL, un-attributed to a brand) is
+`UNKNOWN` residual bucket (~0.4% of tracked mL, un-attributed to a brand) is
 dropped from every firm count, entry/exit statistic, and regression. Where a
 statistic needs a weight, the demand-side notes use mL-sales weights; per Marc's
 instruction the firm-level nicotine *state* in 7.5 is instead built
@@ -196,8 +196,10 @@ tracks its rise is VUSE, which is also the only incumbent whose catalog *grows*
 after 2020 (from ~35 to ~52 as it takes the lead). And the single largest
 movement in every incumbent's catalog is not a firm decision at all: the February
 2020 flavored-cartridge enforcement (event 3) is a cliff — MISTIC's active UPC
-count falls from ~37 to ~2 within two months, LOGIC's from ~30 to ~12, NJOY's from
-~50 to ~20, BLU's from ~48 to ~27.
+count falls from ~38 to ~4 within two months (a floor of ~4 rather than ~2,
+since 2 of MISTIC's UPCs, previously stranded in `UNKNOWN`, were reclassified
+this session and remain active through the cliff — see Appendix), LOGIC's from
+~30 to ~12, NJOY's from ~50 to ~20, BLU's from ~48 to ~27.
 
 **Lead-lag.** A distributed-lag regression of the monthly change in national mL
 share (percentage points) on leads and lags of the change in log UPC count,
@@ -289,8 +291,8 @@ note:
   (brand × UPC × month, built by `code/build/5_build_upc_month_niccorr.R` with the same
   row-level corrections, validated by collapsing back to the brand-type panel)
   for 7.5.
-- **Brand universe.** 76 brand-codes; `UNKNOWN` (1.9% of mL) dropped from all
-  firm-level statistics.
+- **Brand universe.** 76 brand-codes; `UNKNOWN` (0.4% of mL, was 1.9% before the
+  2026-09-01 reclassification below) dropped from all firm-level statistics.
 - **Firm counts (7.1).** Shares are mL-based, computed each month over all
   identified brands.
 - **Entry (7.2a).** First month a brand-code has positive national tracked mL;
@@ -314,3 +316,32 @@ note:
 - **Files.** Code: `code/analysis/10_ebe_diagnostics.R`,
   `code/build/5_build_upc_month_niccorr.R`. Figures and CSVs:
   `output/prelim_analysis/firm_dynamics_ebe/`.
+- **2026-09-01 revision: partial `UNKNOWN` reclassification.** A follow-up
+  investigation (prompted while checking whether the 2021 entry wave, see the
+  09_01_2026 note, could be resolved by better UPC classification) found that
+  the pre-2021 `UNKNOWN` bucket is small (95 distinct UPCs, all with a real,
+  populated barcode — `UNKNOWN` means the brand-name text failed to resolve,
+  not that the UPC itself is unknown) and that most of its volume sits on
+  manufacturer prefixes already used by known brands. 11 UPCs were confirmed
+  and added to `label_maps$upc_to_brand`: 5 VUSE (prefix `0849205`, matching
+  existing `MANUAL_UPC_OVERRIDES` entries), 2 HAUS/MISTIC (`0855704`), 2 JUUL
+  (`0819913`), and 2 BLU (confirmed directly via `brand_descr_f`/`product_descr`
+  on a subset of their raw rows, not just prefix). Both build scripts
+  (`build/3_build_t2_panel_niccorr.R`, `build/5_build_upc_month_niccorr.R`) were
+  re-run against the updated `label_maps.RData`; pre-fix panels are backed up at
+  `input/backup_2026-09-01_pre_unknown_fix/`. Effect: national `UNKNOWN` mL falls
+  78% (19.67M → 4.30M mL, 1.85% → 0.40% of total tracked mL); VUSE +7.13M mL,
+  MISTIC +4.37M mL, JUUL +2.10M mL, BLU +1.77M mL, concentrated in 2014–2020 with
+  essentially none in 2021+. Two smaller UPCs on the same shared BLU/Von-Erl
+  prefix (`0887969`) were left as `UNKNOWN` — every raw attribute is blank across
+  all years for both, so there was nothing to identify them by, and a manual web
+  search on the bare UPC numbers turned up nothing. Checked and found
+  **not** to move: 7.1's threshold counts, 7.2's entry/exit and top-5-tenure
+  figures, and 7.4's pooled and firm-by-firm learning coefficients — all
+  reproduce the pre-revision numbers to the same rounding shown here, because
+  the reclassified volume is small relative to the recipient brands' totals and
+  national mL (the actual denominator for every share) is unchanged by a
+  relabeling. The one figure this revision changes is noted in 7.5a (MISTIC's
+  post-Feb-2020 UPC-count floor). LOGIC/NJOY/BLU's other 7.5a cliff figures were
+  not re-verified against the chart this session and may already have been
+  approximate in the original note; they are unrelated to this fix.
