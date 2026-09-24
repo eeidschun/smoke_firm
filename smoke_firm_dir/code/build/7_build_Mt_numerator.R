@@ -5,11 +5,14 @@ rm(list = ls())
 # this is from demand side, not in github repo
 load("input/NCP/cps_2013-2023.RData")
 
-cps_ec = cps_yr_all %>% filter(ec) %>% select(household_code, wt, year_month, liq_total_f)
+cps_ec = cps_yr_all %>% filter(ec) %>% select(household_code, upc, trip_code_uc, wt, year_month, liq_total_f)
 cps_ec = cps_ec %>% filter(!is.na(liq_total_f))
+cps_ec = cps_ec %>% distinct()
 
-M_t = cps_ec %>% group_by(year_month) %>% summarise(simple_avg_mL = mean(liq_total_f),
-                                              hh_wt_avg_mL = weighted.mean(liq_total_f, wt)) %>% ungroup()
+cps_ec = cps_ec %>% group_by(household_code, wt, year_month) %>% summarise(liq_total_f_in_month_for_hh = sum(liq_total_f)) %>% ungroup()
+
+M_t = cps_ec %>% group_by(year_month) %>% summarise(simple_avg_mL = mean(liq_total_f_in_month_for_hh),
+                                              hh_wt_avg_mL = weighted.mean(liq_total_f_in_month_for_hh, wt)) %>% ungroup()
 
 M_t_long = M_t %>% pivot_longer(cols = c(simple_avg_mL, hh_wt_avg_mL))
 
