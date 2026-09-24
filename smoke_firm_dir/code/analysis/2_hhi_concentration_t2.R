@@ -127,20 +127,41 @@ pal["Other"] <- "grey80"
 
 comp_plot <- comp_plot %>%
   mutate(lab = ifelse(share >= 0.05,
-                      paste0(ifelse(is_leader, "★ ", ""),
-                             str_wrap(as.character(brand), width = 9), "\n",
+                      paste0(str_wrap(as.character(brand), width = 9), "\n",
                              round(100 * share), "%"),
                       ""))
+
+## The unicode star (U+2605) failed to render via geom_text() when typed as a
+## literal character straight into this file (a source-encoding issue, not a
+## missing font glyph -- it renders fine both in theme text and in geom_text()
+## once specified as the "★" escape instead, tested separately). Placed
+## INSIDE the leader's own bar segment, not floating above the bar --
+## position_stack() can't be trusted for a layer holding only the leader's
+## row (it needs every segment present in that x-group to compute the right
+## cumulative offset), so the stacking is replicated by hand here to get each
+## segment's true [ymin, ymax] and center the star a bit above its label so
+## the two don't overlap. position_stack()'s default puts the FIRST factor
+## level at the TOP of the bar (last level, "Other", at the bottom) --
+## descending factor-level order from the bottom up, not ascending.
+stack_pos <- comp_plot %>%
+  arrange(year, desc(as.integer(brand))) %>%
+  group_by(year) %>%
+  mutate(ymax = cumsum(share), ymin = ymax - share, ymid = (ymin + ymax) / 2) %>%
+  ungroup()
+leader_pos <- stack_pos %>% filter(is_leader) %>%
+  mutate(y_star = pmin(ymax - 0.01, ymid + 0.3 * share))
 
 save_plot(
   ggplot(comp_plot, aes(factor(year), share, fill = brand)) +
     geom_col(width = 0.8, color = "white", linewidth = 0.3) +
     geom_text(aes(label = lab), position = position_stack(vjust = 0.5),
               size = 2.7, lineheight = 0.9) +
+    geom_text(data = leader_pos, aes(x = factor(year), y = y_star), label = "★",
+              size = 5, color = "black", inherit.aes = FALSE) +
     scale_fill_manual(values = pal) +
     scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
     labs(title = "Annual e-cigarette brand composition (mL-weighted)",
-         subtitle = "Top-5 brands per year shown individually; ★ = market leader (CR1). Rest = \"Other\".",
+         subtitle = "Top-5 brands per year shown individually; ★ = market leader.",
          y = "Share of national mL", x = NULL, fill = "Brand") +
     theme_minimal(base_size = 12) +
     theme(legend.position = "right"),
@@ -149,3 +170,68 @@ save_plot(
 
 cat("\nWrote: hhi_over_time.png, concentration_by_year.png,",
     "hhi_monthly.csv, brand_concentration_by_year.csv\n")
+
+## ---- monthly version of concentration_by_year.png --------------------------
+## Same top-5 (re-ranked fresh each period, like the annual chart re-ranks each
+## year) + "Other" design as the annual bar chart, at monthly cadence. Bars,
+## not area -- easier to read a specific month off than a stacked area. No
+## per-segment text (132 months x up to 6 labels would be illegible like the
+## annual chart's); instead just the leader's name is printed above each bar.
+comp_mo <- brand_mo %>%
+  group_by(month) %>%
+  arrange(month, desc(share)) %>%
+  mutate(rank = row_number()) %>%
+  ungroup()
+
+top_seg_mo <- comp_mo %>%
+  filter(rank <= TOPN) %>%
+  transmute(month, brand, share)
+
+other_seg_mo <- comp_mo %>%
+  filter(rank > TOPN) %>%
+  group_by(month) %>%
+  summarise(brand = "Other", share = sum(share), .groups = "drop")
+
+comp_plot_mo <- bind_rows(top_seg_mo, other_seg_mo)
+write_csv(comp_plot_mo %>% arrange(month, desc(share)),
+          file.path(output_dir, "brand_concentration_by_month.csv"))
+
+brand_levels_mo <- comp_plot_mo %>%
+  filter(brand != "Other") %>%
+  group_by(brand) %>% summarise(tot = sum(share), .groups = "drop") %>%
+  arrange(desc(tot)) %>% pull(brand)
+comp_plot_mo <- comp_plot_mo %>%
+  mutate(brand = factor(brand, levels = c(brand_levels_mo, "Other")))
+
+pal_mo <- setNames(scales::hue_pal()(length(brand_levels_mo)), brand_levels_mo)
+pal_mo["Other"] <- "grey80"
+
+## Label only where the leader actually changes month-to-month -- the leader
+## typically holds for a multi-year stretch, so labeling every month just
+## repeats the same name dozens of times in a row and is unreadable.
+leader_mo <- comp_mo %>% filter(rank == 1) %>%
+  arrange(month) %>%
+  mutate(is_new = brand != lag(brand) | row_number() == 1) %>%
+  filter(is_new) %>%
+  transmute(month, lab = as.character(brand))
+
+save_plot(
+  ggplot(comp_plot_mo, aes(month, share, fill = brand)) +
+    geom_col(position = "stack", width = 26, color = NA) +
+    geom_vline(data = leader_mo, aes(xintercept = month), inherit.aes = FALSE,
+               linetype = "dotted", color = "grey40", linewidth = 0.3) +
+    geom_text(data = leader_mo, aes(x = month, y = 1.02, label = lab),
+              inherit.aes = FALSE, hjust = 0, vjust = 0, angle = 30,
+              size = 3, color = "grey15", fontface = "bold") +
+    scale_fill_manual(values = pal_mo) +
+    scale_y_continuous(labels = scales::percent_format(accuracy = 1),
+                        expand = expansion(mult = c(0, 0.13))) +
+    labs(title = "Monthly e-cigarette brand composition (mL-weighted)",
+         subtitle = "Top-5 brands each month (re-ranked monthly, unlike the fixed annual-incumbent roster used for a_it); rest = \"Other\". Name above each bar = that month's leader.",
+         y = "Share of national mL", x = NULL, fill = "Brand") +
+    theme_minimal(base_size = 12) +
+    theme(legend.position = "right"),
+  "concentration_by_month", w = 13, h = 6.5
+)
+
+cat("Wrote: concentration_by_month.png, brand_concentration_by_month.csv\n")
