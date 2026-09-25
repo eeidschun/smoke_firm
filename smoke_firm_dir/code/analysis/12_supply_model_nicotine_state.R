@@ -8,7 +8,7 @@
 ##
 ## Distribution-breadth filter (as of 2026-09-22): UPC-months backed by fewer
 ## than N_STORES_MIN distinct reporting stores are dropped BEFORE both the
-## top-5 roster ranking and the a_it average -- a plausible signature of a
+## incumbent roster and the a_it average -- a plausible signature of a
 ## handful of stores clearing overstock/discontinued inventory rather than
 ## genuine active distribution, and the concern was that either construction
 ## could be skewed by it. Verified this session: at N=3, only ~0.01% of total
@@ -25,17 +25,21 @@
 ## to be that year -- see build/6's header for the fuller argument. Needs
 ## input/upc_month_store_breadth.rds from build/6 (raw-file scan, run once).
 ##
-## Tracked-firm selection: the annual top-5 ranking (mL share among
-## identified brands, UNKNOWN excluded, positive volume that year) is used
-## ONLY to decide WHICH firms are worth tracking at all -- the tracked set is
-## the union of every brand that was a top-5 leader in ANY year. Once
-## selected, a_it is built across a tracked firm's FULL monthly history, not
-## gated to just the specific years it happened to rank top-5 -- a firm's
-## state should be a continuous series (it doesn't have gaps just because it
-## temporarily fell out of the top 5), matching how the model's own Fa/Fxi
+## Incumbent roster (as of 2026-09-25): a firm is an incumbent for calendar
+## year Y iff its annual mL share among identified brands (UNKNOWN excluded,
+## breadth-filtered) exceeds INCUMBENT_SHARE_MIN = 7%, fixed for all 12 months
+## of Y (model note §7). This replaced the earlier annual top-5 ranking; the
+## 7% rule is decoupled from N_BAR = 5, which only caps the dynamic game.
+## roster_7pct_vs_top5.csv records which firm-years the switch moved. The
+## fringe a_Ft is the complement of each YEAR's incumbents, so it moves too.
+##
+## Tracked-firm selection: the tracked set is the union of every brand that
+## was an incumbent in ANY year. Once selected, a_it is built across a tracked
+## firm's FULL monthly history, not gated to its incumbent years -- a firm's
+## state should be a continuous series, matching how the model's own Fa/Fxi
 ## transition kernels are estimated off each incumbent's realized history
-## (solution appendix §3). is_top5_that_year flags which months fall inside
-## the firm's own top-5 years, for reference only.
+## (solution appendix §3). is_incumbent_that_year flags which months fall
+## inside the firm's own incumbent years, for reference only.
 ##
 ## a_{i,t} is UPC-level (collapsed across T2 type first, in case the same
 ## upc12 spans multiple type rows in a month): mg/mL = nic_mg_sum / mL_sum per
@@ -50,7 +54,7 @@ suppressPackageStartupMessages({ library(tidyverse); library(lubridate) })
 source("smoke_firm_dir/code/fxns/1_paths.R")
 out_dir <- file.path(PRELIM_DIR, "supply_model_state")
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
-fxn("5_supply_model_state_fxns.R")   # build_top5_roster(), build_a_it_and_fringe(), plot_*()
+fxn("5_supply_model_state_fxns.R")   # build_share_roster(), build_top5_roster(), build_a_it_and_fringe(), plot_*()
 
 N_STORES_MIN <- 3
 
@@ -90,18 +94,36 @@ um <- um_b %>% filter(n_stores >= N_STORES_MIN) %>% select(-n_stores, -store_sha
 cat(sprintf("\napplying N_STORES_MIN = %d: %d / %d UPC-months kept (%.1f%% of original mL retained)\n",
             N_STORES_MIN, nrow(um), nrow(um_all), 100 * sum(um$mL_sum) / sum(um_all$mL_sum)))
 
-## ---- annual top-5 roster (on filtered data) --------------------------------
-rr <- build_top5_roster(um)
+## ---- annual incumbent roster: share > 7% (on filtered data) ---------------
+rr <- build_share_roster(um)
 roster <- rr$roster
 write_csv(roster, file.path(out_dir, "incumbent_roster_by_year.csv"))
 
-cat("\n=== Top-5 incumbent roster by year (annual mL share, fixed for that year's months; N_stores >=",
-    N_STORES_MIN, ") ===\n")
+cat(sprintf("\n=== Incumbent roster by year (annual mL share > %.0f%%, fixed for that year's months; N_stores >= %d) ===\n",
+            100 * INCUMBENT_SHARE_MIN, N_STORES_MIN))
 roster %>% mutate(share_yr = round(100 * share_yr, 1)) %>%
   arrange(year, rank) %>% as.data.frame() %>% print(row.names = FALSE)
+cat("\nincumbents per year:\n")
+count(roster, year, name = "n_incumbents") %>% as.data.frame() %>% print(row.names = FALSE)
 
-## ---- provenance: does the filter change WHO is top-5, vs. the unfiltered roster? ----
-roster_unfiltered <- build_top5_roster(um_all)$roster
+## ---- provenance: which firm-years did the switch from top-5 move? -----------
+roster_top5 <- build_top5_roster(um)$roster
+cmp_rule <- full_join(roster %>% transmute(year, brand, incumbent_7pct = TRUE),
+                      roster_top5 %>% transmute(year, brand, top5 = TRUE),
+                      by = c("year", "brand")) %>%
+  mutate(across(c(incumbent_7pct, top5), ~ coalesce(.x, FALSE))) %>%
+  left_join(rr$brand_yr %>% select(year, brand, share_yr = share, rank), by = c("year", "brand")) %>%
+  filter(incumbent_7pct != top5) %>%
+  mutate(change = if_else(incumbent_7pct, "ADDED by 7% rule (rank > 5)", "DROPPED by 7% rule (share <= 7%)")) %>%
+  arrange(year, rank)
+write_csv(cmp_rule, file.path(out_dir, "roster_7pct_vs_top5.csv"))
+cat(sprintf("\nroster switch top-5 -> 7%%: %d firm-years differ\n", nrow(cmp_rule)))
+if (nrow(cmp_rule) > 0) cmp_rule %>% mutate(share_yr = round(100 * share_yr, 1)) %>%
+  as.data.frame() %>% print(row.names = FALSE)
+
+## ---- provenance: does the filter change WHO is an incumbent, vs. the unfiltered roster? ----
+## (top5_* column names kept from the top-5 era; they now mean incumbent under the 7% rule)
+roster_unfiltered <- build_share_roster(um_all)$roster
 all_years  <- sort(unique(c(roster_unfiltered$year, roster$year)))
 all_brands <- sort(unique(c(roster_unfiltered$brand, roster$brand)))
 cmp <- crossing(year = all_years, brand = all_brands) %>%
@@ -118,7 +140,7 @@ cmp <- crossing(year = all_years, brand = all_brands) %>%
   arrange(year, desc(flip), rank_orig)
 write_csv(cmp, file.path(out_dir, "roster_diff_vs_unfiltered.csv"))
 n_flip <- sum(cmp$flip)
-cat(sprintf("\nroster impact of the breadth filter: %d / %d rostered firm-years flip top-5 status\n",
+cat(sprintf("\nroster impact of the breadth filter: %d / %d rostered firm-years flip incumbent status\n",
             n_flip, nrow(cmp)))
 if (n_flip > 0) cmp %>% filter(flip) %>% as.data.frame() %>% print(row.names = FALSE)
 
@@ -151,16 +173,16 @@ write_csv(combined, file.path(out_dir, "a_it_and_fringe_monthly.csv"))
 ## ---- diagnostic figures ------------------------------------------------------
 p <- plot_a_it_single(a_it, a_Ft, tracked_firms,
   title = expression(a[it]*": UPC-unweighted average delivered nicotine, tracked firms vs. fringe"),
-  subtitle = paste0("Distribution-breadth filtered (N_stores >= ", N_STORES_MIN, "). Bold/colored = that firm's actual top-5 (incumbent) years; ",
-                    "thin grey = tracked but not top-5 that year. Dashed grey = fringe (pooled)."))
+  subtitle = paste0("Distribution-breadth filtered (N_stores >= ", N_STORES_MIN, "). Bold/colored = that firm's incumbent years (annual mL share > 7%); ",
+                    "thin grey = tracked but not an incumbent that year. Dashed grey = fringe (pooled)."))
 ggsave(file.path(out_dir, "a_it_and_fringe_trajectories.png"), p, width = 10, height = 6, dpi = 200, bg = "white")
 
 p_facet <- plot_a_it_facets(a_it, a_Ft, roster,
   title = expression(a[it]*": tracked firms, one panel each"),
-  subtitle = paste0("Distribution-breadth filtered (N_stores >= ", N_STORES_MIN, "). Blue/bold = that firm's actual top-5 (incumbent) years; ",
-                    "thin grey = tracked but not top-5 that year; dashed grey = fringe (pooled), shown for reference in every panel"))
+  subtitle = paste0("Distribution-breadth filtered (N_stores >= ", N_STORES_MIN, "). Blue/bold = that firm's incumbent years (annual mL share > 7%); ",
+                    "thin grey = tracked but not an incumbent that year; dashed grey = fringe (pooled), shown for reference in every panel"))
 ggsave(file.path(out_dir, "a_it_facets_by_firm.png"), p_facet, width = 12, height = 9, dpi = 200, bg = "white")
 
-cat("\nWrote: breadth_filter_sensitivity.csv, incumbent_roster_by_year.csv, roster_diff_vs_unfiltered.csv,",
+cat("\nWrote: breadth_filter_sensitivity.csv, incumbent_roster_by_year.csv, roster_7pct_vs_top5.csv, roster_diff_vs_unfiltered.csv,",
     "a_it_incumbents_monthly.csv, a_Ft_fringe_monthly.csv, a_it_and_fringe_monthly.csv,",
     "a_it_and_fringe_trajectories.png, a_it_facets_by_firm.png\n  ->", out_dir, "\n")

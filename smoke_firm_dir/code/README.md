@@ -71,6 +71,9 @@ RAW_DIR/full_<yr>_7467_<yr>.RData      store × week × UPC, one file per year
    ├─ build/5 ──► input/upc_month_niccorr_from_full.RData     brand × UPC × type × month
    └─ build/6 ──► input/upc_month_store_breadth.rds          UPC × month store counts
                      │
+   NCP (demand side) ─ build/7 ──► input/avg_mL_by_hh_in_ncp.RData   k_t for M_t
+   5 + 6 + 7 + taxes + Census ─ build/8 ──► input/demand_panel_firm_month.RData   Stage 1 sample
+                     │
                      ▼
               analysis/1–13  ──►  output/prelim_analysis/<topic>/  (figures, CSVs)
 ```
@@ -150,7 +153,7 @@ order doesn't matter.
 | `2_upc_overrides.R` | `YIELD_FACTOR` (0.68), `MANUAL_UPC_OVERRIDES`, `MANUAL_OVERRIDES`, `EXCLUDE_UPCS` (HeatSticks, hardware), `BRAND_RENAME` |
 | `3_t2_classify.R` | `classify_t2()` — the Closed pod / Disposable / Open refill classifier |
 | `4_event_lines_t2.R` | `events`, `event_layers(ymax)` (single panel: lines + numbered markers), `event_vlines()` (faceted: lines only), `event_caption` |
-| `5_supply_model_state_fxns.R` | `build_top5_roster()` (annual top-5 by mL share among identified brands), `build_a_it_and_fringe()` (tracked-firm `a_it` over each firm's full history, plus the pooled fringe `a_Ft`), `compute_top5_runs()`, `plot_a_it_single()`, `plot_a_it_facets()`. Used by `analysis/12`. Kept separate so the roster and `a_it` logic can run on filtered or unfiltered input unchanged |
+| `5_supply_model_state_fxns.R` | `build_share_roster()` (annual incumbents: mL share among identified brands > `INCUMBENT_SHARE_MIN` = 7%), `build_top5_roster()` (the earlier annual top-5 roster, kept for comparison), `build_a_it_and_fringe()` (tracked-firm `a_it` over each firm's full history, plus the pooled fringe `a_Ft`), `compute_top5_runs()`, `plot_a_it_single()`, `plot_a_it_facets()`. Used by `analysis/12`. Kept separate so the roster and `a_it` logic can run on filtered or unfiltered input unchanged |
 
 ## `build/` — raw → panels
 
@@ -162,6 +165,8 @@ order doesn't matter.
 | 4 | `build_cart_counts_t2.R` | same inputs as 3 | `p_and_n_decomp_t2/cart_counts_by_type_month.csv`: cartridge counts on the CDC-standardised unit (1 unit = 5 cartridges = 1 disposable = 1 bottle). Does not touch the panel |
 | 5 | `build_upc_month_niccorr.R` | `RAW_DIR/full_*`, imputation map, `fxns/2,3`, the canonical panel (for validation) | `input/upc_month_niccorr_from_full.RData`: the same row-level corrections as 3, kept at UPC level |
 | 6 | `build_upc_month_store_breadth.R` | `RAW_DIR/full_*` | `input/upc_month_store_breadth.rds`: distinct stores selling each UPC each month, as a raw count and as a share of that month's e-cig store panel. Feeds the breadth filter in `analysis/12` and `13` |
+| 7 | `build_Mt_numerator.R` | the demand-side Nielsen Consumer Panel purchase file (**not in this repo**; set `NCP_CPS_PATH`) | `input/avg_mL_by_hh_in_ncp.RData`: mean monthly e-liquid mL per e-cig-buying household, simple and projection-weighted. This is `k_t` in the market size `M_t = k_t × US adults`. **Already supplied**; not runnable here |
+| 8 | `build_firm_month_demand_panel.R` | `build/5`, `build/6`, `build/7` outputs, `raw/ecig_taxes/ec_tax_cotti_per_mL.RData`, `raw/census_pop/sc-est20*-alldata6.csv` | `input/demand_panel_firm_month.RData`: the Stage 1 nested-logit sample. `demand_im` has one row per incumbent × month (7% rule) with price (real $/mL), `a_it`, shares, eq. 7's LHS and within-nest term, and the instruments. `demand_mkt` has one row per month with fringe and outside shares, `M_t` and its robustness variants, `TaxIV_t` (population-weighted state tax, real $/mL), active-firm counts and `a_Ft` |
 
 Steps 2–6 each read all 11 raw files and take several minutes. Step 2 only needs
 re-running when the imputation logic changes; the map it writes is committed.
@@ -185,7 +190,7 @@ the historical rebuild order, not dependency.
 | 9 | `ecig_type_schematics.R` | `p_and_n_decomp_t2/` | labelled drawings of the three T2 form factors (not to scale) | — |
 | 10 | `ebe_diagnostics.R` | `firm_dynamics_ebe/` | firm-dynamics diagnostics for the EBE model, items 7.1/7.2/7.4/7.5 of the 08_27_2026 note: active-firm counts, first appearance, top-5 tenure, learning regressions, mL- vs UPC-weighted nicotine | canonical + UPC-month panels |
 | 11 | `entry_wave_coverage_check.R` | `firm_dynamics_ebe/` | the 09_01_2026 note: the 2021 burst of new brands comes from changes in RMS store coverage and product classification, not from real entry | `input/entry_wave_store_cache.rds` from `manual_refinement/7` |
-| 12 | `supply_model_nicotine_state.R` | `supply_model_state/` | **supply-model state variables.** `a_it` is the UPC-unweighted mean delivered mg/mL for every firm ever in an annual top 5, over its full monthly history, with an `is_top5_that_year` flag. `a_Ft` is the pooled fringe, where fringe means everyone outside that year's top 5. Also writes the annual roster, breadth-filter sensitivity, `roster_diff_vs_unfiltered.csv` (the filter changes 0 roster firm-years) and two trajectory figures | `build/5`, `build/6`, `fxns/5` |
+| 12 | `supply_model_nicotine_state.R` | `supply_model_state/` | **supply-model state variables.** Incumbents are firms with annual mL share > 7%, fixed for the year (3–6 per year). `a_it` is the UPC-unweighted mean delivered mg/mL for every firm ever an incumbent, over its full monthly history, with an `is_incumbent_that_year` flag. `a_Ft` is the pooled fringe, where fringe means everyone outside that year's incumbents. Also writes the annual roster, `roster_7pct_vs_top5.csv` (firm-years that moved when the roster switched from top-5 to 7%, 2026-09-25), breadth-filter sensitivity, `roster_diff_vs_unfiltered.csv` (the filter changes 0 roster firm-years) and two trajectory figures | `build/5`, `build/6`, `fxns/5` |
 | 13 | `national_nicotine.R` | `p_and_n_decomp_t2/` | national monthly mg/mL, mL-weighted and pooled across types, on the same subset as 12 (≥3 stores, no UNKNOWN), with the Sep 2018 FDA letters marked (`national_monthly_nicotine.png/.csv`). Within 0.25 mg/mL of the unfiltered pooled line from 1 | `build/5`, `build/6` |
 
 ## `manual_refinement/` — one-off audits (provenance, not re-run)

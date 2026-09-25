@@ -1,5 +1,5 @@
 ## ============================================================================
-## Shared construction + plotting functions for the a_it / fringe / top-5
+## Shared construction + plotting functions for the a_it / fringe /
 ## incumbent roster pipeline, used by analysis/12. Factored out so the same
 ## logic runs on both the store-breadth-filtered and unfiltered UPC-month
 ## panels (analysis/12 builds the unfiltered roster only for comparison),
@@ -13,11 +13,12 @@
 suppressPackageStartupMessages({ library(tidyverse); library(lubridate) })
 fxn("4_event_lines_t2.R")   # events, event_vlines(), event_caption
 
-N_BAR_DEFAULT <- 5
+N_BAR_DEFAULT         <- 5
+INCUMBENT_SHARE_MIN   <- 0.07   # demand-side incumbent cutoff (model note §7)
 
-## ---- top-5 roster: ranked once per year on realized mL share --------------
-build_top5_roster <- function(um, N_BAR = N_BAR_DEFAULT) {
-  brand_yr <- um %>%
+## ---- annual brand mL shares among identified brands, ranked ----------------
+brand_year_shares <- function(um) {
+  um %>%
     group_by(year, brand) %>%
     summarise(mL = sum(mL_sum), .groups = "drop") %>%
     group_by(year) %>%
@@ -25,6 +26,21 @@ build_top5_roster <- function(um, N_BAR = N_BAR_DEFAULT) {
     arrange(year, desc(share)) %>%
     mutate(rank = row_number()) %>%
     ungroup()
+}
+
+## ---- incumbent roster: annual mL share > share_min, fixed for that year ----
+## The live demand-side definition. Decoupled from N_BAR, which only caps the
+## dynamic entry/exit game -- the count here runs 3-6/year.
+build_share_roster <- function(um, share_min = INCUMBENT_SHARE_MIN) {
+  brand_yr <- brand_year_shares(um)
+  roster <- brand_yr %>% filter(share > share_min) %>%
+    select(year, brand, rank, share_yr = share)
+  list(brand_yr = brand_yr, roster = roster)
+}
+
+## ---- top-5 roster: the earlier definition, kept for comparison only --------
+build_top5_roster <- function(um, N_BAR = N_BAR_DEFAULT) {
+  brand_yr <- brand_year_shares(um)
   roster <- brand_yr %>% filter(rank <= N_BAR) %>%
     select(year, brand, rank, share_yr = share)
   list(brand_yr = brand_yr, roster = roster)
@@ -46,12 +62,12 @@ build_a_it_and_fringe <- function(um, roster) {
     left_join(a_it_raw, by = c("month", "brand")) %>%
     left_join(roster %>% select(year, brand, rank), by = c("year", "brand")) %>%
     select(-year) %>%
-    mutate(is_top5_that_year = !is.na(rank)) %>%
+    mutate(is_incumbent_that_year = !is.na(rank)) %>%
     select(-rank) %>%
     arrange(brand, month)
 
-  ## fringe = complement of roster (that YEAR's top-5), not of tracked_firms:
-  ## a tracked firm still has UPCs in years it wasn't top-5 (e.g. BLU in
+  ## fringe = complement of roster (that YEAR's incumbents), not of tracked_firms:
+  ## a tracked firm still has UPCs in years it wasn't an incumbent (e.g. BLU in
   ## 2021), and that volume is properly fringe in those years. Gating on
   ## tracked_firms instead would silently drop it from both series.
   fringe_upcs <- um %>% anti_join(roster, by = c("year", "brand"))
@@ -63,11 +79,11 @@ build_a_it_and_fringe <- function(um, roster) {
   list(a_it = a_it, a_Ft = a_Ft, tracked_firms = tracked_firms)
 }
 
-## ---- contiguous top-5 "on" runs, for plotting (a firm can have >1 run) -----
-compute_top5_runs <- function(a_it) {
+## ---- contiguous incumbent "on" runs, for plotting (a firm can have >1 run) --
+compute_incumbent_runs <- function(a_it) {
   mo_idx <- function(m) as.integer(format(m, "%Y")) * 12L + as.integer(format(m, "%m"))
   a_it %>%
-    filter(is_top5_that_year) %>%
+    filter(is_incumbent_that_year) %>%
     arrange(brand, month) %>%
     group_by(brand) %>%
     mutate(run_id = cumsum(c(1L, diff(mo_idx(month))) > 1L)) %>%
@@ -82,17 +98,17 @@ compute_top5_runs <- function(a_it) {
 ## Two geom_line layers per firm (not one aesthetic mapping) so the line
 ## stays continuous across TRUE/FALSE transitions instead of breaking: a
 ## thin/faded/grey layer over every month (group = brand only), overlaid with
-## a bold/colored layer restricted to is_top5_that_year==TRUE runs (grouped
-## by brand + run so non-contiguous top-5 spells render as separate segments).
+## a bold/colored layer restricted to is_incumbent_that_year==TRUE runs (grouped
+## by brand + run so non-contiguous incumbent spells render as separate segments).
 plot_a_it_single <- function(a_it, a_Ft, tracked_firms, title, subtitle) {
-  top5_runs <- compute_top5_runs(a_it)
+  inc_runs <- compute_incumbent_runs(a_it)
   ggplot() +
     event_vlines() +
     geom_line(data = a_Ft, aes(month, a_Ft),
               linewidth = 1, linetype = "dashed", color = "grey30") +
     geom_line(data = a_it, aes(month, a_it, group = brand),
               color = "grey75", linewidth = 0.35, alpha = 0.8) +
-    geom_line(data = top5_runs, aes(month, a_it, color = brand, group = series_run),
+    geom_line(data = inc_runs, aes(month, a_it, color = brand, group = series_run),
               linewidth = 1.05) +
     scale_color_manual(values = setNames(scales::hue_pal()(length(tracked_firms)), tracked_firms)) +
     labs(title = title, subtitle = subtitle,
@@ -106,12 +122,12 @@ plot_a_it_single <- function(a_it, a_Ft, tracked_firms, title, subtitle) {
 ## once per facet). Single consistent highlight color -- brand color-coding
 ## is redundant once each firm has its own facet strip label.
 plot_a_it_facets <- function(a_it, a_Ft, roster, title, subtitle) {
-  top5_runs <- compute_top5_runs(a_it)
+  inc_runs <- compute_incumbent_runs(a_it)
   firm_order <- roster %>% group_by(brand) %>%
     summarise(first_year = min(year), .groups = "drop") %>%
     arrange(first_year) %>% pull(brand)
   a_it_f      <- a_it      %>% mutate(brand = factor(brand, levels = firm_order))
-  top5_runs_f <- top5_runs %>% mutate(brand = factor(brand, levels = firm_order))
+  inc_runs_f <- inc_runs %>% mutate(brand = factor(brand, levels = firm_order))
 
   ggplot() +
     event_vlines() +
@@ -119,7 +135,7 @@ plot_a_it_facets <- function(a_it, a_Ft, roster, title, subtitle) {
               linewidth = 0.6, linetype = "dashed", color = "grey55") +
     geom_line(data = a_it_f, aes(month, a_it, group = brand),
               color = "grey75", linewidth = 0.35, alpha = 0.9) +
-    geom_line(data = top5_runs_f, aes(month, a_it, group = series_run),
+    geom_line(data = inc_runs_f, aes(month, a_it, group = series_run),
               color = "#1f78b4", linewidth = 0.9) +
     facet_wrap(~brand, scales = "free_y", ncol = 4) +
     labs(title = title, subtitle = subtitle,
