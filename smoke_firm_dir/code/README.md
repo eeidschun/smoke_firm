@@ -115,6 +115,12 @@ its header.
   but only about 0.01% of mL. The threshold is a raw store count, not a share
   of the month's store panel. `build/6` explains why.
 - **Prices.** `revenue_real` is deflated by CPI. `revenue_nom` is nominal.
+  The Stage 1 firm-month price `p_it` is the simple mean of eligible UPC-month
+  prices, each computed as real revenue / mL sold after collapsing T2 rows.
+  It is UPC-unweighted, matching the across-UPC convention for `a_it`;
+  `p_it * firm mL` need not equal observed revenue. The descriptive fringe
+  `p_F` remains aggregate revenue / mL and is not a demand regressor.
+  See [the price update](../docs/price_construction_update.md).
 - **Timeline events.** `fxns/4` holds the standard event markers (EVALI, the
   JUUL flavour pull, FDA flavoured-cartridge enforcement, the PMTA deadline).
   Scripts that need a different event define it locally; for example,

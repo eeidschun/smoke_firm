@@ -1,0 +1,98 @@
+I've read the handoff notes, the staged build prompts, the conference model note and the solution appendix. I haven't written any code or changed any files. The build prompts are the plan, and the solution appendix's equations are what I'll implement against.
+Settled choices I'll build against:
+- Demand model: a firm-level nested logit. All incumbents and the fringe share one nest, and the outside option is its own nest. The estimating equation is appendix eq. 7, run as one IV/2SLS regression on incumbents only. a_{i,t} is the nicotine state, averaged without UPC weights.
+- Incumbents vs. fringe: a firm is an incumbent for a calendar year if its annual mL share among identified brands is above 7% (at least 3 stores, UNKNOWN excluded). The label is fixed for all 12 months of that year. This rule is separate from N̄ = 5, which only applies to the entry/exit game.
+- Instruments: price is instrumented with TaxIV_t, the population-weighted national e-liquid excise tax. The within-nest share term is instrumented with the number of active firms.
+- Still open: whether crossing the 7% line counts as entry or exit (a question for Marc), the distributions for φ/xₑ (Stage 4, your pick), and the correction for old brands biasing a_F. None of these block Stages 1–3.
+Things to resolve before or during Stage 1:
+1. The PDFs and prompt files aren't in the repo. The build prompts say they are, but I searched the whole repo and found none of them. I have the attached copies in this chat. You may want to save them somewhere like smoke_firm_dir/handoff_files/ so later sessions can find them.
+2. Market size M_t is never defined, and Stage 1 can't run without it. s_0 = 1 − Σs_i − s_F needs a market size that includes the outside option, for example the adult population times some per-capita mL figure. Neither document says what it is.
+3. The price variable isn't defined either. It could be $/mL, or $/mg of nicotine, and it could be averaged over a firm's UPCs by mL weights or without weights. The FOC and the cost recovery both depend on this choice.
+4. Both instruments vary only over time, so they may be weak. TaxIV_t is one national number per month. The active-firm count probably is too, and if it counts 7%-incumbents it only changes once a year. Any month or year fixed effects would soak up both, and even without them we're identifying off a single time series. We also need to decide which "active firms" to count: incumbents only, all brands, or all brands above the store threshold.
+5. The docs disagree about whether N̄ = 5 binds. The model note says N̄ = 5 "never binds", but it also says the incumbent count reaches 6 in 2014 and 2018. That's the same thing as the cap binding, and it matters for the Stage 6 state space.
+6. The fringe's own state and transition aren't in any stage. Stage 5 needs a_{F,t}, and the appendix mentions a fringe transition F_F, but Stages 1–7 never build either. I'd add both to Stage 3.
+7. Some cross-references point to the wrong sections. The documents cite model-note sections that don't exist or don't match (§4.5, §4.6, and "§6" for the nicotine construction; §6 is actually the fringe section). This won't affect the code, but it should be fixed before anyone else reads the drafts.
+Also, this session opened in archive/, but the live pipeline is under smoke_firm_dir/, so that's where I'll work. When you're ready, say go and I'll run Stage 0: a report on what's in smoke_firm_dir/, with no code changes. That will also show whether earlier work already settles items 2 and 3, in particular what's in raw/ecig_taxes/ and the new supply-model state scripts.
+for market size, what if I go with US adult population? price variable should be $ / mL , and so i think the tax insrument should be at this level too. do not think about the cap of firms being 5 yet - that is for later stages. yes i want to have the live pipeline under smoke_firm_dir.
+Write C:\Users\user\.claude\projects\c--Users-user-Desktop-Bitbucket-smoke-firm\memory\project_mpe_demand_spec_decisions.md
+17 lines
+--- name: project-mpe-demand-spec-decisions description: Stage-1 demand spec choices for the MPE build (market size, price units, tax IV units) decided 2026-09-24 metadata:   type: project ---  Decisions for the staged MPE build (mpe_build_prompts.md / ec_supply_solution_appendix.pdf), made 2026-09-24:  - Market size M_t = US adult population (per-capita potential-mL scaling k still to be chosen; mL / adults is not a share without it). - Price p_{i,t} is in $/mL; the tax instrument TaxIV_t must be in $/mL too (ad valorem state taxes need converting). - Ignore the N̄=5 cap for now; it belongs to the later dynamic stages (6-7). - All new build work goes in smoke_firm_dir/ (the live pipeline), not archive/.  **Why:** Neither PDF defined M_t or the price units; the user settled them before Stage 1. **How to apply:** Build Stage 1 shares/prices/IV on these definitions; confirm k before computing s_0. Related: [[feedback-nicotine-upc-unweighted]], [[project-rms-coverage-incumbent-threshold]]. 
+Bash Append memory pointer to index
+IN
+cd "C:/Users/user/.claude/projects/c--Users-user-Desktop-Bitbucket-smoke-firm/memory" && echo "- [MPE demand spec decisions](project_mpe_demand_spec_decisions.md) — M_t = US adult pop, price & tax IV in \$/mL, ignore N̄=5 for now" >> MEMORY.md && tail -2 MEMORY.md
+OUT
+- [RMS coverage & incumbent threshold](project_rms_coverage_incumbent_threshold.md) — deferred; RMS under-covers c-stores, NJOY/Logic early shares understated - [MPE demand spec decisions](project_mpe_demand_spec_decisions.md) — M_t = US adult pop, price & tax IV in $/mL, ignore N̄=5 for now Shell cwd was reset to c:\Users\user\Desktop\Bitbucket\smoke_firm\archive
+Got it. From here on I'll use these four choices:
+- Market size: US adult population.
+- Units: price and the tax instrument are both in $/mL.
+- Cap: I won't think about the N̄ = 5 limit on firms until the later stages.
+- Where the work goes: all of it in smoke_firm_dir/, not archive/.
+I saved these to memory so future sessions start from them.
+One more decision is needed before Stage 1 can compute shares. The numerator of a share is in mL, and adults is a head count. So s_{i,t} = mL_{i,t} / adults_t isn't a share yet. You need one more number: potential mL per adult per month, k, so that M_t = k × adults_t. This is the usual move, like Nevo's "one serving per capita per day" in cereal.
+- What k does: it sets the outside share s_0, which enters both sides of eq. 7. So it moves α̂ and σ̂ somewhat, though usually not by much.
+- How to pick it: take a round number based on a regular vaper's monthly mL, then rerun Stage 1 with k halved and doubled as a robustness check.
+- What to expect: RMS only tracks part of retail, and most adults don't vape. So s_0 will be close to 1 for any reasonable k, which is fine for the nested logit.
+You can pick k now, or I can take a placeholder and rerun with other values later.
+There's also a unit issue with the tax data. Many state e-cig taxes aren't per mL:
+- some are ad valorem (a percent of wholesale or retail price);
+- some are per-cartridge;
+- some tax closed and open systems differently.
+Turning those into $/mL requires a price. If that's the firm's own observed price, the instrument picks up some of the endogeneity it's supposed to remove. The standard fix is a price that's fixed in advance, such as a national average $/mL from a base year. I'll check what's already in smoke_firm_dir/raw/ecig_taxes/ during Stage 0 and report how the rates are stored.
+Say go when you want Stage 0.
+Ijust pulled in input/avg_mL_by_hh_in_ncp.RDAta and the code to build it (you wont' be able to run it) the 7_build_Mt_numerator. R. please check the logic of the code. if you are happy you can read in the .rdata and use that for the M_t
+Globpattern: "smoke_firm_dir/**/*{Mt_numerator,avg_mL_by_hh}*"
+Found 2 files
+Read c:\Users\user\Desktop\Bitbucket\smoke_firm\smoke_firm_dir\code\build\7_build_Mt_numerator.R
+Read c:\Users\user\Desktop\Bitbucket\smoke_firm\smoke_firm_dir\code\fxns\1_paths.R
+The script is short. I'll load the saved output to check its values against the logic.
+Bash Inspect the saved M_t numerator data
+IN
+cd "c:/Users/user/Desktop/Bitbucket/smoke_firm" && Rscript -e ' load("smoke_firm_dir/input/avg_mL_by_hh_in_ncp.RData"); print(ls()); str(M_t_long) suppressMessages(library(dplyr)); library(tidyr) w <- M_t_long %>% select(year_month, name, value) %>% pivot_wider() print(summary(w)); print(nrow(w)); print(range(w$year_month)) w$yr <- substr(w$year_month,1,4) print(w %>% group_by(yr) %>% summarise(n=n(), simple=mean(simple_avg_mL), wt=mean(hh_wt_avg_mL), min_wt=min(hh_wt_avg_mL), max_wt=max(hh_wt_avg_mL)), n=20) print(sum([is.na](http://is.na/)(w$hh_wt_avg_mL))) '
+OUT
+Exit code 139 /usr/bin/bash: line 17:   368 Segmentation fault      Rscript -e ' load("smoke_firm_dir/input/avg_mL_by_hh_in_ncp.RData"); print(ls()); str(M_t_long) suppressMessages(library(dplyr)); library(tidyr) w <- M_t_long %>% select(year_month, name, value) %>% pivot_wider() print(summary(w)); print(nrow(w)); print(range(w$year_month)) w$yr <- substr(w$year_month,1,4) print(w %>% group_by(yr) %>% summarise(n=n(), simple=mean(simple_avg_mL), wt=mean(hh_wt_avg_mL), min_wt=min(hh_wt_avg_mL), max_wt=max(hh_wt_avg_mL)), n=20) print(sum([is.na](http://is.na/)(w$hh_wt_avg_mL))) '
+R crashed when run from Git Bash. I'll retry with a script file run from PowerShell.
+Write C:\Users\user\AppData\Local\Temp\claude\c--Users-user-Desktop-Bitbucket-smoke-firm-archive\141b6c34-419f-4cfc-ac6d-599c5ffe775a\scratchpad\inspect_mt.R
+9 lines
+load("smoke_firm_dir/input/avg_mL_by_hh_in_ncp.RData") print(ls()); str(M_t_long) suppressMessages({library(dplyr); library(tidyr)}) w <- M_t_long %>% select(year_month, name, value) %>% pivot_wider() print(nrow(w)); print(range(w$year_month)); print(sum([is.na](http://is.na/)(w$hh_wt_avg_mL))) w$yr <- substr(w$year_month, 1, 4) print(w %>% group_by(yr) %>% summarise(n = n(), simple = mean(simple_avg_mL),       wt = mean(hh_wt_avg_mL), min_wt = min(hh_wt_avg_mL), max_wt = max(hh_wt_avg_mL)), n = 20) 
+PowerShell Inspect the saved M_t numerator data in R
+IN
+Set-Location "c:\Users\user\Desktop\Bitbucket\smoke_firm"; Rscript "C:\Users\user\AppData\Local\Temp\claude\c--Users-user-Desktop-Bitbucket-smoke-firm-archive\141b6c34-419f-4cfc-ac6d-599c5ffe775a\scratchpad\inspect_mt.R"
+OUT
+[1] "M_t_long" Classes 'tbl_df', 'tbl' and 'data.frame':	264 obs. of  4 variables:  $ year_month: chr  "2013-01" "2013-01" "2013-02" "2013-02" ...  $ name      : chr  "simple_avg_mL" "hh_wt_avg_mL" "simple_avg_mL" "hh_wt_avg_mL" ...  $ value     : num  5.01 5.81 5.79 9.1 4.21 ...  $ date      : Date, format: "2013-01-01" "2013-01-01" ... [1] 132 [1] "2013-01" "2023-12" [1] 0 # A tibble: 11 × 6    yr        n simple    wt min_wt max_wt    <chr> <int>  <dbl> <dbl>  <dbl>  <dbl>  1 2013     12   5.60  6.06   4.34   9.10  2 2014     12   5.65  5.50   4.47   7.13  3 2015     12   4.94  4.86   3.92   6.99  4 2016     12   5.18  5.11   3.94   6.58  5 2017     12   5.45  5.49   3.88   6.68  6 2018     12   6.56  6.89   5.27   9.60  7 2019     12   7.17  7.59   6.06   9.55  8 2020     12   8.90  9.11   8.29   9.92  9 2021     12   9.59  9.55   7.07  12.8  10 2022     12  13.6  15.6   13.8   17.5  11 2023     12  15.5  16.5   13.2   21.3 Shell cwd was reset to c:\Users\user\Desktop\Bitbucket\smoke_firm\archive
+I read the script and loaded the .RData it saves. The saved data is complete: 132 months (2013-01 to 2023-12), both columns filled, no NAs. Mostly I'm happy to use it. There are two things I can't check from here, and a few smaller points.
+Needs your confirmation (these are in the demand-side data, which I can't see):
+1. Does liq_total_f already account for units bought? Nielsen purchase rows carry a quantity field. If liq_total_f is the mL in one pack and nobody multiplied by quantity, then every multi-pack purchase is undercounted.
+2. distinct() on line 10 may be dropping real purchases. A household can have two rows with the same UPC on the same trip, for example with different deal or coupon flags. Those rows are identical across the columns kept here, so distinct() collapses them into one. If duplicates only come from the join that built cps, this is fine. If they're real repeat purchases, it undercounts.
+Conceptual points, none of them blocking: 3. This is mL per household that bought e-cigs that month. It is not mL per adult. That fits what k is supposed to be, the monthly potential consumption of a typical buyer. There are two small caveats:
+- A household can contain more than one vaper, so multiplying by adults overstates slightly compared with multiplying by households.
+- People buy in lumps. Some months are spent partly out of stock bought earlier, so a month's purchases overstate a steady consumption rate.
+Both only change the level of M_t, which affects s_0 a little. Neither changes the approach. 4. The monthly series is noisy. Within 2013 alone the weighted value ranges from 4.3 to 9.1 mL. Every firm in a month shares the same ln(s_0), so this noise goes straight into the dependent variable. I'd smooth it: use the annual mean of hh_wt_avg_mL, or a centred 12-month rolling mean. 5. It triples over the sample, from about 5 mL in 2013–17 to about 16 mL in 2022–23, which fits the shift to disposables. A time-varying k keeps M_t in consistent "vaper-months" as the mL per device grows. That's a good reason to keep it varying rather than use one constant. I'd still run a constant k as a robustness check.
+Code hygiene (only matters for rerunning, not for the saved output):
+- pivot_longer (line 17) is used without loading tidyr.
+- dplyr is used on lines 8–15 but only loaded on line 19.
+- The script loads from input/NCP/... but saves to smoke_firm/smoke_firm_dir/input/.... Those paths assume two different working directories.
+- It doesn't source 1_paths.R.
+What I'll use: M_t = hh_wt_avg_mL (annual mean) × US adult population, with the raw monthly series and a constant k as robustness checks. That assumes items 1 and 2 are fine, or tell me if they aren't.
+I haven't edited the script. Do you want me to fix the hygiene issues, or leave it as it is, since I can't run it anyway?
+yes liq_total_f accounts for units bought .
+Edit C:\Users\user\.claude\projects\c--Users-user-Desktop-Bitbucket-smoke-firm\memory\project_mpe_demand_spec_decisions.md
+Modified
+Thanks, that settles item 1.
+Item 2 is still open: the distinct() on line 10. It's only a problem if the same household can buy the same UPC twice on the same trip, as two separate rows. If cps already has one row per trip × UPC, it's harmless. You'd know that better than I would, and I won't hold anything up for it.
+The baseline is now M_t = (annual mean of hh_wt_avg_mL) × US adult population, with the raw monthly series and a constant k as robustness checks. I've updated memory with this.
+Two things are still pending:
+- Script cleanup: do you want me to fix the hygiene issues in 7_build_Mt_numerator.R? Those are the library loading order, 1_paths.R, and the mismatched load and save paths. Or should I leave it as is?
+- Stage 0: say go and I'll write up what's in smoke_firm_dir/, including how raw/ecig_taxes/ stores its rates. I won't change any code.
+yes the distinct thing i did because i think I mistakenly had duplicated rows befrore. cps shoud really e one row per trip x upc
+In that case the distinct() is harmless. If cps really is one row per trip × UPC, it does nothing. If some duplicate rows from the earlier bug are still there, it removes them. The only case it would get wrong is two genuine purchases of the same UPC on the same trip stored as separate rows, and you've said the data isn't built that way.
+That settles the M_t numerator. The baseline is M_t = (annual mean of hh_wt_avg_mL) × US adult population.
+Two things are still waiting on you:
+- Script cleanup: do you want me to fix the hygiene issues in 7_build_Mt_numerator.R, or leave it as is?
+- Stage 0: say go and I'll write up what's in smoke_firm_dir/, without changing any code.
+fix the hygine issu
+Bash Check build-script header conventions
+IN
+cd "c:/Users/user/Desktop/Bitbucket/smoke_firm/smoke_firm_dir/code/build" && ls && head -30 5_build_upc_month_niccorr.R && grep -n "save(\|saveRDS\|library(" 6_build_upc_month_store_breadth.R | head
+OUT
+1_clean_RMS_from_raw_to_most_detailed.R 2_impute_missing_mL.R 3_build_t2_panel_niccorr.R 4_build_cart_counts_t2.R 5_build_upc_month_niccorr.R 6_build_upc_month_store_breadth.R 7_build_Mt_numerator.R ## ============================================================================ ## UPC x month corrected panel  (national, monthly) ## ## Same row-level transform as 3_build_t2_panel_niccorr.R -- cartridge-scaling fix, ## VUSE family label/liquid corrections, manual UPC overrides, mL imputation map, ## HeatStick / hardware exclusions, brand cascade, T2 type -- but aggregated to ## (year_month, brand, upc12, type) instead of (year_month, brand, type). ## ## Two-stage for memory: (1) data.table collapse of the store x week raw file to ## (upc, year_month, product-attributes) carrying unit/revenue sums; (2) apply the ## per-UPC corrections on that small table. Feeds the 7.5 diagnostics with a ## MONTHLY UPC count and a monthly UPC-unweighted nicotine series. Writes a NEW ## cache; does not touch the canonical bt_month_t2_niccorr panel. ## ## Validation: collapsing this panel over upc12 reproduces bt_month_t2. ## ============================================================================  rm(list = ls()) suppressPackageStartupMessages({ library(data.table); library(dplyr); library(tidyr); library(stringr) })  source("smoke_firm_dir/code/fxns/1_paths.R") raw_input_dir <- RAW_DIR support_dir   <- SUPPORT_DIR  fxn("3_t2_classify.R") fxn("2_upc_overrides.R")       # YIELD_FACTOR, overrides, EXCLUDE pad12 <- function(u) str_pad(as.character(u), 12, "left", "0")  upc_ov <- MANUAL_UPC_OVERRIDES %>%   mutate(upc12 = pad12(upc), 19:suppressPackageStartupMessages({ library(data.table); library(stringr) }) 48:saveRDS(upc_breadth, file.path(SUPPORT_DIR, "upc_month_store_breadth.rds")) Shell cwd was reset to c:\Users\user\Desktop\Bitbucket\smoke_firm\archive
+yep lets start stage 0
