@@ -67,3 +67,20 @@ EXCLUDE_UPCS <- c(
   "085570400814",   # HAUS ECTA  - tank atomizer
   "085570400792"    # HAUS ECSOC/E-CG TANK 2PK - 2 coils (hardware), user-confirmed
 )
+
+
+## User-reviewed product sizes: authoritative over older UPC size overrides.
+## Counts and capacities update retail quantities; preserve existing nicotine labels.
+reviewed_size <- read.csv("smoke_firm_dir/input/manual_product_size_corrections.csv",
+                         colClasses = c(upc12 = "character"))
+stopifnot(!anyDuplicated(reviewed_size$upc12), all(reviewed_size$cartridges_per_pack > 0),
+          all(reviewed_size$ml_per_cartridge > 0))
+old_codes <- sprintf("%012.0f", as.numeric(MANUAL_UPC_OVERRIDES$upc))
+old_match <- match(reviewed_size$upc12, old_codes)
+reviewed_overrides <- tibble::tibble(upc = reviewed_size$upc12,
+  brand = MANUAL_UPC_OVERRIDES$brand[old_match], liq_cart_f = reviewed_size$ml_per_cartridge,
+  num_cartridges = reviewed_size$cartridges_per_pack,
+  nic_mg_per_ml = MANUAL_UPC_OVERRIDES$nic_mg_per_ml[old_match],
+  t2_type = ifelse(reviewed_size$product_type %in% c("Closed pod", "Disposable", "Open refill"), reviewed_size$product_type, NA_character_))
+MANUAL_UPC_OVERRIDES <- dplyr::bind_rows(
+  MANUAL_UPC_OVERRIDES[!old_codes %in% reviewed_size$upc12, ], reviewed_overrides)

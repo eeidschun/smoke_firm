@@ -1,7 +1,7 @@
 ## ============================================================================
 ## ARCHIVED / SUPERSEDED. This builds the PRE-nicotine-correction panel
 ## `bt_month_t2_from_full.RData` (the "do-not-use, has incorrect nic" panel).
-## The live builder is build/3_build_t2_panel_niccorr.R. Kept for old-vs-new
+## The live builder is 1_build_data/3_build_t2_panel_niccorr.R. Kept for old-vs-new
 ## comparison only. Paths below are lightly updated but this is not run.
 ##
 ## Build the T2 (Closed pod / Disposable / Open refill) monthly panel and run

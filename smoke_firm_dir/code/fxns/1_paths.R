@@ -32,5 +32,10 @@ SUPPORT_DIR <- file.path(FIRM_DIR, "input")
 OUT_DIR     <- file.path(FIRM_DIR, "output")
 PRELIM_DIR  <- file.path(OUT_DIR, "prelim_analysis")
 RAW_DIR     <- file.path(FIRM_DIR, "raw", "cleaned_RMS")
+## Older checkouts store the same annual cleaned files in repo-root input/.
+if (!dir.exists(RAW_DIR)) {
+  legacy_raw <- file.path(dirname(FIRM_DIR), "input")
+  if (length(list.files(legacy_raw, pattern = "^full_.*7467.*\\.RData$"))) RAW_DIR <- legacy_raw
+}
 
 fxn <- function(name) source(file.path(FXN_DIR, name))

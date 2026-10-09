@@ -5,6 +5,8 @@ input/ncp_upc_month_level/
 input/full_*.RData
 full_*_7467_*.RData
 smoke_firm_dir/raw/cleaned_RMS/
+smoke_firm_dir/backups/
+smoke_firm_dir/input/backup_master_*/
 troubleshoot*
 *.aux
 *.log

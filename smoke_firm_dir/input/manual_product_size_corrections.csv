@@ -1,0 +1,18 @@
+upc12,cartridges_per_pack,ml_per_cartridge,product_type,source,notes
+085962600262,3,1,Closed pod,Standard Finiti cartomizer refill 3-pack (1.0 mL per cartridge),Decision and source supplied by user; not independently verified.
+081991301137,4,0.7,Closed pod,Standard JUUL 4-pack pod box (0.7 mL per pod),Decision and source supplied by user; not independently verified.
+081991301269,4,0.7,Closed pod,Explicit COUNT in product description; user approved; Per-cartridge mL supplied by user (2026-10-06),
+081991301543,1,0.7,Closed pod,UPCIndex (819913015434 = 1-pack unit = 1 pod x 0.7 mL),Corrected total imputed mL to 0.7 to match 1-pack pod count; Decision and source supplied by user; not independently verified.; Original imputed pack mL retained in mL_total_imputed; correction recorded in decision_total_ml_per_pack only.; User explicitly approved transferring the cited product information from source identifier 819913015434 to original target UPC 081991301543; retain original target UPC.
+085570400806,1,1.5,Disposable,Wharton Nielsen E-Cig Study (Traditional single-unit disposable),"Nominal volume ~1.5-2.0 mL; Decision and source supplied by user; not independently verified.; Original imputed pack mL retained in mL_total_imputed; correction recorded in decision_total_ml_per_pack only.; User explicitly selected 1.5 mL per disposable for implementation; approximate source range retained for provenance, not a pending decision."
+085570400807,1,1.5,Disposable,Wharton Nielsen E-Cig Study (Menthol single-unit disposable),"Nominal volume ~1.5-2.0 mL; Decision and source supplied by user; not independently verified.; Original imputed pack mL retained in mL_total_imputed; correction recorded in decision_total_ml_per_pack only.; User explicitly selected 1.5 mL per disposable for implementation; approximate source range retained for provenance, not a pending decision."
+081068701483,2,1.9,Closed pod,Explicit COUNT in product description; user approved; Per-cartridge mL supplied by user (2026-10-06),
+084920501532,2,1.9,Closed pod,Vuse Vibe Original Refill Tanks (2-Pack),Decision and source supplied by user; not independently verified.
+084920501535,2,1.9,Closed pod,Vuse Vibe Menthol Refill Tanks (2-Pack),Decision and source supplied by user; not independently verified.
+084920501544,2,1.9,Closed pod,Vuse Vibe Nectar Refill Tanks (2-Pack),Decision and source supplied by user; not independently verified.
+084920501547,2,1.9,Closed pod,Vuse Vibe Tropical Refill Tanks (2-Pack),Decision and source supplied by user; not independently verified.
+084920501622,2,1.8,Closed pod,"Vuse Alto Pods (2-Pack, 1.8 mL per pod)",Decision and source supplied by user; not independently verified.
+084920501712,1,1.9,Closed pod; Disposable,Explicit COUNT in product description; user approved; Per-cartridge mL supplied by user (2026-10-06); User corrected VUSE VIBE to 1.9 mL per cartridge (2026-10-06),
+084920501793,2,1.8,Closed pod,"Vuse Alto Pods (2-Pack, 1.8 mL per pod)",Decision and source supplied by user; not independently verified.
+084920501808,1,1.8,Closed pod,Vuse Alto Single Pod Refill (1-Pack),Decision and source supplied by user; not independently verified.
+084920501811,1,1.8,Closed pod,Vuse Alto Single Pod Refill (1-Pack),Decision and source supplied by user; not independently verified.
+084920502165,1,1.8,Closed pod,Vuse Alto Single Pod Refill (1-Pack),Decision and source supplied by user; not independently verified.

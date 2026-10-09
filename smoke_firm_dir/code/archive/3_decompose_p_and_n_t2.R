@@ -1,6 +1,6 @@
 ## ARCHIVED / SUPERSEDED. Loads the PRE-nicotine-correction panel
 ## `bt_month_t2_from_full.RData` (the "do-not-use, has incorrect nic" panel).
-## Live equivalent: analysis/1_decompose_t2.R on the corrected panel.
+## Live equivalent: 2_preliminary_analysis/1_decompose_t2.R on the corrected panel.
 ##
 ## Recreate ALL archive/2_decompose_p_and_n.R outputs, but on the T2 panel
 ## (bt_month_t2, built by archive/1_build_t2_panel.R: overrides, exclusions,

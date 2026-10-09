@@ -1,17 +1,17 @@
 "type","brand","within","composition","interaction","total"
-"Closed pod","VUSE",0.939,7.734,3.955,12.628
-"Closed pod","JUUL",-1.149,-7.503,0.692,-7.959
-"Closed pod","MARKTEN",-1.29,-1.29,1.29,-1.29
-"Closed pod","NJOY",-0.088,4.538,-3.233,1.217
-"Closed pod","BLU",-0.448,-0.846,0.374,-0.92
-"Closed pod","LOGIC",-0.095,-0.613,0.074,-0.634
-"Closed pod","UNKNOWN",-0.493,-0.493,0.493,-0.493
-"Closed pod","21ST CENTURY SMOKE",0.321,-0.204,-0.321,-0.204
-"Closed pod","MISTIC",-0.119,-0.119,0.119,-0.119
-"Closed pod","GREEN SMOKE",-0.033,-0.033,0.033,-0.033
+"Closed pod","VUSE",0.944,7.756,3.892,12.592
+"Closed pod","JUUL",-1.326,-7.826,0.808,-8.344
+"Closed pod","MARKTEN",-1.31,-1.31,1.31,-1.31
+"Closed pod","NJOY",-0.089,4.541,-3.235,1.217
+"Closed pod","BLU",-0.487,-0.962,0.417,-1.033
+"Closed pod","LOGIC",-0.096,-0.623,0.075,-0.644
+"Closed pod","21ST CENTURY SMOKE",0.326,-0.208,-0.326,-0.208
+"Closed pod","UNKNOWN",-0.133,-0.133,0.133,-0.133
+"Closed pod","MISTIC",-0.045,-0.045,0.045,-0.045
+"Closed pod","GREEN SMOKE",-0.034,-0.034,0.034,-0.034
 "Closed pod","LEAP",0,0,0.028,0.028
 "Closed pod","GLAS",0,0,0.016,0.016
-"Closed pod","V2 CIGS",-0.01,-0.01,0.01,-0.01
+"Closed pod","V2 CIGS",-0.011,-0.011,0.011,-0.011
 "Closed pod","FINITI",-0.001,-0.001,0.001,-0.001
 "Closed pod","KRAVE",0,0,0,0
 "Closed pod","NICOTEK",0,0,0,0
@@ -20,42 +20,42 @@
 "Closed pod","GREEN SMART LIVING",0,0,0,0
 "Closed pod","E SWISHER",0,0,0,0
 "Closed pod","BO VAPING",0,0,0,0
-"Disposable","BREEZE",0,0,3.831,3.831
-"Disposable","BLU",-0.01,-3.694,0.009,-3.695
-"Disposable","HYPPE",0,0,3.503,3.503
-"Disposable","NJOY",-0.373,-2.94,0.283,-3.03
-"Disposable","VUSE",-0.176,2.963,-0.913,1.875
-"Disposable","SHENZEN HQD TECHNOLOGY",0,0,1.217,1.217
-"Disposable","UNKNOWN",0.527,-1.023,-0.514,-1.01
-"Disposable","MADURO DISTRIBUTORS",0,0,0.978,0.978
-"Disposable","STAGBAR",0,0,0.701,0.701
-"Disposable","ESCO BARS",0,0,0.375,0.375
-"Disposable","ZEO",0,0,0.311,0.311
-"Disposable","JUICY BAR",0,0,0.289,0.289
-"Disposable","IGNITE",0,0,0.281,0.281
-"Disposable","AVATA",0,0,0.258,0.258
-"Disposable","LOGIC",-0.082,-0.24,0.074,-0.247
+"Disposable","BLU",-0.469,-4.236,0.449,-4.256
+"Disposable","BREEZE",0,0,3.818,3.818
+"Disposable","HYPPE",0,0,3.491,3.491
+"Disposable","NJOY",-0.353,-2.738,0.263,-2.828
+"Disposable","VUSE",-0.166,2.995,-0.923,1.906
+"Disposable","SHENZEN HQD TECHNOLOGY",0,0,1.213,1.213
+"Disposable","MISTIC",-1.077,-1.077,1.077,-1.077
+"Disposable","MADURO DISTRIBUTORS",0,0,0.975,0.975
+"Disposable","STAGBAR",0,0,0.698,0.698
+"Disposable","UNKNOWN",0.209,-0.461,-0.197,-0.45
+"Disposable","ESCO BARS",0,0,0.374,0.374
+"Disposable","ZEO",0,0,0.307,0.307
+"Disposable","JUICY BAR",0,0,0.288,0.288
+"Disposable","IGNITE",0,0,0.28,0.28
+"Disposable","LOGIC",-0.072,-0.251,0.065,-0.259
+"Disposable","AVATA",0,0,0.257,0.257
+"Disposable","COSMIC FOG",-0.201,-0.201,0.201,-0.201
 "Disposable","PACHA",0,0,0.192,0.192
-"Disposable","IMPERIAL",-0.145,-0.145,0.145,-0.145
 "Disposable","BIDI",0,0,0.14,0.14
+"Disposable","IMPERIAL",-0.138,-0.138,0.138,-0.138
 "Disposable","MNGO",0,0,0.124,0.124
-"Disposable","PALAX",0,0,0.112,0.112
-"Disposable","SAVAGE",0,0,0.085,0.085
-"Disposable","STICK",0,0,0.078,0.078
-"Disposable","IMIRACLE",0,0,0.055,0.055
+"Disposable","PALAX",0,0,0.111,0.111
+"Disposable","SAVAGE",0,0,0.084,0.084
+"Disposable","STICK",0,0,0.077,0.077
+"Disposable","IMIRACLE",0,0,0.054,0.054
 "Disposable","PUUR VAPOR",0,0,0.022,0.022
 "Disposable","JUICY",0,0,0.019,0.019
-"Disposable","V2 CIGS",-0.002,-0.01,0.002,-0.01
+"Disposable","V2 CIGS",-0.002,-0.009,0.002,-0.009
 "Disposable","POSH",0,0,0.008,0.008
 "Disposable","KRAVE",-0.007,-0.007,0.007,-0.007
 "Disposable","FUME",0,0,0.006,0.006
-"Disposable","JUUL",0,0,0.002,0.002
-"Disposable","MISTIC",-0.002,-0.002,0.002,-0.002
 "Disposable","ZIG-ZAG",-0.002,-0.002,0.002,-0.002
 "Disposable","SWITCH MODS",0,0,0.002,0.002
 "Disposable","FAZE",-0.001,-0.001,0.001,-0.001
+"Disposable","JUUL",0,0,0.001,0.001
 "Disposable","POP",0,0,0,0
-"Disposable","NICOTEK",0,0,0,0
 "Disposable","JAK",0,0,0,0
 "Disposable","SHENZHEN GOLDREAMS TECHNOLOGY",0,0,0,0
 "Disposable","GLAS",0,0,0,0
@@ -71,12 +71,12 @@
 "Disposable","DUO XTRA",0,0,0,0
 "Disposable","CUE",0,0,0,0
 "Disposable","E SWISHER",0,0,0,0
-"Open refill","MISTIC",-5.417,-4.119,3.002,-6.533
-"Open refill","VAPIN PLUS",0.043,5.414,0.445,5.901
-"Open refill","NJOY",2.556,-3.442,-2.458,-3.345
-"Open refill","COSMIC FOG",-1.398,-1.398,1.398,-1.398
-"Open refill","LOGIC",-0.536,-0.536,0.536,-0.536
-"Open refill","NICOTEK",-0.013,0.362,-0.261,0.089
-"Open refill","FINITI",0.004,0.036,0.041,0.082
+"Open refill","MISTIC",-5.689,-4.532,3.305,-6.916
+"Open refill","VAPIN PLUS",0.045,5.301,0.436,5.781
+"Open refill","NJOY",2.69,-3.632,-2.594,-3.537
+"Open refill","LOGIC",-0.564,-0.564,0.564,-0.564
+"Open refill","BLU",0,0,0.26,0.26
+"Open refill","NICOTEK",-0.014,0.355,-0.255,0.086
+"Open refill","FINITI",0.004,0.036,0.04,0.08
 "Open refill","IMPERIAL",-0.002,-0.002,0.002,-0.002
 "Open refill","JUST JUICE",0,0,0,0

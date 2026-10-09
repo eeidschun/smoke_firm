@@ -340,29 +340,51 @@
 "1-no-value","081717001002","NICSTICK","NICSTICK E-CGAC MN","NICSTICK E-CGAC MN",1,NA,"none",NA,"",1
 "1-no-value","084727700006","JASPER & JASPER","JJC E-CGC TOB","JJC E-CGC TOB",5,NA,"none",NA,"",1
 "1-no-value","085436100401","NE WHERE","NE WHERE E-CG MN","NE WHERE E-CG MN",1,NA,"none",NA,"",1
-"2-siblings-disagree","084920501793","VUSE",NA,NA,NA,3.6,"prefix11",24,"CHECK:siblings_disagree",268658
+"2-siblings-disagree","088796900560","BLU","BLECGS+ ECGT CT","BLECGS+ ECGT CT",1,3,"prefix10",24,"CHECK:siblings_disagree",372082
+"2-siblings-disagree","084920501667","VUSE","ELCT CGRTT CARTRIDGE","ELCT CGRTT CARTRIDGE",2,0.75,"prefix11",80.7,"CHECK:siblings_disagree",292191
+"2-siblings-disagree","081505802237","LOGIC","LOGIC POWER ECLE CHERRY","LOGIC POWER ECLE CHERRY",2,2.4,"prefix11",27,"CHECK:siblings_disagree",227267
 "2-siblings-disagree","085438400415","LOGIC","LOGIC E-CG TOB","LOGIC E-CG TOB",1,7.25,"prefix10",18,"CHECK:siblings_disagree",181440
 "2-siblings-disagree","009710000218","MARKTEN","MARKTEN EVCC CREAM","MARKTEN EVCC CREAM",2,1.6,"prefix8+carts",35,"CHECK:siblings_disagree",152653
+"2-siblings-disagree","081505802233","LOGIC","LOGIC POWER ECLE MN","LOGIC POWER ECLE MN",1,2.4,"prefix11",27,"CHECK:siblings_disagree",150277
 "2-siblings-disagree","009710000289","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,0.8,"prefix8+carts",35,"CHECK:siblings_disagree",129487
 "2-siblings-disagree","009710000287","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,0.8,"prefix8+carts",35,"CHECK:siblings_disagree",116384
 "2-siblings-disagree","009710000288","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,0.8,"prefix8+carts",35,"CHECK:siblings_disagree",114694
 "2-siblings-disagree","085438400414","LOGIC","LOGIC E-CG MN","LOGIC E-CG MN",2,7.25,"prefix10",18,"CHECK:siblings_disagree",114431
 "2-siblings-disagree","085570400720","MISTIC","MISTIC E-CGC RFL","MISTIC E-CGC RFL",3,5,"prefix10",18,"CHECK:siblings_disagree",98207
 "2-siblings-disagree","085570400719","MISTIC","MISTIC E-CGC RFL","MISTIC E-CGC RFL",3,5,"prefix10",18,"CHECK:siblings_disagree",94322
+"2-siblings-disagree","081990502355","GLAS","GLAS","GLAS SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO SAPPHIRE BOX 2 COUNT",2,2.6,"line+carts",50,"CHECK:siblings_disagree",72444
 "2-siblings-disagree","036586038376","21ST CENTURY SMOKE","21CS E-CGC","21CS E-CGC",1,14.9937645,"prefix8+carts",16,"CHECK:siblings_disagree",66605
 "2-siblings-disagree","009710000286","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,0.8,"prefix8+carts",35,"CHECK:siblings_disagree",51035
 "2-siblings-disagree","009710000285","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,0.8,"prefix8+carts",35,"CHECK:siblings_disagree",50254
+"2-siblings-disagree","085570400743","COSMIC FOG","CSM FG ECGL KREWBERRY","CSM FG ECGL KREWBERRY",1,5,"prefix10",18,"CHECK:siblings_disagree",47624
+"2-siblings-disagree","084920501503","VUSE",NA,"VUSE SOLO SMOKING ALTERNATIVE PRODUCT BOX 1 COUNT",1,3.8,"prefix10",30,"CHECK:siblings_disagree",43533
+"2-siblings-disagree","085570400744","COSMIC FOG","CSM FG ECGL NE-CR","CSM FG ECGL NE-CR",1,5,"prefix10",18,"CHECK:siblings_disagree",42966
 "2-siblings-disagree","081505802212","LOGIC","LOGIC LQD ECGT","LOGIC LQD ECGT",1,3,"prefix10",18,"CHECK:siblings_disagree",32811
+"2-siblings-disagree","081990502793","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"CHECK:siblings_disagree",26376
+"2-siblings-disagree","081990502791","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"CHECK:siblings_disagree",24022
+"2-siblings-disagree","085438400469","LOGIC","LP ECGLC PLATINUM TOB","LP ECGLC PLATINUM TOB",5,7.25,"prefix10",18,"CHECK:siblings_disagree",23271
 "2-siblings-disagree","085570400702","MISTIC","MISTIC E-CG MN","MISTIC E-CG MN",1,5,"prefix11",18,"CHECK:siblings_disagree",22289
 "2-siblings-disagree","081649401348","NICOTEK","N-M-C E-CG","N-M-C E-CG",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",21896
+"2-siblings-disagree","081505802236","LOGIC","LOGIC POWER ECGL CRG CHERRY","LOGIC POWER ECGL CRG CHERRY",1,2.4,"prefix11",27,"CHECK:siblings_disagree",20972
+"2-siblings-disagree","085570400542","MISTIC","MISTIC 2.0 E-CG MN","MISTIC 2.0 E-CG MN",1,10,"prefix8+carts",24,"CHECK:siblings_disagree",20595
+"2-siblings-disagree","085438400470","LOGIC","LP ECGLC PLATINUM MN","LP ECGLC PLATINUM MN",5,7.25,"prefix10",18,"CHECK:siblings_disagree",20335
+"2-siblings-disagree","085438400468","LOGIC","LP ECGLC BLACK TOB","LP ECGLC BLACK TOB",5,7.25,"prefix10",18,"CHECK:siblings_disagree",18591
+"2-siblings-disagree","085570400541","MISTIC","MISTIC 2.0 E-CG","MISTIC 2.0 E-CG",1,10,"prefix8+carts",24,"CHECK:siblings_disagree",17803
+"2-siblings-disagree","084920500050","VUSE","VUSE DVC OGN/BT&ECCR","VUSE DVC OGN/BT&ECCR",1,3,"prefix11",48,"CHECK:siblings_disagree",16582
 "2-siblings-disagree","085438400412","LOGIC","LOGIC E-CG REGULAR TOB","LOGIC E-CG REGULAR TOB",1,7.25,"prefix10",18,"CHECK:siblings_disagree",15965
+"2-siblings-disagree","085438400471","LOGIC","LP ECGLC BLACK MN","LP ECGLC BLACK MN",5,7.25,"prefix10",18,"CHECK:siblings_disagree",15843
 "2-siblings-disagree","081068701811","NJOY","NJOY E-CG LIQUID PEACH TEA","NJOY E-CG LIQUID PEACH TEA",1,5.527495,"prefix11",11.8,"CHECK:siblings_disagree",15100
 "2-siblings-disagree","081649401154","NICOTEK","NICOTEK METRO E-CG","NICOTEK METRO E-CG",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",14776
 "2-siblings-disagree","081505802213","LOGIC","LOGIC LQD ECTA","LOGIC LQD ECTA",3,3,"prefix10",18,"CHECK:siblings_disagree",10907
 "2-siblings-disagree","081649401300","NICOTEK","NCTK MTR MNGT E-CG MN","NCTK MTR MNGT E-CG MN",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",10306
 "2-siblings-disagree","085570400737","MISTIC","MISTIC E-CGC CHERRY RFL","MISTIC E-CGC CHERRY RFL",3,5,"prefix10",18,"CHECK:siblings_disagree",9654
+"2-siblings-disagree","084920500053","VUSE","VUSE DVC MN/BT&ECCR","VUSE DVC MN/BT&ECCR",1,3,"prefix11",48,"CHECK:siblings_disagree",9494
 "2-siblings-disagree","036586038277","21ST CENTURY SMOKE","21SCS E-CG REGULAR TOB","21SCS E-CG REGULAR TOB",1,5.4,"prefix10",16,"CHECK:siblings_disagree",8865
+"2-siblings-disagree","085570400545","MISTIC","MISTIC 2.0 E-CG STBRY CRUSH","MISTIC 2.0 E-CG STBRY CRUSH",1,10,"prefix8+carts",24,"CHECK:siblings_disagree",8155
 "2-siblings-disagree","081649401155","NICOTEK","NCTK MTR SVN E-CG MN","NCTK MTR SVN E-CG MN",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",8101
+"2-siblings-disagree","085570400543","MISTIC","MISTIC 2.0 E-CG FRUIT BLAST","MISTIC 2.0 E-CG FRUIT BLAST",1,10,"prefix8+carts",24,"CHECK:siblings_disagree",7964
+"2-siblings-disagree","085570400769","MISTIC","HAUS E-CG LIQUID TPF","HAUS E-CG LIQUID TPF",1,5,"prefix10",18,"CHECK:siblings_disagree",7875
+"2-siblings-disagree","085570400544","MISTIC","MISTIC 2.0 E-CG CHERRY BURST","MISTIC 2.0 E-CG CHERRY BURST",1,10,"prefix8+carts",24,"CHECK:siblings_disagree",7612
 "2-siblings-disagree","036586038210","21ST CENTURY SMOKE","21SCS E-CG MN","21SCS E-CG MN",1,5.4,"prefix11",16,"CHECK:siblings_disagree",7503
 "2-siblings-disagree","081649401354","NICOTEK","NICOTEK METRO E-CG MN KING","NICOTEK METRO E-CG MN KING",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",7480
 "2-siblings-disagree","081649401352","NICOTEK","NICOTEK METRO E-CG KING","NICOTEK METRO E-CG KING",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",6878
@@ -372,38 +394,53 @@
 "2-siblings-disagree","816494011374","NICOTEK","N-M-C E-CG","N-M-C E-CG",1,9.995843,"brand+carts",24,"CHECK:siblings_disagree",6142
 "2-siblings-disagree","081649401295","NICOTEK","N-M-C E-CG","N-M-C E-CG",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",6004
 "2-siblings-disagree","081649401296","NICOTEK","N-M-C E-CG MN","N-M-C E-CG MN",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",5820
-"2-siblings-disagree","085570400488","MISTIC","MISTIC E-CGC RFL","MISTIC E-CGC RFL",1,7.5,"prefix10",18,"CHECK:siblings_disagree",5486
+"2-siblings-disagree","085570400488","MISTIC","MISTIC E-CGC RFL","MISTIC E-CGC RFL",1,7.5,"prefix10",20,"CHECK:siblings_disagree",5486
 "2-siblings-disagree","009710000107","MARKTEN","MARKTEN E-CGC","MARKTEN E-CGC",4,1.6,"prefix10",35,"CHECK:siblings_disagree",5190
+"2-siblings-disagree","085570400775","MISTIC","HAUS E-CG LIQUID MN CITRUS","HAUS E-CG LIQUID MN CITRUS",1,5,"prefix10",18,"CHECK:siblings_disagree",4730
 "2-siblings-disagree","085438400413","LOGIC","LOGIC E-CG REGULAR MN","LOGIC E-CG REGULAR MN",1,7.25,"prefix10",18,"CHECK:siblings_disagree",4718
 "2-siblings-disagree","085570400401","NEO","NEO SOLO E-CG","NEO SOLO E-CG",1,7.5,"prefix10",20,"CHECK:siblings_disagree",4594
 "2-siblings-disagree","085570400420","MISTIC","MISTIC E-CG MN","MISTIC E-CG MN",1,7.5,"prefix10",20,"CHECK:siblings_disagree",4430
 "2-siblings-disagree","036586038274","21ST CENTURY SMOKE","21SCS E-CG C-M","21SCS E-CG C-M",1,5.4,"prefix10",16,"CHECK:siblings_disagree",4131
+"2-siblings-disagree","081990502790","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"CHECK:siblings_disagree",3852
 "2-siblings-disagree","085570400402","NEO","NEO SOLO E-CG","NEO SOLO E-CG",1,7.5,"prefix10",20,"CHECK:siblings_disagree",3700
+"2-siblings-disagree","081990502792","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"CHECK:siblings_disagree",3461
 "2-siblings-disagree","009710000109","MARKTEN","MARKTEN E-CGC MN","MARKTEN E-CGC MN",4,1.6,"prefix10",35,"CHECK:siblings_disagree",3231
 "2-siblings-disagree","072944053377","LOGIC","LBL E-CG REGULAR TOB","LBL E-CG REGULAR TOB",1,1.2,"brand+carts",24,"CHECK:siblings_disagree",3227
-"2-siblings-disagree","081068701408","NJOY","NJOY ONE JOY E-CG","NJOY ONE JOY E-CG",1,3.8,"prefix10",45,"CHECK:siblings_disagree",2925
+"2-siblings-disagree","085570400778","MISTIC","HAUS E-CG LIQUID C-CRH","HAUS E-CG LIQUID C-CRH",1,5,"prefix10",18,"CHECK:siblings_disagree",3109
+"2-siblings-disagree","085965400217","BLU","BL-EGS E-CGCM CT RFL","BL-EGS E-CGCM CT RFL",5,5,"prefix10",16,"CHECK:siblings_disagree",3109
+"2-siblings-disagree","081068701408","NJOY","NJOY ONE JOY E-CG","NJOY ONE JOY E-CG",1,3.8,"prefix10",23.7,"CHECK:siblings_disagree",2925
 "2-siblings-disagree","081505802030","LOGIC","LOGIC E-CGC TOB","LOGIC E-CGC TOB",3,1.2,"prefix10",24,"CHECK:siblings_disagree",2912
-"2-siblings-disagree","085570400487","MISTIC","MISTIC E-CGC RFL","MISTIC E-CGC RFL",1,7.5,"prefix10",18,"CHECK:siblings_disagree",2893
+"2-siblings-disagree","085570400487","MISTIC","MISTIC E-CGC RFL","MISTIC E-CGC RFL",1,7.5,"prefix10",20,"CHECK:siblings_disagree",2893
 "2-siblings-disagree","081997901118","NJOY",NA,NA,NA,2.85,"prefix10",43,"CHECK:siblings_disagree",2877
+"2-siblings-disagree","085570400772","MISTIC","HAUS E-CG LIQUID HAVANA","HAUS E-CG LIQUID HAVANA",1,5,"prefix10",18,"CHECK:siblings_disagree",2775
 "2-siblings-disagree","081505802305","LOGIC","LOGIC VAPELEAF ECV&C","LOGIC VAPELEAF ECV&C",1,1.2,"prefix8+carts",24,"CHECK:siblings_disagree",2578
-"2-siblings-disagree","081068701410","NJOY","NJOY ONE JOY E-CG","NJOY ONE JOY E-CG",1,3.8,"prefix10",45,"CHECK:siblings_disagree",2484
-"2-siblings-disagree","081068701409","NJOY","NJOY ONE JOY E-CG MN","NJOY ONE JOY E-CG MN",1,3.8,"prefix10",45,"CHECK:siblings_disagree",2327
+"2-siblings-disagree","081068701410","NJOY","NJOY ONE JOY E-CG","NJOY ONE JOY E-CG",1,3.8,"prefix10",23.7,"CHECK:siblings_disagree",2484
+"2-siblings-disagree","081068701409","NJOY","NJOY ONE JOY E-CG MN","NJOY ONE JOY E-CG MN",1,3.8,"prefix10",23.7,"CHECK:siblings_disagree",2327
 "2-siblings-disagree","072944053375","LOGIC","LOGIC E-CG REGULAR MN","LOGIC E-CG REGULAR MN",1,1.2,"brand+carts",24,"CHECK:siblings_disagree",2245
+"2-siblings-disagree","081990502794","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"CHECK:siblings_disagree",2105
 "2-siblings-disagree","081505802306","LOGIC","LOGIC VAPELEAF ECV&C MN GREEN","LOGIC VAPELEAF ECV&C MN GREEN",1,1.2,"prefix8+carts",24,"CHECK:siblings_disagree",1984
 "2-siblings-disagree","085570400407","NEO","NEO E-CGC","NEO E-CGC",1,7.5,"prefix10",20,"CHECK:siblings_disagree",1884
 "2-siblings-disagree","084920500055","VUSE","VUSE DVCC AST 2'S/BT&ECCR&L&T","VUSE DVCC AST 2'S/BT&ECCR&L&T",2,3,"prefix11",48,"CHECK:siblings_disagree",1882
 "2-siblings-disagree","081505802028","LOGIC","LOGIC E-CGC TOB","LOGIC E-CGC TOB",3,1.2,"prefix10",24,"CHECK:siblings_disagree",1862
-"2-siblings-disagree","081068701413","NJOY","NJOY ONE JOY E-CG MN","NJOY ONE JOY E-CG MN",1,3.8,"prefix10",45,"CHECK:siblings_disagree",1837
+"2-siblings-disagree","085965400214","BLU","BL-EGS E-CGCM M-M RFL","BL-EGS E-CGCM M-M RFL",5,5,"prefix10",16,"CHECK:siblings_disagree",1859
+"2-siblings-disagree","081068701413","NJOY","NJOY ONE JOY E-CG MN","NJOY ONE JOY E-CG MN",1,3.8,"prefix10",23.7,"CHECK:siblings_disagree",1837
 "2-siblings-disagree","009710000102","MARKTEN","MARKTEN E-CGC","MARKTEN E-CGC",4,1.6,"prefix10",35,"CHECK:siblings_disagree",1822
+"2-siblings-disagree","081505802032","LOGIC","LP ECGLC PLATINUM TOB","LP ECGLC PLATINUM TOB",3,1.2,"prefix10",24,"CHECK:siblings_disagree",1799
 "2-siblings-disagree","009710000101","MARKTEN","MARKTEN E-CG","MARKTEN E-CG",1,1.6,"prefix10",35,"CHECK:siblings_disagree",1784
 "2-siblings-disagree","081505802307","LOGIC","LOGIC VAPELEAF ECV&C MN PURPLE","LOGIC VAPELEAF ECV&C MN PURPLE",1,1.2,"prefix8+carts",24,"CHECK:siblings_disagree",1572
 "2-siblings-disagree","081505802029","LOGIC","LOGIC E-CGC MN","LOGIC E-CGC MN",3,1.2,"prefix10",24,"CHECK:siblings_disagree",1536
+"2-siblings-disagree","081505802020","LOGIC","LP ECGLC TOB","LP ECGLC TOB",3,1.2,"prefix10",24,"CHECK:siblings_disagree",1454
 "2-siblings-disagree","085001754883",NA,NA,NA,1,1.6,"brand+carts",59.4,"CHECK:siblings_disagree",1366
+"2-siblings-disagree","085965400223","BLU","BL-EGS E-CGCM C-C RFL","BL-EGS E-CGCM C-C RFL",5,5,"prefix10",16,"CHECK:siblings_disagree",1301
+"2-siblings-disagree","081505802033","LOGIC","LP ECGLC PLATINUM MN","LP ECGLC PLATINUM MN",3,1.2,"prefix10",24,"CHECK:siblings_disagree",1265
 "2-siblings-disagree","085002678419",NA,NA,NA,1,1.6,"brand+carts",59.4,"CHECK:siblings_disagree",1217
+"2-siblings-disagree","081505802021","LOGIC","LP ECGLC MN","LP ECGLC MN",3,1.2,"prefix10",24,"CHECK:siblings_disagree",1193
 "2-siblings-disagree","081505802031","LOGIC","LOGIC E-CGC MN","LOGIC E-CGC MN",3,1.2,"prefix10",24,"CHECK:siblings_disagree",1145
 "2-siblings-disagree","009710000103","MARKTEN","MARKTEN E-CG MN","MARKTEN E-CG MN",1,1.6,"prefix10",35,"CHECK:siblings_disagree",988
 "2-siblings-disagree","009710000104","MARKTEN","MARKTEN E-CGC MN","MARKTEN E-CGC MN",4,1.6,"prefix10",35,"CHECK:siblings_disagree",949
+"2-siblings-disagree","084920500777","VUSE","VUSE VIBE","VUSE VIBE SMOKING ALTERNATIVE PRODUCT MOLDED TRAY IN BOX 1 COUNT",1,4,"prefix10",30,"CHECK:siblings_disagree",935
 "2-siblings-disagree","085570400408","NEO","NEO E-CG MN","NEO E-CG MN",1,7.5,"prefix10",20,"CHECK:siblings_disagree",636
+"2-siblings-disagree","081505802046","LOGIC","LOGIC POWER E-CG CHERRY","LOGIC POWER E-CG CHERRY",1,1.2,"prefix10",24,"CHECK:siblings_disagree",598
 "2-siblings-disagree","085001754805",NA,NA,NA,1,1.6,"brand+carts",59.4,"CHECK:siblings_disagree",551
 "2-siblings-disagree","081505802012","LOGIC","LOGIC E-CGC TOB","LOGIC E-CGC TOB",1,1.2,"prefix10",24,"CHECK:siblings_disagree",534
 "2-siblings-disagree","081505802016","LOGIC","LOGIC E-CGC TOB","LOGIC E-CGC TOB",1,1.2,"prefix10",24,"CHECK:siblings_disagree",530
@@ -413,44 +450,67 @@
 "2-siblings-disagree","081649401225","NICOTEK","NICOTEK METRO E-CG VO","NICOTEK METRO E-CG VO",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",396
 "2-siblings-disagree","081505802017","LOGIC","LOGIC E-CGC MN","LOGIC E-CGC MN",1,1.2,"prefix10",24,"CHECK:siblings_disagree",370
 "2-siblings-disagree","081649401226","NICOTEK","NICOTEK METRO E-CG MN","NICOTEK METRO E-CG MN",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",370
+"2-siblings-disagree","085965400220","BLU","BL-EGS E-CGCM JAVA JOLT RFL","BL-EGS E-CGCM JAVA JOLT RFL",5,5,"prefix10",16,"CHECK:siblings_disagree",362
+"2-siblings-disagree","084920500142","VUSE","VUSE DVC OGN/BT&ECC","VUSE DVC OGN/BT&ECC",1,1,"prefix10",48,"CHECK:siblings_disagree",330
 "2-siblings-disagree","079361829246","DINNER LADY","DINNER LADY","DINNER LADY SMOKING ALTERNATIVE PRODUCT STRAWBERRY ICE 1 COUNT",1,1.5,"line+carts",25,"CHECK:siblings_disagree",325
 "2-siblings-disagree","036586038289","21ST CENTURY SMOKE","21SCS E-CGC REGULAR","21SCS E-CGC REGULAR",3,5.4,"prefix10",16,"CHECK:siblings_disagree",318
 "2-siblings-disagree","036586038204","21ST CENTURY SMOKE","21SCS E-CGAC MN","21SCS E-CGAC MN",3,5.4,"prefix10",16,"CHECK:siblings_disagree",299
 "2-siblings-disagree","036586038207","21ST CENTURY SMOKE","21SCS E-CGAC REGULAR","21SCS E-CGAC REGULAR",3,5.4,"prefix10",16,"CHECK:siblings_disagree",287
+"2-siblings-disagree","088796900501","BLU","BLU","BLU SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE MENTHOL CARTOON 1 COUNT",1,3,"prefix10",24,"CHECK:siblings_disagree",286
+"2-siblings-disagree","084920500145","VUSE","VUSE DVC MN/BT&ECC","VUSE DVC MN/BT&ECC",1,1,"prefix10",48,"CHECK:siblings_disagree",219
 "2-siblings-disagree","085438400456","LOGIC","LOGIC E-CG AST 2'S","LOGIC E-CG AST 2'S",2,7.25,"prefix10",18,"CHECK:siblings_disagree",195
+"2-siblings-disagree","088796900507","BLU","BLECGS+ ECGT VIVID VANILLA 3PK","BLECGS+ ECGT VIVID VANILLA 3PK",15,3,"prefix10",24,"CHECK:siblings_disagree",195
 "2-siblings-disagree","081068701813","NJOY","NJOY E-CG LIQUID PEACH TEA","NJOY E-CG LIQUID PEACH TEA",1,5.527495,"prefix11",11.8,"CHECK:siblings_disagree",191
 "2-siblings-disagree","081068701801","NJOY","NJOY E-CG LIQUID BTR-CRNCH","NJOY E-CG LIQUID BTR-CRNCH",1,5.527495,"prefix10",11.8,"CHECK:siblings_disagree",176
 "2-siblings-disagree","081068701805","NJOY","NJOY E-CG LIQUID S-MS","NJOY E-CG LIQUID S-MS",1,5.527495,"prefix10",11.8,"CHECK:siblings_disagree",148
 "2-siblings-disagree","081068701803","NJOY","NJOY E-CG LIQUID S-MS","NJOY E-CG LIQUID S-MS",1,5.527495,"prefix10",11.8,"CHECK:siblings_disagree",147
 "2-siblings-disagree","088796900580","BLU",NA,NA,NA,3,"prefix10",24,"CHECK:siblings_disagree",114
+"2-siblings-disagree","085266256444","PUFF",NA,"PUFF PLUS SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO GUAVA ICE BOX 1 COUNT",1,3.2,"prefix10",50,"CHECK:siblings_disagree",73
 "2-siblings-disagree","085962600290","FINITI","FIN E-CG","FIN E-CG",1,1.75,"prefix10",16,"CHECK:siblings_disagree",68
 "2-siblings-disagree","085266256484","HYDE","HYPPE BAR","HYPPE BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO GRAPE SODA BOX 1 COUNT",1,3.2,"prefix10",50,"CHECK:siblings_disagree",60
 "2-siblings-disagree","036586038509","FLAVORED MIST","F-M E-CG GRAPE","F-M E-CG GRAPE",1,14.9937645,"prefix8+carts",16,"CHECK:siblings_disagree",49
+"2-siblings-disagree","085965400222","BLU","BL-EGS E-CGCM C-C RFL","BL-EGS E-CGCM C-C RFL",5,5,"prefix10",16,"CHECK:siblings_disagree",49
 "2-siblings-disagree","036586038512","FLAVORED MIST","F-M E-CG MANGO","F-M E-CG MANGO",1,14.9937645,"prefix8+carts",16,"CHECK:siblings_disagree",47
 "2-siblings-disagree","036586038336","VAPIN PLUS","VAPIN PLUS LVP","VAPIN PLUS LVP",1,14.9937645,"prefix8+carts",16,"CHECK:siblings_disagree",41
 "2-siblings-disagree","036586038506","FLAVORED MIST","F-M E-CG CHERRY","F-M E-CG CHERRY",1,14.9937645,"prefix8+carts",16,"CHECK:siblings_disagree",39
 "2-siblings-disagree","003095507662","LOGIC","LOGIC E-CG TOB","LOGIC E-CG TOB",1,1.2,"brand+carts",24,"CHECK:siblings_disagree",34
 "2-siblings-disagree","036586038500","FLAVORED MIST","F-M E-CG APPLE","F-M E-CG APPLE",1,14.9937645,"prefix8+carts",16,"CHECK:siblings_disagree",32
+"2-siblings-disagree","019383500754","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR LUX","AIR BAR LUX SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO COOL MINT CANISTER 1 COUNT",1,2.7,"line+carts",36,"CHECK:siblings_disagree",30
 "2-siblings-disagree","036586038503","FLAVORED MIST","F-M E-CG BLUEBERRY","F-M E-CG BLUEBERRY",1,14.9937645,"prefix8+carts",16,"CHECK:siblings_disagree",30
 "2-siblings-disagree","036586038515","FLAVORED MIST","F-M E-CG STRAWBERRY","F-M E-CG STRAWBERRY",1,14.9937645,"prefix8+carts",16,"CHECK:siblings_disagree",27
+"2-siblings-disagree","081505802288","LOGIC","LOGIC POWER","LOGIC POWER SMOKING ALTERNATIVE PRODUCT TOBACCO BOX 1 COUNT",1,3,"prefix10",18,"CHECK:siblings_disagree",21
 "2-siblings-disagree","085438400410","LOGIC","LGL E-CG","LGL E-CG",1,7.25,"prefix10",18,"CHECK:siblings_disagree",17
+"2-siblings-disagree","084920500156","VUSE","VUSE SOLO","VUSE SOLO SMOKING ALTERNATIVE PRODUCT BOX 1 COUNT",1,1,"prefix10",48,"CHECK:siblings_disagree",14
 "2-siblings-disagree","003095507669","LOGIC","LG-PLT E-CG MN","LG-PLT E-CG MN",1,1.2,"brand+carts",24,"CHECK:siblings_disagree",11
+"2-siblings-disagree","081505802289","LOGIC","LOGIC POWER","LOGIC POWER SMOKING ALTERNATIVE PRODUCT MENTHOL BOX 1 COUNT",1,3,"prefix10",18,"CHECK:siblings_disagree",11
 "2-siblings-disagree","072944053385","LOGIC","LGL E-CG TOB MEDIUM","LGL E-CG TOB MEDIUM",1,1.2,"brand+carts",24,"CHECK:siblings_disagree",10
 "2-siblings-disagree","081505802304","LOGIC","LOGIC VAPELEAF","LOGIC VAPELEAF SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE VAPOR AND REGULAR VAPOR SYSTEM 1 COUNT",1,1.2,"prefix8+carts",24,"CHECK:siblings_disagree",10
 "2-siblings-disagree","081649401362","NICOTEK","NICOTEK METRO E-CG MN KING","NICOTEK METRO E-CG MN KING",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",10
+"2-siblings-disagree","085266255813","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix10",50,"CHECK:siblings_disagree",10
+"2-siblings-disagree","085266256480","KOMGE","PUFF FLOW","PUFF FLOW SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PAPAYA BANANA 1000 PUFFS BOX 1 COUNT",1,3.2,"prefix10",50,"CHECK:siblings_disagree",10
 "2-siblings-disagree","697213645963","AIRIS","AIRIS NEO","AIRIS NEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO KIWI STRAWBERRY BOX 1 COUNT",1,16,"prefix8+carts",25,"CHECK:siblings_disagree",10
+"2-siblings-disagree","085438400467","LOGIC","LOGIC PRO","LOGIC PRO SMOKING ALTERNATIVE PRODUCT BOX 1 COUNT",1,7.25,"prefix10",18,"CHECK:siblings_disagree",7
+"2-siblings-disagree","081068701492","NJOY","NJOY POD CLASSIC TOB 5%","NJOY POD CLASSIC TOB 5%",2,3.8,"prefix11",50,"CHECK:siblings_disagree",5
+"2-siblings-disagree","085965400212","BLU","BLU CIGS E-CGCM M-M RFL","BLU CIGS E-CGCM M-M RFL",5,5,"prefix10",16,"CHECK:siblings_disagree",5
+"2-siblings-disagree","019383500291","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR LUX","AIR BAR LUX SMOKING ALTERNATIVE PRODUCT GEL SUNSET COCKTAIL BOTTLE 1 COUNT",1,2.9,"prefix11",25,"CHECK:siblings_disagree",4
+"2-siblings-disagree","084014180184","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR LUX","AIR BAR LUX SMOKING ALTERNATIVE PRODUCT RASPBERRY WATERMELON 1000 PUFFS BOX 1 COUNT",1,2.7,"line+carts",36,"CHECK:siblings_disagree",4
 "2-siblings-disagree","081649401135","NICOTEK","NICOTEK METRO CHICK STICK","NICOTEK METRO CHICK STICK SMOKING ALTERNATIVE PRODUCT BOX IN WRAP 1 COUNT",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",3
+"2-siblings-disagree","085266256416","PUFF","PUFF PLUS","PUFF PLUS SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PINK LEMONADE BOX 1 COUNT",1,3.2,"prefix10",50,"CHECK:siblings_disagree",3
 "2-siblings-disagree","081649401360","NICOTEK","NICOTEK METRO E-CG KING","NICOTEK METRO E-CG KING",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",2
 "2-siblings-disagree","081649401579","FAZE","FAZE BASIC EPV","FAZE BASIC EPV",1,9.995843,"prefix8+carts",24,"CHECK:siblings_disagree",2
 "2-siblings-disagree","060946510709","GREEN SMART LIVING","GS-L E-CGC MN RFL","GS-L E-CGC MN RFL",5,3.5,"prefix11",18,"CHECK:siblings_disagree",1
 "2-siblings-disagree","060946510719","GREEN SMART LIVING","GS-L E-CGC REGULAR RFL","GS-L E-CGC REGULAR RFL",5,3.5,"prefix10",18,"CHECK:siblings_disagree",1
+"2-siblings-disagree","084014180178","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR LUX","AIR BAR LUX SMOKING ALTERNATIVE PRODUCT STRAWBERRY KIWI 1 COUNT",1,2.7,"line+carts",36,"CHECK:siblings_disagree",1
+"2-siblings-disagree","085266256498","HYPPE","HYPPE BAR","HYPPE BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO COLA ICE BOX 10 COUNT",10,3.2,"prefix10",50,"CHECK:siblings_disagree",1
 "3-weak-match","088886130603","LEAP",NA,"LEAP GO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE MINT BOX 1 COUNT",1,1.5,"prefix8_percart",96,"weak:coarse_match",78149
 "3-weak-match","085000134231","EPIC","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.5,"line_percart",60,"weak:coarse_match",73158
 "3-weak-match","085000134246","EPIC","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.5,"line_percart",60,"weak:coarse_match",70327
 "3-weak-match","081821401474","GREEN SMOKE","GREEN SMOKE E-CGC M-I","GREEN SMOKE E-CGC M-I",5,5,"prefix8_percart",14.4,"weak:coarse_match",50770
 "3-weak-match","081764101801","KRAVE","KRAVE 1001 E-CG RFL","KRAVE 1001 E-CG RFL",3,6,"prefix8_percart",6,"weak:coarse_match",33080
 "3-weak-match","081764101804","KRAVE","KRAVE 1001 E-CG MN RFL","KRAVE 1001 E-CG MN RFL",3,6,"prefix8_percart",6,"weak:coarse_match",25047
+"3-weak-match","085014900705","MISTIC","M2CFP E-CG MILK AND HONEY","M2CFP E-CG MILK AND HONEY",1,1,"brand+carts",18,"weak:coarse_match",17676
 "3-weak-match","819905028503","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.5,"line_percart",60,"weak:coarse_match",15271
+"3-weak-match","085014900706","MISTIC","M2CFP E-CG SONRISE","M2CFP E-CG SONRISE",1,1,"brand+carts",18,"weak:coarse_match",11917
 "3-weak-match","081679601414","V2 CIGS","V2 CIGS E-CG RT","V2 CIGS E-CG RT",1,1,"brand+carts",18,"weak:coarse_match",8195
 "3-weak-match","084866646235","FINITI","FIN ECGVT VANILLA","FIN ECGVT VANILLA",2,4.8,"brand+carts",24,"weak:coarse_match",8194
 "3-weak-match","081679601272","V2 CIGS","V2 CIGS E-CG MN OF","V2 CIGS E-CG MN OF",1,1,"brand+carts",18,"weak:coarse_match",7332
@@ -472,6 +532,7 @@
 "3-weak-match","081836802813","STIG","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.5,"line_percart",60,"weak:coarse_match",419
 "3-weak-match","084043916407","ZIG-ZAG","ZIG-ZAG EVC CLMR","ZIG-ZAG EVC CLMR",2,2.8,"prefix8_percart",58,"weak:coarse_match",316
 "3-weak-match","088886130601","LEAP","LEAP GO","LEAP GO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE CITRUS MENTHOL BOX 1 COUNT",1,1.5,"prefix8_percart",96,"weak:coarse_match",306
+"3-weak-match","085014900708","MISTIC","M2CFP E-CG NEON CREAM","M2CFP E-CG NEON CREAM",1,1,"brand+carts",18,"weak:coarse_match",290
 "3-weak-match","079357320162","IMPERIAL","IMPRL HK E-CG JUNGLE JUICE","IMPRL HK E-CG JUNGLE JUICE",1,19.991686,"brand+carts",18,"weak:coarse_match",126
 "3-weak-match","088886130604","LEAP","LEAP GO","LEAP GO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE MIXED BERRY BOX 1 COUNT",1,1.5,"prefix8_percart",96,"weak:coarse_match",124
 "3-weak-match","085267507268","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.5,"line_percart",60,"weak:coarse_match",96
@@ -484,33 +545,43 @@
 "3-weak-match","079357323335","IMPERIAL","IMPRL HK E-CG SUMMERTIME SWIRL","IMPRL HK E-CG SUMMERTIME SWIRL",1,19.991686,"brand+carts",18,"weak:coarse_match",8
 "3-weak-match","079357311757","IMPERIAL","IMPRL HK E-CG IMPERIAL MIX","IMPRL HK E-CG IMPERIAL MIX",1,19.991686,"brand+carts",18,"weak:coarse_match",6
 "3-weak-match","083921900082","CIG2O","CIG2O EVCC MN","CIG2O EVCC MN",5,5,"prefix8_percart",8.4,"weak:coarse_match",5
+"3-weak-match","085014900704","MISTIC","M2CFP E-CG KRYPTOMELON","M2CFP E-CG KRYPTOMELON",1,1,"brand+carts",18,"weak:coarse_match",3
 "3-weak-match","081821401337","GREEN SMOKE","GREEN SMOKE ELC-VP MN ICE","GREEN SMOKE ELC-VP MN ICE",1,1,"prefix8_percart",72,"weak:coarse_match",1
 "3-weak-match","083921900083","CIG2O","CIG2O EVCC MN","CIG2O EVCC MN",5,5,"prefix8_percart",8.4,"weak:coarse_match",1
 "4-single-sibling","081536802035","NJOY","ELCT CGRTT","ELCT CGRTT",1,1,"prefix11",45,"note:single_sibling",640262
+"4-single-sibling","088796900752","BLU",NA,"BLU ECIGS PLUS+ SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE TANK GLACIER MINT BOX 3 COUNT",3,1,"prefix10",24,"note:single_sibling",309243
+"4-single-sibling","088796900918","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",24,"note:single_sibling",307172
+"4-single-sibling","088796900912","BLU",NA,"MY BLU SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO VIVID VANILLA BOX 2 COUNT",2,3,"prefix11",24,"note:single_sibling",281276
+"4-single-sibling","084920501805","VUSE","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.8,"prefix11",50,"note:single_sibling",252493
+"4-single-sibling","081505802252","LOGIC","LP ECGLC BERRY MINT","LP ECGLC BERRY MINT",2,3,"prefix11",18,"note:single_sibling",240568
 "4-single-sibling","036586038660","21ST CENTURY SMOKE",NA,NA,NA,1.6,"prefix10",16,"note:single_sibling",220681
 "4-single-sibling","081536802030","NJOY","NJOY E-CG TANK APPLE CRISP","NJOY E-CG TANK APPLE CRISP",1,1,"prefix11",45,"note:single_sibling",193673
-"4-single-sibling","084920502165","VUSE",NA,NA,NA,1.8,"prefix11",24,"note:single_sibling",182522
 "4-single-sibling","081536802039","NJOY","NJOY E-CG TANK APPLE MELON","NJOY E-CG TANK APPLE MELON",1,1,"prefix11",45,"note:single_sibling",179326
-"4-single-sibling","084920501712","VUSE",NA,NA,NA,1.9,"prefix11",30,"note:single_sibling",172285
 "4-single-sibling","081536802027","NJOY","NJOY E-CG TANK ICED FRUIT","NJOY E-CG TANK ICED FRUIT",1,1,"prefix11",45,"note:single_sibling",166973
 "4-single-sibling","036586038657","21ST CENTURY SMOKE","ELCT CGRTT A&C","ELCT CGRTT A&C",1,1.6,"prefix10",16,"note:single_sibling",159034
 "4-single-sibling","081764101760","KRAVE","KRAVE 500 E-CG MN","KRAVE 500 E-CG MN",1,2,"prefix10",18,"note:single_sibling",156615
 "4-single-sibling","081764101759","KRAVE","KRAVE 500 E-CG TOB RFL","KRAVE 500 E-CG TOB RFL",1,2,"prefix10",18,"note:single_sibling",149034
-"4-single-sibling","085962600262","FINITI",NA,NA,NA,3,"prefix11",13.3,"note:single_sibling",135214
+"4-single-sibling","088796901056","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",2,3,"prefix11",16,"note:single_sibling",148041
+"4-single-sibling","084920501787","VUSE","ELCT VAPOR CGRTT CARTRIDGE","ELCT VAPOR CGRTT CARTRIDGE",2,1.8,"prefix11",24,"note:single_sibling",139932
+"4-single-sibling","081990502849","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",50,"note:single_sibling",134492
 "4-single-sibling","088886130206","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",48,"note:single_sibling",115147
-"4-single-sibling","084920501811","VUSE",NA,NA,NA,1.8,"prefix10",50,"note:single_sibling",53828
+"4-single-sibling","088796900527","BLU","BL-EGS E-CG C-B","BL-EGS E-CG C-B",1,1,"prefix11",24,"note:single_sibling",98213
+"4-single-sibling","084920502159","VUSE","VUSE","VUSE ANTISMOKING PRODUCT 1 COUNT",1,1.8,"prefix10",24,"note:single_sibling",94801
+"4-single-sibling","081505802251","LOGIC","ELCT CGRTT LIQUID CAPSULE","ELCT CGRTT LIQUID CAPSULE",2,3,"prefix11",18,"note:single_sibling",70242
 "4-single-sibling","081821401475","GREEN SMOKE","GREEN SMOKE EVPC CLASSIC","GREEN SMOKE EVPC CLASSIC",3,3,"prefix8+carts",24,"note:single_sibling",52507
-"4-single-sibling","084920501808","VUSE",NA,NA,NA,1.8,"prefix11",50,"note:single_sibling",52101
 "4-single-sibling","036586037172","VAPIN PLUS","VPLS E-CG LIQUID STBRY","VPLS E-CG LIQUID STBRY",1,14.9937645,"prefix11",16,"note:single_sibling",46385
 "4-single-sibling","088886130200","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",48,"note:single_sibling",41788
 "4-single-sibling","084920501859","VUSE",NA,NA,NA,1.8,"prefix10",50,"note:single_sibling",41129
+"4-single-sibling","081990502850","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",76.9,"note:single_sibling",40074
 "4-single-sibling","084920501814","VUSE",NA,NA,NA,1.8,"prefix10",50,"note:single_sibling",39717
 "4-single-sibling","036586037200","VAPIN PLUS","VAPIN PLUS ECTA","VAPIN PLUS ECTA",1,2.306733,"prefix11",16,"note:single_sibling",36821
 "4-single-sibling","036586037250","21ST CENTURY SMOKE",NA,NA,NA,2.306733,"prefix10",16,"note:single_sibling",32692
 "4-single-sibling","081764101577","KRAVE","KRAVE E-CG TOB KING","KRAVE E-CG TOB KING",1,2,"prefix8+carts",18,"note:single_sibling",29345
+"4-single-sibling","088796900986","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",20,"note:single_sibling",27971
 "4-single-sibling","081764101580","KRAVE","KRAVE E-CG MN KING","KRAVE E-CG MN KING",1,2,"prefix8+carts",18,"note:single_sibling",27833
 "4-single-sibling","081713502323","CUE","ELCT CGRTT LIQUID CARTRIDGE","ELCT CGRTT LIQUID CARTRIDGE",1,4.9979215,"prefix10",6,"note:single_sibling",22524
 "4-single-sibling","081991301500","JUUL","ELCT CGRTT CARTRIDGE","ELCT CGRTT CARTRIDGE",2,1.4,"prefix11",50,"note:single_sibling",20184
+"4-single-sibling","084920501715","VUSE",NA,"VUSE VIBE SMOKING ALTERNATIVE PRODUCT LIQUID VAPORIZER PEN NECTAR 1 COUNT",1,1.9,"prefix11",30,"note:single_sibling",19715
 "4-single-sibling","036586037169","VAPIN PLUS","VPLS E-CG LIQUID RICH TOB","VPLS E-CG LIQUID RICH TOB",1,14.9937645,"prefix11",16,"note:single_sibling",19104
 "4-single-sibling","081002599277","IGNITE","IGNITE","IGNITE SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BANANA ICE BOX 1 COUNT",1,1.2,"prefix11",25,"note:single_sibling",17064
 "4-single-sibling","088886130204","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",48,"note:single_sibling",16113
@@ -537,9 +608,11 @@
 "4-single-sibling","081713502319",NA,NA,NA,NA,4.9979215,"prefix10",6,"note:single_sibling",8092
 "4-single-sibling","036586037163","VAPIN PLUS","VPLS E-CG LIQUID CHERRY","VPLS E-CG LIQUID CHERRY",1,14.9937645,"prefix11",16,"note:single_sibling",7999
 "4-single-sibling","081821401391","GREEN SMOKE","GREEN SMOKE EVPC M-I","GREEN SMOKE EVPC M-I",3,3,"prefix8+carts",24,"note:single_sibling",7923
+"4-single-sibling","085003843892","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TOBACCO FLAVOR 1000 PUFFS BOX 1 COUNT",1,3,"prefix11",54.2,"note:single_sibling",7750
 "4-single-sibling","081713502312",NA,NA,NA,NA,4.9979215,"prefix10",6,"note:single_sibling",7097
 "4-single-sibling","081649401019","NICOTEK",NA,NA,NA,1,"prefix11",18,"note:single_sibling",7056
 "4-single-sibling","085001975213","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO LIGHTNING BULL 750 PUFFS BOX 1 COUNT",1,10,"prefix11",16.2,"note:single_sibling",6649
+"4-single-sibling","088796900723","BLU","BLU","BLU ANTISMOKING PRODUCT ELECTRONIC CIGARETTE POLAR MINT BOX 1 COUNT",1,1,"prefix11",24,"note:single_sibling",5245
 "4-single-sibling","081821401133","GREEN SMOKE","GREEN SMOKE E-CGCM A-T RFL","GREEN SMOKE E-CGCM A-T RFL",3,3,"prefix11",24,"note:single_sibling",4575
 "4-single-sibling","078779031521","SWITCH MODS","SWITCH MODS","SWITCH MODS SMOKING ALTERNATIVE PRODUCT STICK PINK LEMONADE BOX 1 COUNT",1,1.3,"prefix10",115.4,"note:single_sibling",4551
 "4-single-sibling","081713502451","CUE","ELCT CGRTT LIQUID CARTRIDGE","ELCT CGRTT LIQUID CARTRIDGE",1,4.9979215,"prefix8+carts",6,"note:single_sibling",3984
@@ -551,9 +624,12 @@
 "4-single-sibling","081821401009","GREEN SMOKE","GREEN SMOKE E-CGCM RL-TB RFL","GREEN SMOKE E-CGCM RL-TB RFL",3,3,"prefix8+carts",24,"note:single_sibling",2603
 "4-single-sibling","036586037581","VAPIN PLUS","VPLS E-CG LIQUID RICH TOB","VPLS E-CG LIQUID RICH TOB",1,14.9937645,"prefix11",24,"note:single_sibling",2440
 "4-single-sibling","085001975288","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO FRUIT SHAKE 750 PUFFS BOX 1 COUNT",1,10,"prefix11",16.2,"note:single_sibling",2437
+"4-single-sibling","088796900988","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",20,"note:single_sibling",2355
 "4-single-sibling","002590017517","E SWISHER","E SWISHER E-CG","E SWISHER E-CG",1,1,"prefix11",18,"note:single_sibling",2076
+"4-single-sibling","068146700322","BLU","BLU CIGS E-CG","BLU CIGS E-CG",1,1,"line+carts",24,"note:single_sibling",2050
 "4-single-sibling","081649401440","NICOTEK","NBL-NCL E-CG LIQUID TOB","NBL-NCL E-CG LIQUID TOB",1,9.995843,"prefix11",16,"note:single_sibling",1459
 "4-single-sibling","078779031501","SWITCH MODS","SWITCH MODS","SWITCH MODS SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MINT BOX 1 COUNT",1,1.3,"prefix10",115.4,"note:single_sibling",1427
+"4-single-sibling","085410000331","BLU","BL-EGS E-CGCM VV RFL","BL-EGS E-CGCM VV RFL",5,5,"prefix10",16,"note:single_sibling",1236
 "4-single-sibling","036586038130","21ST CENTURY SMOKE","21SCS E-CG MN","21SCS E-CG MN",1,0.9,"prefix11",16,"note:single_sibling",1074
 "4-single-sibling","081649401441","NICOTEK","NL-NBL E-CG LIQUID MN","NL-NBL E-CG LIQUID MN",1,9.995843,"prefix11",16,"note:single_sibling",1013
 "4-single-sibling","081649401442","NICOTEK","NL-NBL E-CG LIQUID CHERRY","NL-NBL E-CG LIQUID CHERRY",1,9.995843,"prefix11",16,"note:single_sibling",935
@@ -580,10 +656,12 @@
 "4-single-sibling","697184747280","JUICY BAR","JUICY BAR","JUICY BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PINEAPPLE COCONUT ICE MESH COIL BOX 1 COUNT",1,13,"prefix11",11.5,"note:single_sibling",373
 "4-single-sibling","084043916124","ZIG-ZAG","ZIG-ZAG E-CG LIQUID DRBRY","ZIG-ZAG E-CG LIQUID DRBRY",1,1.4,"prefix10",116.1,"note:single_sibling",356
 "4-single-sibling","692660811311","PALAX","PALAX","PALAX SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MANGO CHILL BOX 1 COUNT",1,18,"prefix11",8.3,"note:single_sibling",346
+"4-single-sibling","085266255801","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",50,"note:single_sibling",306
 "4-single-sibling","081102002182","IMPERIAL","IMPRL HK E-CG LIQUID P-CLD","IMPRL HK E-CG LIQUID P-CLD",1,19.991686,"prefix10",18,"note:single_sibling",293
 "4-single-sibling","692660811309","PALAX","PALAX","PALAX SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MANGO ALOE ICE BOX 1 COUNT",1,18,"prefix11",8.3,"note:single_sibling",270
 "4-single-sibling","081102002156","IMPERIAL",NA,NA,NA,19.991686,"prefix10",18,"note:single_sibling",260
 "4-single-sibling","081102002147","IMPERIAL","IMPRL HK E-CG LIQUID PINEAPPLE","IMPRL HK E-CG LIQUID PINEAPPLE",1,19.991686,"prefix10",18,"note:single_sibling",253
+"4-single-sibling","081010749469","ESCO","ESCO BARS RIPE COLLECTION","ESCO BARS RIPE COLLECTION SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO APPLE MELONS ICE MESH BOX 1 COUNT",1,5.9147,"prefix10",25.4,"note:single_sibling",243
 "4-single-sibling","081102002164","IMPERIAL","IMPRL HK E-CG LIQUID WM MINT","IMPRL HK E-CG LIQUID WM MINT",1,19.991686,"prefix11",18,"note:single_sibling",228
 "4-single-sibling","084043916121","ZIG-ZAG","ZIG-ZAG E-CG LIQUID ISLND BRZ","ZIG-ZAG E-CG LIQUID ISLND BRZ",1,1.4,"prefix10",116.1,"note:single_sibling",224
 "4-single-sibling","081102002201","IMPERIAL","IMPRL HK E-CG LIQUID H-RNB","IMPRL HK E-CG LIQUID H-RNB",1,19.991686,"prefix8+carts",18,"note:single_sibling",210
@@ -604,12 +682,16 @@
 "4-single-sibling","081764101810","KRAVE","KRAVE E-CG MN","KRAVE E-CG MN",1,2,"prefix8+carts",18,"note:single_sibling",106
 "4-single-sibling","081102002145","IMPERIAL",NA,NA,NA,19.991686,"prefix10",18,"note:single_sibling",103
 "4-single-sibling","081102002113","IMPERIAL",NA,NA,NA,19.991686,"prefix10",18,"note:single_sibling",94
+"4-single-sibling","085266255797","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",50,"note:single_sibling",89
 "4-single-sibling","081102002136","IMPERIAL",NA,NA,NA,19.991686,"prefix10",18,"note:single_sibling",85
 "4-single-sibling","081102002168","IMPERIAL","IMPRL HK E-CG LIQUID S-P","IMPRL HK E-CG LIQUID S-P",1,19.991686,"prefix11",18,"note:single_sibling",85
 "4-single-sibling","081764101807","KRAVE","KRAVE E-CG TOB","KRAVE E-CG TOB",1,2,"prefix8+carts",18,"note:single_sibling",76
 "4-single-sibling","081102002196","IMPERIAL","IMPRL HK E-CG LIQUID I-B","IMPRL HK E-CG LIQUID I-B",1,19.991686,"prefix10",18,"note:single_sibling",74
+"4-single-sibling","084920501487","VUSE","VUSE VIBE","VUSE VIBE SMOKING ALTERNATIVE PRODUCT MENTHOL 1 COUNT",1,1.9,"line+carts",30,"note:single_sibling",64
 "4-single-sibling","081102002216","IMPERIAL","IMPRL HK E-CG LIQUID 3D GRAPE","IMPRL HK E-CG LIQUID 3D GRAPE",1,19.991686,"prefix8+carts",18,"note:single_sibling",62
 "4-single-sibling","081102002191","IMPERIAL","IMPRL HK E-CG LIQUID K-ST","IMPRL HK E-CG LIQUID K-ST",1,19.991686,"prefix10",18,"note:single_sibling",59
+"4-single-sibling","081010749467","ESCO","ESCO BARS RIPE COLLECTION","ESCO BARS RIPE COLLECTION SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO KIWI DRAGON BERRY ICE MESH BOX 1 COUNT",1,5.9147,"prefix10",25.4,"note:single_sibling",54
+"4-single-sibling","085410000336","BLU","BL-EGS E-CGCM VV 5P","BL-EGS E-CGCM VV 5P",50,5,"prefix10",16,"note:single_sibling",49
 "4-single-sibling","036586038340","21ST CENTURY SMOKE","21SCS E-CG","21SCS E-CG",1,0.9,"line+carts",16,"note:single_sibling",39
 "4-single-sibling","081068701379","NJOY","NJOY NPRO E-CG MINI","NJOY NPRO E-CG MINI",1,10,"prefix11",45,"note:single_sibling",36
 "4-single-sibling","085410000348","QUIK E-CIG","QUIK E-CIG E-CG TOB","QUIK E-CIG E-CG TOB",1,5,"prefix10",16,"note:single_sibling",35
@@ -617,10 +699,12 @@
 "4-single-sibling","078413191783","GLAMEE","GLAMEE NOVA","GLAMEE NOVA SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO KIWI BLUEBERRY ICE BOX 1 COUNT",1,16,"prefix10",25,"note:single_sibling",28
 "4-single-sibling","081102002461","IMPERIAL","IMP-SMOKE EVC CLMR","IMP-SMOKE EVC CLMR",1,19.991686,"prefix8+carts",18,"note:single_sibling",25
 "4-single-sibling","084043916500","RIP TIDE RIPSTICK","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.4,"prefix8+carts",116.1,"note:single_sibling",23
+"4-single-sibling","085266255570","PUFF","PUFF","PUFF SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO LUSH IC BOX 1 COUNT",1,3.2,"prefix10",50.8,"note:single_sibling",16
 "4-single-sibling","085962600235","FINITI","FINITI E-CGC CMT RFL","FINITI E-CGC CMT RFL",14,14,"prefix11",16,"note:single_sibling",16
 "4-single-sibling","084043916184","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.4,"prefix11",116.1,"note:single_sibling",13
 "4-single-sibling","084043916232","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.4,"prefix8+carts",116.1,"note:single_sibling",10
 "4-single-sibling","085410000349","QUIK E-CIG","QUIK E-CIG E-CG MN","QUIK E-CIG E-CG MN",1,5,"prefix10",16,"note:single_sibling",10
+"4-single-sibling","085266255833","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",50,"note:single_sibling",8
 "4-single-sibling","084043916235","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.4,"prefix8+carts",116.1,"note:single_sibling",7
 "4-single-sibling","085962600260","FINITI","FIN AST NO 2'S/ECCR","FIN AST NO 2'S/ECCR",8,3,"prefix11",13.3,"note:single_sibling",7
 "4-single-sibling","081713502256","CUE","CUE","CUE SMOKING ALTERNATIVE PRODUCT BOX 1 COUNT",1,4.9979215,"line+carts",6,"note:single_sibling",6
@@ -636,36 +720,52 @@
 "4-single-sibling","081764101915","VAPOR X","ELCT CGRTT VAPORIZER","ELCT CGRTT VAPORIZER",1,2,"prefix8+carts",18,"note:single_sibling",2
 "4-single-sibling","083921900145","CIG2O","CIG2O E-CG GRAPE","CIG2O E-CG GRAPE",1,1,"prefix11",18,"note:single_sibling",2
 "4-single-sibling","084043916241","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.4,"prefix8+carts",116.1,"note:single_sibling",2
+"4-single-sibling","085004221224","ESCO BARS","ESCO BARS FRUITIA","ESCO BARS FRUITIA SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO SLUSHY MESH BOX 1 COUNT",1,6,"line+carts",25,"note:single_sibling",2
 "4-single-sibling","009710000234","MARKTEN","MARKTEN EVCC","MARKTEN EVCC",2,1.6,"line+carts",25,"note:single_sibling",1
 "4-single-sibling","081102002193","IMPERIAL","IMPRL HK E-CG LIQUID ROOT BEER","IMPRL HK E-CG LIQUID ROOT BEER",1,19.991686,"prefix10",18,"note:single_sibling",1
 "4-single-sibling","084014180024","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR","AIR BAR SMOKING ALTERNATIVE PRODUCT MANGO 1 COUNT",1,10,"line+carts",16.2,"note:single_sibling",1
+"5-minor-spread","088796900511","BLU","BL-EGS E-CG TANK CAROLINA","BL-EGS E-CG TANK CAROLINA",3,2.5,"prefix11",24,"minor:some_spread",202476
+"5-minor-spread","088796901082","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.25412425,"prefix11",28.7,"minor:some_spread",171196
 "5-minor-spread","088886130602","LEAP","ELCT CGRTT","ELCT CGRTT",1,1.25,"line+carts",38.4,"minor:some_spread",170228
 "5-minor-spread","088796900870","BLU",NA,NA,NA,2.247586,"prefix11",24,"minor:some_spread",135600
+"5-minor-spread","081002599296","IGNITE","IGNITE V15","IGNITE V15 SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY GUAVA ICE BOX 1 COUNT",1,2.6,"prefix11",25,"minor:some_spread",112648
+"5-minor-spread","081002599297","IGNITE","IGNITE V15","IGNITE V15 SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLUEBERRY ICE BOX 1 COUNT",1,2.6,"prefix11",25,"minor:some_spread",107508
+"5-minor-spread","088796901040","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",2,3,"prefix10",24,"minor:some_spread",68857
 "5-minor-spread","088886130600","LEAP","ELCT CGRTT","ELCT CGRTT",1,1.25,"line+carts",38.4,"minor:some_spread",48279
+"5-minor-spread","084920501526","VUSE","ELCT CGRTT VAPOR TANK","ELCT CGRTT VAPOR TANK",2,4.9,"prefix11",20.8,"minor:some_spread",33387
 "5-minor-spread","081505802006","LOGIC","LOGIC POWER E-CGC CHERRY","LOGIC POWER E-CGC CHERRY",3,1.35,"prefix11",24,"minor:some_spread",26888
 "5-minor-spread","085001975203","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY CREAM 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",21295
 "5-minor-spread","084866604136","FINITI","FIN ECGVT BOLD MN","FIN ECGVT BOLD MN",1,1.75,"prefix8+carts",12.6,"minor:some_spread",20794
 "5-minor-spread","085001975200","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY CREAM 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",19871
 "5-minor-spread","085001975227","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PINA COLADA 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",17973
 "5-minor-spread","085001975207","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLUE RAZZ 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",17386
+"5-minor-spread","088796901080","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.25412425,"prefix11",28.7,"minor:some_spread",16273
 "5-minor-spread","085001975205","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO LUSH IC 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",15655
 "5-minor-spread","085001975229","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PINA COLADA 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",13892
 "5-minor-spread","085001975204","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO LUSH IC 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",13430
 "5-minor-spread","085001975202","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY CREAM 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",12680
 "5-minor-spread","085001975209","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY BANANA 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",11423
 "5-minor-spread","002012631800","MISTIC","MISTIC E-CG","MISTIC E-CG",1,2.5,"prefix11",18,"minor:some_spread",10932
+"5-minor-spread","081010830133","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TOBACCO FLAVOR SUNSTONE BOX 1 COUNT",1,3.2,"line+carts",50.8,"minor:some_spread",9772
 "5-minor-spread","085001975208","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLUE RAZZ 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",9393
+"5-minor-spread","081010830130","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO RUBY BOX 1 COUNT",1,3.2,"line+carts",50.8,"minor:some_spread",9370
 "5-minor-spread","085001975290","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLUEBERRY ICE 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",9191
+"5-minor-spread","088796900877","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.247586,"prefix11",24,"minor:some_spread",9133
 "5-minor-spread","084866604131","FINITI","FIN ECGVT BOLD TOB","FIN ECGVT BOLD TOB",1,1.75,"prefix8+carts",12.6,"minor:some_spread",8720
 "5-minor-spread","085001975228","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PINA COLADA 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",7796
+"5-minor-spread","088796900874","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.247586,"prefix11",24,"minor:some_spread",7551
 "5-minor-spread","085001975296","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLUEBERRY ICE 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",7244
+"5-minor-spread","081010830115","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO EMERALD BOX 1 COUNT",1,3.2,"line+carts",50.8,"minor:some_spread",7211
 "5-minor-spread","085001975246","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR ANTISMOKING PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY BANANA ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",6367
 "5-minor-spread","085001975248","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR ANTISMOKING PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY BANANA ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",6185
 "5-minor-spread","085001975238","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR ANTISMOKING PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY BANANA ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",6011
+"5-minor-spread","081010830121","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TOBACCO FLAVOR JADE BOX 1 COUNT",1,3.2,"line+carts",50.8,"minor:some_spread",5746
 "5-minor-spread","085001975256","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PEACH ICE ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",5699
 "5-minor-spread","085001975244","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR ANTISMOKING PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY BANANA ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",5624
 "5-minor-spread","085001975294","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLUEBERRY ICE 750 PUFFS BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",5447
 "5-minor-spread","085001975250","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO ICED FRUIT PUNCH ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",4980
+"5-minor-spread","088796900873","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.247586,"prefix11",24,"minor:some_spread",4951
+"5-minor-spread","081010830127","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TOBACCO FLAVOR ONYX BOX 1 COUNT",1,3.2,"line+carts",50.8,"minor:some_spread",4903
 "5-minor-spread","085001975242","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR ANTISMOKING PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY BANANA ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",4657
 "5-minor-spread","085001975252","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PEACH ICE ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",4562
 "5-minor-spread","085001975233","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR ANTISMOKING PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY BANANA ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",4443
@@ -675,6 +775,7 @@
 "5-minor-spread","085001975264","SAVAGE","SAVAGE","SAVAGE SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MANGO DRAGONFRUIT LEMONADE MESH COIL BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",2904
 "5-minor-spread","085001975236","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR ANTISMOKING PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY BANANA ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",2715
 "5-minor-spread","085001975254","PUUR VAPOR","PUUR VAPOR","PUUR VAPOR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PEACH ICE ULTRA BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",2545
+"5-minor-spread","088796901084","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.25412425,"prefix11",28.7,"minor:some_spread",2421
 "5-minor-spread","085001975260","SAVAGE","SAVAGE","SAVAGE SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO ENERGY BULL MESH COIL BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",2297
 "5-minor-spread","085001975268","SAVAGE","SAVAGE","SAVAGE SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO APPLE WATERMELON MESH COIL BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",1944
 "5-minor-spread","085001975267","SAVAGE","SAVAGE","SAVAGE SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO APPLE WATERMELON MESH COIL BOX 1 COUNT",1,12,"prefix10",13.5,"minor:some_spread",1842
@@ -683,12 +784,17 @@
 "5-minor-spread","065747797270","SAVAGE","SAVAGE","SAVAGE SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PINEAPPLE COCONUT MESH COIL BOX 1 COUNT",1,12,"line+carts",13.5,"minor:some_spread",1158
 "5-minor-spread","065747795989","SAVAGE","SAVAGE","SAVAGE SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWRAZZ MESH COIL BOX 1 COUNT",1,12,"line+carts",13.5,"minor:some_spread",963
 "5-minor-spread","085143800736","JAK","ELCT CGRTT","ELCT CGRTT",1,1.25,"line+carts",38.4,"minor:some_spread",403
+"5-minor-spread","085266255757","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix10",50,"minor:some_spread",253
 "5-minor-spread","693764350223","IMIRACLE","LOST MARY","LOST MARY SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MANGO PASSION FRUIT BOX 1 COUNT",1,13.5,"prefix8+carts",11.1,"minor:some_spread",185
+"5-minor-spread","081010830139","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TOBACCO FLAVOR VELVET BOX 1 COUNT",1,3.2,"line+carts",50.8,"minor:some_spread",100
 "5-minor-spread","693764350215","IMIRACLE","LOST MARY","LOST MARY SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLUEBERRY RASPBERRY CHERRY BOX 1 COUNT",1,13.5,"prefix8+carts",11.1,"minor:some_spread",97
 "5-minor-spread","693764350228","IMIRACLE","LOST MARY","LOST MARY SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY ICE CREAM BOX 1 COUNT",1,13.5,"prefix8+carts",11.1,"minor:some_spread",97
+"5-minor-spread","085266255753","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix10",50,"minor:some_spread",90
 "5-minor-spread","693764356879","IMIRACLE","ELF BAR","ELF BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO WATERMELON JOLLY CANDY ICE BOX 1 COUNT",1,13,"line+carts",11.5,"minor:some_spread",90
+"5-minor-spread","081010830109","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TOBACCO FLAVOR CLASSIC BOX 1 COUNT",1,3.2,"line+carts",50.8,"minor:some_spread",88
 "5-minor-spread","693764350224","IMIRACLE","LOST MARY","LOST MARY SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MIXED BERRIES BOX 1 COUNT",1,13.5,"prefix8+carts",11.1,"minor:some_spread",84
 "5-minor-spread","693764350217","IMIRACLE","LOST MARY","LOST MARY SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO COTTON CANDY BOX 1 COUNT",1,13.5,"prefix8+carts",11.1,"minor:some_spread",82
+"5-minor-spread","085266255777","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix10",50,"minor:some_spread",73
 "5-minor-spread","036586039515","FLAVORED MIST","F-M E-CGAC STRAWBERRY","F-M E-CGAC STRAWBERRY",3,2.7,"prefix8+carts",16,"minor:some_spread",57
 "5-minor-spread","036586039509","FLAVORED MIST","F-M E-CGAC GRAPE","F-M E-CGAC GRAPE",3,2.7,"prefix8+carts",16,"minor:some_spread",27
 "5-minor-spread","081505802007","LOGIC","LOGIC POWER E-CGC VANILLA","LOGIC POWER E-CGC VANILLA",3,1.35,"prefix11",24,"minor:some_spread",22
@@ -709,22 +815,25 @@
 "5-minor-spread","489525720144","IMIRACLE","ELF BAR","ELF BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLUE RAZZ ICE BOX 1 COUNT",1,13,"line+carts",11.5,"minor:some_spread",4
 "5-minor-spread","489525720174","IMIRACLE","ELF BAR","ELF BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY PINA COLADA BOX 1 COUNT",1,13,"line+carts",11.5,"minor:some_spread",4
 "5-minor-spread","085005452457","FUME","FUME QRJOY","FUME QRJOY SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PACIFIC COOLER BOX 1 COUNT",1,12,"brand+carts",25,"minor:some_spread",2
+"5-minor-spread","085266256657","PUFF","PUFF PLUS","PUFF PLUS SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MAMBA BOX 1 COUNT",1,3.2,"line+carts",50,"minor:some_spread",1
 "6-ok-ish","081068701482","NJOY",NA,NA,NA,3.8,"prefix11",12.6,"ok",2928816
 "6-ok-ish","081991301158","JUUL",NA,NA,NA,2.8,"prefix10",50,"ok",2377287
-"6-ok-ish","084920501622","VUSE",NA,NA,NA,3.6,"prefix11",50,"ok",1566972
-"6-ok-ish","081991301543","JUUL",NA,NA,NA,1.4,"prefix10",50,"ok",1406027
-"6-ok-ish","081991301137","JUUL",NA,NA,NA,2.8,"prefix11",50,"ok",1351013
+"6-ok-ish","088796901130","BLU","BLU","BLU ANTISMOKING PRODUCT ELECTRONIC CIGARETTE LIQUID PO GOLD LEAF BOX IN WRAP 2 COUNT",2,3,"prefix11",24.8,"ok",460117
 "6-ok-ish","088796901108","BLU",NA,NA,NA,3,"prefix10",24.8,"ok",363985
-"6-ok-ish","084920501532","VUSE",NA,NA,NA,3.8,"prefix11",30,"ok",332406
-"6-ok-ish","081991301269","JUUL",NA,NA,NA,2.8,"prefix11",40,"ok",301672
-"6-ok-ish","085570400807","MISTIC",NA,NA,NA,10,"prefix11",24,"ok",236707
-"6-ok-ish","084920501535","VUSE",NA,NA,NA,3.8,"prefix11",30,"ok",232346
-"6-ok-ish","085570400806","MISTIC",NA,NA,NA,10,"prefix11",24,"ok",199899
+"6-ok-ish","088796901132","BLU","BLU","BLU ANTISMOKING PRODUCT ELECTRONIC CIGARETTE LIQUID PO GOLD LEAF BOX IN WRAP 2 COUNT",2,3,"prefix11",24.8,"ok",205167
+"6-ok-ish","088796900998","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",2,3,"prefix11",40,"ok",198832
+"6-ok-ish","081505802245","LOGIC","LP ECGLC CHERRY","LP ECGLC CHERRY",2,3,"prefix11",13.3,"ok",181527
+"6-ok-ish","084920501538","VUSE","ELCT CGRTT TANK","ELCT CGRTT TANK",2,3.8,"prefix11",30,"ok",174363
 "6-ok-ish","085962600205","FINITI","FINITI MIDNIGHT E-CG CMT","FINITI MIDNIGHT E-CG CMT",1,1.75,"prefix11",16,"ok",169046
+"6-ok-ish","088796900906","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",2,3,"prefix11",24,"ok",139225
+"6-ok-ish","088796901070","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",2,3,"prefix11",30,"ok",131602
 "6-ok-ish","081536802175","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1,"prefix10",60,"ok",130484
+"6-ok-ish","081990502787","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",87.5,"ok",128956
 "6-ok-ish","081536802174","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1,"prefix10",60,"ok",126382
-"6-ok-ish","084920501544","VUSE",NA,NA,NA,3.8,"prefix11",30,"ok",122100
 "6-ok-ish","081536802177","NJOY",NA,"NJOY LOOP PODS SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TROPICAL TWIST BOX 2 COUNT",2,1,"prefix10",60,"ok",120373
+"6-ok-ish","088796901002","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",32,"ok",117750
+"6-ok-ish","088796901000","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",32,"ok",113806
+"6-ok-ish","088796901004","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",32,"ok",108871
 "6-ok-ish","081068701775","NJOY","NJOY E-CG LIQUID MN","NJOY E-CG LIQUID MN",1,10,"prefix11",10,"ok",96566
 "6-ok-ish","084866602263","FINITI","FIN E-CG","FIN E-CG",1,1,"prefix11",16,"ok",95807
 "6-ok-ish","081536802173","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1,"prefix10",60,"ok",93632
@@ -732,8 +841,8 @@
 "6-ok-ish","081536802176","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1,"prefix10",60,"ok",86190
 "6-ok-ish","081068701686","NJOY","NJOY E-CGCM GOLD TOB RFL","NJOY E-CGCM GOLD TOB RFL",2,2,"prefix11",30,"ok",83411
 "6-ok-ish","085962600207","FINITI","FINITI E-CG","FINITI E-CG",1,1.75,"prefix11",16,"ok",80663
+"6-ok-ish","088796900992","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",40,"ok",69893
 "6-ok-ish","081991301516","JUUL","ELCT CGRTT CARTRIDGE","ELCT CGRTT CARTRIDGE",2,1.4,"prefix11",50,"ok",69345
-"6-ok-ish","084920501547","VUSE",NA,NA,NA,3.8,"prefix11",30,"ok",65611
 "6-ok-ish","088796901129","BLU","BLU","BLU SMOKING ALTERNATIVE PRODUCT TOBACCO 2 COUNT",2,3,"prefix10",24.8,"ok",64800
 "6-ok-ish","084866604600","FINITI","FIN ECGVT BOLD TOB","FIN ECGVT BOLD TOB",1,4.8,"prefix11",24,"ok",62144
 "6-ok-ish","084866604612","FINITI","FIN E-CG CLMR","FIN E-CG CLMR",2,4.8,"prefix10",24,"ok",59364
@@ -741,43 +850,67 @@
 "6-ok-ish","081991301522","JUUL","ELCT CGRTT CARTRIDGE","ELCT CGRTT CARTRIDGE",2,1.4,"prefix11",50,"ok",41267
 "6-ok-ish","088886130220","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix10",48,"ok",40395
 "6-ok-ish","081991301520","JUUL","ELCT CGRTT CARTRIDGE","ELCT CGRTT CARTRIDGE",2,1.4,"prefix11",50,"ok",38931
+"6-ok-ish","088796901136","BLU","BLU","BLU SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO GRAPHITE BLACK BOX 1 COUNT",1,3,"prefix11",24.8,"ok",38828
 "6-ok-ish","081068701485","NJOY","ELCT CGRTT CARTRIDGE","ELCT CGRTT CARTRIDGE",1,3.8,"prefix11",12.6,"ok",36140
+"6-ok-ish","081505802263","LOGIC","ELCT CGRTT LIQUID CAPSULE","ELCT CGRTT LIQUID CAPSULE",1,3,"prefix11",18,"ok",34479
 "6-ok-ish","088886130100","LEAP",NA,NA,NA,3,"prefix11",48,"ok",34139
 "6-ok-ish","088886130216","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",48,"ok",31938
+"6-ok-ish","081505802265","LOGIC","ELCT CGRTT LIQUID CAPSULE","ELCT CGRTT LIQUID CAPSULE",1,3,"prefix11",18,"ok",31322
 "6-ok-ish","081068701690","NJOY","NJOY E-CGCM VANILLA BEAN RFL","NJOY E-CGCM VANILLA BEAN RFL",2,2,"prefix10",30,"ok",29822
 "6-ok-ish","084866604603","FINITI","FIN ECGVT VANILLA","FIN ECGVT VANILLA",2,4.8,"prefix11",24,"ok",29266
+"6-ok-ish","081990502560","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"ok",28698
+"6-ok-ish","088796901124","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix10",24.8,"ok",22705
 "6-ok-ish","085570400861","MISTIC","MISTIC ECGT RFL","MISTIC ECGT RFL",1,10,"prefix10",24,"ok",22502
 "6-ok-ish","081068701692","NJOY","NJOY E-CGCM POMEGRANATE RFL","NJOY E-CGCM POMEGRANATE RFL",2,2,"prefix10",30,"ok",21812
 "6-ok-ish","081068701542","NJOY","NJOY E-CG MN KING","NJOY E-CG MN KING",5,5,"prefix11",37.5,"ok",20990
 "6-ok-ish","084866604604","FINITI","FIN ECGVT CHERRY","FIN ECGVT CHERRY",2,4.8,"prefix11",24,"ok",20907
+"6-ok-ish","081990502556","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"ok",18934
+"6-ok-ish","081010830021","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TOBACCO BOX 1 COUNT",1,3,"prefix10",50,"ok",18698
 "6-ok-ish","079182782732","AVATA","AVATA","AVATA SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO PINEAPPLE BANANA BOX 1 COUNT",1,12,"line+carts",25,"ok",18684
+"6-ok-ish","088796900994","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",2,3,"prefix11",40,"ok",18238
+"6-ok-ish","081010830024","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TOBACCO BOX 1 COUNT",1,3,"prefix10",50,"ok",17518
 "6-ok-ish","081649401350","NICOTEK","NICOTEK METRO E-CG MN","NICOTEK METRO E-CG MN",2,2,"prefix8+carts",18,"ok",17014
 "6-ok-ish","081068701787","NJOY","NJOY E-CG LIQUID BLD-ORNGE","NJOY E-CG LIQUID BLD-ORNGE",1,10,"prefix11",8,"ok",15758
+"6-ok-ish","081990502559","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"ok",15592
+"6-ok-ish","085000888078","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MINT 1000 PUFFS BOX 1 COUNT",1,3.2,"prefix11",50.8,"ok",14957
 "6-ok-ish","084866604606","FINITI","FIN ECGVT COFFEE","FIN ECGVT COFFEE",2,4.8,"prefix11",24,"ok",14713
+"6-ok-ish","065135724943","ESCO BARS","ESCO BARS","ESCO BARS SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO SPEARMINT BOX 1 COUNT",1,6,"line+carts",25,"ok",14432
+"6-ok-ish","081990502567","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"ok",14213
+"6-ok-ish","085000888077","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MANGO EQUALS 4 PACKS BOX 1 COUNT",1,3.2,"prefix11",50.8,"ok",14005
 "6-ok-ish","036586037191","VAPIN PLUS","VPLS E-CG LIQUID A-T","VPLS E-CG LIQUID A-T",1,14.9937645,"prefix11",16,"ok",13660
 "6-ok-ish","084866604605","FINITI","FIN ECGVT GRAPE","FIN ECGVT GRAPE",2,4.8,"prefix11",24,"ok",13529
+"6-ok-ish","081990502557","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"ok",12848
+"6-ok-ish","088796900990","BLU","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,3,"prefix11",40,"ok",11705
+"6-ok-ish","081990502568","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,2.6,"prefix11",50,"ok",11659
 "6-ok-ish","081068701585","NJOY","NJOY E-CG KING 1CT=","NJOY E-CG KING 1CT=",2,5,"prefix10",45,"ok",11506
 "6-ok-ish","009710000229","MARKTEN","ELCT VAPOR CGRTT CARTRIDGE","ELCT VAPOR CGRTT CARTRIDGE",2,3.6,"line+carts",50,"ok",10513
 "6-ok-ish","084866604618","FINITI","FIN ECGVT CHERRY","FIN ECGVT CHERRY",2,4.8,"prefix10",24,"ok",10474
 "6-ok-ish","081068701587","NJOY","NJOY E-CG MN KING 1CT=","NJOY E-CG MN KING 1CT=",2,5,"prefix10",45,"ok",10357
 "6-ok-ish","088796901157","BLU","BLU","BLU SMOKING ALTERNATIVE PRODUCT 1 COUNT",2,3,"prefix10",24.8,"ok",10353
-"6-ok-ish","085570400838","MISTIC","MISTIC E-CGC RFL","MISTIC E-CGC RFL",1,10,"prefix10",18,"ok",10186
+"6-ok-ish","085570400838","MISTIC","MISTIC E-CGC RFL","MISTIC E-CGC RFL",1,10,"prefix10",24,"ok",10186
+"6-ok-ish","075362019867","ESCO BARS","ESCO BARS","ESCO BARS SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO RAINBOW BOX 1 COUNT",1,6,"line+carts",25,"ok",9566
 "6-ok-ish","081068701586","NJOY","NJOY E-CG KING 1CT=","NJOY E-CG KING 1CT=",2,5,"prefix10",45,"ok",9368
 "6-ok-ish","088796900577","BLU","ELCT CGRTT","ELCT CGRTT",1,5,"prefix11",19.2,"ok",8507
+"6-ok-ish","084920500179","VUSE","VUSE E-CGC RICH MINT","VUSE E-CGC RICH MINT",2,1,"prefix11",48,"ok",7250
 "6-ok-ish","009710000114","MARKTEN","MARKTEN E-CG/ECC","MARKTEN E-CG/ECC",1,1.6,"prefix11",35,"ok",6904
 "6-ok-ish","085570400418","MISTIC","MISTIC E-CG","MISTIC E-CG",1,1,"prefix11",18,"ok",5937
 "6-ok-ish","085962600211","FINITI","FINITI E-CG OLS","FINITI E-CG OLS",1,1.75,"prefix11",16,"ok",5779
+"6-ok-ish","081002599614","IGNITE","IGNITE V15","IGNITE V15 SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BANANA ICE BOX 1 COUNT",1,5.1,"line+carts",31.9,"ok",5721
 "6-ok-ish","084866604607","FINITI",NA,NA,NA,4.8,"prefix11",24,"ok",5662
+"6-ok-ish","081002599563","IGNITE","IGNITE V15","IGNITE V15 SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLUEBERRY ICE BOX 1 COUNT",1,5.1,"line+carts",31.9,"ok",5380
 "6-ok-ish","036586037197","VAPIN PLUS","VPLS E-CG LIQUID PEACH","VPLS E-CG LIQUID PEACH",1,14.9937645,"prefix11",16,"ok",5002
+"6-ok-ish","081002599572","IGNITE","IGNITE V15","IGNITE V15 SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY APPLE WATERMELON BOX 1 COUNT",1,5.1,"line+carts",31.9,"ok",4556
 "6-ok-ish","081068701288","NJOY","NJOY E-CG NO","NJOY E-CG NO",1,5,"prefix10",18,"ok",4348
 "6-ok-ish","009710000116","MARKTEN","MARKTEN E-CG MN/ECC","MARKTEN E-CG MN/ECC",1,1.6,"prefix11",35,"ok",4029
 "6-ok-ish","081002599579","IGNITE","IGNITE V8","IGNITE V8 SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO ICY MINT BOX 1 COUNT",1,2.6,"line+carts",25,"ok",3878
+"6-ok-ish","081002599576","IGNITE","IGNITE V15","IGNITE V15 SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO WATERMELON ICE BOX 1 COUNT",1,5.1,"line+carts",31.9,"ok",3797
 "6-ok-ish","081002599711","IGNITE","IGNITE V8","IGNITE V8 SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MANGO BOX 1 COUNT",1,2.6,"line+carts",25,"ok",3304
 "6-ok-ish","085002048173","PACHA","PACHA SYN","PACHA SYN SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BANANA ICE BOX 1 COUNT",1,4,"prefix10",40.6,"ok",2583
 "6-ok-ish","081002599206","IGNITE","IGNITE","IGNITE SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO TOBACCO BOX 1 COUNT",1,1.2,"prefix11",25,"ok",2538
 "6-ok-ish","085570400411","NEO","NEO E-CGC RFL","NEO E-CGC RFL",5,1,"prefix11",18,"ok",2527
 "6-ok-ish","085962600216","FINITI","FINITI E-CG C-M OLS","FINITI E-CG C-M OLS",1,1.75,"prefix11",16,"ok",2501
 "6-ok-ish","085570400415","NEO","NEO E-CGC RFL","NEO E-CGC RFL",5,1,"prefix11",18,"ok",2449
+"6-ok-ish","081010830002","ZEO","ZEO","ZEO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MENTHOL EVERGREEN BOX 1 COUNT",1,3,"prefix11",50,"ok",2097
 "6-ok-ish","697184747161","JUICY","JUICY BAR","JUICY BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MIXED BERRY ICE MESH COIL BOX 1 COUNT",1,13,"prefix11",11.5,"ok",2026
 "6-ok-ish","081649401430","NICOTEK","NBL-NCL E-CG LIQUID TOB","NBL-NCL E-CG LIQUID TOB",1,9.995843,"prefix11",24,"ok",2013
 "6-ok-ish","036586037194","VAPIN PLUS","VPLS E-CG LIQUID GRAPE","VPLS E-CG LIQUID GRAPE",1,14.9937645,"prefix11",16,"ok",1859
@@ -791,7 +924,6 @@
 "6-ok-ish","081649401455","NICOTEK",NA,NA,NA,9.995843,"prefix10",24,"ok",969
 "6-ok-ish","081649401454","NICOTEK",NA,NA,NA,9.995843,"prefix10",24,"ok",921
 "6-ok-ish","081649401453","NICOTEK",NA,NA,NA,9.995843,"prefix10",24,"ok",836
-"6-ok-ish","081068701483","NJOY",NA,NA,NA,3.8,"prefix11",12.6,"ok",834
 "6-ok-ish","084934900227","V2 CIGS","V2 CIGS E-CG MN","V2 CIGS E-CG MN",1,1,"prefix11",18,"ok",802
 "6-ok-ish","081649401465","NICOTEK",NA,NA,NA,9.995843,"prefix10",24,"ok",744
 "6-ok-ish","002590017500","E SWISHER","E SWISHER E-CGAC","E SWISHER E-CGAC",1,3,"prefix11",15,"ok",698
@@ -801,23 +933,34 @@
 "6-ok-ish","081649401437","NICOTEK","NL-NBL E-CG LIQUID VANILLA","NL-NBL E-CG LIQUID VANILLA",1,9.995843,"prefix11",24,"ok",613
 "6-ok-ish","081649401438","NICOTEK","NL-NBL E-CG LIQUID KIWI","NL-NBL E-CG LIQUID KIWI",1,9.995843,"prefix11",24,"ok",562
 "6-ok-ish","081649401435","NICOTEK","NL-NBL E-CG LIQUID APPLE","NL-NBL E-CG LIQUID APPLE",1,9.995843,"prefix11",24,"ok",561
+"6-ok-ish","075362007995","ESCO BARS","ESCO BARS","ESCO BARS SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY BANANA BOX 1 COUNT",1,6,"line+carts",25,"ok",454
 "6-ok-ish","002590017501","E SWISHER","E SWISHER E-CG MB","E SWISHER E-CG MB",1,3,"prefix11",15,"ok",423
+"6-ok-ish","075362020291","ESCO BARS","ESCO BARS","ESCO BARS SMOKING ALTERNATIVE PRODUCT MANGO ICE 1 COUNT",1,6,"line+carts",25,"ok",416
 "6-ok-ish","084018990339","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR","AIR BAR ANTISMOKING PRODUCT 1 COUNT",1,10,"prefix10",16.2,"ok",375
 "6-ok-ish","697184747274","JUICY BAR","JUICY BAR","JUICY BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO VANILLA ICE CREAM MESH COIL BOX 1 COUNT",1,13,"prefix10",11.5,"ok",336
+"6-ok-ish","085266255761","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",50,"ok",315
 "6-ok-ish","002590017504","E SWISHER","E SWISHER E-CGC MB RFL","E SWISHER E-CGC MB RFL",3,3,"prefix11",15,"ok",309
+"6-ok-ish","085266255825","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",87.5,"ok",308
 "6-ok-ish","002012632805","MISTIC","MISTIC E-CGC MN RFL","MISTIC E-CGC MN RFL",5,5,"prefix11",15,"ok",283
+"6-ok-ish","085266255781","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",87.5,"ok",259
 "6-ok-ish","081068701760","NJOY","NJOY E-CGCMB AST 2'S\SAP=","NJOY E-CGCMB AST 2'S\SAP=",2,10,"prefix10",10,"ok",251
 "6-ok-ish","036586037188","VAPIN PLUS","VPLS E-CG LIQUID CHO","VPLS E-CG LIQUID CHO",1,14.9937645,"prefix10",16,"ok",248
 "6-ok-ish","084018990594","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR BOX","AIR BAR BOX SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MONSTER ICE 3000 PUFFS BOX 1 COUNT",1,10,"prefix10",16.2,"ok",239
 "6-ok-ish","081068701761","NJOY","NJOY E-CGCMB AST 2'S\SAP=","NJOY E-CGCMB AST 2'S\SAP=",2,10,"prefix10",10,"ok",230
+"6-ok-ish","085266255749","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",50,"ok",220
 "6-ok-ish","697184747132","JUICY BAR","JUICY BAR","JUICY BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO STRAWBERRY KIWI MESH COIL BOX 1 COUNT",1,13,"prefix11",11.5,"ok",208
 "6-ok-ish","019383500507","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR MAX","AIR BAR MAX SMOKING ALTERNATIVE PRODUCT GUAVA SHAKE 1 COUNT",1,6.5,"prefix10",33.2,"ok",200
 "6-ok-ish","081068701789","NJOY","NJOY E-CG LIQUID BLD-ORNGE","NJOY E-CG LIQUID BLD-ORNGE",1,10,"prefix11",8,"ok",183
 "6-ok-ish","081991301141","JUUL","ELCT CGRTT CARTRIDGE","ELCT CGRTT CARTRIDGE",4,2.8,"prefix11",50,"ok",158
 "6-ok-ish","002590017505","E SWISHER","E SWISHER E-CGC MB RFL","E SWISHER E-CGC MB RFL",3,3,"prefix11",15,"ok",148
 "6-ok-ish","036586037185","VAPIN PLUS","VPLS E-CIG LIQUID CAPPUCCINO","VPLS E-CIG LIQUID CAPPUCCINO",1,14.9937645,"prefix10",16,"ok",147
+"6-ok-ish","085266255765","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",50,"ok",144
 "6-ok-ish","697184747275","JUICY BAR","JUICY BAR","JUICY BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO ALASKAN BLUEBERRY MINT MESH COIL BOX 1 COUNT",1,13,"prefix10",11.5,"ok",114
+"6-ok-ish","085266255769","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",50,"ok",100
+"6-ok-ish","671716977193","HYPPE","HYPPE MAX AIR","HYPPE MAX AIR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MIGHTY MINT OVER CHARGING PROTECTION BOX 1 COUNT",1,13,"line+carts",11.5,"ok",80
 "6-ok-ish","019383500511","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR MAX","AIR BAR MAX SMOKING ALTERNATIVE PRODUCT BANANA SHAKE 1 COUNT",1,6.5,"prefix11",33.2,"ok",79
+"6-ok-ish","085266255745","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",50,"ok",70
+"6-ok-ish","085266255789","NJOY","ELCT CGRTT LIQUID POD","ELCT CGRTT LIQUID POD",1,1.3,"prefix11",87.5,"ok",59
 "6-ok-ish","002590017506","E SWISHER","E SWISHER E-CG TF","E SWISHER E-CG TF",1,3,"prefix11",15,"ok",45
 "6-ok-ish","081536802011","NJOY","NJOY E-CG TROPICAL TWIST","NJOY E-CG TROPICAL TWIST",1,1,"prefix10",45,"ok",34
 "6-ok-ish","019383500501","SHENZHEN GOLDREAMS TECHNOLOGY","AIR BAR MAX","AIR BAR MAX SMOKING ALTERNATIVE PRODUCT CRANBERRY GRAPE 1 COUNT",1,6.5,"prefix10",33.2,"ok",20
@@ -827,10 +970,14 @@
 "6-ok-ish","081068701553","NJOY","NJOY E-CG TRDNL KING","NJOY E-CG TRDNL KING",10,5,"prefix10",45,"ok",7
 "6-ok-ish","081068701245","NJOY","NJOY E-CGC MN NO RFL","NJOY E-CGC MN NO RFL",5,5,"prefix11",24,"ok",5
 "6-ok-ish","081068701717","NJOY","NJOY E-CG MN KING -5.00","NJOY E-CG MN KING -5.00",5,10,"prefix10",10,"ok",5
+"6-ok-ish","084920500135","VUSE","VUSE SOLO","VUSE SOLO SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE ORIGINAL BOX 1 COUNT",1,0.5,"prefix11",48,"ok",5
+"6-ok-ish","085570400495","COSMIC FOG","CSMC FG ECGL MLK&HNY","CSMC FG ECGL MLK&HNY",1,10,"prefix11",21,"ok",5
+"6-ok-ish","671716977155","HYPPE","HYPPE MAX AIR","HYPPE MAX AIR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO BLACK SAKURA MESH COIL BOX IN WRAP 1 COUNT",1,13,"line+carts",11.5,"ok",5
 "6-ok-ish","697184747333","JUICY BAR","JUICY BAR","JUICY BAR SMOKING ALTERNATIVE PRODUCT ELECTRONIC CIGARETTE LIQUID PO MEXICAN PINA COLADA MESH COIL BOX 1 COUNT",1,13,"line+carts",11.5,"ok",5
 "6-ok-ish","002590017507","E SWISHER","E SWISHER E-CG MB","E SWISHER E-CG MB",1,3,"prefix11",15,"ok",4
 "6-ok-ish","083921900232","CIG2O","CIG2O E-CG RED HOT","CIG2O E-CG RED HOT",1,1,"prefix10",18,"ok",4
 "6-ok-ish","085570400815","MISTIC","HAUS ECTA RFL","HAUS ECTA RFL",1,10,"prefix10",24,"ok",4
+"6-ok-ish","005965400208","BLU","BL-EGS E-CGCM CT","BL-EGS E-CGCM CT",5,1,"prefix11",24,"ok",3
 "6-ok-ish","081068701241","NJOY","NJOY E-CGC NO RFL","NJOY E-CGC NO RFL",5,5,"prefix11",24,"ok",3
 "6-ok-ish","081068701683","NJOY","NJOY E-CG 4P","NJOY E-CG 4P",4,2,"prefix11",30,"ok",3
 "6-ok-ish","085570400812","MISTIC","HAUS E-CG LIQUID A-B 5P","HAUS E-CG LIQUID A-B 5P",5,10,"prefix10",24,"ok",3

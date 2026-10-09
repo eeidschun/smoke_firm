@@ -1,0 +1,3 @@
+specification,n,months,firms,alpha,sigma,alpha_positive,sigma_admissible,admissible_for_cost_recovery,qr_coefficient_error,sandwich_error
+national_count,540,132,9,0.210909675478268,3.42198632651855,TRUE,FALSE,FALSE,4.09428047021265e-12,6.00568483832831e-11
+geographic_count,540,132,9,0.201690697404002,3.6302533582483,TRUE,FALSE,FALSE,2.42683650952813e-12,8.47437675588481e-11

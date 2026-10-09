@@ -19,21 +19,21 @@ Structure:
   - `smoke_firm_dir/code/` — all R scripts, in subfolders, each file numbered by
     run order within its folder. `fxns/` — shared helpers sourced by everything
     (`1_paths.R` defines `FIRM_DIR`/`RAW_DIR`/`SUPPORT_DIR`/`OUT_DIR`/`PRELIM_DIR`;
-    `2_upc_overrides.R`, `3_t2_classify.R`, `4_event_lines_t2.R`). `build/` — raw
+    `2_upc_overrides.R`, `3_t2_classify.R`, `4_event_lines_t2.R`). `1_build_data/` — raw
     → panels (`3_build_t2_panel_niccorr.R` writes the canonical panel;
     `5_build_upc_month_niccorr.R` the UPC-month one; `1_clean_RMS…` runs on the BU
-    SCC and its output is pre-supplied). `analysis/` — panel → meeting-note
-    figures. `manual_refinement/` — one-off nicotine/VUSE audits whose findings are
+    SCC and its output is pre-supplied). `2_preliminary_analysis/` — panel → meeting-note
+    figures. `1_build_data/audit_manual_refinement/` — one-off nicotine/VUSE audits whose findings are
     already baked into `input/manual_nic_corrections.csv` and `fxns/2_upc_overrides.R`;
     provenance, not re-run. `archive/` — superseded pre-niccorr builders/decomps.
-    `code_from_demand_side/` — demand-side scripts kept for reference. Every script
+    `2_preliminary_analysis/audit_demand_side/` — demand-side scripts kept for reference. Every script
     is run from the repo root and starts with
     `source("smoke_firm_dir/code/fxns/1_paths.R")`. See `code/README.md`.
   - `smoke_firm_dir/input/` — small support files: `manual_nic_corrections.csv`,
     `label_maps.RData`, imputation caches, and the built panels.
     `bt_month_t2_niccorr_from_full.RData` is the current corrected panel
     (brand × type × month). `upc_month_niccorr_from_full.RData` is the matching
-    brand × UPC × month panel (built by `code/build/5_build_upc_month_niccorr.R`;
+    brand × UPC × month panel (built by `code/1_build_data/5_build_upc_month_niccorr.R`;
     collapses back to `bt_month_t2` exactly). `bt_month_t2_from_full-do_not_use_has_incorrect_nic.RData`
     is the old panel with the cartridge-scaling bug — kept only for old-vs-new
     comparison, never use it for new analysis.
@@ -71,7 +71,7 @@ Key facts to carry forward:
 
 Known gotchas:
 
-- `code/build/3_build_t2_panel_niccorr.R` and `code/manual_refinement/2_upc_audit.R`
+- `code/1_build_data/3_build_t2_panel_niccorr.R` and `code/1_build_data/audit_manual_refinement/2_upc_audit.R`
   both write to
   `smoke_firm_dir/output/prelim_analysis/investment_proxy/top5_upc_per_year.csv` with
   different, incompatible schemas. Whichever runs last wins. Run the panel
@@ -92,3 +92,15 @@ Known gotchas:
   this file.
 - Do not overwrite `smoke_firm_dir/input/bt_month_t2_niccorr_from_full.RData`, or any
   other canonical panel, without an explicit user decision and a backup.
+
+## Ordered pipeline update (2026-10-01)
+
+`code/0_master.R` is the explicit orchestrator (no arguments prints a plan).
+Use `--stage=instruments --run` for geographic input construction plus diagnostics.
+Build 9 writes `input/demand_instrument_candidates.rds`; preliminary 14 only
+reads it. `3_demand_estimation/` estimates and reports two IV/2SLS demand specifications;
+run the master with `--stage=demand --run`. Results are exploratory: both initial
+sigma estimates exceed one and must not feed cost recovery. The master
+excludes external builders 1/7, audits and archive. Redundant preliminary 8
+was deleted; scripts 1 and 2 already produce all four of its figures.
+See `smoke_firm_dir/code/README.md` for modes, dependencies and script status.

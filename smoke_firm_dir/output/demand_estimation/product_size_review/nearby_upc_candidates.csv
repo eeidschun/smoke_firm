@@ -1,0 +1,86 @@
+"target_upc","upc","cached_lines","available_counts","available_ml_per_cartridge","available_total_ml","sources","shared_prefix_digits","numeric_distance"
+"085962600262","085962600260","FIN AST NO 2'S/ECCR","8","","","raw-attribute cache: missing total",11,2
+"085962600262","085962600265","FIN AST NO 2'S/ECCR","8","","","raw-attribute cache: missing total",11,3
+"085962600262","085962600271","FINITI E-CGCM RFL","5","1","5","raw-attribute cache: ref",10,9
+"085962600262","085962600273","FINITI E-CGCM RFL","5","1","5","raw-attribute cache: ref",10,11
+"085962600262","085962600276","FINITI E-CGCM C-M RFL","5","1","5","raw-attribute cache: ref",10,14
+"081991301137","081991301138","JUUL E-CGC BRUULE","4","0.7","2.8","raw-attribute cache: ref",11,1
+"081991301137","081991301139","JUUL E-CGC FRUUT","4","0.7","2.8","raw-attribute cache: ref",11,2
+"081991301137","081991301140","JUUL E-CGC MIINT","4","0.7","2.8","raw-attribute cache: ref",10,3
+"081991301137","081991301141","ELCT CGRTT CARTRIDGE","4","","","raw-attribute cache: missing total",10,4
+"081991301137","081991301142","JUUL E-CGC TABAAC","4","0.7","2.8","raw-attribute cache: ref",10,5
+"081991301269","081991301268","ELCT CGRTT CARTRIDGE","4","0.7","2.8","raw-attribute cache: ref",11,1
+"081991301269","081991301259","JUUL E-CGC CM","4","0.7","2.8","raw-attribute cache: ref",10,10
+"081991301269","081991301288","ELCT CGRTT LIQUID POD; JUUL; JUUL Closed pod","1; 4","0.7; 2.8","2.8","explicit manual UPC override; raw-attribute cache: missing total; raw-attribute cache: ref",10,19
+"081991301269","081991301247","JUUL E-CGC COOL CUCUMBER","4","0.7","2.8","raw-attribute cache: ref",10,22
+"081991301269","081991301244","JUUL E-CGC MANGO","4","0.7","2.8","raw-attribute cache: ref",10,25
+"081991301543","081991301545","; JUUL","1","","","raw-attribute cache: missing total",11,2
+"081991301543","081991301546","ELCT VAPOR DEVICE; JUUL","1","","","raw-attribute cache: missing total",11,3
+"081991301543","081991301550","; JUUL","1","","","raw-attribute cache: missing total",10,7
+"081991301543","081991301551","ELCT VAPOR DEVICE","1","","","raw-attribute cache: missing total",10,8
+"081991301543","081991301522","ELCT CGRTT CARTRIDGE; JUUL","2","0.7","1.4","raw-attribute cache: missing total; raw-attribute cache: ref",10,21
+"085570400806","085570400805","HAUS E-CG LIQUID COOL ICE","1","10","10","raw-attribute cache: ref",11,1
+"085570400806","085570400804","HAUS E-CG LIQUID","1","10","10","raw-attribute cache: ref",11,2
+"085570400806","085570400803","HAUS E-CG LIQUID OCEAN MIST","1","10","10","raw-attribute cache: ref",11,3
+"085570400806","085570400802","HAUS E-CG LIQUID JAVA","1","10","10","raw-attribute cache: ref",11,4
+"085570400806","085570400801","HAUS E-CG LIQUID W-R","1","10","10","raw-attribute cache: ref",11,5
+"085570400807","085570400805","HAUS E-CG LIQUID COOL ICE","1","10","10","raw-attribute cache: ref",11,2
+"085570400807","085570400804","HAUS E-CG LIQUID","1","10","10","raw-attribute cache: ref",11,3
+"085570400807","085570400803","HAUS E-CG LIQUID OCEAN MIST","1","10","10","raw-attribute cache: ref",11,4
+"085570400807","085570400802","HAUS E-CG LIQUID JAVA","1","10","10","raw-attribute cache: ref",11,5
+"085570400807","085570400801","HAUS E-CG LIQUID W-R","1","10","10","raw-attribute cache: ref",11,6
+"081068701483","081068701485","ELCT CGRTT CARTRIDGE; NJOY ACE","1; 2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",11,2
+"081068701483","081068701491","ELCT CGRTT CARTRIDGE","2","1.9","3.8","raw-attribute cache: ref",10,8
+"081068701483","081068701492","NJOY POD CLASSIC TOB 5%","2","","","raw-attribute cache: missing total",10,9
+"081068701483","081068701473","NJOY E-CG MN KING","1","1","1","raw-attribute cache: ref",10,10
+"081068701483","081068701493","ELCT CGRTT LIQUID POD","2","1.9","3.8","raw-attribute cache: ref",10,10
+"084920501532","084920501535","; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",11,3
+"084920501532","084920501538","ELCT CGRTT TANK; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",11,6
+"084920501532","084920501529","VS VB E-CG TANK OGN","2","1.9","3.8","raw-attribute cache: ref",10,3
+"084920501532","084920501526","ELCT CGRTT VAPOR TANK; VUSE CIRO","1; 2","","","raw-attribute cache: missing total",10,6
+"084920501532","084920501541","ELCT CGRTT VAPOR TANK","2","1.9","3.8","raw-attribute cache: ref",10,9
+"084920501535","084920501532","; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",11,3
+"084920501535","084920501538","ELCT CGRTT TANK; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",11,3
+"084920501535","084920501529","VS VB E-CG TANK OGN","2","1.9","3.8","raw-attribute cache: ref",10,6
+"084920501535","084920501541","ELCT CGRTT VAPOR TANK","2","1.9","3.8","raw-attribute cache: ref",10,6
+"084920501535","084920501526","ELCT CGRTT VAPOR TANK; VUSE CIRO","1; 2","","","raw-attribute cache: missing total",10,9
+"084920501544","084920501541","ELCT CGRTT VAPOR TANK","2","1.9","3.8","raw-attribute cache: ref",11,3
+"084920501544","084920501547","; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",11,3
+"084920501544","084920501538","ELCT CGRTT TANK; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",10,6
+"084920501544","084920501535","; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",10,9
+"084920501544","084920501532","; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",10,12
+"084920501547","084920501544","; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",11,3
+"084920501547","084920501541","ELCT CGRTT VAPOR TANK","2","1.9","3.8","raw-attribute cache: ref",11,6
+"084920501547","084920501538","ELCT CGRTT TANK; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",10,9
+"084920501547","084920501535","; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",10,12
+"084920501547","084920501532","; VUSE VIBE","2","1.9","3.8","raw-attribute cache: missing total; raw-attribute cache: ref",10,15
+"084920501622","084920501625","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",11,3
+"084920501622","084920501628","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",11,6
+"084920501622","084920501619","ELCT VAPOR CGRTT CARTRIDGE","1","1.8","1.8","raw-attribute cache: ref",10,3
+"084920501622","084920501631","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",10,9
+"084920501622","084920501634","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",10,12
+"084920501712","084920501715","; VUSE VIBE","1","","","raw-attribute cache: missing total",11,3
+"084920501712","084920501787","ELCT VAPOR CGRTT CARTRIDGE; VUSE ALTO","2","0.9","1.8","raw-attribute cache: missing total; raw-attribute cache: ref",10,75
+"084920501712","084920501790","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",10,78
+"084920501712","084920501791","VUSE ALTO","10","1.8","18","raw-attribute cache: ref",10,79
+"084920501712","084920501796","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",10,84
+"084920501793","084920501791","VUSE ALTO","10","1.8","18","raw-attribute cache: ref",11,2
+"084920501793","084920501790","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",11,3
+"084920501793","084920501796","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",11,3
+"084920501793","084920501787","ELCT VAPOR CGRTT CARTRIDGE; VUSE ALTO","2","0.9","1.8","raw-attribute cache: missing total; raw-attribute cache: ref",10,6
+"084920501793","084920501715","; VUSE VIBE","1","","","raw-attribute cache: missing total",10,78
+"084920501808","084920501805","ELCT CGRTT LIQUID POD; VUSE ALTO","1","1.8","1.8","raw-attribute cache: missing total; raw-attribute cache: ref",11,3
+"084920501808","084920501796","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",9,12
+"084920501808","084920501791","VUSE ALTO","10","1.8","18","raw-attribute cache: ref",9,17
+"084920501808","084920501790","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",9,18
+"084920501808","084920501787","ELCT VAPOR CGRTT CARTRIDGE; VUSE ALTO","2","0.9","1.8","raw-attribute cache: missing total; raw-attribute cache: ref",9,21
+"084920501811","084920501805","ELCT CGRTT LIQUID POD; VUSE ALTO","1","1.8","1.8","raw-attribute cache: missing total; raw-attribute cache: ref",10,6
+"084920501811","084920501796","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",9,15
+"084920501811","084920501791","VUSE ALTO","10","1.8","18","raw-attribute cache: ref",9,20
+"084920501811","084920501790","ELCT VAPOR CGRTT CARTRIDGE","2","1.8","3.6","raw-attribute cache: ref",9,21
+"084920501811","084920501787","ELCT VAPOR CGRTT CARTRIDGE; VUSE ALTO","2","0.9","1.8","raw-attribute cache: missing total; raw-attribute cache: ref",9,24
+"084920502165","084920502162","VUSE ALTO","1","1.8","1.8","raw-attribute cache: ref",11,3
+"084920502165","084920502159","VUSE; VUSE ALTO","1","","","raw-attribute cache: missing total",10,6
+"084920502165","084920502120","ELCT VAPOR DEVICE; VUSE ALTO","0","","","raw-attribute cache: missing total",10,45
+"084920502165","084920502117","; VUSE ALTO","0","","","raw-attribute cache: missing total",10,48
+"084920502165","084920502114","ELCT VAPOR DEVICE; VUSE ALTO","0","","","raw-attribute cache: missing total",10,51

@@ -1,4 +1,4 @@
-## ARCHIVED / SUPERSEDED by analysis/1_decompose_t2.R (and, for the pre-niccorr
+## ARCHIVED / SUPERSEDED by 2_preliminary_analysis/1_decompose_t2.R (and, for the pre-niccorr
 ## T2 version, archive/3_decompose_p_and_n_t2.R). This is the original,
 ## product_type-based decomposition that also builds label_maps.RData. Kept for
 ## reference; not part of the current pipeline.

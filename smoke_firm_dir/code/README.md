@@ -7,9 +7,75 @@ into national panels. It then builds the descriptive series, concentration
 measures, firm-dynamics diagnostics and supply-model state variables used in
 the meeting notes.
 
-Before re-running or changing anything in `build/`, read
+Before re-running or changing anything in `1_build_data/`, read
 `smoke_firm_dir/handoff_files/MIGRATION_HANDOFF_2026-08-21.md`. It documents the
 nicotine-correction method and the required rebuild order.
+
+## Ordered pipeline (2026-10-01)
+
+```text
+code/
+  0_master.R
+  fxns/                              shared helpers, sourced by callers
+  1_build_data/                      numbered builders 1?9
+    audit_manual_refinement/         numbered historical audits 1?7
+  2_preliminary_analysis/             numbered analyses 1?14
+    audit_demand_side/               numbered reference scripts 1?2
+  3_demand_estimation/                two IV/2SLS specifications and reports
+  archive/                           superseded pre-correction scripts
+```
+
+Run the master from the repository root. It uses an explicit ordered manifest,
+not a recursive directory scan. Each script runs in a separate `Rscript --vanilla`
+process, so its `rm(list = ls())` cannot erase the master or another script's state.
+
+```sh
+# Show the default plan without writing outputs:
+Rscript smoke_firm_dir/code/0_master.R
+# Build the geographic instrument input from existing panels and run its diagnostics:
+Rscript smoke_firm_dir/code/0_master.R --stage=instruments --run
+# Use existing panels, build instruments, then run the preliminary analyses:
+Rscript smoke_firm_dir/code/0_master.R --stage=all --mode=cached --run
+# Rebuild local panels, then run preliminary analyses (slow):
+Rscript smoke_firm_dir/code/0_master.R --stage=all --mode=rebuild --run
+```
+
+Stages are `all`, `build`, `preliminary`, `instruments`, and `demand`.
+Run `Rscript smoke_firm_dir/code/0_master.R --stage=demand --run` to estimate
+and report both demand specifications from the saved candidate input.
+See [the demand README](3_demand_estimation/README.md) for assumptions and outputs. Without `--run`,
+the master only prints a plan. Cached build mode runs builder 9 only; rebuild
+mode runs builders 2?6, 8, 9. External builders 1 (SCC) and 7 (NCP) are manual
+prerequisites. Rebuild mode backs up top-level support data before writing and
+forces the geography cache to refresh. `RAW_DIR` prefers `raw/cleaned_RMS/` and
+falls back to the older repository-root `input/` if needed. Input checks stop
+execution before a script with missing prerequisites is launched.
+
+Builder **9_build_geographic_instruments.R** now writes
+`input/demand_instrument_candidates.rds` and uses
+`input/brand_state_month_presence.rds`. This is the demand-estimation
+input, including both original and revised instruments. It does not replace the
+canonical panel. Preliminary **14_instrument_comparison.R** only reads that
+input and writes diagnostics and a CSV export. To refresh geographic presence
+outside full rebuild mode, set `REBUILD_GEO_PRESENCE=1` before running builder 9.
+The old output-directory cache is retained as provenance, but is no longer read.
+
+### Which files are outside the routine run?
+
+| Script(s) | Status |
+|---|---|
+| Preliminary `8_rebuild_corrected_requested_figures.R` | Deleted on 2026-10-01 after confirming its four output figures are already produced by scripts 1 and 2. |
+| Build `1_clean_RMS_from_raw_to_most_detailed.R` | Active upstream cleaner requiring SCC inputs; not obsolete, not run locally. |
+| Build `7_build_Mt_numerator.R` | Active upstream NCP builder requiring external purchases; existing output used locally. |
+| Build `4_build_cart_counts_t2.R` | Used by the CDC-standardized descriptive comparison (preliminary 5), not needed for demand estimation itself. |
+| Manual audits 1?6 | Historical nicotine/VUSE investigations; corrections already incorporated into current builders. |
+| Manual audit 7 | Optional regeneration of the entry-wave cache used by preliminary 11. |
+| `audit_demand_side/` | Reference from the companion demand project; excluded from this pipeline. |
+| `archive/` | Superseded pre-nicotine-correction builders and analyses. |
+
+The other preliminary scripts still produce distinct descriptive results. Being
+unnecessary for demand estimation does not make them obsolete. The gap at
+preliminary script 8 is intentional; surviving scripts keep their numbers.
 
 ## Contents
 
@@ -18,10 +84,10 @@ nicotine-correction method and the required rebuild order.
 - [Key conventions](#key-conventions)
 - [The built panels](#the-built-panels)
 - [`fxns/` — shared helpers](#fxns--shared-helpers)
-- [`build/` — raw → panels](#build--raw--panels)
-- [`analysis/` — panels → figures and tables](#analysis--panels--figures-and-tables)
-- [`manual_refinement/` — one-off audits](#manual_refinement--one-off-audits-provenance-not-re-run)
-- [`archive/` and `code_from_demand_side/`](#archive--superseded)
+- [`1_build_data/` — raw → panels](#build--raw--panels)
+- [`2_preliminary_analysis/` — panels → figures and tables](#analysis--panels--figures-and-tables)
+- [`1_build_data/audit_manual_refinement/` — one-off audits](#manual_refinement--one-off-audits-provenance-not-re-run)
+- [`archive/` and `2_preliminary_analysis/audit_demand_side/`](#archive--superseded)
 - [Full rebuild order](#full-rebuild-order)
 - [Gotchas](#gotchas)
 
@@ -51,7 +117,7 @@ which defines the path constants used everywhere:
 From a terminal:
 
 ```sh
-Rscript smoke_firm_dir/code/analysis/13_national_nicotine.R
+Rscript smoke_firm_dir/code/2_preliminary_analysis/13_national_nicotine.R
 ```
 
 Files are numbered by run order **within** each folder.
@@ -60,22 +126,22 @@ Files are numbered by run order **within** each folder.
 
 ```
 restricted Nielsen RMS (BU SCC)
-   │  build/1  (runs on the SCC only)
+   │  1_build_data/1  (runs on the SCC only)
    ▼
 RAW_DIR/full_<yr>_7467_<yr>.RData      store × week × UPC, one file per year
    │
-   ├─ build/2 ──► input/missing_mL_imputation_map.rds   (mL imputation, committed)
+   ├─ 1_build_data/2 ──► input/missing_mL_imputation_map.rds   (mL imputation, committed)
    │
-   ├─ build/3 ──► input/bt_month_t2_niccorr_from_full.RData   brand × type × month  ◄── CANONICAL
-   ├─ build/4 ──► output/.../cart_counts_by_type_month.csv
-   ├─ build/5 ──► input/upc_month_niccorr_from_full.RData     brand × UPC × type × month
-   └─ build/6 ──► input/upc_month_store_breadth.rds          UPC × month store counts
+   ├─ 1_build_data/3 ──► input/bt_month_t2_niccorr_from_full.RData   brand × type × month  ◄── CANONICAL
+   ├─ 1_build_data/4 ──► output/.../cart_counts_by_type_month.csv
+   ├─ 1_build_data/5 ──► input/upc_month_niccorr_from_full.RData     brand × UPC × type × month
+   └─ 1_build_data/6 ──► input/upc_month_store_breadth.rds          UPC × month store counts
                      │
-   NCP (demand side) ─ build/7 ──► input/avg_mL_by_hh_in_ncp.RData   k_t for M_t
-   5 + 6 + 7 + taxes + Census ─ build/8 ──► input/demand_panel_firm_month.RData   Stage 1 sample
+   NCP (demand side) ─ 1_build_data/7 ──► input/avg_mL_by_hh_in_ncp.RData   k_t for M_t
+   5 + 6 + 7 + taxes + Census ─ 1_build_data/8 ──► input/demand_panel_firm_month.RData   Stage 1 sample
                      │
                      ▼
-              analysis/1–13  ──►  output/prelim_analysis/<topic>/  (figures, CSVs)
+              2_preliminary_analysis/1–13  ──►  output/prelim_analysis/<topic>/  (figures, CSVs)
 ```
 
 The panel-level analyses (1–9) need only the canonical panel. The firm-level
@@ -102,18 +168,18 @@ its header.
   `avg mL per e-cig = Σ units·mL² / Σ units·mL`. Both are mL-weighted.
 - **Two weightings for nicotine.**
   - **mL-weighted** (`Σ nic_mg / Σ mL`): the demand side and the national
-    descriptive series (`analysis/1`, `7`, `13`).
+    descriptive series (`2_preliminary_analysis/1`, `7`, `13`).
   - **UPC-unweighted** (plain mean of per-UPC mg/mL): the **supply-side firm
-    state** `a_it` / `a_Ft` (`analysis/12`). This was Marc's instruction: a
+    state** `a_it` / `a_Ft` (`2_preliminary_analysis/12`). This was Marc's instruction: a
     firm's nicotine state belongs to its posted product line, not its sales mix.
 - **`UNKNOWN` brand.** A catch-all for unattributed UPCs, about 0.4% of mL. It
   is kept in the canonical panel but dropped from anything firm-level, because
   it is not a firm.
 - **Distribution-breadth filter.** UPC-months sold in fewer than
-  `N_STORES_MIN = 3` distinct stores are dropped in `analysis/12` and `13`.
+  `N_STORES_MIN = 3` distinct stores are dropped in `2_preliminary_analysis/12` and `13`.
   These are mostly a few stores clearing old stock: about 19% of UPC-months
   but only about 0.01% of mL. The threshold is a raw store count, not a share
-  of the month's store panel. `build/6` explains why.
+  of the month's store panel. `1_build_data/6` explains why.
 - **Prices.** `revenue_real` is deflated by CPI. `revenue_nom` is nominal.
   The Stage 1 firm-month price `p_it` is the simple mean of eligible UPC-month
   prices, each computed as real revenue / mL sold after collapsing T2 rows.
@@ -124,7 +190,7 @@ its header.
 - **Timeline events.** `fxns/4` holds the standard event markers (EVALI, the
   JUUL flavour pull, FDA flavoured-cartridge enforcement, the PMTA deadline).
   Scripts that need a different event define it locally; for example,
-  `analysis/13` uses the Sep 2018 FDA "epidemic" letters.
+  `2_preliminary_analysis/13` uses the Sep 2018 FDA "epidemic" letters.
 
 ## The built panels
 
@@ -132,12 +198,12 @@ All are in `input/` (`SUPPORT_DIR`).
 
 | file | grain | key columns | built by |
 |---|---|---|---|
-| **`bt_month_t2_niccorr_from_full.RData`** → `bt_month_t2` | brand × T2 type × month (2013-01 … 2023-12, ~4.9k rows) | `units_sum`, `mL_sum`, `revenue_nom`, `revenue_real`, `nic_mg_sum`, `mL_sq_times_unit_sum`, plus cell ratios `price_per_mL`, `nic_mg_per_mL`, `avg_mL_per_ecig`, `P_hom_cell`, `N_hom_cell`, `mL_share` | `build/3` |
-| `upc_month_niccorr_from_full.RData` → `upc_month_t2` | brand × UPC × T2 type × month (~43k rows) | same sums as above, plus `upc12`, `descr`, `label_mg_per_mL`, `deliv_mg_per_mL` | `build/5` |
-| `upc_month_store_breadth.rds` | UPC × month | `n_stores`, `n_stores_month_total`, `store_share` | `build/6` |
-| `missing_mL_imputation_map.rds`, `t2_impute_cache.rds` | UPC | imputed mL and nicotine for UPCs with a missing `liq_total_f` | `build/2` |
-| `manual_nic_corrections.csv`, `label_maps.RData` | UPC / label | hand-verified nicotine corrections and label maps | by hand / `manual_refinement/` |
-| `entry_wave_store_cache.rds` | store × month | store coverage for the 2021 entry-wave check | `manual_refinement/7` |
+| **`bt_month_t2_niccorr_from_full.RData`** → `bt_month_t2` | brand × T2 type × month (2013-01 … 2023-12, ~4.9k rows) | `units_sum`, `mL_sum`, `revenue_nom`, `revenue_real`, `nic_mg_sum`, `mL_sq_times_unit_sum`, plus cell ratios `price_per_mL`, `nic_mg_per_mL`, `avg_mL_per_ecig`, `P_hom_cell`, `N_hom_cell`, `mL_share` | `1_build_data/3` |
+| `upc_month_niccorr_from_full.RData` → `upc_month_t2` | brand × UPC × T2 type × month (~43k rows) | same sums as above, plus `upc12`, `descr`, `label_mg_per_mL`, `deliv_mg_per_mL` | `1_build_data/5` |
+| `upc_month_store_breadth.rds` | UPC × month | `n_stores`, `n_stores_month_total`, `store_share` | `1_build_data/6` |
+| `missing_mL_imputation_map.rds`, `t2_impute_cache.rds` | UPC | imputed mL and nicotine for UPCs with a missing `liq_total_f` | `1_build_data/2` |
+| `manual_nic_corrections.csv`, `label_maps.RData` | UPC / label | hand-verified nicotine corrections and label maps | by hand / `1_build_data/audit_manual_refinement/` |
+| `entry_wave_store_cache.rds` | store × month | store coverage for the 2021 entry-wave check | `1_build_data/audit_manual_refinement/7` |
 
 The canonical panel was rebuilt from the raw `full_*` files and validated cell
 by cell against the documented national `N_hom` figures (2026-08-27). The
@@ -159,9 +225,9 @@ order doesn't matter.
 | `2_upc_overrides.R` | `YIELD_FACTOR` (0.68), `MANUAL_UPC_OVERRIDES`, `MANUAL_OVERRIDES`, `EXCLUDE_UPCS` (HeatSticks, hardware), `BRAND_RENAME` |
 | `3_t2_classify.R` | `classify_t2()` — the Closed pod / Disposable / Open refill classifier |
 | `4_event_lines_t2.R` | `events`, `event_layers(ymax)` (single panel: lines + numbered markers), `event_vlines()` (faceted: lines only), `event_caption` |
-| `5_supply_model_state_fxns.R` | `build_share_roster()` (annual incumbents: mL share among identified brands > `INCUMBENT_SHARE_MIN` = 7%), `build_top5_roster()` (the earlier annual top-5 roster, kept for comparison), `build_a_it_and_fringe()` (tracked-firm `a_it` over each firm's full history, plus the pooled fringe `a_Ft`), `compute_top5_runs()`, `plot_a_it_single()`, `plot_a_it_facets()`. Used by `analysis/12`. Kept separate so the roster and `a_it` logic can run on filtered or unfiltered input unchanged |
+| `5_supply_model_state_fxns.R` | `build_share_roster()` (annual incumbents: mL share among identified brands > `INCUMBENT_SHARE_MIN` = 7%), `build_top5_roster()` (the earlier annual top-5 roster, kept for comparison), `build_a_it_and_fringe()` (tracked-firm `a_it` over each firm's full history, plus the pooled fringe `a_Ft`), `compute_top5_runs()`, `plot_a_it_single()`, `plot_a_it_facets()`. Used by `2_preliminary_analysis/12`. Kept separate so the roster and `a_it` logic can run on filtered or unfiltered input unchanged |
 
-## `build/` — raw → panels
+## `1_build_data/` — raw → panels
 
 | # | file | reads | writes |
 |---|---|---|---|
@@ -170,14 +236,14 @@ order doesn't matter.
 | 3 | `build_t2_panel_niccorr.R` | `RAW_DIR/full_*`, imputation map, `input/label_maps.RData`, `input/manual_nic_corrections.csv`, `fxns/2,3` | **`input/bt_month_t2_niccorr_from_full.RData`** (the canonical panel), impact CSVs (`niccorr_by_brand_year.csv`, `niccorr_national_old_vs_new.csv`) and `investment_proxy/top5_upc_per_year.csv` |
 | 4 | `build_cart_counts_t2.R` | same inputs as 3 | `p_and_n_decomp_t2/cart_counts_by_type_month.csv`: cartridge counts on the CDC-standardised unit (1 unit = 5 cartridges = 1 disposable = 1 bottle). Does not touch the panel |
 | 5 | `build_upc_month_niccorr.R` | `RAW_DIR/full_*`, imputation map, `fxns/2,3`, the canonical panel (for validation) | `input/upc_month_niccorr_from_full.RData`: the same row-level corrections as 3, kept at UPC level |
-| 6 | `build_upc_month_store_breadth.R` | `RAW_DIR/full_*` | `input/upc_month_store_breadth.rds`: distinct stores selling each UPC each month, as a raw count and as a share of that month's e-cig store panel. Feeds the breadth filter in `analysis/12` and `13` |
+| 6 | `build_upc_month_store_breadth.R` | `RAW_DIR/full_*` | `input/upc_month_store_breadth.rds`: distinct stores selling each UPC each month, as a raw count and as a share of that month's e-cig store panel. Feeds the breadth filter in `2_preliminary_analysis/12` and `13` |
 | 7 | `build_Mt_numerator.R` | the demand-side Nielsen Consumer Panel purchase file (**not in this repo**; set `NCP_CPS_PATH`) | `input/avg_mL_by_hh_in_ncp.RData`: mean monthly e-liquid mL per e-cig-buying household, simple and projection-weighted. This is `k_t` in the market size `M_t = k_t × US adults`. **Already supplied**; not runnable here |
-| 8 | `build_firm_month_demand_panel.R` | `build/5`, `build/6`, `build/7` outputs, `raw/ecig_taxes/ec_tax_cotti_per_mL.RData`, `raw/census_pop/sc-est20*-alldata6.csv` | `input/demand_panel_firm_month.RData`: the Stage 1 nested-logit sample. `demand_im` has one row per incumbent × month (7% rule) with price (real $/mL), `a_it`, shares, eq. 7's LHS and within-nest term, and the instruments. `demand_mkt` has one row per month with fringe and outside shares, `M_t` and its robustness variants, `TaxIV_t` (population-weighted state tax, real $/mL), active-firm counts and `a_Ft` |
+| 8 | `build_firm_month_demand_panel.R` | `1_build_data/5`, `1_build_data/6`, `1_build_data/7` outputs, `raw/ecig_taxes/ec_tax_cotti_per_mL.RData`, `raw/census_pop/sc-est20*-alldata6.csv` | `input/demand_panel_firm_month.RData`: the Stage 1 nested-logit sample. `demand_im` has one row per incumbent × month (7% rule) with price (real $/mL), `a_it`, shares, eq. 7's LHS and within-nest term, and the instruments. `demand_mkt` has one row per month with fringe and outside shares, `M_t` and its robustness variants, `TaxIV_t` (population-weighted state tax, real $/mL), active-firm counts and `a_Ft` |
 
 Steps 2–6 each read all 11 raw files and take several minutes. Step 2 only needs
 re-running when the imputation logic changes; the map it writes is committed.
 
-## `analysis/` — panels → figures and tables
+## `2_preliminary_analysis/` — panels → figures and tables
 
 Each script loads built panels and writes to `output/prelim_analysis/<dir>/`.
 They are independent of each other except where noted. The numbering follows
@@ -189,31 +255,30 @@ the historical rebuild order, not dependency.
 | 2 | `hhi_concentration_t2.R` | `p_and_n_decomp_t2/` | mL-weighted brand HHI (`hhi_over_time.png`, `hhi_monthly.csv`); annual top-5 composition bars with ★ on the leader (`concentration_by_year.png`); a monthly version re-ranked each month, labelled where the leader changes (`concentration_by_month.png`) | canonical panel |
 | 3 | `tracked_volume_t2.R` | `p_and_n_decomp_t2/` | tracked RMS unit volume by type and pooled (`tracked_units_by_type.png`, `tracked_units_pooled.png`) | canonical panel |
 | 4 | `disposable_share_vs_cdc_t2.R` | `p_and_n_decomp_t2/` | RMS disposable share of pod+disposable units against the CDC/IRI benchmark (Ali et al., MMWR 2023) | canonical panel |
-| 5 | `disposable_share_cdc_standardized.R` | `p_and_n_decomp_t2/` | the same comparison on CDC's standardised unit, to separate differences in unit definition from gaps in channel coverage | `build/4` output |
+| 5 | `disposable_share_cdc_standardized.R` | `p_and_n_decomp_t2/` | the same comparison on CDC's standardised unit, to separate differences in unit definition from gaps in channel coverage | `1_build_data/4` output |
 | 6 | `investment_proxy_t2.R` | `investment_proxy/` | for brands ever in the top 6: type mix and nicotine against market share (`typemix_by_brand.png`, `share_vs_nicotine_by_brand.png`, `ever_top6_brand_year_panel.csv`) | canonical panel |
 | 7 | `brand_nicotine_trajectories_t2.R` | `p_and_n_decomp_t2/` | corrected mg/mL and `N_hom` trajectories for every brand that appears in the annual top-5 chart | canonical panel |
-| 8 | `rebuild_corrected_requested_figures.R` | `p_and_n_decomp_t2/` | rebuilds the national-series-by-type, HHI and annual-composition figures from the corrected panel. **Overwrites some of 1's and 2's figures** (see Gotchas) | canonical panel |
 | 9 | `ecig_type_schematics.R` | `p_and_n_decomp_t2/` | labelled drawings of the three T2 form factors (not to scale) | — |
 | 10 | `ebe_diagnostics.R` | `firm_dynamics_ebe/` | firm-dynamics diagnostics for the EBE model, items 7.1/7.2/7.4/7.5 of the 08_27_2026 note: active-firm counts, first appearance, top-5 tenure, learning regressions, mL- vs UPC-weighted nicotine | canonical + UPC-month panels |
-| 11 | `entry_wave_coverage_check.R` | `firm_dynamics_ebe/` | the 09_01_2026 note: the 2021 burst of new brands comes from changes in RMS store coverage and product classification, not from real entry | `input/entry_wave_store_cache.rds` from `manual_refinement/7` |
-| 12 | `supply_model_nicotine_state.R` | `supply_model_state/` | **supply-model state variables.** Incumbents are firms with annual mL share > 7%, fixed for the year (3–6 per year). `a_it` is the UPC-unweighted mean delivered mg/mL for every firm ever an incumbent, over its full monthly history, with an `is_incumbent_that_year` flag. `a_Ft` is the pooled fringe, where fringe means everyone outside that year's incumbents. Also writes the annual roster, `roster_7pct_vs_top5.csv` (firm-years that moved when the roster switched from top-5 to 7%, 2026-09-25), breadth-filter sensitivity, `roster_diff_vs_unfiltered.csv` (the filter changes 0 roster firm-years) and two trajectory figures | `build/5`, `build/6`, `fxns/5` |
-| 13 | `national_nicotine.R` | `p_and_n_decomp_t2/` | national monthly mg/mL, mL-weighted and pooled across types, on the same subset as 12 (≥3 stores, no UNKNOWN), with the Sep 2018 FDA letters marked (`national_monthly_nicotine.png/.csv`). Within 0.25 mg/mL of the unfiltered pooled line from 1 | `build/5`, `build/6` |
+| 11 | `entry_wave_coverage_check.R` | `firm_dynamics_ebe/` | the 09_01_2026 note: the 2021 burst of new brands comes from changes in RMS store coverage and product classification, not from real entry | `input/entry_wave_store_cache.rds` from `1_build_data/audit_manual_refinement/7` |
+| 12 | `supply_model_nicotine_state.R` | `supply_model_state/` | **supply-model state variables.** Incumbents are firms with annual mL share > 7%, fixed for the year (3–6 per year). `a_it` is the UPC-unweighted mean delivered mg/mL for every firm ever an incumbent, over its full monthly history, with an `is_incumbent_that_year` flag. `a_Ft` is the pooled fringe, where fringe means everyone outside that year's incumbents. Also writes the annual roster, `roster_7pct_vs_top5.csv` (firm-years that moved when the roster switched from top-5 to 7%, 2026-09-25), breadth-filter sensitivity, `roster_diff_vs_unfiltered.csv` (the filter changes 0 roster firm-years) and two trajectory figures | `1_build_data/5`, `1_build_data/6`, `fxns/5` |
+| 13 | `national_nicotine.R` | `p_and_n_decomp_t2/` | national monthly mg/mL, mL-weighted and pooled across types, on the same subset as 12 (≥3 stores, no UNKNOWN), with the Sep 2018 FDA letters marked (`national_monthly_nicotine.png/.csv`). Within 0.25 mg/mL of the unfiltered pooled line from 1 | `1_build_data/5`, `1_build_data/6` |
 
-## `manual_refinement/` — one-off audits (provenance, not re-run)
+## `1_build_data/audit_manual_refinement/` — one-off audits (provenance, not re-run)
 
 `1`–`6` are the VUSE / cartridge-scaling nicotine investigation. Their
 conclusions are already built into `input/manual_nic_corrections.csv`,
 `input/missing_mL_imputation_map.rds` and `fxns/2_upc_overrides.R`, so the live
 pipeline does not depend on them. `7` is the raw store-coverage pass for the
 2021 entry-wave check. It writes `input/entry_wave_store_cache.rds` for
-`analysis/11`.
+`2_preliminary_analysis/11`.
 
 | # | file | purpose |
 |---|---|---|
 | 1 | `nic_cartscale_fix.R` | first diagnosis of the cartridge-scaling bug |
-| 2 | `upc_audit.R` | top-UPC audit (see Gotchas: shares an output file with `build/3`) |
+| 2 | `upc_audit.R` | top-UPC audit (see Gotchas: shares an output file with `1_build_data/3`) |
 | 3–6 | `vuse_upc_check.R`, `vuse_nic_recompute.R`, `vuse_nic_corrected.R`, `vuse_nic_sanity.R` | VUSE label and liquid corrections (Ciro 0.9 / Vibe 2.0 / Solo 0.5 mL) |
-| 7 | `entry_wave_store_pass.R` | store-coverage cache for `analysis/11` |
+| 7 | `entry_wave_store_pass.R` | store-coverage cache for `2_preliminary_analysis/11` |
 
 ## `archive/` — superseded
 
@@ -223,7 +288,7 @@ only. Don't build on them.
 `1_build_t2_panel.R` (builds the "do-not-use, has incorrect nic" panel),
 `2_decompose_p_and_n.R`, `3_decompose_p_and_n_t2.R`.
 
-## `code_from_demand_side/` — reference
+## `2_preliminary_analysis/audit_demand_side/` — reference
 
 Demand-side cleaning and figure scripts carried over from the companion paper.
 Not part of this pipeline.
@@ -232,32 +297,27 @@ Not part of this pipeline.
 
 Start from the raw `full_*` files already in `RAW_DIR`:
 
-1. `build/2`, only if the imputation logic changed. The committed map is
+1. `1_build_data/2`, only if the imputation logic changed. The committed map is
    otherwise enough.
-2. `build/3`: the canonical panel. **Back up the existing one first.**
-3. `build/4`, `build/5`, `build/6`, in any order.
-4. `analysis/1`–`13`. Run `8` before `2` if you want 2's ★ composition chart
+2. `1_build_data/3`: the canonical panel. **Back up the existing one first.**
+3. `1_build_data/4`, `1_build_data/5`, `1_build_data/6`, in any order.
+4. `2_preliminary_analysis/1`–`13`. Run `8` before `2` if you want 2's ★ composition chart
    to survive (see Gotchas).
 5. Only if the audit format of `investment_proxy/top5_upc_per_year.csv` is
-   needed: `manual_refinement/2` after `build/3`.
+   needed: `1_build_data/audit_manual_refinement/2` after `1_build_data/3`.
 
 ## Gotchas
 
 - **Raw-file location.** `RAW_DIR` points to `smoke_firm_dir/raw/cleaned_RMS/`.
   An earlier layout kept the `full_*` files in repo-root `input/`. If a build
   script can't find them, check which location they are actually in.
-- **`top5_upc_per_year.csv` has two writers.** `build/3` and
-  `manual_refinement/2_upc_audit.R` both write
+- **`top5_upc_per_year.csv` has two writers.** `1_build_data/3` and
+  `1_build_data/audit_manual_refinement/2_upc_audit.R` both write
   `investment_proxy/top5_upc_per_year.csv`, with different, incompatible
   schemas. Whichever runs last wins.
-- **`analysis/8` overwrites `analysis/1` and `2`.** It rewrites
-  `national_monthly_series_by_type*.png`, `hhi_over_time.png` and
-  `concentration_by_year.png`. Its composition chart still puts the ★ inside
-  the text label (the older approach that `analysis/2` replaced), so run 2
-  after 8 to keep 2's version.
 - **ggplot2 is 3.4.0 locally.** Don't rely on `scale_linewidth_manual()`. When
   every series uses the same width, set a fixed `linewidth` in `geom_line()`
-  instead of mapping it in `aes()`. `analysis/8` still uses the mapped form.
+  instead of mapping it in `aes()`.
 - **PNG writes on Windows.** `ggsave` fails with "agg could not write to the
   given file" if the PNG is open in a viewer. Close it and re-run.
 - **RMS is not the whole national market.** Kilts RMS covers few convenience
@@ -266,3 +326,15 @@ Start from the raw `full_*` files already in `RAW_DIR`:
   Nielsen Convenience Track + All Outlets Combined. The RMS e-cig store panel
   also swings from about 12k to 29k stores over the sample. See
   `output/personal_notes/09_24_2026_rms_coverage_and_incumbent_threshold_note_ai.md`.
+
+## External prerequisites for builders 1 and 7
+
+Both scripts are retained. Their opening comments now list exact file locations,
+required objects/columns and output destinations. Builder 1 expects the SCC
+`smoke_demand/input/RMS/1_initial/` annual extracts, the tax file under
+`input/prod_attr/taxes/`, and the 2023-base CPI file under `input/Misc/`.
+Builder 7 expects `input/NCP/cps_2013-2023.RData` relative to the repository root,
+or an explicitly edited `NCP_CPS_PATH`. Neither is automatically run by the master.
+
+
+Product characteristics: build script `1_build_data/10_build_product_size.R` produces reusable UPC-month sizes and firm-month unweighted averages. Run only this step with `Rscript --vanilla smoke_firm_dir/code/0_master.R --stage=characteristics --run`. See `3_demand_estimation/README.md` for definitions, coverage rules and output paths.

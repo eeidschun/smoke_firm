@@ -1,0 +1,17 @@
+tax,count,outcome,test,F,p,df1,df2,n
+TaxIV,n_brands_3st,p_it,count_incremental,33.8348687050156,4.35540086394775e-08,1,131,540
+TaxIV,n_brands_3st,p_it,excluded_joint,63.6468716620062,4.87315595344448e-20,2,131,540
+TaxIV,n_brands_3st,ln_s_i_g,count_incremental,80.1844548366816,2.90730965057173e-15,1,131,540
+TaxIV,n_brands_3st,ln_s_i_g,excluded_joint,41.9757862677711,8.18387182932928e-15,2,131,540
+TaxIV,n_brands_overlap,p_it,count_incremental,33.5071522359878,4.97980581207719e-08,1,131,540
+TaxIV,n_brands_overlap,p_it,excluded_joint,63.5893936568226,5.01733860328559e-20,2,131,540
+TaxIV,n_brands_overlap,ln_s_i_g,count_incremental,49.4392714091011,1.01607470136891e-10,1,131,540
+TaxIV,n_brands_overlap,ln_s_i_g,excluded_joint,25.6697751249547,3.92258419626358e-10,2,131,540
+TaxIV_geo,n_brands_3st,p_it,count_incremental,34.2606874733518,3.6611741518025e-08,1,131,540
+TaxIV_geo,n_brands_3st,p_it,excluded_joint,62.9344623168322,7.00103404230082e-20,2,131,540
+TaxIV_geo,n_brands_3st,ln_s_i_g,count_incremental,102.723582464823,3.53325734778203e-18,1,131,540
+TaxIV_geo,n_brands_3st,ln_s_i_g,excluded_joint,54.9987981794799,4.56496330154721e-18,2,131,540
+TaxIV_geo,n_brands_overlap,p_it,count_incremental,33.6293859159446,4.73691109764469e-08,1,131,540
+TaxIV_geo,n_brands_overlap,p_it,excluded_joint,63.1087079380367,6.40612750416539e-20,2,131,540
+TaxIV_geo,n_brands_overlap,ln_s_i_g,count_incremental,72.1796385375154,3.7721292013506e-14,1,131,540
+TaxIV_geo,n_brands_overlap,ln_s_i_g,excluded_joint,39.1689907749861,4.63152215722886e-14,2,131,540

@@ -1,0 +1,13 @@
+id,group,estimator,firm_FE,count,endogenous,excluded_IVs
+M1,Main,Full IV,FALSE,n_brands_3st,"p_it, ln_s_i_g","TaxIV_geo, n_brands_3st"
+M2,Main,Full IV,FALSE,n_brands_overlap,"p_it, ln_s_i_g","TaxIV_geo, n_brands_overlap"
+M3,Main,Full IV,TRUE,n_brands_3st,"p_it, ln_s_i_g","TaxIV_geo, n_brands_3st"
+M4,Main,Full IV,TRUE,n_brands_overlap,"p_it, ln_s_i_g","TaxIV_geo, n_brands_overlap"
+M5,Main,OLS,FALSE,,None,None
+M6,Main,OLS,TRUE,,None,None
+D1,Partial IV,Share-only IV,FALSE,n_brands_3st,ln_s_i_g,n_brands_3st
+D2,Partial IV,Share-only IV,FALSE,n_brands_overlap,ln_s_i_g,n_brands_overlap
+D3,Partial IV,Share-only IV,TRUE,n_brands_3st,ln_s_i_g,n_brands_3st
+D4,Partial IV,Share-only IV,TRUE,n_brands_overlap,ln_s_i_g,n_brands_overlap
+D5,Partial IV,Price-only IV,FALSE,,p_it,TaxIV_geo
+D6,Partial IV,Price-only IV,TRUE,,p_it,TaxIV_geo

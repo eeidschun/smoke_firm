@@ -1,8 +1,8 @@
 ## ============================================================================
 ## Shared construction + plotting functions for the a_it / fringe /
-## incumbent roster pipeline, used by analysis/12. Factored out so the same
+## incumbent roster pipeline, used by 2_preliminary_analysis/12. Factored out so the same
 ## logic runs on both the store-breadth-filtered and unfiltered UPC-month
-## panels (analysis/12 builds the unfiltered roster only for comparison),
+## panels (2_preliminary_analysis/12 builds the unfiltered roster only for comparison),
 ## instead of risking drift between two hand-copied versions.
 ##
 ## Input contract: `um`, a UPC-month table already collapsed to one row per
