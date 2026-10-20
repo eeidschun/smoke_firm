@@ -1,0 +1,6 @@
+Diagnostic: outside share fixed at the specified level in every month; liquid quantities and within-nest shares held fixed.
+Market size is Q_t/(1-s0). The three original market-size labels duplicate the same forced outcome.
+This forces y=ln_s_i_g+log((1-s0)/s0), so sigma=1 and all other slopes=0 algebraically (intercept/firm FE absorb the constant).
+Near-zero residuals and standard errors reflect the identity, not empirical precision. This cannot test a monotonic economic response of sigma to outside share.
+To preserve monthly variation, a separate exercise could rescale an existing M_t to a specified mean outside share, rather than fix every month's outside share.
+No Markdown files or canonical inputs were modified.

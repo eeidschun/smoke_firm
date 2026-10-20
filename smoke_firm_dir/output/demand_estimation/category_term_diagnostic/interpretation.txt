@@ -1,0 +1,8 @@
+Category-term diagnostic. Original 48 models and the 48 outside-share 0.5-1.5% models.
+c_t=log((1-s0_t)/s0_t); y_it=ln_s_i_g+c_t. Four regressions per design: price, within-nest log share, category term, demand outcome on identical instruments/controls/FE.
+528 firm-month observations, 132 month clusters; original UPC-unweighted price and exogenous current quality. No month FE. Each first stage/regression is conditional on the specified controls and firm FE, not a raw monthly correlation.
+Two excluded IVs and two endogenous regressors: rho_category = alpha*pi_price + (sigma-1)*pi_share exactly. Exported inverse-matrix weights show each IV's algebraic contribution to sigma-1, not causal attribution or an independent instrument-validity test.
+The category term is common across firms in a month. Firm-month regressions weight months by their observed number of incumbent rows and retain firm controls/FE to match demand estimation; they are not equally weighted regressions of 132 monthly observations.
+Positive/negative reduced-form signs are conditional associations. A demand-relevant instrument can legitimately predict category demand via price; the diagnostic alone cannot distinguish that channel from exclusion violations or misspecified outside shares.
+All auxiliary slopes pass explicit-dummy QR checks. Reconstructed alpha/sigma match saved original/tiny-outside fits. Reduced-form outcome=share+category identity and unchanged source hashes verified. No Markdown changes.
+Reproduce: Rscript --vanilla smoke_firm_dir/code/3_demand_estimation/20_category_term_diagnostic.R

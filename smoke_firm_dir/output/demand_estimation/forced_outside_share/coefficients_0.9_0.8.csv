@@ -1,0 +1,433 @@
+id,original_id,base_id,original_market,forced_outside_share,group,firm_FE,count,term,estimate,std_error,n,months
+0.9_annual_B1,annual_B1,B1,annual,0.9,Baseline,FALSE,n_brands_3st,(Intercept),-2.1972245773357,1.64465881834975e-13,528,132
+0.9_annual_B1,annual_B1,B1,annual,0.9,Baseline,FALSE,n_brands_3st,fit_p_it,-8.88178419700125e-15,7.27648413335887e-15,528,132
+0.9_annual_B1,annual_B1,B1,annual,0.9,Baseline,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000026,6.68441438312171e-14,528,132
+0.9_annual_B1,annual_B1,B1,annual,0.9,Baseline,FALSE,n_brands_3st,a_it,-5.32907051820075e-15,2.02547197529652e-15,528,132
+0.9_annual_B2,annual_B2,B2,annual,0.9,Baseline,FALSE,n_brands_overlap,(Intercept),-2.1972245773369,1.22305742028978e-12,528,132
+0.9_annual_B2,annual_B2,B2,annual,0.9,Baseline,FALSE,n_brands_overlap,fit_p_it,7.105427357601e-15,4.9035326376549e-14,528,132
+0.9_annual_B2,annual_B2,B2,annual,0.9,Baseline,FALSE,n_brands_overlap,fit_ln_s_i_g,0.999999999999375,5.53748483789356e-13,528,132
+0.9_annual_B2,annual_B2,B2,annual,0.9,Baseline,FALSE,n_brands_overlap,a_it,1.4210854715202e-14,1.90730177492848e-14,528,132
+0.9_annual_B3,annual_B3,B3,annual,0.9,Baseline,TRUE,n_brands_3st,fit_p_it,5.27355936696949e-16,9.94074799648873e-17,528,132
+0.9_annual_B3,annual_B3,B3,annual,0.9,Baseline,TRUE,n_brands_3st,fit_ln_s_i_g,1,3.03836465997082e-16,528,132
+0.9_annual_B3,annual_B3,B3,annual,0.9,Baseline,TRUE,n_brands_3st,a_it,-3.81639164714898e-17,1.42589068440712e-17,528,132
+0.9_annual_B4,annual_B4,B4,annual,0.9,Baseline,TRUE,n_brands_overlap,fit_p_it,1.17961196366423e-16,7.35053436000615e-17,528,132
+0.9_annual_B4,annual_B4,B4,annual,0.9,Baseline,TRUE,n_brands_overlap,fit_ln_s_i_g,1,3.258699138582e-16,528,132
+0.9_annual_B4,annual_B4,B4,annual,0.9,Baseline,TRUE,n_brands_overlap,a_it,6.93889390390723e-18,1.07567710326239e-17,528,132
+0.9_annual_S1,annual_S1,S1,annual,0.9,Size,FALSE,n_brands_3st,(Intercept),-2.19722457733751,7.16788794217063e-13,528,132
+0.9_annual_S1,annual_S1,S1,annual,0.9,Size,FALSE,n_brands_3st,fit_p_it,7.105427357601e-15,4.45224554202782e-14,528,132
+0.9_annual_S1,annual_S1,S1,annual,0.9,Size,FALSE,n_brands_3st,fit_ln_s_i_g,0.999999999999616,3.73328669573804e-13,528,132
+0.9_annual_S1,annual_S1,S1,annual,0.9,Size,FALSE,n_brands_3st,a_it,1.02140518265514e-14,9.66789142932032e-15,528,132
+0.9_annual_S1,annual_S1,S1,annual,0.9,Size,FALSE,n_brands_3st,avg_ml_per_ecig,-1.4210854715202e-14,9.16198984019566e-14,528,132
+0.9_annual_S2,annual_S2,S2,annual,0.9,Size,FALSE,n_brands_overlap,(Intercept),-2.19722457733884,1.05882624968411e-12,528,132
+0.9_annual_S2,annual_S2,S2,annual,0.9,Size,FALSE,n_brands_overlap,fit_p_it,-4.9737991503207e-14,5.57396137067112e-14,528,132
+0.9_annual_S2,annual_S2,S2,annual,0.9,Size,FALSE,n_brands_overlap,fit_ln_s_i_g,0.99999999999855,4.16394291814394e-13,528,132
+0.9_annual_S2,annual_S2,S2,annual,0.9,Size,FALSE,n_brands_overlap,a_it,3.50830475781549e-14,9.8622551834501e-15,528,132
+0.9_annual_S2,annual_S2,S2,annual,0.9,Size,FALSE,n_brands_overlap,avg_ml_per_ecig,-2.27373675443232e-13,1.10035379568832e-13,528,132
+0.9_annual_S3,annual_S3,S3,annual,0.9,Size,TRUE,n_brands_3st,fit_p_it,2.70616862252382e-16,9.20454864319434e-17,528,132
+0.9_annual_S3,annual_S3,S3,annual,0.9,Size,TRUE,n_brands_3st,fit_ln_s_i_g,1,2.48298621137268e-16,528,132
+0.9_annual_S3,annual_S3,S3,annual,0.9,Size,TRUE,n_brands_3st,a_it,1.82145964977565e-17,2.20109403189766e-17,528,132
+0.9_annual_S3,annual_S3,S3,annual,0.9,Size,TRUE,n_brands_3st,avg_ml_per_ecig,3.19189119579733e-16,1.68920320915489e-16,528,132
+0.9_annual_S4,annual_S4,S4,annual,0.9,Size,TRUE,n_brands_overlap,fit_p_it,0,6.6139901918168e-17,528,132
+0.9_annual_S4,annual_S4,S4,annual,0.9,Size,TRUE,n_brands_overlap,fit_ln_s_i_g,1,2.51219582868228e-16,528,132
+0.9_annual_S4,annual_S4,S4,annual,0.9,Size,TRUE,n_brands_overlap,a_it,2.60208521396521e-18,1.96539147277306e-17,528,132
+0.9_annual_S4,annual_S4,S4,annual,0.9,Size,TRUE,n_brands_overlap,avg_ml_per_ecig,5.55111512312578e-17,1.28543606831925e-16,528,132
+0.9_annual_V1,annual_V1,V1,annual,0.9,Variety,FALSE,n_brands_3st,(Intercept),-2.19722457733587,9.92368497666061e-12,528,132
+0.9_annual_V1,annual_V1,V1,annual,0.9,Variety,FALSE,n_brands_3st,fit_p_it,-2.8421709430404e-14,2.65557968160784e-13,528,132
+0.9_annual_V1,annual_V1,V1,annual,0.9,Variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000091,2.83949852201556e-12,528,132
+0.9_annual_V1,annual_V1,V1,annual,0.9,Variety,FALSE,n_brands_3st,a_it,-2.66453525910038e-14,8.01029329569567e-14,528,132
+0.9_annual_V1,annual_V1,V1,annual,0.9,Variety,FALSE,n_brands_3st,log_upc_variety,-2.8421709430404e-13,9.56384026264739e-13,528,132
+0.9_annual_V2,annual_V2,V2,annual,0.9,Variety,FALSE,n_brands_overlap,(Intercept),-2.19722457734269,2.55754367709977e-12,528,132
+0.9_annual_V2,annual_V2,V2,annual,0.9,Variety,FALSE,n_brands_overlap,fit_p_it,1.70530256582424e-13,7.56076480952891e-14,528,132
+0.9_annual_V2,annual_V2,V2,annual,0.9,Variety,FALSE,n_brands_overlap,fit_ln_s_i_g,0.999999999998067,6.87309271023732e-13,528,132
+0.9_annual_V2,annual_V2,V2,annual,0.9,Variety,FALSE,n_brands_overlap,a_it,3.5527136788005e-14,1.73981249998466e-14,528,132
+0.9_annual_V2,annual_V2,V2,annual,0.9,Variety,FALSE,n_brands_overlap,log_upc_variety,6.25277607468888e-13,2.4568445273971e-13,528,132
+0.9_annual_V3,annual_V3,V3,annual,0.9,Variety,TRUE,n_brands_3st,fit_p_it,6.24500451351651e-17,1.08586594018392e-16,528,132
+0.9_annual_V3,annual_V3,V3,annual,0.9,Variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.65294310775013e-16,528,132
+0.9_annual_V3,annual_V3,V3,annual,0.9,Variety,TRUE,n_brands_3st,a_it,-7.02563007770607e-17,2.05210199946853e-17,528,132
+0.9_annual_V3,annual_V3,V3,annual,0.9,Variety,TRUE,n_brands_3st,log_upc_variety,-7.21644966006352e-16,2.37682157565667e-16,528,132
+0.9_annual_V4,annual_V4,V4,annual,0.9,Variety,TRUE,n_brands_overlap,fit_p_it,2.22044604925031e-16,7.87653105821595e-17,528,132
+0.9_annual_V4,annual_V4,V4,annual,0.9,Variety,TRUE,n_brands_overlap,fit_ln_s_i_g,1,3.60524883250896e-16,528,132
+0.9_annual_V4,annual_V4,V4,annual,0.9,Variety,TRUE,n_brands_overlap,a_it,-4.85722573273506e-17,1.51123805578664e-17,528,132
+0.9_annual_V4,annual_V4,V4,annual,0.9,Variety,TRUE,n_brands_overlap,log_upc_variety,-4.44089209850063e-16,1.47718237320503e-16,528,132
+0.9_annual_SV1,annual_SV1,SV1,annual,0.9,Size and variety,FALSE,n_brands_3st,(Intercept),-2.1972245773286,1.28312554343775e-11,528,132
+0.9_annual_SV1,annual_SV1,SV1,annual,0.9,Size and variety,FALSE,n_brands_3st,fit_p_it,-3.5527136788005e-14,3.30197860706078e-13,528,132
+0.9_annual_SV1,annual_SV1,SV1,annual,0.9,Size and variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000136,3.94827147014427e-12,528,132
+0.9_annual_SV1,annual_SV1,SV1,annual,0.9,Size and variety,FALSE,n_brands_3st,a_it,-2.8421709430404e-14,9.33890356596499e-14,528,132
+0.9_annual_SV1,annual_SV1,SV1,annual,0.9,Size and variety,FALSE,n_brands_3st,avg_ml_per_ecig,1.56319401867222e-13,6.71742828044848e-13,528,132
+0.9_annual_SV1,annual_SV1,SV1,annual,0.9,Size and variety,FALSE,n_brands_3st,log_upc_variety,-4.54747350886464e-13,1.32372376511565e-12,528,132
+0.9_annual_SV2,annual_SV2,SV2,annual,0.9,Size and variety,FALSE,n_brands_overlap,(Intercept),-2.1972245773386,2.79867434853818e-12,528,132
+0.9_annual_SV2,annual_SV2,SV2,annual,0.9,Size and variety,FALSE,n_brands_overlap,fit_p_it,4.2632564145606e-14,7.1723761805653e-14,528,132
+0.9_annual_SV2,annual_SV2,SV2,annual,0.9,Size and variety,FALSE,n_brands_overlap,fit_ln_s_i_g,0.999999999999318,8.36684014560226e-13,528,132
+0.9_annual_SV2,annual_SV2,SV2,annual,0.9,Size and variety,FALSE,n_brands_overlap,a_it,2.1316282072803e-14,1.82412083957393e-14,528,132
+0.9_annual_SV2,annual_SV2,SV2,annual,0.9,Size and variety,FALSE,n_brands_overlap,avg_ml_per_ecig,-5.6843418860808e-14,1.32129881768261e-13,528,132
+0.9_annual_SV2,annual_SV2,SV2,annual,0.9,Size and variety,FALSE,n_brands_overlap,log_upc_variety,0,2.76456501246275e-13,528,132
+0.9_annual_SV3,annual_SV3,SV3,annual,0.9,Size and variety,TRUE,n_brands_3st,fit_p_it,2.15105711021124e-16,1.45091404337379e-16,528,132
+0.9_annual_SV3,annual_SV3,SV3,annual,0.9,Size and variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.2405029961654e-16,528,132
+0.9_annual_SV3,annual_SV3,SV3,annual,0.9,Size and variety,TRUE,n_brands_3st,a_it,-6.07153216591883e-17,3.75607981691167e-17,528,132
+0.9_annual_SV3,annual_SV3,SV3,annual,0.9,Size and variety,TRUE,n_brands_3st,avg_ml_per_ecig,-1.04083408558608e-17,2.50796500228142e-16,528,132
+0.9_annual_SV3,annual_SV3,SV3,annual,0.9,Size and variety,TRUE,n_brands_3st,log_upc_variety,-7.7715611723761e-16,2.36503954790715e-16,528,132
+0.9_annual_SV4,annual_SV4,SV4,annual,0.9,Size and variety,TRUE,n_brands_overlap,fit_p_it,3.46944695195361e-16,1.05779379954234e-16,528,132
+0.9_annual_SV4,annual_SV4,SV4,annual,0.9,Size and variety,TRUE,n_brands_overlap,fit_ln_s_i_g,0.999999999999999,3.72888142789638e-16,528,132
+0.9_annual_SV4,annual_SV4,SV4,annual,0.9,Size and variety,TRUE,n_brands_overlap,a_it,3.29597460435593e-17,1.91895585290011e-17,528,132
+0.9_annual_SV4,annual_SV4,SV4,annual,0.9,Size and variety,TRUE,n_brands_overlap,avg_ml_per_ecig,3.78169717762944e-16,1.64655676443185e-16,528,132
+0.9_annual_SV4,annual_SV4,SV4,annual,0.9,Size and variety,TRUE,n_brands_overlap,log_upc_variety,5.55111512312578e-17,1.4192295191041e-16,528,132
+0.9_monthly_B1,monthly_B1,B1,monthly,0.9,Baseline,FALSE,n_brands_3st,(Intercept),-2.1972245773357,1.64465881834975e-13,528,132
+0.9_monthly_B1,monthly_B1,B1,monthly,0.9,Baseline,FALSE,n_brands_3st,fit_p_it,-8.88178419700125e-15,7.27648413335887e-15,528,132
+0.9_monthly_B1,monthly_B1,B1,monthly,0.9,Baseline,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000026,6.68441438312171e-14,528,132
+0.9_monthly_B1,monthly_B1,B1,monthly,0.9,Baseline,FALSE,n_brands_3st,a_it,-5.32907051820075e-15,2.02547197529652e-15,528,132
+0.9_monthly_B2,monthly_B2,B2,monthly,0.9,Baseline,FALSE,n_brands_overlap,(Intercept),-2.1972245773369,1.22305742028978e-12,528,132
+0.9_monthly_B2,monthly_B2,B2,monthly,0.9,Baseline,FALSE,n_brands_overlap,fit_p_it,7.105427357601e-15,4.9035326376549e-14,528,132
+0.9_monthly_B2,monthly_B2,B2,monthly,0.9,Baseline,FALSE,n_brands_overlap,fit_ln_s_i_g,0.999999999999375,5.53748483789356e-13,528,132
+0.9_monthly_B2,monthly_B2,B2,monthly,0.9,Baseline,FALSE,n_brands_overlap,a_it,1.4210854715202e-14,1.90730177492848e-14,528,132
+0.9_monthly_B3,monthly_B3,B3,monthly,0.9,Baseline,TRUE,n_brands_3st,fit_p_it,5.27355936696949e-16,9.94074799648873e-17,528,132
+0.9_monthly_B3,monthly_B3,B3,monthly,0.9,Baseline,TRUE,n_brands_3st,fit_ln_s_i_g,1,3.03836465997082e-16,528,132
+0.9_monthly_B3,monthly_B3,B3,monthly,0.9,Baseline,TRUE,n_brands_3st,a_it,-3.81639164714898e-17,1.42589068440712e-17,528,132
+0.9_monthly_B4,monthly_B4,B4,monthly,0.9,Baseline,TRUE,n_brands_overlap,fit_p_it,1.17961196366423e-16,7.35053436000615e-17,528,132
+0.9_monthly_B4,monthly_B4,B4,monthly,0.9,Baseline,TRUE,n_brands_overlap,fit_ln_s_i_g,1,3.258699138582e-16,528,132
+0.9_monthly_B4,monthly_B4,B4,monthly,0.9,Baseline,TRUE,n_brands_overlap,a_it,6.93889390390723e-18,1.07567710326239e-17,528,132
+0.9_monthly_S1,monthly_S1,S1,monthly,0.9,Size,FALSE,n_brands_3st,(Intercept),-2.19722457733751,7.16788794217063e-13,528,132
+0.9_monthly_S1,monthly_S1,S1,monthly,0.9,Size,FALSE,n_brands_3st,fit_p_it,7.105427357601e-15,4.45224554202782e-14,528,132
+0.9_monthly_S1,monthly_S1,S1,monthly,0.9,Size,FALSE,n_brands_3st,fit_ln_s_i_g,0.999999999999616,3.73328669573804e-13,528,132
+0.9_monthly_S1,monthly_S1,S1,monthly,0.9,Size,FALSE,n_brands_3st,a_it,1.02140518265514e-14,9.66789142932032e-15,528,132
+0.9_monthly_S1,monthly_S1,S1,monthly,0.9,Size,FALSE,n_brands_3st,avg_ml_per_ecig,-1.4210854715202e-14,9.16198984019566e-14,528,132
+0.9_monthly_S2,monthly_S2,S2,monthly,0.9,Size,FALSE,n_brands_overlap,(Intercept),-2.19722457733884,1.05882624968411e-12,528,132
+0.9_monthly_S2,monthly_S2,S2,monthly,0.9,Size,FALSE,n_brands_overlap,fit_p_it,-4.9737991503207e-14,5.57396137067112e-14,528,132
+0.9_monthly_S2,monthly_S2,S2,monthly,0.9,Size,FALSE,n_brands_overlap,fit_ln_s_i_g,0.99999999999855,4.16394291814394e-13,528,132
+0.9_monthly_S2,monthly_S2,S2,monthly,0.9,Size,FALSE,n_brands_overlap,a_it,3.50830475781549e-14,9.8622551834501e-15,528,132
+0.9_monthly_S2,monthly_S2,S2,monthly,0.9,Size,FALSE,n_brands_overlap,avg_ml_per_ecig,-2.27373675443232e-13,1.10035379568832e-13,528,132
+0.9_monthly_S3,monthly_S3,S3,monthly,0.9,Size,TRUE,n_brands_3st,fit_p_it,2.70616862252382e-16,9.20454864319434e-17,528,132
+0.9_monthly_S3,monthly_S3,S3,monthly,0.9,Size,TRUE,n_brands_3st,fit_ln_s_i_g,1,2.48298621137268e-16,528,132
+0.9_monthly_S3,monthly_S3,S3,monthly,0.9,Size,TRUE,n_brands_3st,a_it,1.82145964977565e-17,2.20109403189766e-17,528,132
+0.9_monthly_S3,monthly_S3,S3,monthly,0.9,Size,TRUE,n_brands_3st,avg_ml_per_ecig,3.19189119579733e-16,1.68920320915489e-16,528,132
+0.9_monthly_S4,monthly_S4,S4,monthly,0.9,Size,TRUE,n_brands_overlap,fit_p_it,0,6.6139901918168e-17,528,132
+0.9_monthly_S4,monthly_S4,S4,monthly,0.9,Size,TRUE,n_brands_overlap,fit_ln_s_i_g,1,2.51219582868228e-16,528,132
+0.9_monthly_S4,monthly_S4,S4,monthly,0.9,Size,TRUE,n_brands_overlap,a_it,2.60208521396521e-18,1.96539147277306e-17,528,132
+0.9_monthly_S4,monthly_S4,S4,monthly,0.9,Size,TRUE,n_brands_overlap,avg_ml_per_ecig,5.55111512312578e-17,1.28543606831925e-16,528,132
+0.9_monthly_V1,monthly_V1,V1,monthly,0.9,Variety,FALSE,n_brands_3st,(Intercept),-2.19722457733587,9.92368497666061e-12,528,132
+0.9_monthly_V1,monthly_V1,V1,monthly,0.9,Variety,FALSE,n_brands_3st,fit_p_it,-2.8421709430404e-14,2.65557968160784e-13,528,132
+0.9_monthly_V1,monthly_V1,V1,monthly,0.9,Variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000091,2.83949852201556e-12,528,132
+0.9_monthly_V1,monthly_V1,V1,monthly,0.9,Variety,FALSE,n_brands_3st,a_it,-2.66453525910038e-14,8.01029329569567e-14,528,132
+0.9_monthly_V1,monthly_V1,V1,monthly,0.9,Variety,FALSE,n_brands_3st,log_upc_variety,-2.8421709430404e-13,9.56384026264739e-13,528,132
+0.9_monthly_V2,monthly_V2,V2,monthly,0.9,Variety,FALSE,n_brands_overlap,(Intercept),-2.19722457734269,2.55754367709977e-12,528,132
+0.9_monthly_V2,monthly_V2,V2,monthly,0.9,Variety,FALSE,n_brands_overlap,fit_p_it,1.70530256582424e-13,7.56076480952891e-14,528,132
+0.9_monthly_V2,monthly_V2,V2,monthly,0.9,Variety,FALSE,n_brands_overlap,fit_ln_s_i_g,0.999999999998067,6.87309271023732e-13,528,132
+0.9_monthly_V2,monthly_V2,V2,monthly,0.9,Variety,FALSE,n_brands_overlap,a_it,3.5527136788005e-14,1.73981249998466e-14,528,132
+0.9_monthly_V2,monthly_V2,V2,monthly,0.9,Variety,FALSE,n_brands_overlap,log_upc_variety,6.25277607468888e-13,2.4568445273971e-13,528,132
+0.9_monthly_V3,monthly_V3,V3,monthly,0.9,Variety,TRUE,n_brands_3st,fit_p_it,6.24500451351651e-17,1.08586594018392e-16,528,132
+0.9_monthly_V3,monthly_V3,V3,monthly,0.9,Variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.65294310775013e-16,528,132
+0.9_monthly_V3,monthly_V3,V3,monthly,0.9,Variety,TRUE,n_brands_3st,a_it,-7.02563007770607e-17,2.05210199946853e-17,528,132
+0.9_monthly_V3,monthly_V3,V3,monthly,0.9,Variety,TRUE,n_brands_3st,log_upc_variety,-7.21644966006352e-16,2.37682157565667e-16,528,132
+0.9_monthly_V4,monthly_V4,V4,monthly,0.9,Variety,TRUE,n_brands_overlap,fit_p_it,2.22044604925031e-16,7.87653105821595e-17,528,132
+0.9_monthly_V4,monthly_V4,V4,monthly,0.9,Variety,TRUE,n_brands_overlap,fit_ln_s_i_g,1,3.60524883250896e-16,528,132
+0.9_monthly_V4,monthly_V4,V4,monthly,0.9,Variety,TRUE,n_brands_overlap,a_it,-4.85722573273506e-17,1.51123805578664e-17,528,132
+0.9_monthly_V4,monthly_V4,V4,monthly,0.9,Variety,TRUE,n_brands_overlap,log_upc_variety,-4.44089209850063e-16,1.47718237320503e-16,528,132
+0.9_monthly_SV1,monthly_SV1,SV1,monthly,0.9,Size and variety,FALSE,n_brands_3st,(Intercept),-2.1972245773286,1.28312554343775e-11,528,132
+0.9_monthly_SV1,monthly_SV1,SV1,monthly,0.9,Size and variety,FALSE,n_brands_3st,fit_p_it,-3.5527136788005e-14,3.30197860706078e-13,528,132
+0.9_monthly_SV1,monthly_SV1,SV1,monthly,0.9,Size and variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000136,3.94827147014427e-12,528,132
+0.9_monthly_SV1,monthly_SV1,SV1,monthly,0.9,Size and variety,FALSE,n_brands_3st,a_it,-2.8421709430404e-14,9.33890356596499e-14,528,132
+0.9_monthly_SV1,monthly_SV1,SV1,monthly,0.9,Size and variety,FALSE,n_brands_3st,avg_ml_per_ecig,1.56319401867222e-13,6.71742828044848e-13,528,132
+0.9_monthly_SV1,monthly_SV1,SV1,monthly,0.9,Size and variety,FALSE,n_brands_3st,log_upc_variety,-4.54747350886464e-13,1.32372376511565e-12,528,132
+0.9_monthly_SV2,monthly_SV2,SV2,monthly,0.9,Size and variety,FALSE,n_brands_overlap,(Intercept),-2.1972245773386,2.79867434853818e-12,528,132
+0.9_monthly_SV2,monthly_SV2,SV2,monthly,0.9,Size and variety,FALSE,n_brands_overlap,fit_p_it,4.2632564145606e-14,7.1723761805653e-14,528,132
+0.9_monthly_SV2,monthly_SV2,SV2,monthly,0.9,Size and variety,FALSE,n_brands_overlap,fit_ln_s_i_g,0.999999999999318,8.36684014560226e-13,528,132
+0.9_monthly_SV2,monthly_SV2,SV2,monthly,0.9,Size and variety,FALSE,n_brands_overlap,a_it,2.1316282072803e-14,1.82412083957393e-14,528,132
+0.9_monthly_SV2,monthly_SV2,SV2,monthly,0.9,Size and variety,FALSE,n_brands_overlap,avg_ml_per_ecig,-5.6843418860808e-14,1.32129881768261e-13,528,132
+0.9_monthly_SV2,monthly_SV2,SV2,monthly,0.9,Size and variety,FALSE,n_brands_overlap,log_upc_variety,0,2.76456501246275e-13,528,132
+0.9_monthly_SV3,monthly_SV3,SV3,monthly,0.9,Size and variety,TRUE,n_brands_3st,fit_p_it,2.15105711021124e-16,1.45091404337379e-16,528,132
+0.9_monthly_SV3,monthly_SV3,SV3,monthly,0.9,Size and variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.2405029961654e-16,528,132
+0.9_monthly_SV3,monthly_SV3,SV3,monthly,0.9,Size and variety,TRUE,n_brands_3st,a_it,-6.07153216591883e-17,3.75607981691167e-17,528,132
+0.9_monthly_SV3,monthly_SV3,SV3,monthly,0.9,Size and variety,TRUE,n_brands_3st,avg_ml_per_ecig,-1.04083408558608e-17,2.50796500228142e-16,528,132
+0.9_monthly_SV3,monthly_SV3,SV3,monthly,0.9,Size and variety,TRUE,n_brands_3st,log_upc_variety,-7.7715611723761e-16,2.36503954790715e-16,528,132
+0.9_monthly_SV4,monthly_SV4,SV4,monthly,0.9,Size and variety,TRUE,n_brands_overlap,fit_p_it,3.46944695195361e-16,1.05779379954234e-16,528,132
+0.9_monthly_SV4,monthly_SV4,SV4,monthly,0.9,Size and variety,TRUE,n_brands_overlap,fit_ln_s_i_g,0.999999999999999,3.72888142789638e-16,528,132
+0.9_monthly_SV4,monthly_SV4,SV4,monthly,0.9,Size and variety,TRUE,n_brands_overlap,a_it,3.29597460435593e-17,1.91895585290011e-17,528,132
+0.9_monthly_SV4,monthly_SV4,SV4,monthly,0.9,Size and variety,TRUE,n_brands_overlap,avg_ml_per_ecig,3.78169717762944e-16,1.64655676443185e-16,528,132
+0.9_monthly_SV4,monthly_SV4,SV4,monthly,0.9,Size and variety,TRUE,n_brands_overlap,log_upc_variety,5.55111512312578e-17,1.4192295191041e-16,528,132
+0.9_constant_B1,constant_B1,B1,constant,0.9,Baseline,FALSE,n_brands_3st,(Intercept),-2.1972245773357,1.64465881834975e-13,528,132
+0.9_constant_B1,constant_B1,B1,constant,0.9,Baseline,FALSE,n_brands_3st,fit_p_it,-8.88178419700125e-15,7.27648413335887e-15,528,132
+0.9_constant_B1,constant_B1,B1,constant,0.9,Baseline,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000026,6.68441438312171e-14,528,132
+0.9_constant_B1,constant_B1,B1,constant,0.9,Baseline,FALSE,n_brands_3st,a_it,-5.32907051820075e-15,2.02547197529652e-15,528,132
+0.9_constant_B2,constant_B2,B2,constant,0.9,Baseline,FALSE,n_brands_overlap,(Intercept),-2.1972245773369,1.22305742028978e-12,528,132
+0.9_constant_B2,constant_B2,B2,constant,0.9,Baseline,FALSE,n_brands_overlap,fit_p_it,7.105427357601e-15,4.9035326376549e-14,528,132
+0.9_constant_B2,constant_B2,B2,constant,0.9,Baseline,FALSE,n_brands_overlap,fit_ln_s_i_g,0.999999999999375,5.53748483789356e-13,528,132
+0.9_constant_B2,constant_B2,B2,constant,0.9,Baseline,FALSE,n_brands_overlap,a_it,1.4210854715202e-14,1.90730177492848e-14,528,132
+0.9_constant_B3,constant_B3,B3,constant,0.9,Baseline,TRUE,n_brands_3st,fit_p_it,5.27355936696949e-16,9.94074799648873e-17,528,132
+0.9_constant_B3,constant_B3,B3,constant,0.9,Baseline,TRUE,n_brands_3st,fit_ln_s_i_g,1,3.03836465997082e-16,528,132
+0.9_constant_B3,constant_B3,B3,constant,0.9,Baseline,TRUE,n_brands_3st,a_it,-3.81639164714898e-17,1.42589068440712e-17,528,132
+0.9_constant_B4,constant_B4,B4,constant,0.9,Baseline,TRUE,n_brands_overlap,fit_p_it,1.17961196366423e-16,7.35053436000615e-17,528,132
+0.9_constant_B4,constant_B4,B4,constant,0.9,Baseline,TRUE,n_brands_overlap,fit_ln_s_i_g,1,3.258699138582e-16,528,132
+0.9_constant_B4,constant_B4,B4,constant,0.9,Baseline,TRUE,n_brands_overlap,a_it,6.93889390390723e-18,1.07567710326239e-17,528,132
+0.9_constant_S1,constant_S1,S1,constant,0.9,Size,FALSE,n_brands_3st,(Intercept),-2.19722457733751,7.16788794217063e-13,528,132
+0.9_constant_S1,constant_S1,S1,constant,0.9,Size,FALSE,n_brands_3st,fit_p_it,7.105427357601e-15,4.45224554202782e-14,528,132
+0.9_constant_S1,constant_S1,S1,constant,0.9,Size,FALSE,n_brands_3st,fit_ln_s_i_g,0.999999999999616,3.73328669573804e-13,528,132
+0.9_constant_S1,constant_S1,S1,constant,0.9,Size,FALSE,n_brands_3st,a_it,1.02140518265514e-14,9.66789142932032e-15,528,132
+0.9_constant_S1,constant_S1,S1,constant,0.9,Size,FALSE,n_brands_3st,avg_ml_per_ecig,-1.4210854715202e-14,9.16198984019566e-14,528,132
+0.9_constant_S2,constant_S2,S2,constant,0.9,Size,FALSE,n_brands_overlap,(Intercept),-2.19722457733884,1.05882624968411e-12,528,132
+0.9_constant_S2,constant_S2,S2,constant,0.9,Size,FALSE,n_brands_overlap,fit_p_it,-4.9737991503207e-14,5.57396137067112e-14,528,132
+0.9_constant_S2,constant_S2,S2,constant,0.9,Size,FALSE,n_brands_overlap,fit_ln_s_i_g,0.99999999999855,4.16394291814394e-13,528,132
+0.9_constant_S2,constant_S2,S2,constant,0.9,Size,FALSE,n_brands_overlap,a_it,3.50830475781549e-14,9.8622551834501e-15,528,132
+0.9_constant_S2,constant_S2,S2,constant,0.9,Size,FALSE,n_brands_overlap,avg_ml_per_ecig,-2.27373675443232e-13,1.10035379568832e-13,528,132
+0.9_constant_S3,constant_S3,S3,constant,0.9,Size,TRUE,n_brands_3st,fit_p_it,2.70616862252382e-16,9.20454864319434e-17,528,132
+0.9_constant_S3,constant_S3,S3,constant,0.9,Size,TRUE,n_brands_3st,fit_ln_s_i_g,1,2.48298621137268e-16,528,132
+0.9_constant_S3,constant_S3,S3,constant,0.9,Size,TRUE,n_brands_3st,a_it,1.82145964977565e-17,2.20109403189766e-17,528,132
+0.9_constant_S3,constant_S3,S3,constant,0.9,Size,TRUE,n_brands_3st,avg_ml_per_ecig,3.19189119579733e-16,1.68920320915489e-16,528,132
+0.9_constant_S4,constant_S4,S4,constant,0.9,Size,TRUE,n_brands_overlap,fit_p_it,0,6.6139901918168e-17,528,132
+0.9_constant_S4,constant_S4,S4,constant,0.9,Size,TRUE,n_brands_overlap,fit_ln_s_i_g,1,2.51219582868228e-16,528,132
+0.9_constant_S4,constant_S4,S4,constant,0.9,Size,TRUE,n_brands_overlap,a_it,2.60208521396521e-18,1.96539147277306e-17,528,132
+0.9_constant_S4,constant_S4,S4,constant,0.9,Size,TRUE,n_brands_overlap,avg_ml_per_ecig,5.55111512312578e-17,1.28543606831925e-16,528,132
+0.9_constant_V1,constant_V1,V1,constant,0.9,Variety,FALSE,n_brands_3st,(Intercept),-2.19722457733587,9.92368497666061e-12,528,132
+0.9_constant_V1,constant_V1,V1,constant,0.9,Variety,FALSE,n_brands_3st,fit_p_it,-2.8421709430404e-14,2.65557968160784e-13,528,132
+0.9_constant_V1,constant_V1,V1,constant,0.9,Variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000091,2.83949852201556e-12,528,132
+0.9_constant_V1,constant_V1,V1,constant,0.9,Variety,FALSE,n_brands_3st,a_it,-2.66453525910038e-14,8.01029329569567e-14,528,132
+0.9_constant_V1,constant_V1,V1,constant,0.9,Variety,FALSE,n_brands_3st,log_upc_variety,-2.8421709430404e-13,9.56384026264739e-13,528,132
+0.9_constant_V2,constant_V2,V2,constant,0.9,Variety,FALSE,n_brands_overlap,(Intercept),-2.19722457734269,2.55754367709977e-12,528,132
+0.9_constant_V2,constant_V2,V2,constant,0.9,Variety,FALSE,n_brands_overlap,fit_p_it,1.70530256582424e-13,7.56076480952891e-14,528,132
+0.9_constant_V2,constant_V2,V2,constant,0.9,Variety,FALSE,n_brands_overlap,fit_ln_s_i_g,0.999999999998067,6.87309271023732e-13,528,132
+0.9_constant_V2,constant_V2,V2,constant,0.9,Variety,FALSE,n_brands_overlap,a_it,3.5527136788005e-14,1.73981249998466e-14,528,132
+0.9_constant_V2,constant_V2,V2,constant,0.9,Variety,FALSE,n_brands_overlap,log_upc_variety,6.25277607468888e-13,2.4568445273971e-13,528,132
+0.9_constant_V3,constant_V3,V3,constant,0.9,Variety,TRUE,n_brands_3st,fit_p_it,6.24500451351651e-17,1.08586594018392e-16,528,132
+0.9_constant_V3,constant_V3,V3,constant,0.9,Variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.65294310775013e-16,528,132
+0.9_constant_V3,constant_V3,V3,constant,0.9,Variety,TRUE,n_brands_3st,a_it,-7.02563007770607e-17,2.05210199946853e-17,528,132
+0.9_constant_V3,constant_V3,V3,constant,0.9,Variety,TRUE,n_brands_3st,log_upc_variety,-7.21644966006352e-16,2.37682157565667e-16,528,132
+0.9_constant_V4,constant_V4,V4,constant,0.9,Variety,TRUE,n_brands_overlap,fit_p_it,2.22044604925031e-16,7.87653105821595e-17,528,132
+0.9_constant_V4,constant_V4,V4,constant,0.9,Variety,TRUE,n_brands_overlap,fit_ln_s_i_g,1,3.60524883250896e-16,528,132
+0.9_constant_V4,constant_V4,V4,constant,0.9,Variety,TRUE,n_brands_overlap,a_it,-4.85722573273506e-17,1.51123805578664e-17,528,132
+0.9_constant_V4,constant_V4,V4,constant,0.9,Variety,TRUE,n_brands_overlap,log_upc_variety,-4.44089209850063e-16,1.47718237320503e-16,528,132
+0.9_constant_SV1,constant_SV1,SV1,constant,0.9,Size and variety,FALSE,n_brands_3st,(Intercept),-2.1972245773286,1.28312554343775e-11,528,132
+0.9_constant_SV1,constant_SV1,SV1,constant,0.9,Size and variety,FALSE,n_brands_3st,fit_p_it,-3.5527136788005e-14,3.30197860706078e-13,528,132
+0.9_constant_SV1,constant_SV1,SV1,constant,0.9,Size and variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000136,3.94827147014427e-12,528,132
+0.9_constant_SV1,constant_SV1,SV1,constant,0.9,Size and variety,FALSE,n_brands_3st,a_it,-2.8421709430404e-14,9.33890356596499e-14,528,132
+0.9_constant_SV1,constant_SV1,SV1,constant,0.9,Size and variety,FALSE,n_brands_3st,avg_ml_per_ecig,1.56319401867222e-13,6.71742828044848e-13,528,132
+0.9_constant_SV1,constant_SV1,SV1,constant,0.9,Size and variety,FALSE,n_brands_3st,log_upc_variety,-4.54747350886464e-13,1.32372376511565e-12,528,132
+0.9_constant_SV2,constant_SV2,SV2,constant,0.9,Size and variety,FALSE,n_brands_overlap,(Intercept),-2.1972245773386,2.79867434853818e-12,528,132
+0.9_constant_SV2,constant_SV2,SV2,constant,0.9,Size and variety,FALSE,n_brands_overlap,fit_p_it,4.2632564145606e-14,7.1723761805653e-14,528,132
+0.9_constant_SV2,constant_SV2,SV2,constant,0.9,Size and variety,FALSE,n_brands_overlap,fit_ln_s_i_g,0.999999999999318,8.36684014560226e-13,528,132
+0.9_constant_SV2,constant_SV2,SV2,constant,0.9,Size and variety,FALSE,n_brands_overlap,a_it,2.1316282072803e-14,1.82412083957393e-14,528,132
+0.9_constant_SV2,constant_SV2,SV2,constant,0.9,Size and variety,FALSE,n_brands_overlap,avg_ml_per_ecig,-5.6843418860808e-14,1.32129881768261e-13,528,132
+0.9_constant_SV2,constant_SV2,SV2,constant,0.9,Size and variety,FALSE,n_brands_overlap,log_upc_variety,0,2.76456501246275e-13,528,132
+0.9_constant_SV3,constant_SV3,SV3,constant,0.9,Size and variety,TRUE,n_brands_3st,fit_p_it,2.15105711021124e-16,1.45091404337379e-16,528,132
+0.9_constant_SV3,constant_SV3,SV3,constant,0.9,Size and variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.2405029961654e-16,528,132
+0.9_constant_SV3,constant_SV3,SV3,constant,0.9,Size and variety,TRUE,n_brands_3st,a_it,-6.07153216591883e-17,3.75607981691167e-17,528,132
+0.9_constant_SV3,constant_SV3,SV3,constant,0.9,Size and variety,TRUE,n_brands_3st,avg_ml_per_ecig,-1.04083408558608e-17,2.50796500228142e-16,528,132
+0.9_constant_SV3,constant_SV3,SV3,constant,0.9,Size and variety,TRUE,n_brands_3st,log_upc_variety,-7.7715611723761e-16,2.36503954790715e-16,528,132
+0.9_constant_SV4,constant_SV4,SV4,constant,0.9,Size and variety,TRUE,n_brands_overlap,fit_p_it,3.46944695195361e-16,1.05779379954234e-16,528,132
+0.9_constant_SV4,constant_SV4,SV4,constant,0.9,Size and variety,TRUE,n_brands_overlap,fit_ln_s_i_g,0.999999999999999,3.72888142789638e-16,528,132
+0.9_constant_SV4,constant_SV4,SV4,constant,0.9,Size and variety,TRUE,n_brands_overlap,a_it,3.29597460435593e-17,1.91895585290011e-17,528,132
+0.9_constant_SV4,constant_SV4,SV4,constant,0.9,Size and variety,TRUE,n_brands_overlap,avg_ml_per_ecig,3.78169717762944e-16,1.64655676443185e-16,528,132
+0.9_constant_SV4,constant_SV4,SV4,constant,0.9,Size and variety,TRUE,n_brands_overlap,log_upc_variety,5.55111512312578e-17,1.4192295191041e-16,528,132
+0.8_annual_B1,annual_B1,B1,annual,0.8,Baseline,FALSE,n_brands_3st,(Intercept),-1.38629436111728,6.23765085939244e-13,528,132
+0.8_annual_B1,annual_B1,B1,annual,0.8,Baseline,FALSE,n_brands_3st,fit_p_it,0,2.88964928592853e-14,528,132
+0.8_annual_B1,annual_B1,B1,annual,0.8,Baseline,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000114,2.3169025177957e-13,528,132
+0.8_annual_B1,annual_B1,B1,annual,0.8,Baseline,FALSE,n_brands_3st,a_it,-3.46389583683049e-14,5.61264652720033e-15,528,132
+0.8_annual_B2,annual_B2,B2,annual,0.8,Baseline,FALSE,n_brands_overlap,(Intercept),-1.38629436111836,8.02773370348046e-13,528,132
+0.8_annual_B2,annual_B2,B2,annual,0.8,Baseline,FALSE,n_brands_overlap,fit_p_it,1.77635683940025e-15,3.32174591657961e-14,528,132
+0.8_annual_B2,annual_B2,B2,annual,0.8,Baseline,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000048,3.56254652619565e-13,528,132
+0.8_annual_B2,annual_B2,B2,annual,0.8,Baseline,FALSE,n_brands_overlap,a_it,-1.77635683940025e-14,1.13665859455951e-14,528,132
+0.8_annual_B3,annual_B3,B3,annual,0.8,Baseline,TRUE,n_brands_3st,fit_p_it,4.71844785465692e-16,1.68194024586341e-16,528,132
+0.8_annual_B3,annual_B3,B3,annual,0.8,Baseline,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.31713478275588e-16,528,132
+0.8_annual_B3,annual_B3,B3,annual,0.8,Baseline,TRUE,n_brands_3st,a_it,-3.46944695195361e-17,2.24450524514749e-17,528,132
+0.8_annual_B4,annual_B4,B4,annual,0.8,Baseline,TRUE,n_brands_overlap,fit_p_it,1.52655665885959e-16,1.22309765036166e-16,528,132
+0.8_annual_B4,annual_B4,B4,annual,0.8,Baseline,TRUE,n_brands_overlap,fit_ln_s_i_g,1,4.33985914397064e-16,528,132
+0.8_annual_B4,annual_B4,B4,annual,0.8,Baseline,TRUE,n_brands_overlap,a_it,0,2.14778876566313e-17,528,132
+0.8_annual_S1,annual_S1,S1,annual,0.8,Size,FALSE,n_brands_3st,(Intercept),-1.3862943611194,3.02183767362376e-13,528,132
+0.8_annual_S1,annual_S1,S1,annual,0.8,Size,FALSE,n_brands_3st,fit_p_it,-7.105427357601e-14,1.91307566429476e-14,528,132
+0.8_annual_S1,annual_S1,S1,annual,0.8,Size,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000003,1.58659404634141e-13,528,132
+0.8_annual_S1,annual_S1,S1,annual,0.8,Size,FALSE,n_brands_3st,a_it,2.22044604925031e-15,4.6992419957148e-15,528,132
+0.8_annual_S1,annual_S1,S1,annual,0.8,Size,FALSE,n_brands_3st,avg_ml_per_ecig,-1.20792265079217e-13,3.56177875876777e-14,528,132
+0.8_annual_S2,annual_S2,S2,annual,0.8,Size,FALSE,n_brands_overlap,(Intercept),-1.38629436111895,2.11496501572327e-13,528,132
+0.8_annual_S2,annual_S2,S2,annual,0.8,Size,FALSE,n_brands_overlap,fit_p_it,-5.6843418860808e-14,1.2627117370342e-14,528,132
+0.8_annual_S2,annual_S2,S2,annual,0.8,Size,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000027,9.14100047369959e-14,528,132
+0.8_annual_S2,annual_S2,S2,annual,0.8,Size,FALSE,n_brands_overlap,a_it,-3.5527136788005e-15,2.89493987406333e-15,528,132
+0.8_annual_S2,annual_S2,S2,annual,0.8,Size,FALSE,n_brands_overlap,avg_ml_per_ecig,-8.5265128291212e-14,2.25857601758047e-14,528,132
+0.8_annual_S3,annual_S3,S3,annual,0.8,Size,TRUE,n_brands_3st,fit_p_it,4.71844785465692e-16,1.94822131192899e-16,528,132
+0.8_annual_S3,annual_S3,S3,annual,0.8,Size,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.69398172445809e-16,528,132
+0.8_annual_S3,annual_S3,S3,annual,0.8,Size,TRUE,n_brands_3st,a_it,3.55618312575245e-17,2.23656138187706e-17,528,132
+0.8_annual_S3,annual_S3,S3,annual,0.8,Size,TRUE,n_brands_3st,avg_ml_per_ecig,6.5225602696728e-16,2.107768601145e-16,528,132
+0.8_annual_S4,annual_S4,S4,annual,0.8,Size,TRUE,n_brands_overlap,fit_p_it,1.73472347597681e-16,1.52611879994413e-16,528,132
+0.8_annual_S4,annual_S4,S4,annual,0.8,Size,TRUE,n_brands_overlap,fit_ln_s_i_g,1,4.7836215402787e-16,528,132
+0.8_annual_S4,annual_S4,S4,annual,0.8,Size,TRUE,n_brands_overlap,a_it,1.99493199737333e-17,1.83481782860855e-17,528,132
+0.8_annual_S4,annual_S4,S4,annual,0.8,Size,TRUE,n_brands_overlap,avg_ml_per_ecig,3.46944695195361e-16,1.69424322253355e-16,528,132
+0.8_annual_V1,annual_V1,V1,annual,0.8,Variety,FALSE,n_brands_3st,(Intercept),-1.38629436111842,4.55664452218153e-13,528,132
+0.8_annual_V1,annual_V1,V1,annual,0.8,Variety,FALSE,n_brands_3st,fit_p_it,-4.2632564145606e-14,1.54703891951517e-14,528,132
+0.8_annual_V1,annual_V1,V1,annual,0.8,Variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000045,1.26228984289505e-13,528,132
+0.8_annual_V1,annual_V1,V1,annual,0.8,Variety,FALSE,n_brands_3st,a_it,-1.06581410364015e-14,2.74561041816961e-15,528,132
+0.8_annual_V1,annual_V1,V1,annual,0.8,Variety,FALSE,n_brands_3st,log_upc_variety,-5.6843418860808e-14,3.62444115343458e-14,528,132
+0.8_annual_V2,annual_V2,V2,annual,0.8,Variety,FALSE,n_brands_overlap,(Intercept),-1.38629436111569,3.97018393425154e-12,528,132
+0.8_annual_V2,annual_V2,V2,annual,0.8,Variety,FALSE,n_brands_overlap,fit_p_it,-9.9475983006414e-14,1.06530268950301e-13,528,132
+0.8_annual_V2,annual_V2,V2,annual,0.8,Variety,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000159,1.10107029532024e-12,528,132
+0.8_annual_V2,annual_V2,V2,annual,0.8,Variety,FALSE,n_brands_overlap,a_it,-2.30926389122033e-14,2.86870264413003e-14,528,132
+0.8_annual_V2,annual_V2,V2,annual,0.8,Variety,FALSE,n_brands_overlap,log_upc_variety,-4.54747350886464e-13,3.88475366550046e-13,528,132
+0.8_annual_V3,annual_V3,V3,annual,0.8,Variety,TRUE,n_brands_3st,fit_p_it,3.46944695195361e-17,2.03925540843697e-16,528,132
+0.8_annual_V3,annual_V3,V3,annual,0.8,Variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,7.84389363030687e-16,528,132
+0.8_annual_V3,annual_V3,V3,annual,0.8,Variety,TRUE,n_brands_3st,a_it,-5.89805981832114e-17,2.48458450963235e-17,528,132
+0.8_annual_V3,annual_V3,V3,annual,0.8,Variety,TRUE,n_brands_3st,log_upc_variety,-6.38378239159465e-16,3.08101220457096e-16,528,132
+0.8_annual_V4,annual_V4,V4,annual,0.8,Variety,TRUE,n_brands_overlap,fit_p_it,2.4980018054066e-16,1.60733134120587e-16,528,132
+0.8_annual_V4,annual_V4,V4,annual,0.8,Variety,TRUE,n_brands_overlap,fit_ln_s_i_g,1,6.39700789346313e-16,528,132
+0.8_annual_V4,annual_V4,V4,annual,0.8,Variety,TRUE,n_brands_overlap,a_it,-4.33680868994202e-17,2.4434779941175e-17,528,132
+0.8_annual_V4,annual_V4,V4,annual,0.8,Variety,TRUE,n_brands_overlap,log_upc_variety,-3.05311331771918e-16,2.72261202717728e-16,528,132
+0.8_annual_SV1,annual_SV1,SV1,annual,0.8,Size and variety,FALSE,n_brands_3st,(Intercept),-1.38629436111478,3.57983034582656e-12,528,132
+0.8_annual_SV1,annual_SV1,SV1,annual,0.8,Size and variety,FALSE,n_brands_3st,fit_p_it,-7.105427357601e-14,9.60145572720088e-14,528,132
+0.8_annual_SV1,annual_SV1,SV1,annual,0.8,Size and variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000114,1.10375747642461e-12,528,132
+0.8_annual_SV1,annual_SV1,SV1,annual,0.8,Size and variety,FALSE,n_brands_3st,a_it,-3.19744231092045e-14,2.55925450828686e-14,528,132
+0.8_annual_SV1,annual_SV1,SV1,annual,0.8,Size and variety,FALSE,n_brands_3st,avg_ml_per_ecig,2.1316282072803e-14,1.94436784356826e-13,528,132
+0.8_annual_SV1,annual_SV1,SV1,annual,0.8,Size and variety,FALSE,n_brands_3st,log_upc_variety,-3.97903932025656e-13,3.62286179905187e-13,528,132
+0.8_annual_SV2,annual_SV2,SV2,annual,0.8,Size and variety,FALSE,n_brands_overlap,(Intercept),-1.38629436111523,2.73717987877891e-12,528,132
+0.8_annual_SV2,annual_SV2,SV2,annual,0.8,Size and variety,FALSE,n_brands_overlap,fit_p_it,-8.5265128291212e-14,6.92790323752079e-14,528,132
+0.8_annual_SV2,annual_SV2,SV2,annual,0.8,Size and variety,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000091,8.68598004205814e-13,528,132
+0.8_annual_SV2,annual_SV2,SV2,annual,0.8,Size and variety,FALSE,n_brands_overlap,a_it,-2.1316282072803e-14,2.04024884151838e-14,528,132
+0.8_annual_SV2,annual_SV2,SV2,annual,0.8,Size and variety,FALSE,n_brands_overlap,avg_ml_per_ecig,-4.2632564145606e-14,1.53551614521845e-13,528,132
+0.8_annual_SV2,annual_SV2,SV2,annual,0.8,Size and variety,FALSE,n_brands_overlap,log_upc_variety,-4.54747350886464e-13,2.8078353481003e-13,528,132
+0.8_annual_SV3,annual_SV3,SV3,annual,0.8,Size and variety,TRUE,n_brands_3st,fit_p_it,1.35308431126191e-16,2.1197116379434e-16,528,132
+0.8_annual_SV3,annual_SV3,SV3,annual,0.8,Size and variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,7.13845288252768e-16,528,132
+0.8_annual_SV3,annual_SV3,SV3,annual,0.8,Size and variety,TRUE,n_brands_3st,a_it,-1.38777878078145e-17,2.6870028540129e-17,528,132
+0.8_annual_SV3,annual_SV3,SV3,annual,0.8,Size and variety,TRUE,n_brands_3st,avg_ml_per_ecig,1.83880688453542e-16,2.42919150958168e-16,528,132
+0.8_annual_SV3,annual_SV3,SV3,annual,0.8,Size and variety,TRUE,n_brands_3st,log_upc_variety,-5.27355936696949e-16,2.86814658236165e-16,528,132
+0.8_annual_SV4,annual_SV4,SV4,annual,0.8,Size and variety,TRUE,n_brands_overlap,fit_p_it,4.40619762898109e-16,1.37769537268882e-16,528,132
+0.8_annual_SV4,annual_SV4,SV4,annual,0.8,Size and variety,TRUE,n_brands_overlap,fit_ln_s_i_g,1,5.7166125176599e-16,528,132
+0.8_annual_SV4,annual_SV4,SV4,annual,0.8,Size and variety,TRUE,n_brands_overlap,a_it,4.68375338513738e-17,2.68235741001384e-17,528,132
+0.8_annual_SV4,annual_SV4,SV4,annual,0.8,Size and variety,TRUE,n_brands_overlap,avg_ml_per_ecig,6.31439345255558e-16,1.67444782747762e-16,528,132
+0.8_annual_SV4,annual_SV4,SV4,annual,0.8,Size and variety,TRUE,n_brands_overlap,log_upc_variety,1.11022302462516e-16,2.56147028190719e-16,528,132
+0.8_monthly_B1,monthly_B1,B1,monthly,0.8,Baseline,FALSE,n_brands_3st,(Intercept),-1.38629436111728,6.23765085939244e-13,528,132
+0.8_monthly_B1,monthly_B1,B1,monthly,0.8,Baseline,FALSE,n_brands_3st,fit_p_it,0,2.88964928592853e-14,528,132
+0.8_monthly_B1,monthly_B1,B1,monthly,0.8,Baseline,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000114,2.3169025177957e-13,528,132
+0.8_monthly_B1,monthly_B1,B1,monthly,0.8,Baseline,FALSE,n_brands_3st,a_it,-3.46389583683049e-14,5.61264652720033e-15,528,132
+0.8_monthly_B2,monthly_B2,B2,monthly,0.8,Baseline,FALSE,n_brands_overlap,(Intercept),-1.38629436111836,8.02773370348046e-13,528,132
+0.8_monthly_B2,monthly_B2,B2,monthly,0.8,Baseline,FALSE,n_brands_overlap,fit_p_it,1.77635683940025e-15,3.32174591657961e-14,528,132
+0.8_monthly_B2,monthly_B2,B2,monthly,0.8,Baseline,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000048,3.56254652619565e-13,528,132
+0.8_monthly_B2,monthly_B2,B2,monthly,0.8,Baseline,FALSE,n_brands_overlap,a_it,-1.77635683940025e-14,1.13665859455951e-14,528,132
+0.8_monthly_B3,monthly_B3,B3,monthly,0.8,Baseline,TRUE,n_brands_3st,fit_p_it,4.71844785465692e-16,1.68194024586341e-16,528,132
+0.8_monthly_B3,monthly_B3,B3,monthly,0.8,Baseline,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.31713478275588e-16,528,132
+0.8_monthly_B3,monthly_B3,B3,monthly,0.8,Baseline,TRUE,n_brands_3st,a_it,-3.46944695195361e-17,2.24450524514749e-17,528,132
+0.8_monthly_B4,monthly_B4,B4,monthly,0.8,Baseline,TRUE,n_brands_overlap,fit_p_it,1.52655665885959e-16,1.22309765036166e-16,528,132
+0.8_monthly_B4,monthly_B4,B4,monthly,0.8,Baseline,TRUE,n_brands_overlap,fit_ln_s_i_g,1,4.33985914397064e-16,528,132
+0.8_monthly_B4,monthly_B4,B4,monthly,0.8,Baseline,TRUE,n_brands_overlap,a_it,0,2.14778876566313e-17,528,132
+0.8_monthly_S1,monthly_S1,S1,monthly,0.8,Size,FALSE,n_brands_3st,(Intercept),-1.3862943611194,3.02183767362376e-13,528,132
+0.8_monthly_S1,monthly_S1,S1,monthly,0.8,Size,FALSE,n_brands_3st,fit_p_it,-7.105427357601e-14,1.91307566429476e-14,528,132
+0.8_monthly_S1,monthly_S1,S1,monthly,0.8,Size,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000003,1.58659404634141e-13,528,132
+0.8_monthly_S1,monthly_S1,S1,monthly,0.8,Size,FALSE,n_brands_3st,a_it,2.22044604925031e-15,4.6992419957148e-15,528,132
+0.8_monthly_S1,monthly_S1,S1,monthly,0.8,Size,FALSE,n_brands_3st,avg_ml_per_ecig,-1.20792265079217e-13,3.56177875876777e-14,528,132
+0.8_monthly_S2,monthly_S2,S2,monthly,0.8,Size,FALSE,n_brands_overlap,(Intercept),-1.38629436111895,2.11496501572327e-13,528,132
+0.8_monthly_S2,monthly_S2,S2,monthly,0.8,Size,FALSE,n_brands_overlap,fit_p_it,-5.6843418860808e-14,1.2627117370342e-14,528,132
+0.8_monthly_S2,monthly_S2,S2,monthly,0.8,Size,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000027,9.14100047369959e-14,528,132
+0.8_monthly_S2,monthly_S2,S2,monthly,0.8,Size,FALSE,n_brands_overlap,a_it,-3.5527136788005e-15,2.89493987406333e-15,528,132
+0.8_monthly_S2,monthly_S2,S2,monthly,0.8,Size,FALSE,n_brands_overlap,avg_ml_per_ecig,-8.5265128291212e-14,2.25857601758047e-14,528,132
+0.8_monthly_S3,monthly_S3,S3,monthly,0.8,Size,TRUE,n_brands_3st,fit_p_it,4.71844785465692e-16,1.94822131192899e-16,528,132
+0.8_monthly_S3,monthly_S3,S3,monthly,0.8,Size,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.69398172445809e-16,528,132
+0.8_monthly_S3,monthly_S3,S3,monthly,0.8,Size,TRUE,n_brands_3st,a_it,3.55618312575245e-17,2.23656138187706e-17,528,132
+0.8_monthly_S3,monthly_S3,S3,monthly,0.8,Size,TRUE,n_brands_3st,avg_ml_per_ecig,6.5225602696728e-16,2.107768601145e-16,528,132
+0.8_monthly_S4,monthly_S4,S4,monthly,0.8,Size,TRUE,n_brands_overlap,fit_p_it,1.73472347597681e-16,1.52611879994413e-16,528,132
+0.8_monthly_S4,monthly_S4,S4,monthly,0.8,Size,TRUE,n_brands_overlap,fit_ln_s_i_g,1,4.7836215402787e-16,528,132
+0.8_monthly_S4,monthly_S4,S4,monthly,0.8,Size,TRUE,n_brands_overlap,a_it,1.99493199737333e-17,1.83481782860855e-17,528,132
+0.8_monthly_S4,monthly_S4,S4,monthly,0.8,Size,TRUE,n_brands_overlap,avg_ml_per_ecig,3.46944695195361e-16,1.69424322253355e-16,528,132
+0.8_monthly_V1,monthly_V1,V1,monthly,0.8,Variety,FALSE,n_brands_3st,(Intercept),-1.38629436111842,4.55664452218153e-13,528,132
+0.8_monthly_V1,monthly_V1,V1,monthly,0.8,Variety,FALSE,n_brands_3st,fit_p_it,-4.2632564145606e-14,1.54703891951517e-14,528,132
+0.8_monthly_V1,monthly_V1,V1,monthly,0.8,Variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000045,1.26228984289505e-13,528,132
+0.8_monthly_V1,monthly_V1,V1,monthly,0.8,Variety,FALSE,n_brands_3st,a_it,-1.06581410364015e-14,2.74561041816961e-15,528,132
+0.8_monthly_V1,monthly_V1,V1,monthly,0.8,Variety,FALSE,n_brands_3st,log_upc_variety,-5.6843418860808e-14,3.62444115343458e-14,528,132
+0.8_monthly_V2,monthly_V2,V2,monthly,0.8,Variety,FALSE,n_brands_overlap,(Intercept),-1.38629436111569,3.97018393425154e-12,528,132
+0.8_monthly_V2,monthly_V2,V2,monthly,0.8,Variety,FALSE,n_brands_overlap,fit_p_it,-9.9475983006414e-14,1.06530268950301e-13,528,132
+0.8_monthly_V2,monthly_V2,V2,monthly,0.8,Variety,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000159,1.10107029532024e-12,528,132
+0.8_monthly_V2,monthly_V2,V2,monthly,0.8,Variety,FALSE,n_brands_overlap,a_it,-2.30926389122033e-14,2.86870264413003e-14,528,132
+0.8_monthly_V2,monthly_V2,V2,monthly,0.8,Variety,FALSE,n_brands_overlap,log_upc_variety,-4.54747350886464e-13,3.88475366550046e-13,528,132
+0.8_monthly_V3,monthly_V3,V3,monthly,0.8,Variety,TRUE,n_brands_3st,fit_p_it,3.46944695195361e-17,2.03925540843697e-16,528,132
+0.8_monthly_V3,monthly_V3,V3,monthly,0.8,Variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,7.84389363030687e-16,528,132
+0.8_monthly_V3,monthly_V3,V3,monthly,0.8,Variety,TRUE,n_brands_3st,a_it,-5.89805981832114e-17,2.48458450963235e-17,528,132
+0.8_monthly_V3,monthly_V3,V3,monthly,0.8,Variety,TRUE,n_brands_3st,log_upc_variety,-6.38378239159465e-16,3.08101220457096e-16,528,132
+0.8_monthly_V4,monthly_V4,V4,monthly,0.8,Variety,TRUE,n_brands_overlap,fit_p_it,2.4980018054066e-16,1.60733134120587e-16,528,132
+0.8_monthly_V4,monthly_V4,V4,monthly,0.8,Variety,TRUE,n_brands_overlap,fit_ln_s_i_g,1,6.39700789346313e-16,528,132
+0.8_monthly_V4,monthly_V4,V4,monthly,0.8,Variety,TRUE,n_brands_overlap,a_it,-4.33680868994202e-17,2.4434779941175e-17,528,132
+0.8_monthly_V4,monthly_V4,V4,monthly,0.8,Variety,TRUE,n_brands_overlap,log_upc_variety,-3.05311331771918e-16,2.72261202717728e-16,528,132
+0.8_monthly_SV1,monthly_SV1,SV1,monthly,0.8,Size and variety,FALSE,n_brands_3st,(Intercept),-1.38629436111478,3.57983034582656e-12,528,132
+0.8_monthly_SV1,monthly_SV1,SV1,monthly,0.8,Size and variety,FALSE,n_brands_3st,fit_p_it,-7.105427357601e-14,9.60145572720088e-14,528,132
+0.8_monthly_SV1,monthly_SV1,SV1,monthly,0.8,Size and variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000114,1.10375747642461e-12,528,132
+0.8_monthly_SV1,monthly_SV1,SV1,monthly,0.8,Size and variety,FALSE,n_brands_3st,a_it,-3.19744231092045e-14,2.55925450828686e-14,528,132
+0.8_monthly_SV1,monthly_SV1,SV1,monthly,0.8,Size and variety,FALSE,n_brands_3st,avg_ml_per_ecig,2.1316282072803e-14,1.94436784356826e-13,528,132
+0.8_monthly_SV1,monthly_SV1,SV1,monthly,0.8,Size and variety,FALSE,n_brands_3st,log_upc_variety,-3.97903932025656e-13,3.62286179905187e-13,528,132
+0.8_monthly_SV2,monthly_SV2,SV2,monthly,0.8,Size and variety,FALSE,n_brands_overlap,(Intercept),-1.38629436111523,2.73717987877891e-12,528,132
+0.8_monthly_SV2,monthly_SV2,SV2,monthly,0.8,Size and variety,FALSE,n_brands_overlap,fit_p_it,-8.5265128291212e-14,6.92790323752079e-14,528,132
+0.8_monthly_SV2,monthly_SV2,SV2,monthly,0.8,Size and variety,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000091,8.68598004205814e-13,528,132
+0.8_monthly_SV2,monthly_SV2,SV2,monthly,0.8,Size and variety,FALSE,n_brands_overlap,a_it,-2.1316282072803e-14,2.04024884151838e-14,528,132
+0.8_monthly_SV2,monthly_SV2,SV2,monthly,0.8,Size and variety,FALSE,n_brands_overlap,avg_ml_per_ecig,-4.2632564145606e-14,1.53551614521845e-13,528,132
+0.8_monthly_SV2,monthly_SV2,SV2,monthly,0.8,Size and variety,FALSE,n_brands_overlap,log_upc_variety,-4.54747350886464e-13,2.8078353481003e-13,528,132
+0.8_monthly_SV3,monthly_SV3,SV3,monthly,0.8,Size and variety,TRUE,n_brands_3st,fit_p_it,1.35308431126191e-16,2.1197116379434e-16,528,132
+0.8_monthly_SV3,monthly_SV3,SV3,monthly,0.8,Size and variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,7.13845288252768e-16,528,132
+0.8_monthly_SV3,monthly_SV3,SV3,monthly,0.8,Size and variety,TRUE,n_brands_3st,a_it,-1.38777878078145e-17,2.6870028540129e-17,528,132
+0.8_monthly_SV3,monthly_SV3,SV3,monthly,0.8,Size and variety,TRUE,n_brands_3st,avg_ml_per_ecig,1.83880688453542e-16,2.42919150958168e-16,528,132
+0.8_monthly_SV3,monthly_SV3,SV3,monthly,0.8,Size and variety,TRUE,n_brands_3st,log_upc_variety,-5.27355936696949e-16,2.86814658236165e-16,528,132
+0.8_monthly_SV4,monthly_SV4,SV4,monthly,0.8,Size and variety,TRUE,n_brands_overlap,fit_p_it,4.40619762898109e-16,1.37769537268882e-16,528,132
+0.8_monthly_SV4,monthly_SV4,SV4,monthly,0.8,Size and variety,TRUE,n_brands_overlap,fit_ln_s_i_g,1,5.7166125176599e-16,528,132
+0.8_monthly_SV4,monthly_SV4,SV4,monthly,0.8,Size and variety,TRUE,n_brands_overlap,a_it,4.68375338513738e-17,2.68235741001384e-17,528,132
+0.8_monthly_SV4,monthly_SV4,SV4,monthly,0.8,Size and variety,TRUE,n_brands_overlap,avg_ml_per_ecig,6.31439345255558e-16,1.67444782747762e-16,528,132
+0.8_monthly_SV4,monthly_SV4,SV4,monthly,0.8,Size and variety,TRUE,n_brands_overlap,log_upc_variety,1.11022302462516e-16,2.56147028190719e-16,528,132
+0.8_constant_B1,constant_B1,B1,constant,0.8,Baseline,FALSE,n_brands_3st,(Intercept),-1.38629436111728,6.23765085939244e-13,528,132
+0.8_constant_B1,constant_B1,B1,constant,0.8,Baseline,FALSE,n_brands_3st,fit_p_it,0,2.88964928592853e-14,528,132
+0.8_constant_B1,constant_B1,B1,constant,0.8,Baseline,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000114,2.3169025177957e-13,528,132
+0.8_constant_B1,constant_B1,B1,constant,0.8,Baseline,FALSE,n_brands_3st,a_it,-3.46389583683049e-14,5.61264652720033e-15,528,132
+0.8_constant_B2,constant_B2,B2,constant,0.8,Baseline,FALSE,n_brands_overlap,(Intercept),-1.38629436111836,8.02773370348046e-13,528,132
+0.8_constant_B2,constant_B2,B2,constant,0.8,Baseline,FALSE,n_brands_overlap,fit_p_it,1.77635683940025e-15,3.32174591657961e-14,528,132
+0.8_constant_B2,constant_B2,B2,constant,0.8,Baseline,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000048,3.56254652619565e-13,528,132
+0.8_constant_B2,constant_B2,B2,constant,0.8,Baseline,FALSE,n_brands_overlap,a_it,-1.77635683940025e-14,1.13665859455951e-14,528,132
+0.8_constant_B3,constant_B3,B3,constant,0.8,Baseline,TRUE,n_brands_3st,fit_p_it,4.71844785465692e-16,1.68194024586341e-16,528,132
+0.8_constant_B3,constant_B3,B3,constant,0.8,Baseline,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.31713478275588e-16,528,132
+0.8_constant_B3,constant_B3,B3,constant,0.8,Baseline,TRUE,n_brands_3st,a_it,-3.46944695195361e-17,2.24450524514749e-17,528,132
+0.8_constant_B4,constant_B4,B4,constant,0.8,Baseline,TRUE,n_brands_overlap,fit_p_it,1.52655665885959e-16,1.22309765036166e-16,528,132
+0.8_constant_B4,constant_B4,B4,constant,0.8,Baseline,TRUE,n_brands_overlap,fit_ln_s_i_g,1,4.33985914397064e-16,528,132
+0.8_constant_B4,constant_B4,B4,constant,0.8,Baseline,TRUE,n_brands_overlap,a_it,0,2.14778876566313e-17,528,132
+0.8_constant_S1,constant_S1,S1,constant,0.8,Size,FALSE,n_brands_3st,(Intercept),-1.3862943611194,3.02183767362376e-13,528,132
+0.8_constant_S1,constant_S1,S1,constant,0.8,Size,FALSE,n_brands_3st,fit_p_it,-7.105427357601e-14,1.91307566429476e-14,528,132
+0.8_constant_S1,constant_S1,S1,constant,0.8,Size,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000003,1.58659404634141e-13,528,132
+0.8_constant_S1,constant_S1,S1,constant,0.8,Size,FALSE,n_brands_3st,a_it,2.22044604925031e-15,4.6992419957148e-15,528,132
+0.8_constant_S1,constant_S1,S1,constant,0.8,Size,FALSE,n_brands_3st,avg_ml_per_ecig,-1.20792265079217e-13,3.56177875876777e-14,528,132
+0.8_constant_S2,constant_S2,S2,constant,0.8,Size,FALSE,n_brands_overlap,(Intercept),-1.38629436111895,2.11496501572327e-13,528,132
+0.8_constant_S2,constant_S2,S2,constant,0.8,Size,FALSE,n_brands_overlap,fit_p_it,-5.6843418860808e-14,1.2627117370342e-14,528,132
+0.8_constant_S2,constant_S2,S2,constant,0.8,Size,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000027,9.14100047369959e-14,528,132
+0.8_constant_S2,constant_S2,S2,constant,0.8,Size,FALSE,n_brands_overlap,a_it,-3.5527136788005e-15,2.89493987406333e-15,528,132
+0.8_constant_S2,constant_S2,S2,constant,0.8,Size,FALSE,n_brands_overlap,avg_ml_per_ecig,-8.5265128291212e-14,2.25857601758047e-14,528,132
+0.8_constant_S3,constant_S3,S3,constant,0.8,Size,TRUE,n_brands_3st,fit_p_it,4.71844785465692e-16,1.94822131192899e-16,528,132
+0.8_constant_S3,constant_S3,S3,constant,0.8,Size,TRUE,n_brands_3st,fit_ln_s_i_g,1,5.69398172445809e-16,528,132
+0.8_constant_S3,constant_S3,S3,constant,0.8,Size,TRUE,n_brands_3st,a_it,3.55618312575245e-17,2.23656138187706e-17,528,132
+0.8_constant_S3,constant_S3,S3,constant,0.8,Size,TRUE,n_brands_3st,avg_ml_per_ecig,6.5225602696728e-16,2.107768601145e-16,528,132
+0.8_constant_S4,constant_S4,S4,constant,0.8,Size,TRUE,n_brands_overlap,fit_p_it,1.73472347597681e-16,1.52611879994413e-16,528,132
+0.8_constant_S4,constant_S4,S4,constant,0.8,Size,TRUE,n_brands_overlap,fit_ln_s_i_g,1,4.7836215402787e-16,528,132
+0.8_constant_S4,constant_S4,S4,constant,0.8,Size,TRUE,n_brands_overlap,a_it,1.99493199737333e-17,1.83481782860855e-17,528,132
+0.8_constant_S4,constant_S4,S4,constant,0.8,Size,TRUE,n_brands_overlap,avg_ml_per_ecig,3.46944695195361e-16,1.69424322253355e-16,528,132
+0.8_constant_V1,constant_V1,V1,constant,0.8,Variety,FALSE,n_brands_3st,(Intercept),-1.38629436111842,4.55664452218153e-13,528,132
+0.8_constant_V1,constant_V1,V1,constant,0.8,Variety,FALSE,n_brands_3st,fit_p_it,-4.2632564145606e-14,1.54703891951517e-14,528,132
+0.8_constant_V1,constant_V1,V1,constant,0.8,Variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000045,1.26228984289505e-13,528,132
+0.8_constant_V1,constant_V1,V1,constant,0.8,Variety,FALSE,n_brands_3st,a_it,-1.06581410364015e-14,2.74561041816961e-15,528,132
+0.8_constant_V1,constant_V1,V1,constant,0.8,Variety,FALSE,n_brands_3st,log_upc_variety,-5.6843418860808e-14,3.62444115343458e-14,528,132
+0.8_constant_V2,constant_V2,V2,constant,0.8,Variety,FALSE,n_brands_overlap,(Intercept),-1.38629436111569,3.97018393425154e-12,528,132
+0.8_constant_V2,constant_V2,V2,constant,0.8,Variety,FALSE,n_brands_overlap,fit_p_it,-9.9475983006414e-14,1.06530268950301e-13,528,132
+0.8_constant_V2,constant_V2,V2,constant,0.8,Variety,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000159,1.10107029532024e-12,528,132
+0.8_constant_V2,constant_V2,V2,constant,0.8,Variety,FALSE,n_brands_overlap,a_it,-2.30926389122033e-14,2.86870264413003e-14,528,132
+0.8_constant_V2,constant_V2,V2,constant,0.8,Variety,FALSE,n_brands_overlap,log_upc_variety,-4.54747350886464e-13,3.88475366550046e-13,528,132
+0.8_constant_V3,constant_V3,V3,constant,0.8,Variety,TRUE,n_brands_3st,fit_p_it,3.46944695195361e-17,2.03925540843697e-16,528,132
+0.8_constant_V3,constant_V3,V3,constant,0.8,Variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,7.84389363030687e-16,528,132
+0.8_constant_V3,constant_V3,V3,constant,0.8,Variety,TRUE,n_brands_3st,a_it,-5.89805981832114e-17,2.48458450963235e-17,528,132
+0.8_constant_V3,constant_V3,V3,constant,0.8,Variety,TRUE,n_brands_3st,log_upc_variety,-6.38378239159465e-16,3.08101220457096e-16,528,132
+0.8_constant_V4,constant_V4,V4,constant,0.8,Variety,TRUE,n_brands_overlap,fit_p_it,2.4980018054066e-16,1.60733134120587e-16,528,132
+0.8_constant_V4,constant_V4,V4,constant,0.8,Variety,TRUE,n_brands_overlap,fit_ln_s_i_g,1,6.39700789346313e-16,528,132
+0.8_constant_V4,constant_V4,V4,constant,0.8,Variety,TRUE,n_brands_overlap,a_it,-4.33680868994202e-17,2.4434779941175e-17,528,132
+0.8_constant_V4,constant_V4,V4,constant,0.8,Variety,TRUE,n_brands_overlap,log_upc_variety,-3.05311331771918e-16,2.72261202717728e-16,528,132
+0.8_constant_SV1,constant_SV1,SV1,constant,0.8,Size and variety,FALSE,n_brands_3st,(Intercept),-1.38629436111478,3.57983034582656e-12,528,132
+0.8_constant_SV1,constant_SV1,SV1,constant,0.8,Size and variety,FALSE,n_brands_3st,fit_p_it,-7.105427357601e-14,9.60145572720088e-14,528,132
+0.8_constant_SV1,constant_SV1,SV1,constant,0.8,Size and variety,FALSE,n_brands_3st,fit_ln_s_i_g,1.00000000000114,1.10375747642461e-12,528,132
+0.8_constant_SV1,constant_SV1,SV1,constant,0.8,Size and variety,FALSE,n_brands_3st,a_it,-3.19744231092045e-14,2.55925450828686e-14,528,132
+0.8_constant_SV1,constant_SV1,SV1,constant,0.8,Size and variety,FALSE,n_brands_3st,avg_ml_per_ecig,2.1316282072803e-14,1.94436784356826e-13,528,132
+0.8_constant_SV1,constant_SV1,SV1,constant,0.8,Size and variety,FALSE,n_brands_3st,log_upc_variety,-3.97903932025656e-13,3.62286179905187e-13,528,132
+0.8_constant_SV2,constant_SV2,SV2,constant,0.8,Size and variety,FALSE,n_brands_overlap,(Intercept),-1.38629436111523,2.73717987877891e-12,528,132
+0.8_constant_SV2,constant_SV2,SV2,constant,0.8,Size and variety,FALSE,n_brands_overlap,fit_p_it,-8.5265128291212e-14,6.92790323752079e-14,528,132
+0.8_constant_SV2,constant_SV2,SV2,constant,0.8,Size and variety,FALSE,n_brands_overlap,fit_ln_s_i_g,1.00000000000091,8.68598004205814e-13,528,132
+0.8_constant_SV2,constant_SV2,SV2,constant,0.8,Size and variety,FALSE,n_brands_overlap,a_it,-2.1316282072803e-14,2.04024884151838e-14,528,132
+0.8_constant_SV2,constant_SV2,SV2,constant,0.8,Size and variety,FALSE,n_brands_overlap,avg_ml_per_ecig,-4.2632564145606e-14,1.53551614521845e-13,528,132
+0.8_constant_SV2,constant_SV2,SV2,constant,0.8,Size and variety,FALSE,n_brands_overlap,log_upc_variety,-4.54747350886464e-13,2.8078353481003e-13,528,132
+0.8_constant_SV3,constant_SV3,SV3,constant,0.8,Size and variety,TRUE,n_brands_3st,fit_p_it,1.35308431126191e-16,2.1197116379434e-16,528,132
+0.8_constant_SV3,constant_SV3,SV3,constant,0.8,Size and variety,TRUE,n_brands_3st,fit_ln_s_i_g,1,7.13845288252768e-16,528,132
+0.8_constant_SV3,constant_SV3,SV3,constant,0.8,Size and variety,TRUE,n_brands_3st,a_it,-1.38777878078145e-17,2.6870028540129e-17,528,132
+0.8_constant_SV3,constant_SV3,SV3,constant,0.8,Size and variety,TRUE,n_brands_3st,avg_ml_per_ecig,1.83880688453542e-16,2.42919150958168e-16,528,132
+0.8_constant_SV3,constant_SV3,SV3,constant,0.8,Size and variety,TRUE,n_brands_3st,log_upc_variety,-5.27355936696949e-16,2.86814658236165e-16,528,132
+0.8_constant_SV4,constant_SV4,SV4,constant,0.8,Size and variety,TRUE,n_brands_overlap,fit_p_it,4.40619762898109e-16,1.37769537268882e-16,528,132
+0.8_constant_SV4,constant_SV4,SV4,constant,0.8,Size and variety,TRUE,n_brands_overlap,fit_ln_s_i_g,1,5.7166125176599e-16,528,132
+0.8_constant_SV4,constant_SV4,SV4,constant,0.8,Size and variety,TRUE,n_brands_overlap,a_it,4.68375338513738e-17,2.68235741001384e-17,528,132
+0.8_constant_SV4,constant_SV4,SV4,constant,0.8,Size and variety,TRUE,n_brands_overlap,avg_ml_per_ecig,6.31439345255558e-16,1.67444782747762e-16,528,132
+0.8_constant_SV4,constant_SV4,SV4,constant,0.8,Size and variety,TRUE,n_brands_overlap,log_upc_variety,1.11022302462516e-16,2.56147028190719e-16,528,132

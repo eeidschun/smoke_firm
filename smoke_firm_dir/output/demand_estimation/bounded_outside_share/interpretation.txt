@@ -1,0 +1,7 @@
+Bounded outside-share sensitivity: 48 original designs per band, 96 fits.
+Original outside share s0_t=1-Q_t/M_t is affine-mapped by its min/max into [lower+0.001,upper-0.001].
+Thus paths span 80.1%-89.9% or 60.1%-69.9%, strictly inside the requested bands. Original month ranking and relative spacing are preserved. Means are not forced to band midpoints.
+New M_t=Q_t/(1-new_s0_t). Unlike constant scaling of M, this alters its temporal shape; even the annual-baseline variant now has monthly M variation.
+This is a chosen diagnostic transformation, not an economically justified denominator. Sigma is freely estimated. Compressing outside-share variation also moves y toward within-nest log share plus a constant; sigma closer to one is not by itself evidence of correction.
+All fits use original UPC-unweighted price, current quality exogenous, geographic tax and original national/geographic active-brand count instruments, four control groups, with/without firm FE, 528 rows, 132 month clusters. No month FE.
+Shares, price, controls and instruments otherwise unchanged. Outside bounds, QR slope/residual checks and unchanged input hashes verified. No Markdown changes.

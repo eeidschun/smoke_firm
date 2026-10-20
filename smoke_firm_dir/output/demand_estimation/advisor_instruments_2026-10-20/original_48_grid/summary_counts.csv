@@ -1,0 +1,13 @@
+sample,market,price_measure,models,admissible_sigma,admissible_and_negative_alpha
+available,annual,p_it,72,2,2
+available,annual,p_it_volume_weighted,72,27,27
+common_lag,annual,p_it,152,6,6
+common_lag,annual,p_it_volume_weighted,152,53,53
+available,constant,p_it,72,0,0
+available,constant,p_it_volume_weighted,72,26,26
+common_lag,constant,p_it,152,0,0
+common_lag,constant,p_it_volume_weighted,152,52,52
+available,monthly,p_it,72,5,5
+available,monthly,p_it_volume_weighted,72,27,27
+common_lag,monthly,p_it,152,10,10
+common_lag,monthly,p_it_volume_weighted,152,52,52

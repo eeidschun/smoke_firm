@@ -12,6 +12,8 @@
 ##   p_it        UPC-unweighted mean of UPC-month real revenue / mL sold.
 ##               Each eligible UPC has equal weight, after collapsing T2 rows.
 ##               p_it * mL need not equal observed firm revenue.
+##   p_it_volume_weighted  separate e-liquid-mL-weighted mean UPC price,
+##               equal to firm real revenue / firm mL; p_it remains unchanged.
 ##   p_F         descriptive fringe revenue / mL (not a demand regressor).
 ##   a_it, a_Ft  UPC-unweighted mean delivered mg/mL (fxns/5, same as 2_preliminary_analysis/12).
 ##   M_t         k_t * US adult (18+) population, in mL. k_t = mean monthly mL
@@ -72,7 +74,9 @@ af     <- build_a_it_and_fringe(um_3, roster)
 bm <- um_3 %>%
   group_by(month, year, brand) %>%
   summarise(mL = sum(mL_sum), revenue_real = sum(revenue_real),
-            p_it = mean(upc_price_per_mL), .groups = "drop") %>%
+            p_it = mean(upc_price_per_mL),
+            p_it_volume_weighted = weighted.mean(upc_price_per_mL, mL_sum),
+            .groups = "drop") %>%
   left_join(roster %>% transmute(year, brand, incumbent = TRUE), by = c("year", "brand")) %>%
   mutate(incumbent = coalesce(incumbent, FALSE))
 
@@ -157,7 +161,7 @@ demand_im <- bm %>%
          s_i_g  = s_it / s_g,                                # within-nest share
          y      = log(s_it) - log(s_0),                      # eq. 7 LHS
          ln_s_i_g = log(s_i_g)) %>%                          # eq. 7 within-nest regressor
-  select(month, year, brand, mL, revenue_real, p_it, a_it, s_it, s_i_g, s_g, s_0,
+  select(month, year, brand, mL, revenue_real, p_it, p_it_volume_weighted, a_it, s_it, s_i_g, s_g, s_0,
          y, ln_s_i_g, TaxIV, starts_with("n_"), M_t, M_t_k_monthly, M_t_k_const) %>%
   arrange(brand, month)
 

@@ -1,0 +1,21 @@
+R version 4.2.2 (2022-10-31 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19045)
+
+Matrix products: default
+
+locale:
+[1] C
+system code page: 65001
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] fixest_0.12.0     data.table_1.15.2
+
+loaded via a namespace (and not attached):
+ [1] zoo_1.8-11          compiler_4.2.2      tools_4.2.2        
+ [4] sandwich_3.0-2      dreamerr_1.4.0      Rcpp_1.0.9         
+ [7] nlme_3.1-160        grid_4.2.2          Formula_1.2-4      
+[10] numDeriv_2016.8-1.1 stringmagic_1.1.0   lattice_0.20-45    

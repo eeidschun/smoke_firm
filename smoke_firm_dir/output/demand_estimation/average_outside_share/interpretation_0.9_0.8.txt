@@ -1,0 +1,7 @@
+Mean outside-share sensitivity; no Markdown modified.
+Each original market-size series is multiplied by c=mean_month(Q/M)/(1-target), with equal weight on each of the 132 calendar months.
+Original monthly market-size shape and all liquid quantities are retained; outside shares vary monthly. Annual M remains constant within each year, as before.
+The original 48 designs use UPC-unweighted price, current quality exogenous, original tax and national/geographic brand-count instruments, four control groups, with/without firm FE. All use the same 528 rows. No month FE; SE clustered by month.
+Only M, outside shares and the dependent variable change. Within-nest share, instruments, controls, sample and prices are fixed, so first stages are unchanged.
+All target means, positivity, independent QR coefficients/residuals and unchanged source hashes passed checks. These are diagnostic scalings, not economically approved market definitions.
+Reproduce or toggle: Rscript --vanilla smoke_firm_dir/code/3_demand_estimation/18_average_outside_share.R 0.90 0.80

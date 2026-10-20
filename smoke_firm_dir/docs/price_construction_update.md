@@ -1,5 +1,13 @@
 # Price construction and retail-volume rebuild ? 2026-10-07
 
+## Advisor follow-up: 2026-10-20
+
+The separate sales-weighted price uses **e-liquid mL weights**: `p_it_volume_weighted = sum_u(Q_u * p_u) / sum_u Q_u = firm real revenue / firm mL`. Existing `p_it` remains UPC-unweighted. Both measures are saved for all eligible brand-months in `input/price_measures_firm_month.rds`; the demand builder includes the additional column on future runs. Existing canonical panels and demand fits were not overwritten.
+
+Across 540 incumbent firm-months, existing `p_it * mL` totals $7.16248 billion versus $4.75711 billion in observed real revenue: net overstatement $2.40537 billion (50.56%). The median signed firm-month gap is +35.17%; the middle half spans +2.33% to +61.25%; the full range is -42.98% to +186.06%. Summed absolute dollar gaps equal 52.53% of observed revenue. 419 observations overstate and 121 understate revenue. On the 528-row matched sample, net overstatement is 51.23%. These totals span 2013-2023 and refer to eligible scanner sales, not total industry revenue.
+
+[Full comparison](../output/prelim_analysis/price_revenue_comparison/README.md) contains firm breakdowns, with annual detail and largest discrepancies in accompanying CSVs. Volume-weighted price times volume reproduces observed revenue for every eligible brand-month. Reconstructed original price, volume and revenue match the saved 540-row incumbent panel. Reproduce with `Rscript --vanilla smoke_firm_dir/code/2_preliminary_analysis/16_price_revenue_comparison.R`. This comparison does not select a replacement demand specification.
+
 Firm-month price remains the UPC-unweighted mean of UPC-month prices in real dollars per mL:
 
 `p_upc,t = sum(real revenue_upc,t) / sum(corrected mL sold_upc,t)`

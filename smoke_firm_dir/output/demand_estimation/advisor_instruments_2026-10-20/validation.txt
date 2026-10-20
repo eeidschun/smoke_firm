@@ -1,0 +1,3 @@
+Baseline SV3/SV4 coefficients and covariance matrices reproduce saved fits.
+All 76 focal-model conditional F statistics pass independent fixest conditional-IV and full-design sandwich::vcovCL checks.
+All 224 models passed independent explicit-dummy QR slope checks in the estimation script.
