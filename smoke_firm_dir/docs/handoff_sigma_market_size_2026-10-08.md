@@ -104,6 +104,29 @@ The IV investigation remains open at the user's request. [Coefficient tables](..
 
 Both specifications associate tax negatively with price and positively with within-nest share and y; count is negatively associated with all three outcomes. These are conditional associations, not established causal effects. Tax's negative price first-stage coefficient warrants scrutiny. Saved alpha is approximately -0.00503 in SV3 and +0.00418 in SV4, while sigma is 2.18644/2.22679. Consequently, the reduced-form instrument coefficients are numerically accounted for almost entirely by the share contribution. This is an exact-identification identity, not an exclusion test or proof of the cause of sigma > 1. First stages reproduce saved coefficients/covariances and all six regressions pass explicit-dummy QR slope checks. Inputs and saved demand fits were unchanged.
 
+### Odd tax–price sign: sensitivity to nicotine and capacity (2026-10-12)
+
+Standalone price-first-stage diagnostics hold the 528 matched incumbent firm-months, geographic population-weighted tax, national brand count, firm FE and month-clustered standard errors fixed. There are no month FE. Varying the included characteristics shows that the negative tax coefficient depends strongly on conditioning on nicotine or capacity:
+
+| Included characteristics | Tax coefficient | Month-clustered SE |
+|---|---:|---:|
+| None: exclude nicotine, capacity and variety | +0.84379 | 0.29271 |
+| Variety only: exclude nicotine and capacity together | +0.77509 | 0.28492 |
+| Nicotine only | -1.43218 | 0.33995 |
+| Capacity only | -1.10000 | 0.28167 |
+| Nicotine and capacity, no variety | -1.67242 | 0.34956 |
+| Nicotine and variety: exclude capacity only | -1.41189 | 0.33129 |
+| Capacity and variety: exclude nicotine only | -1.08758 | 0.28047 |
+| Nicotine, capacity and variety: current SV3 | -1.69852 | 0.33985 |
+
+Excluding nicotine and capacity **together** reverses the current negative association. Adding either characteristic **separately** to the otherwise basic first stage also reverses the positive association to negative. Excluding only one from SV3 does **not** reverse the sign, because the remaining characteristic still produces a negative conditional coefficient. This distinction matters when describing the diagnostic.
+
+The reversal identifies sensitivity to conditioning; it does not establish that nicotine or capacity is endogenous, that the tax instrument satisfies exclusion, or that omitting these demand attributes is appropriate. Firms' choices of nicotine and capacity in response to unobserved demand provide an economic reason to question exogeneity, but correlation among tax, prices and observed characteristics can also produce a reversal with exogenous controls. Common changes over time and product composition remain possible explanations. No structural demand specification has been changed or selected on the basis of these results.
+
+In standard 2SLS, included structural demand controls also enter both first stages. Treating nicotine and/or capacity as endogenous would require joint instrumentation with price and within-nest share, sufficient additional excluded instruments, and assessment of relevance and exclusion. The current two excluded instruments are insufficient to identify three or four endogenous regressors without additional restrictions.
+
+Results: [matched aggregation/conditioning diagnostic](../output/prelim_analysis/state_price_tax_diagnostic/aggregation_bridge/README.md), with exact coefficients in `results.csv`. Script: `code/2_preliminary_analysis/18_aggregation_price_tax_bridge.R`. Current national prices, geographic tax and SV3/SV4 price-first-stage coefficients were independently reproduced. Canonical inputs, saved demand fits and NCP data were unchanged.
+
 ## Where to resume
 
 - Current results: `output/demand_estimation/specification_comparison/README.md`, `comparison.html`, `README.pdf`.
