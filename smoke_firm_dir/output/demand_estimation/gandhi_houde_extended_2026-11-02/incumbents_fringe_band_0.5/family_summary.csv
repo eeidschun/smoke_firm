@@ -1,0 +1,13 @@
+family,instrument_set,fits,qualifying,also_negative_alpha,mean_qualifying,median_qualifying
+nicotine,Baseline,12,12,10,0.819682985055373,0.822455142777197
+nicotine,Tax_Local,12,0,0,,
+nicotine,Tax_Both,12,0,0,,
+nicotine,Both_only,12,2,0,0.887278846587497,0.887278846587497
+nicotine,Baseline_Local,12,12,6,0.779059370030141,0.768170064368723
+nicotine,Baseline_Quadratic,12,0,0,,
+nicotine,Baseline_Both,12,2,2,0.927832397333892,0.927832397333892
+nicotine,Tax_Local_Interactions,12,3,3,0.463294768327083,0.303484004341422
+nicotine,Baseline_Local_Interactions,12,12,12,0.753808524983544,0.735348208889382
+nicotine,Tax_Monthly_Local,12,8,5,0.828400465558881,0.822308755374159
+nicotine,Tax_Monthly_Quadratic,12,0,0,,
+nicotine,Tax_Quadratic,6,0,0,,

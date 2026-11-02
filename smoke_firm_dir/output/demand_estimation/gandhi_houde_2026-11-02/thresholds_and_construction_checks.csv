@@ -1,0 +1,7 @@
+family,characteristic,pair_difference_sd,pairs,construction_error
+nicotine,a_it,7.33437503093284,1848,0
+nicotine_size,a_it,5.83492515331555,1488,0
+nicotine_size,avg_ml_per_ecig,1.31186148353876,1488,0
+nicotine_size_variety,a_it,5.83492515331555,1488,0
+nicotine_size_variety,avg_ml_per_ecig,1.31186148353876,1488,0
+nicotine_size_variety,log_upc_variety,0.604918248221894,1488,0

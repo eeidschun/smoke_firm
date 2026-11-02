@@ -1,0 +1,17 @@
+design,reason,n_excluded
+nicotine_B_Local_only,fewer than two excluded instruments,1
+nicotine_B_Quadratic_only,fewer than two excluded instruments,1
+nicotine_S_Local_only,fewer than two excluded instruments,1
+nicotine_S_Quadratic_only,fewer than two excluded instruments,1
+nicotine_V_Local_only,fewer than two excluded instruments,1
+nicotine_V_Quadratic_only,fewer than two excluded instruments,1
+nicotine_SV_Local_only,fewer than two excluded instruments,1
+nicotine_SV_Quadratic_only,fewer than two excluded instruments,1
+size_S_Local_only,fewer than two excluded instruments,1
+size_S_Quadratic_only,fewer than two excluded instruments,1
+size_SV_Local_only,fewer than two excluded instruments,1
+size_SV_Quadratic_only,fewer than two excluded instruments,1
+variety_V_Local_only,fewer than two excluded instruments,1
+variety_V_Quadratic_only,fewer than two excluded instruments,1
+variety_SV_Local_only,fewer than two excluded instruments,1
+variety_SV_Quadratic_only,fewer than two excluded instruments,1

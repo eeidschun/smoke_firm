@@ -1,0 +1,30 @@
+Gandhi-Houde-style exploratory exercise, November 2, 2026.
+No meeting notes, selected supply specification, or canonical inputs changed.
+
+150 planned specifications: 12 underidentified (four designs x three market sizes), six numerically unstable nicotine-only tax-free fits, 132 retained with verified estimates. Baselines are included in these counts. No full fitted model objects saved.
+
+Characteristics / retained fits / admissible sigma / also negative alpha:
+Nicotine: 42 / 19 / 18.
+Nicotine + size: 60 / 10 / 10.
+Nicotine + size + log variety: 30 / 3 / 3.
+These are different samples/control grids, not directly comparable success rates.
+
+Closest comparison to current chosen demand specification (528 rows, B controls, constant intensity, no FE, volume-weighted price):
+Excluded instruments                          alpha       sigma
+Sales tax + annual count (baseline)          -0.333588    0.869476
+Sales tax + nicotine local                   -0.339170    1.740286
+Sales tax + nicotine quadratic               -0.322331   -0.886624
+Sales tax + both nicotine GH measures        -0.336482    1.212932
+Baseline + nicotine local                    -0.365308    0.935425
+Baseline + nicotine quadratic                -0.324746    1.060674
+Baseline + both nicotine GH measures         -0.358075    0.973421
+
+Replacing annual count by these nicotine differentiation instruments does not produce admissible sigma in the closest chosen-specification comparison. Adding local counts (or local+quadratic) to the baseline retains admissible sigma but moves it nearer one. No automatic improvement or instrument-validity claim follows.
+
+Using nicotine alone without tax or annual count is extremely weak: conditional F approximately 1.2e-7 for the B both-measures design, enormous coefficient estimates, and failed independent numerical agreement. These six market/control fits are logged as unstable, not reported as trustworthy point estimates.
+
+Size instruments require full rival-size coverage, so all 2018 months are excluded (468 observations / 120 months). Their baselines refitted on exactly the same sample have no admissible sigma. Some size-based quadratic sets produce admissible estimates, but cannot be compared to full-sample baseline without the matched controls/sample results. See matched_comparison.csv.
+
+All six full-coverage nicotine baselines reproduce prior saved coefficients and SEs. Retained estimates pass independent explicit QR checks and conditional-F sandwich checks. Exogeneity of nicotine, size, and assortment is maintained, not established; GH-style instruments do not solve endogenous positioning or tax sales-weight endogeneity by construction. No firm-ownership decomposition beyond one independent brand/product, no fringe differentiation characteristics, no interactions, no predicted-price instruments, no endogenous-quality extension in this first pass.
+
+Sources: Gandhi and Houde, NBER w26375 https://www.nber.org/papers/w26375 ; construction definitions cross-checked with https://pyblp.readthedocs.io/en/stable/_api/pyblp.build_differentiation_instruments.html . Instruments and IV estimation implemented in R, not with PyBLP.

@@ -1,0 +1,21 @@
+design,reason,n_excluded,market,coefficient_error,residual_error,alpha,sigma,projected_condition_number
+nicotine_B_Local_only,fewer than two excluded instruments,1,,,,,,
+nicotine_B_Quadratic_only,fewer than two excluded instruments,1,,,,,,
+nicotine_S_Local_only,fewer than two excluded instruments,1,,,,,,
+nicotine_S_Quadratic_only,fewer than two excluded instruments,1,,,,,,
+nicotine_V_Local_only,fewer than two excluded instruments,1,,,,,,
+nicotine_V_Quadratic_only,fewer than two excluded instruments,1,,,,,,
+nicotine_SV_Local_only,fewer than two excluded instruments,1,,,,,,
+nicotine_SV_Quadratic_only,fewer than two excluded instruments,1,,,,,,
+size_S_Local_only,fewer than two excluded instruments,1,,,,,,
+size_S_Quadratic_only,fewer than two excluded instruments,1,,,,,,
+size_SV_Local_only,fewer than two excluded instruments,1,,,,,,
+size_SV_Quadratic_only,fewer than two excluded instruments,1,,,,,,
+variety_V_Local_only,fewer than two excluded instruments,1,,,,,,
+variety_V_Quadratic_only,fewer than two excluded instruments,1,,,,,,
+variety_SV_Local_only,fewer than two excluded instruments,1,,,,,,
+variety_SV_Quadratic_only,fewer than two excluded instruments,1,,,,,,
+variety_SV_Both_only,numerically unstable: independent QR comparison fails,2,annual,2.47540617692721e-05,9.64900817734815e-06,86.0786046040163,-41.6395718426274,251802.286927785
+variety_SV_Both_only,numerically unstable: independent QR comparison fails,2,monthly,2.83502328102259e-05,1.10839076228331e-05,99.6973472691701,-48.427876449227,251802.286927785
+variety_SV_Both_only,numerically unstable: independent QR comparison fails,2,constant,2.88927110432269e-05,1.13345288355049e-05,101.375232577657,-48.8480865195654,251802.286927785
+nicotine_variety_V_Local_only,numerically unstable: independent QR comparison fails,2,constant,1.12664395146567e-07,4.29384314770687e-08,7.73368953035744,-8.26561288213821,40552.8208091877

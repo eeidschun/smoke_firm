@@ -1,0 +1,18 @@
+Extended Gandhi-Houde-style sensitivity, November 2, 2026.
+
+Expanded characteristic combinations, local bandwidths (0.5, 1, 2 pooled pair-difference SDs), signed local interactions, quadratic cross interactions, baseline/monthly count combinations, and nicotine differentiation including the passive aggregate fringe. No firm FE; volume-weighted prices; sales-weighted taxes where present; current characteristics exogenous. All three market-size variants. Full rival coverage and baseline samples matched. No current specification or pricing inputs replaced.
+
+2129 retained fits; 646 have 0<sigma<1 and 561 also negative alpha. 216 market-specific fits underidentified (72 designs x 3 market sizes) and 31 numerically unstable market fits logged separately. Counts contain deliberate repeats of bandwidth-invariant specifications, different control/sample families, and baseline fits; they are descriptive, not independent evidence.
+
+Closest selected-specification comparisons, 528 rows, nicotine-only controls, constant intensity:
+Baseline tax+annual count: alpha -0.333588, sigma 0.869476 (SE 0.237314).
+Incumbent-only rivals, bandwidth 2, tax+local: alpha -0.333782, sigma 0.899757 (SE 0.161256).
+Same, tax+local interactions: alpha -0.291365, sigma 0.955033 (SE 0.140707).
+Incumbents+aggregate fringe, bandwidth 0.5, baseline+local: alpha -0.316846, sigma 0.773295 (SE 0.221394).
+All four sigma confidence intervals extend above one. Rival-pool and bandwidth choices materially affect results. Narrow/incumbent bandwidths 0.5/1 tax+local give sigma 4.119/1.740, whereas wider bandwidth 2 gives 0.900. Including fringe produces different patterns, not a uniformly improved family. Some richer-characteristic designs yield admissibility, but size-family samples exclude all 2018.
+
+This expands the first-pass conclusion: some GH-style variants can yield admissible and more precise estimates in the same chosen-control/sample setting. There is no robust, definition-insensitive improvement establishing a replacement for the provisional demand specification. Instrument exclusion, endogenous positioning/assortment, and sales-weighted-tax endogeneity remain unverified. No overidentification tests or weak-IV-robust inference performed. Do not select by sigma alone.
+
+Validation: independent matrix construction checks including all interaction terms across 3024 variant/family/month groups agree within 9e-14; all retained fit slopes/residuals pass independent QR checks; matched baselines invariant to bandwidth and rival-pool definitions on the same samples; source hashes unchanged. No full fitted objects saved.
+
+Sources: https://www.nber.org/papers/w26375 ; https://pyblp.readthedocs.io/en/stable/_api/pyblp.build_differentiation_instruments.html . Bandwidth changes are explicitly labeled sensitivity variants. No package GH estimator used.

@@ -1,0 +1,9 @@
+Extended GH-style trial November 2, 2026.
+Incumbent pools: all seven nonempty combinations of nicotine, size, log variety; controls include all own characteristics used in IVs. Nicotine rivals also tested with an observed aggregate fringe alternative.
+Local bandwidth 0.5, 1, 2 times pooled SD of ordered within-month characteristic differences; strict inequality. Quadratic sums normalized by SD squared.
+Local signed-difference interactions and cross-characteristic quadratic interactions added, plus monthly-count combinations. One-product-per-brand, no ownership portfolio split.
+Volume-weighted price; no firm or month FE; exogenous current characteristics; sales-weighted tax where present; existing three market sizes. No endogenous-quality or predicted-price instruments.
+Months with missing rival characteristics dropped whole; original complete-size estimation rule retained. Baseline refit within each exact variant/characteristic/control/market sample. Bandwidth-invariant specifications repeated deliberately and not independent evidence.
+Numerically unstable, underidentified and rank-deficient designs logged separately. Conditional F unavailable if clustered moment covariance singular; no generalized-inverse F invented.
+Source construction: https://pyblp.readthedocs.io/en/stable/_api/pyblp.build_differentiation_instruments.html ; GH paper https://www.nber.org/papers/w26375 . Hand-coded IVs, no PyBLP estimator.
+No full fitted objects, no supply specification change, no new raw rebuild. Characteristic and sales-tax exogeneity are maintained assumptions, not validated by admissible sigma.

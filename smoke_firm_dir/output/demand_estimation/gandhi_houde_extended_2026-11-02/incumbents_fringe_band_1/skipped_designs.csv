@@ -1,0 +1,15 @@
+design,market,reason,n_excluded,coefficient_error,residual_error,alpha,sigma,projected_condition_number
+nicotine_B_Tax_Quadratic,annual,numerically unstable: independent QR comparison fails,2,1.14610412538241e-06,6.54958938639538e-07,0.564810529871638,-98.2141368023422,75277.3593289531
+nicotine_B_Tax_Quadratic,monthly,numerically unstable: independent QR comparison fails,2,1.10543587084067e-06,6.35051080166704e-07,0.547473886389775,-93.6624222062481,75277.3593289531
+nicotine_B_Tax_Quadratic,constant,numerically unstable: independent QR comparison fails,2,9.99550763935986e-07,5.73623239574772e-07,0.219145544794407,-85.3627523885442,75277.3593289531
+nicotine_B_Local_only,,fewer than two excluded instruments,1,,,,,
+nicotine_B_Quadratic_only,,fewer than two excluded instruments,1,,,,,
+nicotine_S_Tax_Quadratic,annual,numerically unstable: independent QR comparison fails,2,6.8344959913702e-05,4.6020090167076e-05,-2.47753912102639,-478.690196349444,340950.207944863
+nicotine_S_Tax_Quadratic,monthly,numerically unstable: independent QR comparison fails,2,6.48421455480275e-05,4.35453600857727e-05,-2.34860017342958,-455.845265438355,340950.207944863
+nicotine_S_Tax_Quadratic,constant,numerically unstable: independent QR comparison fails,2,6.1106057842153e-05,4.11440731795665e-05,-2.55575236440701,-432.391313799898,340950.207944863
+nicotine_S_Local_only,,fewer than two excluded instruments,1,,,,,
+nicotine_S_Quadratic_only,,fewer than two excluded instruments,1,,,,,
+nicotine_V_Local_only,,fewer than two excluded instruments,1,,,,,
+nicotine_V_Quadratic_only,,fewer than two excluded instruments,1,,,,,
+nicotine_SV_Local_only,,fewer than two excluded instruments,1,,,,,
+nicotine_SV_Quadratic_only,,fewer than two excluded instruments,1,,,,,

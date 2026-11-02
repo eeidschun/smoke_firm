@@ -49,3 +49,15 @@ Rscript --vanilla smoke_firm_dir/code/4_static_pricing_subgame/7_audit_plots.R
 ```
 
 The audit directory is inside `output/static_pricing_subgame/manual_fixed_point_2026-10-28/`. Existing pricing/recovery inputs remain unchanged. The cost-perturbation scenario is a numerical check with demand states held fixed, not a new empirical estimate.
+
+
+## Sequential algorithm robustness checks
+
+8. `8_sequential_pricing_functions.R`: Gauss–Seidel markup updates and sequential exact best responses using manual bisection. Each update uses the latest rivals' prices. Convergence is tested for all firms together after a full sweep.
+9. `9_audit_sequential_pricing.R`: all 132 months, four initial price vectors, alphabetical/reverse firm orders, markup damping 0.5/1 and best-response damping 1. All 3,168 runs converge; final unilateral checks pass. Unit checks verify a hand-calculated sequential sweep, explicit iteration-budget failure, one-firm equivalence and consistent relabeling/order invariance. Recovery and simultaneous-solve inputs remain unchanged.
+
+```
+Rscript --vanilla smoke_firm_dir/code/4_static_pricing_subgame/9_audit_sequential_pricing.R
+```
+
+Results and three plot pages: `output/static_pricing_subgame/manual_fixed_point_2026-10-28/audit/sequential_checks_2026-11-02/`. When `pdfunite` is available, the script also creates `audit/pricing_audit_plots_with_sequential.pdf`, preserving the original nine-page booklet separately. Sequential update order is a computational choice, not a Stackelberg/sequential-move economic assumption. Sweep counts are not directly comparable computational effort across algorithms because best responses have inner bisection steps. No full fitted-model objects are saved.

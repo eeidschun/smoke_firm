@@ -1,0 +1,2 @@
+Extended GH variant: incumbents_band_2
+See ../interpretation.txt for the expanded design and assumptions. Bandwidth-invariant fits are deliberate repetitions. Estimates and validation files are in this directory.

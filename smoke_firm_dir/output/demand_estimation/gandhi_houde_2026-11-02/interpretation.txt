@@ -1,0 +1,13 @@
+Exploratory GH-style differentiation IVs, November 2, 2026. No meeting notes modified.
+Sources: https://www.nber.org/papers/w26375 ; https://pyblp.readthedocs.io/en/stable/_api/pyblp.build_differentiation_instruments.html
+Hand-constructed local counts and squared-distance sums; no PyBLP estimator used. Market = month, alternative = national incumbent brand.
+Rivals are all other incumbent brands in the original annual roster, before estimation exclusions. Aggregate fringe not included in characteristic distances; fringe volume remains in demand shares. Brand treated as single-product independent pricing firm; actual parent ownership not encoded.
+Local instrument counts rival brands with absolute characteristic difference strictly below pooled SD of ordered within-market pair differences, excluding self. SD computed once per characteristic/coverage family across all eligible months.
+Quadratic instrument sums squared differences divided by that same SD squared; scaling changes units only. No interactions or predicted-price instruments.
+Own-firm differentiation sums are zero under one-product-per-brand and are not included.
+Characteristics: nicotine; nicotine+size; nicotine+size+log variety. All treated as exogenous; no current/lag quality endogenous models. Own corresponding characteristics included as controls.
+If any incumbent lacks a characteristic, exclude the entire month for that characteristic family. In particular size families drop all 2018, not just BLU. No incomplete rival sets or imputation.
+Volume-weighted prices, sales-weighted taxes where present, no firm or month FE, month-clustered SEs. Original annual/monthly/constant market sizes, roster, and quantity totals retained. Original 528-row complete-size rule retained before further complete-market exclusions.
+Baseline tax+annual incumbent count refit on every matched sample. Differentiation instruments tested alone, replacing count while retaining tax, and supplementing baseline. Underidentified/rank-deficient sets explicitly skipped.
+Instrument validity requires exogeneity of product positioning and relevant rival characteristics conditional on controls. GH does not fix endogenous nicotine/assortment or sales-weighted tax automatically. Admissible sigma is not model validation.
+Every retained fit passes explicit QR coefficient/residual checks; unstable estimates are logged in skipped_designs.csv; conditional SW F checked by full-design clustered sandwich. No overidentification tests or weak-IV-robust inference. No full fitted objects saved or supply specification replaced.
