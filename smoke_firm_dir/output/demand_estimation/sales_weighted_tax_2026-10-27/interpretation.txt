@@ -1,0 +1,9 @@
+Tax-weight sensitivity: 2026-10-27.
+Population: existing population weights over each brand-month operating states.
+Sales: same-month brand-specific eligible liquid-volume shares across states; not revenue/package weights or a simple UPC average.
+Both prices, controls B/S/V/SV, with/without firm FE, three market sizes, 19 exogenous-quality instrument sets and 9 identified endogenous-quality sets.
+Per mode: 1344 exogenous-quality + 432 endogenous-quality = 1776 fits. Exogenous-quality grid includes original 48 designs.
+All original samples, market sizes, prices, quality and other instruments unchanged. TaxIV_geo is internal name in each mode; weights differ by mode.
+Population original48 validation checks against saved canonical estimates/covariances. Every fit has independent QR slope/residual checks; conditional F checks retained.
+Sales weights can correlate with demand shocks and quantity measurement error. Admissible sigma is not evidence of exclusion or a model-selection criterion.
+Existing panels, NCP input, raw data and original results not overwritten.

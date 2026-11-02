@@ -186,7 +186,7 @@ its header.
   It is UPC-unweighted, matching the across-UPC convention for `a_it`;
   `p_it * firm mL` need not equal observed revenue. The descriptive fringe
   `p_F` remains aggregate revenue / mL and is not a demand regressor.
-  See [the price update](../docs/price_construction_update.md).
+  See [the price update](../docs/meetings/marc_mtg_2026-10-14_sigma_troubleshooting.md#price-construction-and-retail-volume-rebuild-consolidated-reference).
 - **Timeline events.** `fxns/4` holds the standard event markers (EVALI, the
   JUUL flavour pull, FDA flavoured-cartridge enforcement, the PMTA deadline).
   Scripts that need a different event define it locally; for example,

@@ -1,0 +1,22 @@
+R version 4.2.2 (2022-10-31)
+Platform: aarch64-apple-darwin20 (64-bit)
+Running under: macOS 14.4.1
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRblas.0.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRlapack.dylib
+
+locale:
+[1] C
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] fixest_0.11.2     data.table_1.17.4
+
+loaded via a namespace (and not attached):
+ [1] zoo_1.8-11          compiler_4.2.2      tools_4.2.2        
+ [4] sandwich_3.0-2      dreamerr_1.3.0      Rcpp_1.0.10        
+ [7] nlme_3.1-160        grid_4.2.2          Formula_1.2-4      
+[10] numDeriv_2016.8-1.1 lattice_0.20-45    

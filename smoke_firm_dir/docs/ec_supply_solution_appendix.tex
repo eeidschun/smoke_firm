@@ -1,0 +1,256 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,longtable,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\setlength{\emergencystretch}{3em}
+\title{E-Cigarette Supply --- Solution Appendix}
+\author{Erin Eidschun}
+\date{Draft --- reconstructed and revised October 27, 2026}
+\begin{document}\maketitle
+Companion to \textit{E-Cigarette Supply: A Conference-Version Model}. This note sets out demand, the static pricing system, proposed state transitions, and the dynamic entry/exit fixed point.
+\paragraph{Revision record.} Reconstructed from the archived PDF with duplicate/overlapping passages consolidated. Use $+\alpha p$ with signed $\alpha<0$ throughout, include the estimated intercept, and calibrate passive fringe utility including unobserved quality. Numerical pricing is to be implemented manually. Current static decisions are distinguished from deferred dynamic assumptions. Original PDFs are archived in \texttt{source\_archive/pre\_reconstruction/}.
+
+\section*{0. Scope}
+At month $t$, active incumbents $i\in I_t$ carry $\omega_{i,t}=(a_{i,t},\xi_{i,t})$. The fringe $F$ is one passive aggregate alternative. The dynamic draft allows at most one potential entrant and proposes a cap $\bar N=5$; the empirical roster can contain six incumbents, so that cap is not imposed on initial observed-market replication. Static pricing holds current states, costs, roster, and fringe utility fixed. Markov laws are not needed until continuation values or simulations over future states are computed.
+
+\section{Demand system}
+Let $c$ denote the common intercept, reserving $mc_i$ for marginal costs. Mean utility is
+\begin{equation}\label{eq:utility}
+\delta_{i,t}=c+\beta_a a_{i,t}+\xi_{i,t}+\alpha p_{i,t},\qquad \alpha<0,\quad 0\leq\sigma<1.
+\end{equation}
+The quality coefficient is free, not normalized to one, since nicotine is a physically measured observable. Incumbents and fringe share a nest $g$, while outside utility is normalized to zero:
+\begin{align}
+D_{g,t}&=\sum_{j\in I_t\cup\{F\}}\exp(\delta_{j,t}/(1-\sigma)),&
+s_{i\mid g,t}&=\frac{\exp(\delta_{i,t}/(1-\sigma))}{D_{g,t}},\label{eq:conditional}\\
+IV_{g,t}&=(1-\sigma)\log D_{g,t},&s_{g,t}&=\frac{\exp(IV_{g,t})}{1+\exp(IV_{g,t})},\\
+s_{i,t}&=s_{i\mid g,t}s_{g,t},&s_{0t}&=1-s_{g,t}.\label{eq:shares}
+\end{align}
+For incumbents $i,j$ in the same nest,
+\begin{align}
+\frac{\partial s_i}{\partial p_i}
+&=\alpha s_i\left[\frac{1}{1-\sigma}-\frac{\sigma}{1-\sigma}s_{i\mid g}-s_i\right]<0,\label{eq:own}\\
+\frac{\partial s_i}{\partial p_j}
+&=-\alpha s_i\left[\frac{\sigma}{1-\sigma}s_{j\mid g}+s_j\right]>0,\quad j\ne i.\label{eq:cross}
+\end{align}
+At $\sigma=0$, these reduce to $\alpha s_i(1-s_i)$ and $-\alpha s_is_j$, respectively. These signs correspond to the signed price slope; the old PDF used a positive sensitivity multiplying $-p$.
+
+\subsection*{Demand estimation and residual recovery}
+\begin{enumerate}
+\item Construct shares from observed eligible liquid volumes: $s_{it}=q_{it}/M_t$, $s_{Ft}=q_{Ft}/M_t$, $s_{gt}=(\sum_iq_{it}+q_{Ft})/M_t$, $s_{0t}=1-s_{gt}$. The fringe belongs in the nest total before any incumbent regression exclusions.
+\item Compute the outcome $\log(s_{it}/s_{0t})$ and regressor $\log(s_{it}/s_{gt})$. Neither requires known demand parameters.
+\item Estimate the single incumbent-only IV regression
+\begin{equation}\label{eq:inversion}
+\log(s_{it}/s_{0t})=c+\alpha p_{it}+\beta_a a_{it}+\sigma\log(s_{it}/s_{gt})+\xi_{it}.
+\end{equation}
+Price and within-nest log share are jointly endogenous, current quality is exogenous in the provisional specification, and $c,\alpha,\beta_a,\sigma$ are estimated jointly. Recover $\widehat\xi_{it}$ as the regression residual; do not re-estimate it as prices change in a pricing counterfactual.
+\item The fringe is not a regression row, but its total utility is now calibrated using the same inversion:
+\begin{equation}\label{eq:fringe}
+\delta_{F,t}^{\mathrm{obs}}=\log(s_{Ft}/s_{0t})-\sigma\log(s_{Ft}/s_{gt}).
+\end{equation}
+With consistently measured $p_{Ft}$ and $a_{Ft}$, define
+\[
+\xi_{Ft}=\delta_{F,t}^{\mathrm{obs}}-c-\beta_a a_{Ft}-\alpha p_{Ft}.
+\]
+This replaces the restriction $\delta_F=\beta_a a_F$. Total fringe utility is sufficient for the initial static solve; its decomposition does not identify a separate fringe demand equation. Hold $\delta_{Ft}$ fixed during that solve, allowing its share to change with incumbent prices.
+\end{enumerate}
+The residual $\xi_{it}$ is a market-level unobserved demand attribute, distinct from individual-level taste disturbances integrated out to obtain the nested-logit share system. The original estimation explanation emphasizes that Nielsen provides aggregate shares, not consumer-level choice observations: use nested-logit inversion with IV rather than applying an individual-choice likelihood directly to aggregate shares. Do not confuse recovering $\widehat\xi$ after estimation with supplying it as a known regressor beforehand. Historical quality $a_{it}$ and fringe quality $a_{Ft}$ are equal-UPC delivered-nicotine measures constructed from the data; calibration of total fringe utility does not redefine measured quality.
+
+\paragraph{Price construction and current calibration.} Historically, price was the equal-UPC mean of UPC real revenue/corrected mL, filtering to known brands, positive units/volume, and at least three stores nationally. Reviewed pack sizes/counts feed retail volume, nicotine, and shares; NCP household inputs are preserved. Equal-UPC price times firm volume generally differs from observed revenue. The current provisional candidate instead uses liquid-volume-weighted price (firm real revenue/firm mL), no firm FE, nicotine only, constant consumption intensity times adult population, and sales-volume-weighted state tax plus annual incumbent count instruments. The 528-row estimates are $c=-6.893768$, $\alpha=-0.333588$, $\beta_a=0.110019$, and $\sigma=0.869476$. Diagnostics also consider size, log variety, other instruments, and annual/monthly intensity. The calibration is provisional: the negative tax--price relationship and uncertainty in sigma remain unresolved.
+
+\section{Static pricing subgame}
+Given the current state and rivals' prices, each single-product incumbent solves
+\begin{equation}\label{eq:profit}
+\max_{p_i}\ \pi_i(p)=(p_i-mc_i)q_i(p)-FC_i,\qquad q_i(p)=M_ts_i(p).
+\end{equation}
+Costs may eventually be parameterized as functions of state; no nicotine-driven cost law is imposed here. The interior FOC is $q_i+(p_i-mc_i)\partial q_i/\partial p_i=0$. Define
+\begin{equation}
+A_i(p)=\frac{1}{1-\sigma}-\frac{\sigma}{1-\sigma}s_{i\mid g}(p)-s_i(p).
+\end{equation}
+Substitution gives
+\begin{equation}\label{eq:markup}
+p_i=mc_i-\frac{1}{\alpha A_i(p)}=mc_i+\frac{1}{(-\alpha)A_i(p)},\qquad i\in I_t.
+\end{equation}
+There are $|I_t|$ unknown incumbent prices and $|I_t|$ equations. Fringe utility, not fringe share, is a fixed input: $s_F(p)$ responds through the denominator. The intercept, quality, residuals, and costs are inputs; $\delta_i(p_i)$ is a function of the current price, not a fixed input. Market size cancels from the FOC, conditional on utility inputs. Fixed operating costs do not enter the pricing FOC.
+
+\subsection*{First exercise: observed-market recovery, step by step}
+
+Start with the chosen demand estimates and the observed prices, volumes, and nicotine measures. \textbf{We are recovering inputs at observed prices here, not solving for new prices.} Use the full-precision saved estimates; the rounded values are $\widehat\alpha=-0.3336$, $\widehat\sigma=0.8695$, $\widehat\beta_a=0.1100$, and $\widehat c=-6.8938$.
+
+\paragraph{Step 1: construct observed shares.}
+For each month, let $q_{it}$ be incumbent liquid volume, $q_{Ft}$ fringe volume, and $Q_t=\sum_{i\in I_t}q_{it}+q_{Ft}$ total eligible category volume. With the selected constant-intensity market size $M_t$,
+\[
+s_{it}=\frac{q_{it}}{M_t},\qquad s_{Ft}=\frac{q_{Ft}}{M_t},\qquad
+s_{gt}=\frac{Q_t}{M_t},\qquad s_{0t}=1-s_{gt},\qquad
+s_{i\mid g,t}=\frac{q_{it}}{Q_t}.
+\]
+The denominator $Q_t$ includes all incumbents and fringe, not just rows used to estimate demand. This is where observed purchases and the market-size assumption enter the recovery.
+
+\paragraph{Step 2: recover unobserved demand quality.}
+The estimating equation is
+\[
+\log(s_{it}/s_{0t})=c+\alpha p_{it}+\beta_a a_{it}
++\sigma\log(s_{it}/s_{gt})+\xi_{it}.
+\]
+Everything except the residual is now known, so rearrange:
+\[
+\widehat\xi_{it}=\log(s_{it}/s_{0t})-\widehat c-\widehat\alpha p_{it}
+-\widehat\beta_a a_{it}-\widehat\sigma\log(s_{it}/s_{gt}).
+\]
+This is the demand component needed to explain the observed share after accounting for price, measured nicotine, and nesting. It is not independently measured quality. Recover fringe total utility in the same way:
+\[
+\widehat\delta_{Ft}=\log(s_{Ft}/s_{0t})-\widehat\sigma\log(s_{Ft}/s_{gt}),\qquad
+\widehat\xi_{Ft}=\widehat\delta_{Ft}-\widehat c-\widehat\beta_a a_{Ft}-\widehat\alpha p_{Ft}.
+\]
+Fringe price and quality are observed aggregate measures for this decomposition. Hold total fringe utility fixed during a month's pricing game; its share can still respond to incumbent prices. Hold incumbent $\widehat\xi_{it}$ and $a_{it}$ fixed as well, recomputing utility as trial prices change.
+
+\paragraph{Step 3: calculate the demand slope and implied markup.}
+The estimated nested logit tells us how each incumbent's share responds to its own price, holding rivals' prices and non-price utility components fixed:
+\[
+\frac{\partial s_i}{\partial p_i}=\widehat\alpha s_i A_i,\qquad
+A_i=\frac{1}{1-\widehat\sigma}-\frac{\widehat\sigma}{1-\widehat\sigma}s_{i\mid g}-s_i.
+\]
+Because $\widehat\alpha<0$, this own-price slope is negative. Under the single-product, vertically integrated Bertrand assumption, price maximizes $(p_i-mc_i)M_ts_i-FC_i$. Differentiating and dividing by $M_t>0$ gives
+\[
+s_i+(p_i-mc_i)\frac{\partial s_i}{\partial p_i}=0.
+\]
+Solving this condition for the price--cost margin gives
+\[
+\widehat\mu_{it}=-\frac{s_{it}}{\partial s_{it}/\partial p_{it}}
+=-\frac{1}{\widehat\alpha A_{it}}>0.
+\]
+This is the markup implied by the estimated demand slope and the assumption that observed prices satisfy the pricing first-order conditions. It is not an independently observed margin.
+
+\paragraph{Step 4: subtract the markup from observed price.}
+\begin{equation}\label{eq:recovercost}
+\widehat{mc}_{it}=p_{it}^{\mathrm{obs}}-\widehat\mu_{it},\qquad
+\widehat\mu_{it}=-\frac{1}{\widehat\alpha A_{it}^{\mathrm{obs}}}.
+\end{equation}
+These are \textbf{effective integrated-channel marginal costs per mL}, inferred from demand and the pricing assumption, not directly observed manufacturer production costs. Each brand chooses its representative retail price and receives retail revenue; no separate wholesale or retailer stage is modeled. Report any negative costs rather than clipping them. Do not subtract an additional tax mechanically from these inferred costs without specifying a different profit/price convention.
+
+\paragraph{Step 5: calculate variable profits.}
+Multiply the recovered per-mL margin by the firm's observed liquid volume:
+\[
+\widehat\pi_{it}^{\mathrm{variable}}
+=(p_{it}^{\mathrm{obs}}-\widehat{mc}_{it})q_{it}
+=\widehat\mu_{it}q_{it}.
+\]
+These are profits \textbf{before fixed operating costs}. If $FC_i$ were specified, net period profit would be $\widehat\pi_{it}^{\mathrm{variable}}-FC_i$. Fixed costs are not identified by the pricing FOC and have not been selected for this recovery exercise.
+
+\paragraph{The central assumption and the next exercise.}
+Step 3 assumes observed prices satisfy the maintained interior Bertrand pricing condition, then infers costs backward from that condition. Exact reconstruction of observed shares and FOCs checks the algebra and implementation, not independent economic validity. The next exercise runs the model forward: hold recovered costs, incumbent non-price utility components, and fringe utility fixed; initialize prices away from observations; and manually iterate on \eqref{eq:markup}. Check whether the observed price vector is recovered, as well as convergence and unilateral profit deviations. No Markov transition law is needed for this within-month exercise.
+
+\subsection*{Manual damped markup fixed point}
+Let $T_i(p)=mc_i-1/[\alpha A_i(p)]$. Choose $0<\lambda\leq1$ and iterate
+\begin{equation}\label{eq:iterate}
+p_i^{(k+1)}=(1-\lambda)p_i^{(k)}+\lambda T_i(p^{(k)}).
+\end{equation}
+At each iteration:
+\begin{enumerate}
+\item Compute $\delta_i=c+\beta_a a_i+\xi_i+\alpha p_i^{(k)}$ and the fixed $\delta_F$.
+\item Compute conditional and unconditional shares using log-sum-exp and a stable logistic calculation to avoid overflow.
+\item Compute $A_i$, markups, and the damped update simultaneously for all incumbents.
+\item Check $\|p^{(k+1)}-p^{(k)}\|_\infty$, $\|p-T(p)\|_\infty$, and scaled FOC residuals. Reject nonfinite quantities, invalid shares, and nonconvergence; impose an iteration cap and record damping and initialization.
+\end{enumerate}
+This is successive substitution on the markup equations, \emph{not} an exact best-response update. Convergence is not guaranteed. Vary initial prices and damping; if it fails, report the failure and discuss a transparent manually implemented alternative rather than invoking a packaged black-box equilibrium solver. The old appendix mentions Newton and the Morrow--Skerlos markup reformulation as alternatives; neither is adopted here without further discussion. Check unilateral profit deviations and appropriate local optimality before labeling a stationary solution a Nash equilibrium.
+
+\subsection*{Two-incumbent example with passive fringe}
+For $i=1,2$, let $v_i=c+\beta_a a_i+\xi_i$ and $\delta_i(p_i)=v_i+\alpha p_i$. Then
+\begin{align*}
+D_g(p)&=e^{(v_1+\alpha p_1)/(1-\sigma)}+e^{(v_2+\alpha p_2)/(1-\sigma)}+e^{\delta_F/(1-\sigma)},\\
+s_{i\mid g}(p)&=e^{(v_i+\alpha p_i)/(1-\sigma)}/D_g(p),\\
+s_g(p)&=D_g(p)^{1-\sigma}/[1+D_g(p)^{1-\sigma}],\qquad s_i(p)=s_{i\mid g}(p)s_g(p),\\
+p_1&=mc_1-\{\alpha[1/(1-\sigma)-\sigma s_{1\mid g}(p)/(1-\sigma)-s_1(p)]\}^{-1},\\
+p_2&=mc_2-\{\alpha[1/(1-\sigma)-\sigma s_{2\mid g}(p)/(1-\sigma)-s_2(p)]\}^{-1}.
+\end{align*}
+These are two equations in two prices, conditional on $v_1,v_2,\delta_F,mc_1,mc_2,\alpha,\sigma$. All shares are recomputed at the trial price vector.
+
+\section{State space and transition: deferred dynamic extension}
+Write the full state as $\Omega_t=(I_t,\{\omega_{i,t}\}_{i\in I_t},\delta_{F,t},z_t)$, where $z_t$ collects any other pricing-relevant exogenous inputs such as market size or cost shifters. A finite-grid approximation discretizes $a$ and $\xi$; neither must literally be integer-valued in the data. The old draft proposes independent exogenous transitions for continuing firms:
+\begin{equation}\label{eq:transition}
+a_{i,t+1}\sim F_a(\cdot\mid a_{it}),\qquad \xi_{i,t+1}\sim F_\xi(\cdot\mid\xi_{it}).
+\end{equation}
+In the original dynamic proposal, an exiting firm leaves permanently (absorbing exit), while an entering firm joins at $t+1$ with state drawn from $G_e$ and then uses the incumbent value function. Absorbing economic exit must be distinguished from a temporary annual-share reclassification. The subscript zero in $\omega_{e,0}$ denotes the entrant's initial state, not calendar time. A law for the revised fringe utility and other changing inputs must also be supplied for a dynamic solve; a law only for $a_F$ is no longer sufficient.
+
+\subsection*{Constructing empirical transition matrices}
+\begin{enumerate}
+\item Choose grids, documenting bins and coverage; quality is observed, while demand residuals become available only after estimating demand. Use actual consecutive calendar months, not the previous observed row across a gap.
+\item Retain continuing-incumbent pairs $(i,t)\to(i,t+1)$; exit contributes no continuing transition. Entry-state observations feed $G_e$, not a fabricated transition.
+\item Pool firms only if a common transition law is maintained. Count transitions from each grid point to each successor.
+\item Normalize rows:
+\begin{equation}
+F_a(a'\mid a)=\frac{\#\{(i,t):a_{it}=a,\ a_{i,t+1}=a'\}}{\#\{(i,t):a_{it}=a\text{ and an eligible successor exists}\}}.
+\end{equation}
+Apply the same procedure to binned $\widehat\xi$.
+\item Diagnose sparse cells and empty rows. Coarsening grids or estimating and discretizing an AR(1) law are possible alternatives, not decisions already made. The original draft suggests Tauchen discretization as one fallback. Revised fringe dynamics require separate treatment.
+\end{enumerate}
+A sample of roughly eleven years and a few incumbents can support only limited grid detail. Independence between $a$ and $\xi$, independence across firms, and time homogeneity all require assessment.
+
+\section{Dynamic entry/exit program: proposed equations}
+Under fixed/known scrap and entry costs, and the post-profit timing in the model note,
+\begin{equation}\label{eq:bellman}
+V_i(\Omega)=\pi_i^*(\Omega)+\max\{\phi_i,\ \beta\mathbb E[V_i(\Omega')\mid\Omega,i\text{ continues}]\}.
+\end{equation}
+Define conditional continuation value $C_i(\Omega)=\beta\mathbb E[V_i(\Omega')\mid\Omega,i\text{ continues}]$ and policies
+\begin{align}
+\lambda_i^{\mathrm{exit}}(\Omega)&=\mathbf1\{\phi_i>C_i(\Omega)\},\\
+\lambda^{\mathrm{entry}}(\Omega)&=\mathbf1\{\beta\mathbb E[V_e(\omega_{e,0},\omega_{-e,t+1})\mid\Omega]-x_e\geq0\}.
+\end{align}
+These are comparisons in value, not a proven monotone cutoff in nicotine or demand residual separately. The original draft's blanket monotonicity claim is not assumed here. The symbol $\lambda$ avoids conflicting with $\sigma$ and notation used for aggregate shocks in related papers. The original naming rationale specifically avoids Ericson--Pakes' aggregate shock $\eta'$ and the exit indicator $\chi$ used in the Doraszelski--Pakes--Satterthwaite restatement; these are retained as draft notation attributions, not newly verified references.
+
+\paragraph{Unresolved private draws.} The original model also describes $\phi_i$ and $x_e$ as private random draws, inconsistent with treating public-state policies as deterministic without further conditioning. Under private draws, specify their distributions and timing, integrate entry/exit probabilities over draws, and use the corresponding expected-max Bellman equation. The equations above record the fixed/known-cost version; they do not settle that choice or the five-firm cap.
+
+\subsection*{Policy/value fixed point}
+A transparent dynamic algorithm, once the information structure is chosen, is:
+\begin{enumerate}
+\item Initialize rivals' exit and entrant policies.
+\item Holding those policies fixed, solve the incumbent's Bellman problem by value iteration, conditioning continuation transitions on that incumbent remaining active. A max over its own exit/continuation choice represents an optimal response, not evaluation of a fixed own policy.
+\item For bounded payoffs and a properly defined finite transition kernel, this inner Bellman operator is a contraction with modulus $\beta<1$. Stop on a value sup-norm criterion.
+\item Update all firms' exit policies and the entrant's policy using the converged values. Repeat until policies and values satisfy mutual consistency; no general outer-loop convergence guarantee follows from the inner contraction.
+\end{enumerate}
+This clarifies the original appendix's nested-policy description: fixed-policy evaluation and optimal Bellman response must not be conflated. Recurrent-state simulation methods can reduce computation in larger state spaces, as discussed in the original Pakes--McGuire references. The full investment extension motivates consideration of Experience-Based Equilibrium.
+
+\paragraph{Explicit iteration corresponding to original Algorithm 1.} For the fixed/known-cost interpretation and a finite state grid, let $P_i^{(r)}(\Omega'\mid\Omega,\mathrm{continue})$ be the kernel implied by rivals' and entrant policies at outer iteration $r$, with firm $i$ conditioned to continue. Initialize bounded $V_i^{(0)}$ and compute
+\[
+V_i^{(k+1)}(\Omega)=\pi_i^*(\Omega)+
+\max\left\{\phi_i,\ \beta\sum_{\Omega'}P_i^{(r)}(\Omega'\mid\Omega,\mathrm{continue})V_i^{(k)}(\Omega')\right\}.
+\]
+Stop the inner loop when $\max_{i,\Omega}|V_i^{(k+1)}(\Omega)-V_i^{(k)}(\Omega)|<\varepsilon_V$. Update exit and entry indicators from the converged values and repeat the outer loop until those policies are unchanged and Bellman/policy residuals meet tolerance. Record iteration limits or cycling rather than assuming convergence. This retains the original inner/outer algorithm explicitly, while clarifying whose policies are fixed and whose action is optimized. The original uses the same symbol $\lambda$ for policy indicators; damping in the static iteration is a separate numerical parameter, not an exit probability.
+
+\subsection*{Worked roster transition example}
+Take two incumbents and one potential entrant with deterministic policies conditional on the current state. If both incumbents continue and there is no entry, the next roster is $\{1,2\}$; other rosters have zero probability. Conditional on that roster and the independence proposal,
+\[
+\Pr(\omega'_1,\omega'_2\mid\Omega)=F_a(a'_1\mid a_1)F_\xi(\xi'_1\mid\xi_1)F_a(a'_2\mid a_2)F_\xi(\xi'_2\mid\xi_2).
+\]
+If firm 1 exits and an entrant arrives, the next roster is $\{2,e\}$ with weights $F_a(a'_2\mid a_2)F_\xi(\xi'_2\mid\xi_2)G_e(\omega'_{e,0})$. Multiply these expressions by transitions for fringe utility and any other exogenous inputs in the full state. Under private random costs, also multiply by the probabilities of the relevant entry/exit roster events. Cap and tie-breaking rules must be supplied where relevant.
+
+\section{Outer solution for a candidate parameter vector}
+For given demand, costs, and dynamic parameters:
+\begin{enumerate}
+\item At each required state, manually solve the static price system, check equilibrium conditions, and store prices, shares, quantities, and operating profits.
+\item Given these profits and specified state laws, solve the dynamic value/policy fixed point.
+\item Simulate forward or compute implied moments for the eventual estimation criterion.
+\end{enumerate}
+Static solutions can be cached if demand, costs, and the current-state inputs are unchanged while only entry/exit parameters or transition probabilities vary on the same grid. If the grid or pricing inputs change, recompute the affected states. This appendix does not implement either equilibrium solver or estimate dynamics.
+
+\clearpage
+\section*{Notation}
+\begin{longtable}{p{0.25\linewidth}p{0.68\linewidth}}\toprule
+Symbol&Meaning\\\midrule\endhead
+$t,i,F$&Month, incumbent brand, aggregate passive fringe.\\
+$\omega_{it}=(a_{it},\xi_{it})$&Measured delivered nicotine and unobserved demand state.\\
+$\Omega_t$&Full state including roster, incumbent states, fringe utility, and other needed inputs.\\
+$c,\beta_a$&Demand intercept and quality coefficient.\\
+$\alpha<0$&Signed price coefficient in $+\alpha p$, not a positive sensitivity.\\
+$\sigma\in[0,1)$&Nested-logit nesting parameter.\\
+$a_{Ft},p_{Ft},\xi_{Ft}$&Fringe measured quality, price, and unobserved component; their combination determines total passive fringe utility.\\
+$\delta_{it},\delta_{Ft}$&Incumbent and calibrated fringe mean utility.\\
+$s_{it},s_{i\mid g,t},s_{gt},s_{0t}$&Unconditional firm share, within-nest share, nest share, outside share.\\
+$M_t,q_{it}$&Potential liquid-volume market size and firm liquid quantity $M_ts_{it}$.\\
+$mc_i,FC_i$&Effective marginal cost per mL and fixed monthly operating cost.\\
+$\pi_i^*,V_i$&Equilibrium static profit and incumbent dynamic value.\\
+$\phi_i,x_e,\beta$&Scrap value, sunk entry cost, discount factor; information structure pending.\\
+$\lambda^{\mathrm{exit}},\lambda^{\mathrm{entry}}$&Exit/entry indicators conditional on the specified information structure.\\
+$F_a,F_\xi,G_e$&Proposed continuing-state kernels and entrant initial-state distribution.\\\bottomrule
+\end{longtable}
+\paragraph{Draft references.} The original appendix cites Berry/BLP for inversion and mean utility, Train for nested-logit derivatives, Ericson--Pakes and Pakes--McGuire for dynamic oligopoly, and Morrow--Skerlos for an alternative markup reformulation. Bibliographic details are retained as draft attributions rather than newly verified references.
+\end{document}

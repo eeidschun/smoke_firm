@@ -1,0 +1,505 @@
+id,controls,FE,price,quality,instruments,market,n,states,months,alpha,sigma
+B_pooled_p_it_Exogenous_Active_annual,B,pooled,p_it,Exogenous,tax + active_count,annual,24674,51,131,-0.453479613806245,0.818081591170698
+B_pooled_p_it_Exogenous_Active_monthly,B,pooled,p_it,Exogenous,tax + active_count,monthly,24674,51,131,-0.45189889451865,0.658597493294329
+B_pooled_p_it_Exogenous_Active_constant,B,pooled,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.372380614370409,0.589277598467266
+B_pooled_p_it_Exogenous_Annual_annual,B,pooled,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-0.455317013207813,0.91075107133646
+B_pooled_p_it_Exogenous_Annual_monthly,B,pooled,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-0.456798568012494,0.905713170472698
+B_pooled_p_it_Exogenous_Annual_constant,B,pooled,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.390432489838558,1.49972631235576
+B_pooled_p_it_Exogenous_Monthly_annual,B,pooled,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,-0.275111246032048,-8.17795050631824
+B_pooled_p_it_Exogenous_Monthly_monthly,B,pooled,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.291146481154021,-7.44897162521025
+B_pooled_p_it_Exogenous_Monthly_constant,B,pooled,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,-0.115701730943397,-12.3563556588499
+B_pooled_p_it_Exogenous_Annual_Lag_annual,B,pooled,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.459051206328909,0.925156234186856
+B_pooled_p_it_Exogenous_Annual_Lag_monthly,B,pooled,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.460603221382081,0.920390143414979
+B_pooled_p_it_Exogenous_Annual_Lag_constant,B,pooled,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.394844590253081,1.51674659570762
+B_pooled_p_it_Exogenous_Monthly_Lag_annual,B,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.375313749792448,0.406751948977461
+B_pooled_p_it_Exogenous_Monthly_Lag_monthly,B,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.383640755881512,0.475339620102821
+B_pooled_p_it_Exogenous_Monthly_Lag_constant,B,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.267141442567978,0.618019385927286
+B_pooled_p_it_Endogenous_Annual_Lag_annual,B,pooled,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.456529685373696,0.899460429438707
+B_pooled_p_it_Endogenous_Annual_Lag_monthly,B,pooled,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.458034122011687,0.894209486178946
+B_pooled_p_it_Endogenous_Annual_Lag_constant,B,pooled,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.39186531112044,1.48638596165075
+B_pooled_p_it_Endogenous_Monthly_Lag_annual,B,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.340993557231128,-6.32241979958614
+B_pooled_p_it_Endogenous_Monthly_Lag_monthly,B,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.351960695998492,-5.73618042256014
+B_pooled_p_it_Endogenous_Monthly_Lag_constant,B,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.21527207932976,-9.55202418519303
+B_pooled_p_volume_Exogenous_Active_annual,B,pooled,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-0.472210925486083,-0.661816298610818
+B_pooled_p_volume_Exogenous_Active_monthly,B,pooled,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-0.470564913409642,-0.81614183354925
+B_pooled_p_volume_Exogenous_Active_constant,B,pooled,p_volume,Exogenous,tax + active_count,constant,24674,51,131,-0.387762071745373,-0.625959577864453
+B_pooled_p_volume_Exogenous_Annual_annual,B,pooled,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.490860999907972,0.183041992321659
+B_pooled_p_volume_Exogenous_Annual_monthly,B,pooled,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.492458211193697,0.175636200845429
+B_pooled_p_volume_Exogenous_Annual_constant,B,pooled,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.420911314093062,0.875718732240526
+B_pooled_p_volume_Exogenous_Monthly_annual,B,pooled,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-0.413064090201059,-3.34119939616463
+B_pooled_p_volume_Exogenous_Monthly_monthly,B,pooled,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.437140095497752,-2.3303038628532
+B_pooled_p_volume_Exogenous_Monthly_constant,B,pooled,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.173719652973929,-10.3221949949612
+B_pooled_p_volume_Exogenous_Annual_Lag_annual,B,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.465786926287716,0.280985441683869
+B_pooled_p_volume_Exogenous_Annual_Lag_monthly,B,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.467215296684851,0.274239170448146
+B_pooled_p_volume_Exogenous_Annual_Lag_constant,B,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.397599728201072,0.966777615090323
+B_pooled_p_volume_Exogenous_Monthly_Lag_annual,B,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.531538258025714,1.51232526756195
+B_pooled_p_volume_Exogenous_Monthly_Lag_monthly,B,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.532660235493189,1.58286441564775
+B_pooled_p_volume_Exogenous_Monthly_Lag_constant,B,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.464424194828144,1.58708185133153
+B_pooled_p_volume_Endogenous_Annual_Lag_annual,B,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.496782491238219,0.123123177487024
+B_pooled_p_volume_Endogenous_Annual_Lag_monthly,B,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.498419575976737,0.115313911642337
+B_pooled_p_volume_Endogenous_Annual_Lag_constant,B,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.426416576454908,0.820011685200979
+B_pooled_p_volume_Endogenous_Monthly_Lag_annual,B,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.46083063407429,-1.88586724972121
+B_pooled_p_volume_Endogenous_Monthly_Lag_monthly,B,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.475652009450779,-1.15693811671931
+B_pooled_p_volume_Endogenous_Monthly_Lag_constant,B,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.290926226365911,-6.75119152350677
+B_brand_state_p_it_Exogenous_Active_annual,B,brand_state,p_it,Exogenous,tax + active_count,annual,24674,51,131,-1.13405911286934,3.51358803852434
+B_brand_state_p_it_Exogenous_Active_monthly,B,brand_state,p_it,Exogenous,tax + active_count,monthly,24674,51,131,-1.14683448855073,3.40069265759796
+B_brand_state_p_it_Exogenous_Active_constant,B,brand_state,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.729676421163426,2.27143296418745
+B_brand_state_p_it_Exogenous_Annual_annual,B,brand_state,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-1.24297371292484,0.00975000245945427
+B_brand_state_p_it_Exogenous_Annual_monthly,B,brand_state,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-1.25258342054452,-0.00130422807434413
+B_brand_state_p_it_Exogenous_Annual_constant,B,brand_state,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.76711206500058,1.0671092765048
+B_brand_state_p_it_Exogenous_Monthly_annual,B,brand_state,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,-0.724236049008584,16.6978042820705
+B_brand_state_p_it_Exogenous_Monthly_monthly,B,brand_state,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.788315719564342,14.9344236613097
+B_brand_state_p_it_Exogenous_Monthly_constant,B,brand_state,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,-0.117879403826354,21.9532539377056
+B_brand_state_p_it_Exogenous_Annual_Lag_annual,B,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.20885880645317,0.0285224600777854
+B_brand_state_p_it_Exogenous_Annual_Lag_monthly,B,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.21736353470132,0.0180762680985621
+B_brand_state_p_it_Exogenous_Annual_Lag_constant,B,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.807588423425877,1.04483629376297
+B_brand_state_p_it_Exogenous_Monthly_Lag_annual,B,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.787053387374017,1.87123080143897
+B_brand_state_p_it_Exogenous_Monthly_Lag_monthly,B,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.844871350192298,1.58578083326293
+B_brand_state_p_it_Exogenous_Monthly_Lag_constant,B,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.190565102057012,4.79748335188412
+B_brand_state_p_it_Endogenous_Annual_Lag_annual,B,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.23680878522737,0.0285205723980211
+B_brand_state_p_it_Endogenous_Annual_Lag_monthly,B,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.24621881128146,0.0180743192770511
+B_brand_state_p_it_Endogenous_Annual_Lag_constant,B,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.774426574960362,1.04483853344049
+B_brand_state_p_it_Endogenous_Monthly_Lag_annual,B,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.376604849654237,21.9968692585821
+B_brand_state_p_it_Endogenous_Monthly_Lag_monthly,B,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.47533681569754,19.7052714763174
+B_brand_state_p_it_Endogenous_Monthly_Lag_constant,B,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,0.284363306695366,28.0847814396754
+B_brand_state_p_volume_Exogenous_Active_annual,B,brand_state,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-1.1463055315024,0.242818636756629
+B_brand_state_p_volume_Exogenous_Active_monthly,B,brand_state,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-1.159218865247,0.0930774623433147
+B_brand_state_p_volume_Exogenous_Active_constant,B,brand_state,p_volume,Exogenous,tax + active_count,constant,24674,51,131,-0.737556012993206,0.166954207789803
+B_brand_state_p_volume_Exogenous_Annual_annual,B,brand_state,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-1.20841341017889,-1.91109080841478
+B_brand_state_p_volume_Exogenous_Annual_monthly,B,brand_state,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-1.2177559243727,-1.93699548862788
+B_brand_state_p_volume_Exogenous_Annual_constant,B,brand_state,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.745782872813561,-0.118354378635653
+B_brand_state_p_volume_Exogenous_Monthly_annual,B,brand_state,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-1.65718358073394,-17.4744996652041
+B_brand_state_p_volume_Exogenous_Monthly_monthly,B,brand_state,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-1.80380950200504,-22.2614110561676
+B_brand_state_p_volume_Exogenous_Monthly_constant,B,brand_state,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.269729479491871,16.3912402514141
+B_brand_state_p_volume_Exogenous_Annual_Lag_annual,B,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.22748239041126,-1.9365556670385
+B_brand_state_p_volume_Exogenous_Annual_Lag_monthly,B,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.23678239057452,-1.96240357369771
+B_brand_state_p_volume_Exogenous_Annual_Lag_constant,B,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.771444425850775,-0.152623008221235
+B_brand_state_p_volume_Exogenous_Monthly_Lag_annual,B,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-1.01968216591618,-0.0539759963679786
+B_brand_state_p_volume_Exogenous_Monthly_Lag_monthly,B,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.990107940784995,-0.0259979619792323
+B_brand_state_p_volume_Exogenous_Monthly_Lag_constant,B,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.799022144876474,1.92765602908085
+B_brand_state_p_volume_Endogenous_Annual_Lag_annual,B,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.22351119894132,-1.98237304678994
+B_brand_state_p_volume_Endogenous_Annual_Lag_monthly,B,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.23282005282154,-2.00811880422754
+B_brand_state_p_volume_Endogenous_Annual_Lag_constant,B,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.766100304702718,-0.214280480523249
+B_brand_state_p_volume_Endogenous_Monthly_Lag_annual,B,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-21.8860973190943,-569.369575419662
+B_brand_state_p_volume_Endogenous_Monthly_Lag_monthly,B,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-27.6238285758752,-726.695745349259
+B_brand_state_p_volume_Endogenous_Monthly_Lag_constant,B,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,16.5255519444947,474.608287083413
+B_brand_by_state_p_it_Exogenous_Active_annual,B,brand_by_state,p_it,Exogenous,tax + active_count,annual,24674,51,131,0.860456398422823,-3.72321893643816
+B_brand_by_state_p_it_Exogenous_Active_monthly,B,brand_by_state,p_it,Exogenous,tax + active_count,monthly,24674,51,131,0.820416744198539,-3.7347347652578
+B_brand_by_state_p_it_Exogenous_Active_constant,B,brand_by_state,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.28405991208241,1.28420396835374
+B_brand_by_state_p_it_Exogenous_Annual_annual,B,brand_by_state,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-1.55259092385882,-0.14578792626504
+B_brand_by_state_p_it_Exogenous_Annual_monthly,B,brand_by_state,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-1.58537311053203,-0.168063216465984
+B_brand_by_state_p_it_Exogenous_Annual_constant,B,brand_by_state,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.310353301625958,1.32318488109316
+B_brand_by_state_p_it_Exogenous_Monthly_annual,B,brand_by_state,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,0.215131504042612,-2.76650115163512
+B_brand_by_state_p_it_Exogenous_Monthly_monthly,B,brand_by_state,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,0.0589185996371264,-2.60578588332207
+B_brand_by_state_p_it_Exogenous_Monthly_constant,B,brand_by_state,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,0.791151491786091,-0.309836307265633
+B_brand_by_state_p_it_Exogenous_Annual_Lag_annual,B,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.971231612244885,0.160975658162939
+B_brand_by_state_p_it_Exogenous_Annual_Lag_monthly,B,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.980058515722186,0.151340758151623
+B_brand_by_state_p_it_Exogenous_Annual_Lag_constant,B,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.693038250093846,1.12125501748999
+B_brand_by_state_p_it_Exogenous_Monthly_Lag_annual,B,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.379781322272972,-0.158656482663916
+B_brand_by_state_p_it_Exogenous_Monthly_Lag_monthly,B,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.465462315819337,-0.307123097124343
+B_brand_by_state_p_it_Exogenous_Monthly_Lag_constant,B,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,0.0858544670770431,2.78188571412647
+B_brand_by_state_p_it_Endogenous_Annual_Lag_annual,B,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.49320902655341,-0.0460211027442608
+B_brand_by_state_p_it_Endogenous_Annual_Lag_monthly,B,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.52354434407306,-0.0641854370126604
+B_brand_by_state_p_it_Endogenous_Annual_Lag_constant,B,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.349441964792171,1.25751248029877
+B_brand_by_state_p_it_Endogenous_Monthly_Lag_annual,B,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,0.0606899360108967,-2.95791266329021
+B_brand_by_state_p_it_Endogenous_Monthly_Lag_monthly,B,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.0772126237062122,-2.77450395304679
+B_brand_by_state_p_it_Endogenous_Monthly_Lag_constant,B,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,0.608053777960162,-0.536763621140211
+B_brand_by_state_p_volume_Exogenous_Active_annual,B,brand_by_state,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-3.97197736130145,2.47168786680299
+B_brand_by_state_p_volume_Exogenous_Active_monthly,B,brand_by_state,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-3.78714916962952,2.1719041759418
+B_brand_by_state_p_volume_Exogenous_Active_constant,B,brand_by_state,p_volume,Exogenous,tax + active_count,constant,24674,51,131,1.31125707486441,-0.760902192879624
+B_brand_by_state_p_volume_Exogenous_Annual_annual,B,brand_by_state,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.903144700634501,-1.32902640269649
+B_brand_by_state_p_volume_Exogenous_Annual_monthly,B,brand_by_state,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.92221415268011,-1.37628518598431
+B_brand_by_state_p_volume_Exogenous_Annual_constant,B,brand_by_state,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.180533027328708,1.08666284420186
+B_brand_by_state_p_volume_Exogenous_Monthly_annual,B,brand_by_state,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-0.306365502154786,-2.06813063750137
+B_brand_by_state_p_volume_Exogenous_Monthly_monthly,B,brand_by_state,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.0839050814263229,-2.41452141509032
+B_brand_by_state_p_volume_Exogenous_Monthly_constant,B,brand_by_state,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-1.12666680382422,2.25843874168728
+B_brand_by_state_p_volume_Exogenous_Annual_Lag_annual,B,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.00035762913157,-1.53769339562825
+B_brand_by_state_p_volume_Exogenous_Annual_Lag_monthly,B,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.01651598505128,-1.57870352779405
+B_brand_by_state_p_volume_Exogenous_Annual_Lag_constant,B,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.411979747249185,0.589863788599161
+B_brand_by_state_p_volume_Exogenous_Monthly_Lag_annual,B,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.822889616139211,-0.951343863183989
+B_brand_by_state_p_volume_Exogenous_Monthly_Lag_monthly,B,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.745242950477461,-0.984630020835367
+B_brand_by_state_p_volume_Exogenous_Monthly_Lag_constant,B,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.893896609377932,1.75516180344774
+B_brand_by_state_p_volume_Endogenous_Annual_Lag_annual,B,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.91750169287657,-1.389302249192
+B_brand_by_state_p_volume_Endogenous_Annual_Lag_monthly,B,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.936141216669336,-1.43475603816538
+B_brand_by_state_p_volume_Endogenous_Annual_Lag_constant,B,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.214714476377766,0.943156757331761
+B_brand_by_state_p_volume_Endogenous_Monthly_Lag_annual,B,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.120799387724112,-2.65263269056018
+B_brand_by_state_p_volume_Endogenous_Monthly_Lag_monthly,B,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,0.153686727674108,-3.16289565698915
+B_brand_by_state_p_volume_Endogenous_Monthly_Lag_constant,B,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-1.21029167122003,2.52184301045472
+S_pooled_p_it_Exogenous_Active_annual,S,pooled,p_it,Exogenous,tax + active_count,annual,24674,51,131,-0.408377693487567,-0.645612385968327
+S_pooled_p_it_Exogenous_Active_monthly,S,pooled,p_it,Exogenous,tax + active_count,monthly,24674,51,131,-0.406161376471783,-0.825723555879617
+S_pooled_p_it_Exogenous_Active_constant,S,pooled,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.333473487714603,-0.673376553406526
+S_pooled_p_it_Exogenous_Annual_annual,S,pooled,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-0.443933121179303,1.00700225647146
+S_pooled_p_it_Exogenous_Annual_monthly,S,pooled,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-0.445472860342097,1.00147240492076
+S_pooled_p_it_Exogenous_Annual_constant,S,pooled,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.381797757120685,1.57273326421044
+S_pooled_p_it_Exogenous_Monthly_annual,S,pooled,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,-0.349605028188292,-3.37736316398278
+S_pooled_p_it_Exogenous_Monthly_monthly,S,pooled,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.362257794146411,-2.86636004153444
+S_pooled_p_it_Exogenous_Monthly_constant,S,pooled,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,-0.202601018916381,-6.75632287940002
+S_pooled_p_it_Exogenous_Annual_Lag_annual,S,pooled,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.447429792791105,1.03132885875312
+S_pooled_p_it_Exogenous_Annual_Lag_monthly,S,pooled,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.449004703294767,1.02604369680301
+S_pooled_p_it_Exogenous_Annual_Lag_constant,S,pooled,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.385385742474556,1.59769514292668
+S_pooled_p_it_Exogenous_Monthly_Lag_annual,S,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.42357333513162,0.708130453273095
+S_pooled_p_it_Exogenous_Monthly_Lag_monthly,S,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.428572021055706,0.796375553842554
+S_pooled_p_it_Exogenous_Monthly_Lag_constant,S,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.335875972404711,0.604856446151492
+S_pooled_p_it_Endogenous_Annual_Lag_annual,S,pooled,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.445835140960969,0.989279764709819
+S_pooled_p_it_Endogenous_Annual_Lag_monthly,S,pooled,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.447394011629099,0.983571651132339
+S_pooled_p_it_Endogenous_Annual_Lag_constant,S,pooled,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.383749447150642,1.55454795889029
+S_pooled_p_it_Endogenous_Monthly_Lag_annual,S,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.382474799632912,-2.62763634483276
+S_pooled_p_it_Endogenous_Monthly_Lag_monthly,S,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.39172627290388,-2.19421332840114
+S_pooled_p_it_Endogenous_Monthly_Lag_constant,S,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.261825265644104,-5.40547667154141
+S_pooled_p_volume_Exogenous_Active_annual,S,pooled,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-0.417600694130896,-2.19263561629694
+S_pooled_p_volume_Exogenous_Active_monthly,S,pooled,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-0.41533432273353,-2.36435089690211
+S_pooled_p_volume_Exogenous_Active_constant,S,pooled,p_volume,Exogenous,tax + active_count,constant,24674,51,131,-0.341004815310792,-1.93664641466276
+S_pooled_p_volume_Exogenous_Annual_annual,S,pooled,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.477491096566563,0.307720446253568
+S_pooled_p_volume_Exogenous_Annual_monthly,S,pooled,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.47914722832699,0.299765203269112
+S_pooled_p_volume_Exogenous_Annual_constant,S,pooled,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.410658770469386,0.971326849597477
+S_pooled_p_volume_Exogenous_Monthly_annual,S,pooled,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-0.487526937636494,0.726705376227688
+S_pooled_p_volume_Exogenous_Monthly_monthly,S,pooled,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.505171318435073,1.38624131319008
+S_pooled_p_volume_Exogenous_Monthly_constant,S,pooled,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.282528700493089,-4.37795757941872
+S_pooled_p_volume_Exogenous_Annual_Lag_annual,S,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.443611983157287,0.419015678953551
+S_pooled_p_volume_Exogenous_Annual_Lag_monthly,S,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.445080373074553,0.411677180918713
+S_pooled_p_volume_Exogenous_Annual_Lag_constant,S,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.379751537545068,1.07285924918964
+S_pooled_p_volume_Exogenous_Monthly_Lag_annual,S,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.528799615524387,1.95669507252983
+S_pooled_p_volume_Exogenous_Monthly_Lag_monthly,S,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.526873351663157,2.03299550083275
+S_pooled_p_volume_Exogenous_Monthly_Lag_constant,S,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.490784605866677,1.82839080645762
+S_pooled_p_volume_Endogenous_Annual_Lag_annual,S,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.484055647119155,0.24123883790883
+S_pooled_p_volume_Endogenous_Annual_Lag_monthly,S,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.485748156479275,0.232915185646636
+S_pooled_p_volume_Endogenous_Annual_Lag_constant,S,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.416647477746192,0.910677017073059
+S_pooled_p_volume_Endogenous_Monthly_Lag_annual,S,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.499268990140281,1.01760826979385
+S_pooled_p_volume_Endogenous_Monthly_Lag_monthly,S,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.511345534069514,1.53920411008792
+S_pooled_p_volume_Endogenous_Monthly_Lag_constant,S,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.341777382708805,-2.91010406014758
+S_brand_state_p_it_Exogenous_Active_annual,S,brand_state,p_it,Exogenous,tax + active_count,annual,24674,51,131,-0.989474021259602,2.35125716477231
+S_brand_state_p_it_Exogenous_Active_monthly,S,brand_state,p_it,Exogenous,tax + active_count,monthly,24674,51,131,-1.00192340274418,2.23574109096949
+S_brand_state_p_it_Exogenous_Active_constant,S,brand_state,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.633023627768827,1.494433589313
+S_brand_state_p_it_Exogenous_Annual_annual,S,brand_state,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-1.03491120541319,0.330351918941056
+S_brand_state_p_it_Exogenous_Annual_monthly,S,brand_state,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-1.04502953169864,0.318513961819745
+S_brand_state_p_it_Exogenous_Annual_constant,S,brand_state,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.638164032449512,1.26580430742041
+S_brand_state_p_it_Exogenous_Monthly_annual,S,brand_state,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,-0.746925897548713,13.1390466088463
+S_brand_state_p_it_Exogenous_Monthly_monthly,S,brand_state,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.816776769089169,10.4704900125129
+S_brand_state_p_it_Exogenous_Monthly_constant,S,brand_state,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,-0.0960473181766925,25.3774769858094
+S_brand_state_p_it_Exogenous_Annual_Lag_annual,S,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.997029841510962,0.34441895896814
+S_brand_state_p_it_Exogenous_Annual_Lag_monthly,S,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.00620223471277,0.332932268991949
+S_brand_state_p_it_Exogenous_Annual_Lag_constant,S,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.668536695079486,1.25452558308396
+S_brand_state_p_it_Exogenous_Monthly_Lag_annual,S,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.94524234261485,0.359456306659769
+S_brand_state_p_it_Exogenous_Monthly_Lag_monthly,S,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.976826090067693,0.156848349726799
+S_brand_state_p_it_Exogenous_Monthly_Lag_constant,S,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.436254431541719,3.45439579485779
+S_brand_state_p_it_Endogenous_Annual_Lag_annual,S,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.02662218832991,0.354909811273174
+S_brand_state_p_it_Endogenous_Annual_Lag_monthly,S,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.03653353010679,0.343685087690181
+S_brand_state_p_it_Endogenous_Annual_Lag_constant,S,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.644810031786729,1.24611418800905
+S_brand_state_p_it_Endogenous_Monthly_Lag_annual,S,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.429127150924195,19.4233525043422
+S_brand_state_p_it_Endogenous_Monthly_Lag_monthly,S,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.560300441126066,15.5421767859654
+S_brand_state_p_it_Endogenous_Monthly_Lag_constant,S,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,0.449128822830837,36.158053288918
+S_brand_state_p_volume_Exogenous_Active_annual,S,brand_state,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-1.00520406973989,-0.47678188107561
+S_brand_state_p_volume_Exogenous_Active_monthly,S,brand_state,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-1.01785136382255,-0.627879825830643
+S_brand_state_p_volume_Exogenous_Active_constant,S,brand_state,p_volume,Exogenous,tax + active_count,constant,24674,51,131,-0.643087047464607,-0.314826176795452
+S_brand_state_p_volume_Exogenous_Annual_annual,S,brand_state,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-1.02338051598412,-1.32370065984763
+S_brand_state_p_volume_Exogenous_Annual_monthly,S,brand_state,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-1.03338610672535,-1.35171028812091
+S_brand_state_p_volume_Exogenous_Annual_constant,S,brand_state,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.631053788377876,0.245855100143335
+S_brand_state_p_volume_Exogenous_Monthly_annual,S,brand_state,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-1.97149740486919,-45.5005428697145
+S_brand_state_p_volume_Exogenous_Monthly_monthly,S,brand_state,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-2.1558675176504,-53.6529452468794
+S_brand_state_p_volume_Exogenous_Monthly_constant,S,brand_state,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.253515160142983,17.8370029883844
+S_brand_state_p_volume_Exogenous_Annual_Lag_annual,S,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.0439072905852,-1.35648603678195
+S_brand_state_p_volume_Exogenous_Annual_Lag_monthly,S,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.05387989667031,-1.38444298194229
+S_brand_state_p_volume_Exogenous_Annual_Lag_constant,S,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.665525921557456,0.190796187967078
+S_brand_state_p_volume_Exogenous_Monthly_Lag_annual,S,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.772440446231185,0.418822473164012
+S_brand_state_p_volume_Exogenous_Monthly_Lag_monthly,S,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.74182616759778,0.499512561928425
+S_brand_state_p_volume_Exogenous_Monthly_Lag_constant,S,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.669051924287602,1.92351001485308
+S_brand_state_p_volume_Endogenous_Annual_Lag_annual,S,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.03452895169724,-1.37512112071281
+S_brand_state_p_volume_Endogenous_Annual_Lag_monthly,S,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.04451662791828,-1.40304812099159
+S_brand_state_p_volume_Endogenous_Annual_Lag_constant,S,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.649776182329921,0.159500911063748
+S_brand_state_p_volume_Endogenous_Monthly_Lag_annual,S,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,1.3380957074644,77.7337632565153
+S_brand_state_p_volume_Endogenous_Monthly_Lag_monthly,S,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,1.74711763996223,91.6766017378879
+S_brand_state_p_volume_Endogenous_Monthly_Lag_constant,S,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-1.40046452119267,-24.8702132383142
+S_brand_by_state_p_it_Exogenous_Active_annual,S,brand_by_state,p_it,Exogenous,tax + active_count,annual,24674,51,131,2.49574098828334,-8.09300314195006
+S_brand_by_state_p_it_Exogenous_Active_monthly,S,brand_by_state,p_it,Exogenous,tax + active_count,monthly,24674,51,131,2.4371796873481,-8.0550256900539
+S_brand_by_state_p_it_Exogenous_Active_constant,S,brand_by_state,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.639629252552881,2.23435129902839
+S_brand_by_state_p_it_Exogenous_Annual_annual,S,brand_by_state,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-1.38777102548021,0.215943930439131
+S_brand_by_state_p_it_Exogenous_Annual_monthly,S,brand_by_state,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-1.41937719029657,0.196249667006465
+S_brand_by_state_p_it_Exogenous_Annual_constant,S,brand_by_state,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.262671319574594,1.42783299742011
+S_brand_by_state_p_it_Exogenous_Monthly_annual,S,brand_by_state,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,3.53718415793836,-10.3212172287886
+S_brand_by_state_p_it_Exogenous_Monthly_monthly,S,brand_by_state,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,2.74045321642585,-8.70389292480588
+S_brand_by_state_p_it_Exogenous_Monthly_constant,S,brand_by_state,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,4.63335847521008,-9.04744100337892
+S_brand_by_state_p_it_Exogenous_Annual_Lag_annual,S,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.869493474511065,0.382346595809651
+S_brand_by_state_p_it_Exogenous_Annual_Lag_monthly,S,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.879788336703424,0.369494723201203
+S_brand_by_state_p_it_Exogenous_Annual_Lag_constant,S,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.602590173547628,1.31869571527266
+S_brand_by_state_p_it_Exogenous_Monthly_Lag_annual,S,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.635979839106399,0.196127023053153
+S_brand_by_state_p_it_Exogenous_Monthly_Lag_monthly,S,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.700301045871339,-0.0323916159194245
+S_brand_by_state_p_it_Exogenous_Monthly_Lag_constant,S,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.221398229721335,3.1876754600181
+S_brand_by_state_p_it_Endogenous_Annual_Lag_annual,S,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-1.32816253851267,0.316130537966957
+S_brand_by_state_p_it_Endogenous_Annual_Lag_monthly,S,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-1.35731763342977,0.300555895590391
+S_brand_by_state_p_it_Endogenous_Annual_Lag_constant,S,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.301766295884612,1.3621243500926
+S_brand_by_state_p_it_Endogenous_Monthly_Lag_annual,S,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,2.54493626643172,-10.1840522909239
+S_brand_by_state_p_it_Endogenous_Monthly_Lag_monthly,S,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,1.92234945525602,-8.59080107292948
+S_brand_by_state_p_it_Endogenous_Monthly_Lag_constant,S,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,3.47904915315296,-8.88787325039734
+S_brand_by_state_p_volume_Exogenous_Active_annual,S,brand_by_state,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-1.44722079067663,-0.00452477060396726
+S_brand_by_state_p_volume_Exogenous_Active_monthly,S,brand_by_state,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-1.41326248625226,-0.156339375750774
+S_brand_by_state_p_volume_Exogenous_Active_constant,S,brand_by_state,p_volume,Exogenous,tax + active_count,constant,24674,51,131,0.370905777870806,0.161368806356588
+S_brand_by_state_p_volume_Exogenous_Annual_annual,S,brand_by_state,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.861449728676513,-1.11708898689317
+S_brand_by_state_p_volume_Exogenous_Annual_monthly,S,brand_by_state,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.881069047429918,-1.16714276736246
+S_brand_by_state_p_volume_Exogenous_Annual_constant,S,brand_by_state,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.163051492518383,1.17552227108092
+S_brand_by_state_p_volume_Exogenous_Monthly_annual,S,brand_by_state,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-0.391218552983455,-2.01020647493392
+S_brand_by_state_p_volume_Exogenous_Monthly_monthly,S,brand_by_state,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.303098762738173,-2.26489084428469
+S_brand_by_state_p_volume_Exogenous_Monthly_constant,S,brand_by_state,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.512457287261675,1.8391542075366
+S_brand_by_state_p_volume_Exogenous_Annual_Lag_annual,S,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.946366562360938,-1.2861263808368
+S_brand_by_state_p_volume_Exogenous_Annual_Lag_monthly,S,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.963159153087668,-1.33055321175693
+S_brand_by_state_p_volume_Exogenous_Annual_Lag_constant,S,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.398448497299777,0.706935602173469
+S_brand_by_state_p_volume_Exogenous_Monthly_Lag_annual,S,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.555025359777094,-0.958232984399628
+S_brand_by_state_p_volume_Exogenous_Monthly_Lag_monthly,S,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.493243035566972,-1.04377715366243
+S_brand_by_state_p_volume_Exogenous_Monthly_Lag_constant,S,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.540690292924418,2.0204676345952
+S_brand_by_state_p_volume_Endogenous_Annual_Lag_annual,S,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.874289188902131,-1.17172166761108
+S_brand_by_state_p_volume_Endogenous_Annual_Lag_monthly,S,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.893481105213834,-1.21995682481055
+S_brand_by_state_p_volume_Endogenous_Annual_Lag_constant,S,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.198643616588051,1.0240756279808
+S_brand_by_state_p_volume_Endogenous_Monthly_Lag_annual,S,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.372504846711444,-2.38436921865978
+S_brand_by_state_p_volume_Endogenous_Monthly_Lag_monthly,S,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.281376197353549,-2.69921286189758
+S_brand_by_state_p_volume_Endogenous_Monthly_Lag_constant,S,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.509231876880492,1.77466519716429
+V_pooled_p_it_Exogenous_Active_annual,V,pooled,p_it,Exogenous,tax + active_count,annual,24674,51,131,-0.450844272838468,1.04653872009675
+V_pooled_p_it_Exogenous_Active_monthly,V,pooled,p_it,Exogenous,tax + active_count,monthly,24674,51,131,-0.448188598999488,0.980242194683551
+V_pooled_p_it_Exogenous_Active_constant,V,pooled,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.368204787938359,0.951279072547882
+V_pooled_p_it_Exogenous_Annual_annual,V,pooled,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-0.436979343703799,0.827751250834355
+V_pooled_p_it_Exogenous_Annual_monthly,V,pooled,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-0.43810310491872,0.821093907337525
+V_pooled_p_it_Exogenous_Annual_constant,V,pooled,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.407999637209513,1.57923860146009
+V_pooled_p_it_Exogenous_Monthly_annual,V,pooled,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,-0.868587432406373,7.63849226282338
+V_pooled_p_it_Exogenous_Monthly_monthly,V,pooled,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.838596244640794,7.14084352067902
+V_pooled_p_it_Exogenous_Monthly_constant,V,pooled,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,-0.973351310732628,10.500442651621
+V_pooled_p_it_Exogenous_Annual_Lag_annual,V,pooled,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.442203332198341,0.849658971727408
+V_pooled_p_it_Exogenous_Annual_Lag_monthly,V,pooled,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.443425860001252,0.843415823410011
+V_pooled_p_it_Exogenous_Annual_Lag_constant,V,pooled,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.413520989803594,1.60239337137073
+V_pooled_p_it_Exogenous_Monthly_Lag_annual,V,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.487317623206186,2.77848096265814
+V_pooled_p_it_Exogenous_Monthly_Lag_monthly,V,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.487318119662802,2.6631334694635
+V_pooled_p_it_Exogenous_Monthly_Lag_constant,V,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.466971250632459,4.0456624543013
+V_pooled_p_it_Endogenous_Annual_Lag_annual,V,pooled,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.437540598467004,0.812433116512173
+V_pooled_p_it_Endogenous_Annual_Lag_monthly,V,pooled,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.438674970962824,0.805486162911809
+V_pooled_p_it_Endogenous_Annual_Lag_constant,V,pooled,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.408592840169356,1.56304851589524
+V_pooled_p_it_Endogenous_Monthly_Lag_annual,V,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.910800579649954,8.68172896748957
+V_pooled_p_it_Endogenous_Monthly_Lag_monthly,V,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.877488794913408,8.10201648747602
+V_pooled_p_it_Endogenous_Monthly_Lag_constant,V,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-1.02941632166468,11.8860080759285
+V_pooled_p_volume_Exogenous_Active_annual,V,pooled,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-0.459743691502926,0.415165837317625
+V_pooled_p_volume_Exogenous_Active_monthly,V,pooled,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-0.457035596120403,0.352588379771137
+V_pooled_p_volume_Exogenous_Active_constant,V,pooled,p_volume,Exogenous,tax + active_count,constant,24674,51,131,-0.375472948496907,0.435636460631502
+V_pooled_p_volume_Exogenous_Annual_annual,V,pooled,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.431932524590437,0.0229964726765187
+V_pooled_p_volume_Exogenous_Annual_monthly,V,pooled,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.433043307111187,0.0142695755079257
+V_pooled_p_volume_Exogenous_Annual_constant,V,pooled,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.40328751431977,0.827853753958055
+V_pooled_p_volume_Exogenous_Monthly_annual,V,pooled,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-0.614788618651518,2.60147721254451
+V_pooled_p_volume_Exogenous_Monthly_monthly,V,pooled,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.593560771897422,2.27775001067276
+V_pooled_p_volume_Exogenous_Monthly_constant,V,pooled,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.688940785289505,4.85589264029819
+V_pooled_p_volume_Exogenous_Annual_Lag_annual,V,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.413412902501578,0.119334086847594
+V_pooled_p_volume_Exogenous_Annual_Lag_monthly,V,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.414400531428507,0.111247824971398
+V_pooled_p_volume_Exogenous_Annual_Lag_constant,V,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.385426246059892,0.920766663421644
+V_pooled_p_volume_Exogenous_Monthly_Lag_annual,V,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.599319277421375,2.32516822751661
+V_pooled_p_volume_Exogenous_Monthly_Lag_monthly,V,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.587332255768851,2.1664980224331
+V_pooled_p_volume_Exogenous_Monthly_Lag_constant,V,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.630664968053728,3.81498652317496
+V_pooled_p_volume_Endogenous_Annual_Lag_annual,V,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.434163182587094,-0.0427515081147836
+V_pooled_p_volume_Endogenous_Annual_Lag_monthly,V,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.435288798756477,-0.0519156226359901
+V_pooled_p_volume_Endogenous_Annual_Lag_constant,V,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.405438874683153,0.764443047351185
+V_pooled_p_volume_Endogenous_Monthly_Lag_annual,V,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.617031069279434,2.66140173621803
+V_pooled_p_volume_Endogenous_Monthly_Lag_monthly,V,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.59446366358504,2.30187779036338
+V_pooled_p_volume_Endogenous_Monthly_Lag_constant,V,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.697388504074519,5.08163920341633
+V_brand_state_p_it_Exogenous_Active_annual,V,brand_state,p_it,Exogenous,tax + active_count,annual,24674,51,131,-1.98309632614235,4.14327582706264
+V_brand_state_p_it_Exogenous_Active_monthly,V,brand_state,p_it,Exogenous,tax + active_count,monthly,24674,51,131,-1.94043605115677,3.98926663895822
+V_brand_state_p_it_Exogenous_Active_constant,V,brand_state,p_it,Exogenous,tax + active_count,constant,24674,51,131,-1.09690123594323,2.54378496230836
+V_brand_state_p_it_Exogenous_Annual_annual,V,brand_state,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-0.770079100566348,0.417374955900205
+V_brand_state_p_it_Exogenous_Annual_monthly,V,brand_state,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-0.775215169367754,0.41017690551179
+V_brand_state_p_it_Exogenous_Annual_constant,V,brand_state,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.649230516476466,1.16872062811022
+V_brand_state_p_it_Exogenous_Monthly_annual,V,brand_state,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,-2.06048879354776,4.38099434881273
+V_brand_state_p_it_Exogenous_Monthly_monthly,V,brand_state,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,-1.96692911419969,4.07064266939402
+V_brand_state_p_it_Exogenous_Monthly_constant,V,brand_state,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,-1.94199757091742,5.13958088696441
+V_brand_state_p_it_Exogenous_Annual_Lag_annual,V,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.800671155543545,0.420152140056465
+V_brand_state_p_it_Exogenous_Annual_Lag_monthly,V,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.805586861837259,0.412934084890177
+V_brand_state_p_it_Exogenous_Annual_Lag_constant,V,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.688775408945603,1.17231056180086
+V_brand_state_p_it_Exogenous_Monthly_Lag_annual,V,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.943975049453016,2.15675437627192
+V_brand_state_p_it_Exogenous_Monthly_Lag_monthly,V,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.943594098142666,2.0320267902318
+V_brand_state_p_it_Exogenous_Monthly_Lag_constant,V,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.856116500284736,2.97636516704981
+V_brand_state_p_it_Endogenous_Annual_Lag_annual,V,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.769305947181654,0.398878537282212
+V_brand_state_p_it_Endogenous_Annual_Lag_monthly,V,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.774447585207396,0.391813721395209
+V_brand_state_p_it_Endogenous_Annual_Lag_constant,V,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.64823109791879,1.14481118868699
+V_brand_state_p_it_Endogenous_Monthly_Lag_annual,V,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-2.12392881483707,4.74364928145321
+V_brand_state_p_it_Endogenous_Monthly_Lag_monthly,V,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-2.02507474433433,4.40303221074883
+V_brand_state_p_it_Endogenous_Monthly_Lag_constant,V,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-2.00369705164632,5.49228601809771
+V_brand_state_p_volume_Exogenous_Active_annual,V,brand_state,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-0.907052359639995,0.749936766730539
+V_brand_state_p_volume_Exogenous_Active_monthly,V,brand_state,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-0.887539891899771,0.668924929044332
+V_brand_state_p_volume_Exogenous_Active_constant,V,brand_state,p_volume,Exogenous,tax + active_count,constant,24674,51,131,-0.501713830659109,0.666842445606109
+V_brand_state_p_volume_Exogenous_Annual_annual,V,brand_state,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.555750381314424,-0.294975231606415
+V_brand_state_p_volume_Exogenous_Annual_monthly,V,brand_state,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.559456977419536,-0.306924325843367
+V_brand_state_p_volume_Exogenous_Annual_constant,V,brand_state,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.468536422852387,0.568159621056697
+V_brand_state_p_volume_Exogenous_Monthly_annual,V,brand_state,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-0.916665153113353,0.77852904305521
+V_brand_state_p_volume_Exogenous_Monthly_monthly,V,brand_state,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.875042554600124,0.63175287053789
+V_brand_state_p_volume_Exogenous_Monthly_constant,V,brand_state,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.863951071350171,1.74428026945915
+V_brand_state_p_volume_Exogenous_Annual_Lag_annual,V,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.558872553444235,-0.25616844871179
+V_brand_state_p_volume_Exogenous_Annual_Lag_monthly,V,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.562584965738678,-0.26804525109984
+V_brand_state_p_volume_Exogenous_Annual_Lag_constant,V,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.471654979388829,0.606921464231072
+V_brand_state_p_volume_Exogenous_Monthly_Lag_annual,V,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.912086390373088,0.769417048622744
+V_brand_state_p_volume_Exogenous_Monthly_Lag_monthly,V,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.884181490559197,0.649939865214236
+V_brand_state_p_volume_Exogenous_Monthly_Lag_constant,V,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.848958607622935,1.71444442651177
+V_brand_state_p_volume_Endogenous_Annual_Lag_annual,V,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.554143039394265,-0.346197622444871
+V_brand_state_p_volume_Endogenous_Annual_Lag_monthly,V,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.557846641236234,-0.358242137148592
+V_brand_state_p_volume_Endogenous_Annual_Lag_constant,V,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.466930942294882,0.516996547681831
+V_brand_state_p_volume_Endogenous_Monthly_Lag_annual,V,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.917018367685241,0.781679588866331
+V_brand_state_p_volume_Endogenous_Monthly_Lag_monthly,V,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.874337559487727,0.625464569956121
+V_brand_state_p_volume_Endogenous_Monthly_Lag_constant,V,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.865107618862576,1.75459625359531
+V_brand_by_state_p_it_Exogenous_Active_annual,V,brand_by_state,p_it,Exogenous,tax + active_count,annual,24674,51,131,0.512765088622528,-0.555384110635854
+V_brand_by_state_p_it_Exogenous_Active_monthly,V,brand_by_state,p_it,Exogenous,tax + active_count,monthly,24674,51,131,0.471453089325136,-0.555307532861524
+V_brand_by_state_p_it_Exogenous_Active_constant,V,brand_by_state,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.295515276344895,1.3885744281024
+V_brand_by_state_p_it_Exogenous_Annual_annual,V,brand_by_state,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-0.816153265349672,0.37035800508125
+V_brand_by_state_p_it_Exogenous_Annual_monthly,V,brand_by_state,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-0.837192981566475,0.356312642125306
+V_brand_by_state_p_it_Exogenous_Annual_constant,V,brand_by_state,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.256165893136494,1.36116312690776
+V_brand_by_state_p_it_Exogenous_Monthly_annual,V,brand_by_state,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,1.41128678688483,-1.18130621900242
+V_brand_by_state_p_it_Exogenous_Monthly_monthly,V,brand_by_state,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,1.21521088574137,-1.07341905865718
+V_brand_by_state_p_it_Exogenous_Monthly_constant,V,brand_by_state,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,1.25677552633727,0.307228107926842
+V_brand_by_state_p_it_Exogenous_Annual_Lag_annual,V,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.836535690387128,0.36222021017895
+V_brand_by_state_p_it_Exogenous_Annual_Lag_monthly,V,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.845358566982087,0.35305248739647
+V_brand_by_state_p_it_Exogenous_Annual_Lag_constant,V,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.621021255365609,1.21549262394498
+V_brand_by_state_p_it_Exogenous_Monthly_Lag_annual,V,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.206909296138382,1.17697649686271
+V_brand_by_state_p_it_Exogenous_Monthly_Lag_monthly,V,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.266763866501451,1.08634110899391
+V_brand_by_state_p_it_Exogenous_Monthly_Lag_constant,V,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.141957055667075,2.34567505935932
+V_brand_by_state_p_it_Endogenous_Annual_Lag_annual,V,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.816462660930853,0.367563056566683
+V_brand_by_state_p_it_Endogenous_Annual_Lag_monthly,V,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.837316931294957,0.35519293282737
+V_brand_by_state_p_it_Endogenous_Annual_Lag_constant,V,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.261704225126555,1.31113218354765
+V_brand_by_state_p_it_Endogenous_Monthly_Lag_annual,V,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,1.26843698726415,-1.34743922293117
+V_brand_by_state_p_it_Endogenous_Monthly_Lag_monthly,V,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,1.08438632212891,-1.2255668236403
+V_brand_by_state_p_it_Endogenous_Monthly_Lag_constant,V,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,1.13329934742519,0.163626446806391
+V_brand_by_state_p_volume_Exogenous_Active_annual,V,brand_by_state,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-5.25445551990796,1.94062548325963
+V_brand_by_state_p_volume_Exogenous_Active_monthly,V,brand_by_state,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-4.83111924456742,1.73960579126819
+V_brand_by_state_p_volume_Exogenous_Active_constant,V,brand_by_state,p_volume,Exogenous,tax + active_count,constant,24674,51,131,3.02823243910321,-0.0499185217213241
+V_brand_by_state_p_volume_Exogenous_Annual_annual,V,brand_by_state,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.390330092235596,-0.0393024480547669
+V_brand_by_state_p_volume_Exogenous_Annual_monthly,V,brand_by_state,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.400392460077597,-0.0639084986228708
+V_brand_by_state_p_volume_Exogenous_Annual_constant,V,brand_by_state,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.122512842796255,1.23258306686838
+V_brand_by_state_p_volume_Exogenous_Monthly_annual,V,brand_by_state,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-1.01795833069533,0.216171778151174
+V_brand_by_state_p_volume_Exogenous_Monthly_monthly,V,brand_by_state,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.876529176201555,0.129901549532989
+V_brand_by_state_p_volume_Exogenous_Monthly_constant,V,brand_by_state,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.906509668153878,1.55170666589186
+V_brand_by_state_p_volume_Exogenous_Annual_Lag_annual,V,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.458020919275966,-0.137907035726833
+V_brand_by_state_p_volume_Exogenous_Annual_Lag_monthly,V,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.467780804986608,-0.162072463434564
+V_brand_by_state_p_volume_Exogenous_Annual_Lag_constant,V,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.201357736180434,1.11773045622513
+V_brand_by_state_p_volume_Exogenous_Monthly_Lag_annual,V,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.983846371693496,0.222385446661389
+V_brand_by_state_p_volume_Exogenous_Monthly_Lag_monthly,V,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.93774618137593,0.118750557667322
+V_brand_by_state_p_volume_Exogenous_Monthly_Lag_constant,V,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.832883843138289,1.56511798801573
+V_brand_by_state_p_volume_Endogenous_Annual_Lag_annual,V,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.393411317659284,-0.100736249612078
+V_brand_by_state_p_volume_Endogenous_Annual_Lag_monthly,V,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.403459916787346,-0.125067778091153
+V_brand_by_state_p_volume_Endogenous_Annual_Lag_constant,V,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.12610179126463,1.16102622902532
+V_brand_by_state_p_volume_Endogenous_Monthly_Lag_annual,V,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-1.0203274531371,0.223244041385747
+V_brand_by_state_p_volume_Endogenous_Monthly_Lag_monthly,V,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.872277571045262,0.117209731540114
+V_brand_by_state_p_volume_Endogenous_Monthly_Lag_constant,V,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.911623082904829,1.56697114294412
+SV_pooled_p_it_Exogenous_Active_annual,SV,pooled,p_it,Exogenous,tax + active_count,annual,24674,51,131,-0.401203466353082,0.598273999446438
+SV_pooled_p_it_Exogenous_Active_monthly,SV,pooled,p_it,Exogenous,tax + active_count,monthly,24674,51,131,-0.398341459394881,0.530114251709947
+SV_pooled_p_it_Exogenous_Active_constant,SV,pooled,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.326286348255031,0.572748605671983
+SV_pooled_p_it_Exogenous_Annual_annual,SV,pooled,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-0.42194474378961,0.91083214648466
+SV_pooled_p_it_Exogenous_Annual_monthly,SV,pooled,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-0.423138392478189,0.903788606210203
+SV_pooled_p_it_Exogenous_Annual_constant,SV,pooled,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.397080747849269,1.63957616368164
+SV_pooled_p_it_Exogenous_Monthly_annual,SV,pooled,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,-0.866692821807328,7.61290898813734
+SV_pooled_p_it_Exogenous_Monthly_monthly,SV,pooled,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.823504606220908,6.93705836476842
+SV_pooled_p_it_Exogenous_Monthly_constant,SV,pooled,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,-1.08625400515595,12.0249883913872
+SV_pooled_p_it_Exogenous_Annual_Lag_annual,SV,pooled,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.427643071260766,0.947187384242775
+SV_pooled_p_it_Exogenous_Annual_Lag_monthly,SV,pooled,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.428895715665417,0.940520235685302
+SV_pooled_p_it_Exogenous_Annual_Lag_constant,SV,pooled,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.402419223260713,1.67363555107127
+SV_pooled_p_it_Exogenous_Monthly_Lag_annual,SV,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.49943322769933,2.3517424641866
+SV_pooled_p_it_Exogenous_Monthly_Lag_monthly,SV,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.497503254462608,2.26693557925716
+SV_pooled_p_it_Exogenous_Monthly_Lag_constant,SV,pooled,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.491515413021101,3.5050781653996
+SV_pooled_p_it_Endogenous_Annual_Lag_annual,SV,pooled,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.422787318459749,0.886975787907082
+SV_pooled_p_it_Endogenous_Annual_Lag_monthly,SV,pooled,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.423989690461766,0.879685258851364
+SV_pooled_p_it_Endogenous_Annual_Lag_constant,SV,pooled,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.397870113530757,1.6172263453562
+SV_pooled_p_it_Endogenous_Monthly_Lag_annual,SV,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.942216321593797,9.13969954598843
+SV_pooled_p_it_Endogenous_Monthly_Lag_monthly,SV,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.890543734446924,8.29232802611182
+SV_pooled_p_it_Endogenous_Monthly_Lag_constant,SV,pooled,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-1.2085564328096,14.4974663918902
+SV_pooled_p_volume_Exogenous_Active_annual,SV,pooled,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-0.404916806111375,0.00494828780083639
+SV_pooled_p_volume_Exogenous_Active_monthly,SV,pooled,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-0.402028309836134,-0.0589789383924187
+SV_pooled_p_volume_Exogenous_Active_constant,SV,pooled,p_volume,Exogenous,tax + active_count,constant,24674,51,131,-0.329306292420372,0.0902151880541338
+SV_pooled_p_volume_Exogenous_Annual_annual,SV,pooled,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.41540531437755,0.146185276363497
+SV_pooled_p_volume_Exogenous_Annual_monthly,SV,pooled,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.416580463531092,0.136978609881072
+SV_pooled_p_volume_Exogenous_Annual_constant,SV,pooled,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.390926668293018,0.919987744825416
+SV_pooled_p_volume_Exogenous_Monthly_annual,SV,pooled,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-0.525851082331193,1.63343467965275
+SV_pooled_p_volume_Exogenous_Monthly_monthly,SV,pooled,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.499647369345029,1.25554755464858
+SV_pooled_p_volume_Exogenous_Monthly_constant,SV,pooled,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.659066084368381,4.53072081247912
+SV_pooled_p_volume_Exogenous_Annual_Lag_annual,SV,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.389557136611318,0.259340736507243
+SV_pooled_p_volume_Exogenous_Annual_Lag_monthly,SV,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.390591668244213,0.250749650759724
+SV_pooled_p_volume_Exogenous_Annual_Lag_constant,SV,pooled,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.366639534407456,1.02630942967057
+SV_pooled_p_volume_Exogenous_Monthly_Lag_annual,SV,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.547663470394307,2.06999254164123
+SV_pooled_p_volume_Exogenous_Monthly_Lag_monthly,SV,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.533441336764898,1.93190734261832
+SV_pooled_p_volume_Exogenous_Monthly_Lag_constant,SV,pooled,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.609873718608586,3.5461741427644
+SV_pooled_p_volume_Endogenous_Annual_Lag_annual,SV,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.417804591505807,0.072767181566211
+SV_pooled_p_volume_Endogenous_Annual_Lag_monthly,SV,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.418992793045629,0.0631611108916816
+SV_pooled_p_volume_Endogenous_Annual_Lag_constant,SV,pooled,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.393181046352299,0.851003574476706
+SV_pooled_p_volume_Endogenous_Monthly_Lag_annual,SV,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.521489919758853,1.53771344425582
+SV_pooled_p_volume_Endogenous_Monthly_Lag_monthly,SV,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.492890613246268,1.10724649268467
+SV_pooled_p_volume_Endogenous_Monthly_Lag_constant,SV,pooled,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.668901591826738,4.7465960311898
+SV_brand_state_p_it_Exogenous_Active_annual,SV,brand_state,p_it,Exogenous,tax + active_count,annual,24674,51,131,-1.17553213092201,2.27350851046564
+SV_brand_state_p_it_Exogenous_Active_monthly,SV,brand_state,p_it,Exogenous,tax + active_count,monthly,24674,51,131,-1.15538106493262,2.17161528237186
+SV_brand_state_p_it_Exogenous_Active_constant,SV,brand_state,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.642050609398171,1.49066145772294
+SV_brand_state_p_it_Exogenous_Annual_annual,SV,brand_state,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-0.700267958594825,0.571115939315653
+SV_brand_state_p_it_Exogenous_Annual_monthly,SV,brand_state,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-0.706115765154309,0.562350470607193
+SV_brand_state_p_it_Exogenous_Annual_constant,SV,brand_state,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.589125889574547,1.30108552269236
+SV_brand_state_p_it_Exogenous_Monthly_annual,SV,brand_state,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,-1.27553205432704,2.63170745883276
+SV_brand_state_p_it_Exogenous_Monthly_monthly,SV,brand_state,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,-1.22223207044804,2.41107506451574
+SV_brand_state_p_it_Exogenous_Monthly_constant,SV,brand_state,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,-1.19763369444686,3.48075574995444
+SV_brand_state_p_it_Exogenous_Annual_Lag_annual,SV,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.720262563037289,0.57570687887781
+SV_brand_state_p_it_Exogenous_Annual_Lag_monthly,SV,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.726002787120737,0.566916708273094
+SV_brand_state_p_it_Exogenous_Annual_Lag_constant,SV,brand_state,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.620230281073776,1.30822736847898
+SV_brand_state_p_it_Exogenous_Monthly_Lag_annual,SV,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.894093575044184,1.84939724859779
+SV_brand_state_p_it_Exogenous_Monthly_Lag_monthly,SV,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.884605388184223,1.71862054005527
+SV_brand_state_p_it_Exogenous_Monthly_Lag_constant,SV,brand_state,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.817619266722548,2.70136619438521
+SV_brand_state_p_it_Endogenous_Annual_Lag_annual,SV,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.700534138129536,0.557895366567918
+SV_brand_state_p_it_Endogenous_Annual_Lag_monthly,SV,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.706380512489977,0.549201032147438
+SV_brand_state_p_it_Endogenous_Annual_Lag_constant,SV,brand_state,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.589539968906645,1.28051908079194
+SV_brand_state_p_it_Endogenous_Monthly_Lag_annual,SV,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-1.27032743708259,2.72707788632035
+SV_brand_state_p_it_Endogenous_Monthly_Lag_monthly,SV,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-1.21762525244721,2.4954913013874
+SV_brand_state_p_it_Endogenous_Monthly_Lag_constant,SV,brand_state,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-1.19244850797327,3.57577012420631
+SV_brand_state_p_volume_Exogenous_Active_annual,SV,brand_state,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-0.706816494320917,0.485438010728771
+SV_brand_state_p_volume_Exogenous_Active_monthly,SV,brand_state,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-0.694700189335032,0.414196030428377
+SV_brand_state_p_volume_Exogenous_Active_constant,SV,brand_state,p_volume,Exogenous,tax + active_count,constant,24674,51,131,-0.386048112998072,0.514055439219169
+SV_brand_state_p_volume_Exogenous_Annual_annual,SV,brand_state,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.521911519534171,-0.148340250852754
+SV_brand_state_p_volume_Exogenous_Annual_monthly,SV,brand_state,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.526269904877911,-0.163113763448608
+SV_brand_state_p_volume_Exogenous_Annual_constant,SV,brand_state,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.439077048222733,0.695816835412432
+SV_brand_state_p_volume_Exogenous_Monthly_annual,SV,brand_state,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-0.735177681225617,0.582648503597257
+SV_brand_state_p_volume_Exogenous_Monthly_monthly,SV,brand_state,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.70445719997651,0.447639052984923
+SV_brand_state_p_volume_Exogenous_Monthly_constant,SV,brand_state,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.690279448058209,1.55683542323799
+SV_brand_state_p_volume_Exogenous_Annual_Lag_annual,SV,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.535142836987855,-0.13213030771309
+SV_brand_state_p_volume_Exogenous_Annual_Lag_monthly,SV,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.539566858915963,-0.146823407658767
+SV_brand_state_p_volume_Exogenous_Annual_Lag_constant,SV,brand_state,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.452541917696556,0.712312907653045
+SV_brand_state_p_volume_Exogenous_Monthly_Lag_annual,SV,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.74672310056229,0.615024055389624
+SV_brand_state_p_volume_Exogenous_Monthly_Lag_monthly,SV,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.724337848699504,0.503388173361089
+SV_brand_state_p_volume_Exogenous_Monthly_Lag_constant,SV,brand_state,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.694200840821701,1.56783175440761
+SV_brand_state_p_volume_Endogenous_Annual_Lag_annual,SV,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.522715992274688,-0.203060268452583
+SV_brand_state_p_volume_Endogenous_Annual_Lag_monthly,SV,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.527078368365602,-0.21810523058969
+SV_brand_state_p_volume_Endogenous_Annual_Lag_constant,SV,brand_state,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.439895721078532,0.640130929820263
+SV_brand_state_p_volume_Endogenous_Monthly_Lag_annual,SV,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.735465983480914,0.572679123624523
+SV_brand_state_p_volume_Endogenous_Monthly_Lag_monthly,SV,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.704953642392107,0.430472267142246
+SV_brand_state_p_volume_Endogenous_Monthly_Lag_constant,SV,brand_state,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.690377369696575,1.55344933102876
+SV_brand_by_state_p_it_Exogenous_Active_annual,SV,brand_by_state,p_it,Exogenous,tax + active_count,annual,24674,51,131,0.91883854234494,-1.15874559981706
+SV_brand_by_state_p_it_Exogenous_Active_monthly,SV,brand_by_state,p_it,Exogenous,tax + active_count,monthly,24674,51,131,0.864491877290718,-1.13930155226689
+SV_brand_by_state_p_it_Exogenous_Active_constant,SV,brand_by_state,p_it,Exogenous,tax + active_count,constant,24674,51,131,-0.524749672967248,1.72918080276148
+SV_brand_by_state_p_it_Exogenous_Annual_annual,SV,brand_by_state,p_it,Exogenous,tax + annual_count,annual,24674,51,131,-0.776549226091253,0.544151128851923
+SV_brand_by_state_p_it_Exogenous_Annual_monthly,SV,brand_by_state,p_it,Exogenous,tax + annual_count,monthly,24674,51,131,-0.797582462531837,0.53013420088854
+SV_brand_by_state_p_it_Exogenous_Annual_constant,SV,brand_by_state,p_it,Exogenous,tax + annual_count,constant,24674,51,131,-0.237947860448137,1.4411087301624
+SV_brand_by_state_p_it_Exogenous_Monthly_annual,SV,brand_by_state,p_it,Exogenous,tax + monthly_count,annual,24674,51,131,-18.4872053635272,18.3332486795458
+SV_brand_by_state_p_it_Exogenous_Monthly_monthly,SV,brand_by_state,p_it,Exogenous,tax + monthly_count,monthly,24674,51,131,-16.4107215713372,16.2124247114007
+SV_brand_by_state_p_it_Exogenous_Monthly_constant,SV,brand_by_state,p_it,Exogenous,tax + monthly_count,constant,24674,51,131,-14.2324085620643,15.4975516230012
+SV_brand_by_state_p_it_Exogenous_Annual_Lag_annual,SV,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.756748419933501,0.547991751197891
+SV_brand_by_state_p_it_Exogenous_Annual_Lag_monthly,SV,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.7663544243037,0.536191282629716
+SV_brand_by_state_p_it_Exogenous_Annual_Lag_constant,SV,brand_by_state,p_it,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.56115818164453,1.37841790979225
+SV_brand_by_state_p_it_Exogenous_Monthly_Lag_annual,SV,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.511409786818039,1.30339225166757
+SV_brand_by_state_p_it_Exogenous_Monthly_Lag_monthly,SV,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.548230544828484,1.1846645426118
+SV_brand_by_state_p_it_Exogenous_Monthly_Lag_constant,SV,brand_by_state,p_it,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.412602510674689,2.40498434763609
+SV_brand_by_state_p_it_Endogenous_Annual_Lag_annual,SV,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.776121247561954,0.547530502412326
+SV_brand_by_state_p_it_Endogenous_Annual_Lag_monthly,SV,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.796907493553928,0.535463842817941
+SV_brand_by_state_p_it_Endogenous_Annual_Lag_constant,SV,brand_by_state,p_it,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.244933792096199,1.38594691476589
+SV_brand_by_state_p_it_Endogenous_Monthly_Lag_annual,SV,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-13.816979341839,15.9335989859254
+SV_brand_by_state_p_it_Endogenous_Monthly_Lag_monthly,SV,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-12.2895455129503,14.0948871832373
+SV_brand_by_state_p_it_Endogenous_Monthly_Lag_constant,SV,brand_by_state,p_it,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-10.641935052299,13.6526990146838
+SV_brand_by_state_p_volume_Exogenous_Active_annual,SV,brand_by_state,p_volume,Exogenous,tax + active_count,annual,24674,51,131,-1.15094717213722,0.586350006520021
+SV_brand_by_state_p_volume_Exogenous_Active_monthly,SV,brand_by_state,p_volume,Exogenous,tax + active_count,monthly,24674,51,131,-1.08287194719005,0.502576652933408
+SV_brand_by_state_p_volume_Exogenous_Active_constant,SV,brand_by_state,p_volume,Exogenous,tax + active_count,constant,24674,51,131,0.657307159362917,0.732554838002766
+SV_brand_by_state_p_volume_Exogenous_Annual_annual,SV,brand_by_state,p_volume,Exogenous,tax + annual_count,annual,24674,51,131,-0.382806848247724,0.0376233813023957
+SV_brand_by_state_p_volume_Exogenous_Annual_monthly,SV,brand_by_state,p_volume,Exogenous,tax + annual_count,monthly,24674,51,131,-0.393175369237281,0.00988688795956795
+SV_brand_by_state_p_volume_Exogenous_Annual_constant,SV,brand_by_state,p_volume,Exogenous,tax + annual_count,constant,24674,51,131,-0.117298514305323,1.28590003284166
+SV_brand_by_state_p_volume_Exogenous_Monthly_annual,SV,brand_by_state,p_volume,Exogenous,tax + monthly_count,annual,24674,51,131,-0.625506060690451,0.210997328281648
+SV_brand_by_state_p_volume_Exogenous_Monthly_monthly,SV,brand_by_state,p_volume,Exogenous,tax + monthly_count,monthly,24674,51,131,-0.55524918998298,0.125665500184353
+SV_brand_by_state_p_volume_Exogenous_Monthly_constant,SV,brand_by_state,p_volume,Exogenous,tax + monthly_count,constant,24674,51,131,-0.481546974722661,1.54610356884946
+SV_brand_by_state_p_volume_Exogenous_Annual_Lag_annual,SV,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.465799278675947,-0.0768589574955108
+SV_brand_by_state_p_volume_Exogenous_Annual_Lag_monthly,SV,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.475980460961965,-0.104337030006252
+SV_brand_by_state_p_volume_Exogenous_Annual_Lag_constant,SV,brand_by_state,p_volume,Exogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.21635595900422,1.14925711389155
+SV_brand_by_state_p_volume_Exogenous_Monthly_Lag_annual,SV,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.704659807319118,0.210058314420987
+SV_brand_by_state_p_volume_Exogenous_Monthly_Lag_monthly,SV,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.662318759777022,0.12439531634091
+SV_brand_by_state_p_volume_Exogenous_Monthly_Lag_constant,SV,brand_by_state,p_volume,Exogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.549860638420375,1.54529315266782
+SV_brand_by_state_p_volume_Endogenous_Annual_Lag_annual,SV,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,annual,24674,51,131,-0.386805046722575,-0.0317094497327452
+SV_brand_by_state_p_volume_Endogenous_Annual_Lag_monthly,SV,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,monthly,24674,51,131,-0.397164542584087,-0.0592894381678933
+SV_brand_by_state_p_volume_Endogenous_Annual_Lag_constant,SV,brand_by_state,p_volume,Endogenous,tax + annual_count + a_lag1,constant,24674,51,131,-0.122070652225236,1.20314630409034
+SV_brand_by_state_p_volume_Endogenous_Monthly_Lag_annual,SV,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,annual,24674,51,131,-0.627899450089692,0.178002245448106
+SV_brand_by_state_p_volume_Endogenous_Monthly_Lag_monthly,SV,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,monthly,24674,51,131,-0.55848667632129,0.0810337616400016
+SV_brand_by_state_p_volume_Endogenous_Monthly_Lag_constant,SV,brand_by_state,p_volume,Endogenous,tax + monthly_count + a_lag1,constant,24674,51,131,-0.483612590129392,1.5176271531597

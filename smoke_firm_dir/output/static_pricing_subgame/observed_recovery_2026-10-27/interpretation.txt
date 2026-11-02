@@ -1,0 +1,10 @@
+Observed-market recovery, 2026-10-27.
+Chosen fit: constant_available_B_noFE_p_it_volume_weighted_Annual
+Full precision saved coefficients; no re-estimation or canonical changes.
+528 estimation rows, 540 observed incumbent rows. 12 BLU 2018 rows inverted outside fit sample to retain full competitors and observed share totals.
+Brand acts as vertically integrated single-product retail pricing firm. Costs are effective integrated-channel costs.
+Fringe utility calibrated from observed shares; fringe price is revenue/volume and quality is existing equal-UPC nicotine. Utility fixed within a static solve; fringe share can change.
+Variable profit = (price - mc)*liquid volume. Fixed operating costs unspecified; net profit and dynamic value not yet computed.
+Negative marginal costs are reported, never clipped. Interpretation and specification may need review.
+Markup FOC and observed shares reproduce by construction: this is an implementation check, not independent evidence for demand or supply validity.
+No price equilibrium or fixed point solved yet. Next step: manual damped pricing iteration with independent initializations, residuals, and unilateral deviation checks.

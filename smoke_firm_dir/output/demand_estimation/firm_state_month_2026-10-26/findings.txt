@@ -1,0 +1,11 @@
+Completed 504 fits, no fitting failures. Common sample: 24,674 incumbent firm-state-month rows, 51 jurisdictions, 131 months.
+Strict 0<sigma<1: 173 fits; 169 also have negative price coefficients. Counts are sensitivity summaries, not model selection.
+With SV controls, additive brand/state FE, annual market size, exogenous quality, tax + local active count:
+Equal-UPC price: alpha -1.17553 (SE 1.41546), sigma 2.27351 (SE 2.32474).
+Volume-weighted price: alpha -0.70682 (SE 0.37495), sigma 0.48544 (SE 0.27435).
+Tax-price first stage: +0.34535 (SE 0.22093) equal-UPC; +0.39736 (SE 0.18013) volume-weighted.
+Annual-count alternatives can produce admissible equal-UPC sigma; volume-weighted annual-count alternatives can yield negative sigma.
+Across the full grid sigma ranges from -726.70 to 474.61: some specifications are highly unstable. No weak-IV-robust inference or instrument validity established.
+Independent residualized QR 2SLS slope checks passed for all 42 SV/annual specifications (maximum error 2.94e-8). State UPC totals reconcile to canonical national volume, units and revenue within 1e-8 relative tolerance. Source hashes preserved.
+Geography, local assortment, market shares and count instruments change together. A matched national/state bridge is still needed to isolate aggregation effects. State market sizes impose common national consumption intensity.
+Read interpretation.txt for definitions. No meeting notes updated.

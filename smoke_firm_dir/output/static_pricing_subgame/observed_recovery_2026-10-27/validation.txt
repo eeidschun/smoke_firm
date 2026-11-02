@@ -1,0 +1,2 @@
+540 observed incumbent own/cross derivative perturbations passed, including passive-fringe response.
+Multinomial-logit limiting case, extreme-utility stability, parameter guards, and unchanged source hashes passed.

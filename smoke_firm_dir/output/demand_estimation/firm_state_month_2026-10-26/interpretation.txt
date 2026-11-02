@@ -1,0 +1,10 @@
+Firm-state-month nested-logit sensitivity, 2026-10-26.
+National annual >7% roster retained. All eligible local brands enter inside-category totals, including fringe.
+Local active count and monthly >7% count include focal brand. Annual count is national, matching original definition.
+State taxes in real dollars/mL. Both equal-UPC price and revenue/volume price. Quality and strict device-size mean are equal-UPC over local assortment; variety is log local UPC count.
+National eligibility requires three stores per UPC-month; no extra local store cutoff imposed.
+Market size is existing national market size times state adult population share; maintains national NCP intensity. This is an assumption, not validated local demand capacity.
+Matched complete-lag/size sample and positive outside shares under all three market variants. No imputation. State-specific calendar lag from all eligible local brand history.
+Fixed effects: pooled, additive brand/state, brand-state pair; no state-month FE (single-nest identity). SE clustered by state and month.
+This changes local assortment and instruments together with aggregation. Differences alone do not isolate aggregation as the cause. Instrument validity remains unestablished.
+No canonical files or meeting Markdown changed.

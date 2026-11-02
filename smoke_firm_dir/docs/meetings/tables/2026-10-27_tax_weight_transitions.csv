@@ -1,0 +1,5 @@
+population_admissible,sales_admissible,runs
+FALSE,TRUE,374
+FALSE,FALSE,1045
+TRUE,TRUE,333
+TRUE,FALSE,24

@@ -1,8 +1,9 @@
 suppressPackageStartupMessages(library(data.table))
 source("smoke_firm_dir/code/fxns/1_paths.R")
 meeting<-file.path(FIRM_DIR,"docs","meetings")
+dir.create(file.path(meeting,"tables"),recursive=TRUE,showWarnings=FALSE)
 root<-file.path(OUT_DIR,"demand_estimation","advisor_instruments_2026-10-20")
-sp<-fread(file.path(meeting,"demand_specification_index.csv"))
+sp<-fread(file.path(meeting,"tables/2026-10-20_demand_specification_index.csv"))
 cc<-rbindlist(lapply(c("original_48_grid","endogenous_quality_grid"),function(folder)fread(file.path(root,folder,"coefficients.csv"))),fill=TRUE)
 sig<-cc[term=="fit_ln_s_i_g",.(id,sigma=estimate,sigma_se=std_error)]
 alpha<-cc[term=="fit_price",.(id,alpha=estimate)]
@@ -10,7 +11,7 @@ x<-merge(merge(sp,sig,by="id"),alpha,by="id")
 stopifnot(nrow(x)==1776L,!anyDuplicated(x$id))
 x[,admissible:=sigma>0 & sigma<1]
 x[,lag_quality:=grepl("a_lag1",excluded_instruments,fixed=TRUE)]
-fwrite(x[admissible==TRUE],file.path(meeting,"sigma_between_zero_and_one.csv"))
+fwrite(x[admissible==TRUE],file.path(meeting,"tables/2026-10-20_sigma_between_zero_and_one.csv"))
 summ<-function(keys)x[,.(total=.N,admissible=sum(admissible),pct=100*mean(admissible)),by=keys]
 print(summ(c("quality","price_measure","firm_FE")))
 print(summ(c("quality","instrument_set")))
@@ -18,8 +19,8 @@ print(summ(c("quality","controls")))
 print(summ(c("quality","market")))
 print(summ(c("quality","lag_quality")))
 print(x[admissible==TRUE,.(n=.N,negative_alpha=sum(alpha<0),min_sigma=min(sigma),max_sigma=max(sigma))])
-fwrite(summ(c("quality","price_measure","firm_FE","instrument_set")),file.path(meeting,"sigma_family_counts.csv"))
-lines<-c("# Families with 0 < sigma < 1","",
+fwrite(summ(c("quality","price_measure","firm_FE","instrument_set")),file.path(meeting,"tables/2026-10-20_sigma_family_counts.csv"))
+lines<-c("# Families with 0 < sigma < 1","","Analysis date: 2026-10-20 (associated demand-results analysis).","",
  paste0(sum(x$admissible)," of ",nrow(x)," runs have a point estimate strictly between zero and one. Counts include deliberate sample-matched repetitions. They are descriptive, not independent evidence or a validity test."))
 for(keys in list(c("quality","price_measure","firm_FE"),c("quality","instrument_set"),c("quality","controls"),c("quality","market"))) {
  tab<-summ(keys)
@@ -28,14 +29,14 @@ for(keys in list(c("quality","price_measure","firm_FE"),c("quality","instrument_
  paste0("|",paste(rep("---",length(keys)+2),collapse="|"),"|"))
  for(i in seq_len(nrow(tab)))lines<-c(lines,paste0("| ",paste(c(unlist(tab[i,..keys]),paste0(tab$admissible[i]," / ",tab$total[i]),sprintf("%.1f%%",tab$pct[i])),collapse=" | ")," |"))
 }
-writeLines(lines,file.path(meeting,"sigma_family_summary.md"))
+writeLines(lines,file.path(meeting,"marc_mtg_2026-10-20_sigma_family_summary.md"))
 good<-x[admissible==TRUE]
 stopifnot(nrow(good)==357L)
 annual<-grepl("incumbent_annual",good$excluded_instruments,fixed=TRUE)
 monthly<-grepl("incumbent_monthly",good$excluded_instruments,fixed=TRUE)
 stopifnot(sum(annual)==297L,sum(!annual & monthly)==55L,sum(!annual & !monthly)==5L)
 section<-c("### Interpretation and checks","",
- "**357 of 1,776 runs have 0 < sigma < 1.** There are enough that families are more informative than a list in the main notes. These counts include deliberate sample-matched repetitions; they are not independent successes. The [complete qualifying-run list](sigma_between_zero_and_one.csv) records each specification, instrument list, identification status, sigma, SE and alpha. The [family breakdown](sigma_family_summary.md) includes denominators.","",
+ "**357 of 1,776 runs have 0 < sigma < 1.** There are enough that families are more informative than a list in the main notes. These counts include deliberate sample-matched repetitions; they are not independent successes. The [complete qualifying-run list](tables/2026-10-20_sigma_between_zero_and_one.csv) records each specification, instrument list, identification status, sigma, SE and alpha. The [family breakdown](marc_mtg_2026-10-20_sigma_family_summary.md) includes denominators.","",
  "**The clearest pattern is the combination of volume-weighted price and an incumbent-count instrument, often without firm FE.** The qualifying runs are not confined to one control set, one market-size definition, lag-quality models, or endogenous-quality models.","",
  "| Price and firm FE family | Runs with 0 < sigma < 1 / all runs in family |",
  "|---|---:|",
@@ -51,7 +52,7 @@ section<-c("### Interpretation and checks","",
  "Of the 357 qualifying sigma estimates, **354 also have a negative price coefficient; 3 do not**. Admissibility here refers only to the sigma point estimate: it does not require its confidence interval to lie within (0,1), a positive quality coefficient, or strong instruments. The full results should be checked for those features before selecting a specification.","",
  "All original 48 baseline coefficients and covariance matrices reproduce. New fits pass independent QR coefficient and structural-residual checks. Conditional F calculations account for two or three endogenous regressors; all three first stages are exported for endogenous-quality models. Original inputs and fits remain unchanged.","",
  "Overidentification df count restrictions; no overidentification test has been run. Neither an admissible sigma nor additional instruments establish exclusion. Lagged quality may correlate with persistent demand shocks; share-threshold counts depend on observed sales. Conventional intervals are not weak-IV-robust. No model selected and no sigma clipping.")
-path<-file.path(meeting,"advisor_meeting_work_log.md")
+path<-file.path(meeting,"marc_mtg_2026-10-26.md")
 old<-readLines(path,warn=FALSE)
 start<-which(old=="### Interpretation and checks")
 stopifnot(length(start)==1L)

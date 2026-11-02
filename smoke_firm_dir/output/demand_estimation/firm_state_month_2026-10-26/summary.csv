@@ -1,0 +1,5 @@
+price,quality,fits,strict_admissible,admissible_negative_alpha
+p_it,Exogenous,180,59,58
+p_it,Endogenous,72,23,22
+p_volume,Exogenous,180,69,67
+p_volume,Endogenous,72,22,22

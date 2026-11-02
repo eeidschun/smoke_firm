@@ -1,0 +1,3 @@
+Saved solves and all 540 own-profit slope checks pass.
+Permutation invariance, explicit iteration-budget failure, sigma-zero best responses, and immutable inputs pass.
+No black-box optimizer or root finder used.

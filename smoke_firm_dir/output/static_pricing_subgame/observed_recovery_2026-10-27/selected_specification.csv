@@ -1,0 +1,2 @@
+id,design_id,market,sample,controls,firm_FE,price_measure,instrument_set,excluded_instruments,n_excluded,overidentification_df,n,months
+constant_available_B_noFE_p_it_volume_weighted_Annual,available_B_noFE_p_it_volume_weighted_Annual,constant,available,B,FALSE,p_it_volume_weighted,Annual,TaxIV_geo + incumbent_annual,2,0,528,132

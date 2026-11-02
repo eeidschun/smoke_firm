@@ -1,0 +1,10 @@
+check,passed
+all_runs_converged,TRUE
+observed_price_replication,TRUE
+positive_markups,TRUE
+mass_balance,TRUE
+negative_own_profit_FOC_slope,TRUE
+permutation_invariance,TRUE
+iteration_limit_failure,TRUE
+sigma_zero_best_responses,TRUE
+input_hashes_unchanged,TRUE

@@ -8,7 +8,7 @@ Start with the [2026-10-08 handoff](handoff_sigma_market_size_2026-10-08.md). IV
 
 Working copies of the uploaded handoff materials, saved on 2026-09-29.
 
-- [Price construction update](price_construction_update.md): current UPC-unweighted firm-month price definition.
+- [Price construction update](meetings/marc_mtg_2026-10-14_sigma_troubleshooting.md#price-construction-and-retail-volume-rebuild-consolidated-reference): current UPC-unweighted firm-month price definition.
 - [Build prompts](mpe_build_prompts.md) and [handoff notes](handoff_notes.md): original text with the current price specification inserted at the top.
 - [Model note](ec_supply_conference_model.pdf): price construction and a brief observed-revenue caveat are embedded directly in Section 3 (Demand), page 3. The added cover page has been removed.
 - [Solution appendix](ec_supply_solution_appendix.pdf): price construction and the revenue caveat are embedded in Section 1 (Demand system), page 1.

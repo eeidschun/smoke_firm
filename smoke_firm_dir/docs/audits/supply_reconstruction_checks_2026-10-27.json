@@ -1,0 +1,24 @@
+{
+  "table_rows_verified": 11,
+  "synthetic_states": 48,
+  "max_derivative_error": 2.379902941385126e-10,
+  "checks_passed": [
+    "table cells",
+    "archived chart source",
+    "signed alpha",
+    "fringe inversion",
+    "own/cross derivatives",
+    "sign reparameterization",
+    "markup FOC",
+    "cost identity",
+    "restored rendered passages"
+  ],
+  "sha256": {
+    "source_archive/pre_reconstruction/ec_supply_conference_model.pdf": "32ff852f3b868549f140afcc8ea3be3d26c34ccf9ad715536081eda6762318db",
+    "source_archive/pre_reconstruction/ec_supply_solution_appendix.pdf": "961f1f69ab05e12c5989f2dd6af73a7677a9472ae68a86070f88349fffaf33cb",
+    "ec_supply_conference_model.tex": "7fafcd005f2572d7e2cadd6edc5b9dd5bebc228a4472456da8758da0137af086",
+    "ec_supply_solution_appendix.tex": "bb7e0f1775143849845793341bcd0649dc44bf6b8260b76119f834b4ec5747aa",
+    "ec_supply_conference_model.pdf": "69040533756aa59272745c5f948fdeeacf5b242e85c78ee771ec1c62a7c404c0",
+    "ec_supply_solution_appendix.pdf": "b4a03a02a8d7189c553eea670e22148c2820f7105728f8cc126e994694ac2ad5"
+  }
+}

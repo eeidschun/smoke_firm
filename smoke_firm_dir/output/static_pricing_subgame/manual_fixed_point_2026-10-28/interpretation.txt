@@ -1,0 +1,10 @@
+Manual monthly pricing fixed point, 2026-10-28.
+132 observed monthly markets; full 540 incumbent rows including flagged 12 out-of-demand-sample BLU 2018 observations.
+4 independent starting vectors x 3 damping values = 1584 attempts. No observed prices used to initialize or select reference solution.
+Reference fixed in advance: cost+1 start, damping 0.5. Costs and nonprice utility fixed; passive fringe utility fixed but its share varies.
+No black-box optimization/root/equilibrium solver. Simultaneous damped markup substitution with step, map-residual and scaled-FOC stopping checks.
+Unilateral best responses checked using explicitly coded bracketing/bisection, with rivals held fixed.
+For pi>=mc, g=1+alpha*(pi-mc)*A is strictly decreasing because A>0 and dA/dpi>0. Unique zero maximizes single-product variable profit; below-cost profits <=0 and profit tends to zero at infinity.
+Deviation check supports numerical Nash optimality under this maintained one-product-per-brand passive-fringe game. It is not a proof of uniqueness of the multi-firm equilibrium.
+Observed-price replication follows from inverted costs/demand; it validates numerical implementation, not demand identification or empirical supply validity.
+No fixed operating costs, transitions, investment, entry/exit or manufacturer/retailer separation introduced. All original recovery inputs unchanged.
