@@ -1,0 +1,11 @@
+version,brand,entry_by_observed_month,active_at_sample_end
+baseline,BLU,,0.301
+baseline,MISTIC,,1
+baseline,NJOY,,1
+baseline,JUUL,0.891,0.9835
+baseline,VUSE,0.9615,1
+selected,BLU,,1
+selected,MISTIC,,1
+selected,NJOY,,1
+selected,JUUL,0.8355,0.9945
+selected,VUSE,0.839,1

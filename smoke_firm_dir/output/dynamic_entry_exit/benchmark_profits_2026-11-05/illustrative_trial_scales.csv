@@ -1,0 +1,10 @@
+parameter,multiplier,dollar_value,reference
+FC,0.1,12.9836767176895,Median initial-incumbent monthly variable profit
+FC,0.5,64.9183835884474,Median initial-incumbent monthly variable profit
+FC,1,129.836767176895,Median initial-incumbent monthly variable profit
+mu_E,0.5,50615615.0870543,Median entrant annualized expected variable profit when entering alone
+mu_E,2,202462460.348217,Median entrant annualized expected variable profit when entering alone
+mu_E,5,506156150.870543,Median entrant annualized expected variable profit when entering alone
+sigma_S,0.5,779.020603061369,Annualized median initial-incumbent variable profit
+sigma_S,2,3116.08241224548,Annualized median initial-incumbent variable profit
+sigma_S,5,7790.20603061369,Annualized median initial-incumbent variable profit

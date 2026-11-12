@@ -1,0 +1,6 @@
+check,value
+static_markets,1e+05
+iterations,38
+map_residual,6.44373443492441e-12
+scaled_FOC,5.66369173782277e-12
+independent_price_error,9.91315918241753e-11

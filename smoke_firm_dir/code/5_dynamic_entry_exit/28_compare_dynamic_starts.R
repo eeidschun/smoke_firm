@@ -1,0 +1,19 @@
+source("smoke_firm_dir/code/fxns/1_paths.R")
+source(file.path(CODE_DIR,"5_dynamic_entry_exit/20_dynamic_solver_functions.R"))
+library(data.table)
+out<-file.path(OUT_DIR,"dynamic_entry_exit/manual_dynamic_trial_2026-11-06")
+a<-readRDS(file.path(out,"dynamic_trial_solution.rds"))
+b<-readRDS(file.path(out,"alternative_accelerated_solution.rds"))
+stopifnot(a$converged,b$converged,identical(a$parameters,b$parameters))
+x<-readRDS(file.path(out,"static_payoff_cache.rds"));g<-build_dynamic_geometry(x$P,x$G)
+codes<-g$states;codes[codes>9]<-0
+profits<-x$profits[as.integer(1+as.vector(codes%*%(10^(0:4)))),,drop=FALSE]
+br<-do.call(dynamic_best_response,c(list(V=b$V,policy=b$policy,profits=profits,geometry=g),b$parameters))
+rv<-max(abs(br$V-b$V)/pmax(1,abs(br$V),abs(b$V)));rp<-max(abs(br$policy-b$policy))
+stopifnot(rv<1e-6,rp<1e-7)
+report<-data.table(check=c("max_scaled_value_difference","max_probability_difference"),
+ value=c(max(abs(a$V-b$V)/pmax(1,abs(a$V),abs(b$V))),max(abs(a$policy-b$policy))))
+report<-rbind(report,data.table(check=c("alternative_scaled_Bellman_residual","alternative_policy_residual"),value=c(rv,rp)))
+fwrite(report,file.path(out,"starting_point_comparison.csv"))
+# This is a numerical robustness comparison, not a uniqueness proof.
+print(report)

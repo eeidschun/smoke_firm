@@ -1,0 +1,145 @@
+brand,first_inactive,decision_month_exit,later_above_floor_months,rule,method,floor_mL
+21ST CENTURY SMOKE,,2023-12-01,0,last_above_0,last_above,0
+BLU,,2023-12-01,0,last_above_0,last_above,0
+FINITI,2023-10-01,2023-09-01,0,last_above_0,last_above,0
+JUUL,,2023-12-01,0,last_above_0,last_above,0
+LOGIC,,2023-12-01,0,last_above_0,last_above,0
+MARKTEN,2022-08-01,2022-07-01,0,last_above_0,last_above,0
+MISTIC,2023-11-01,2023-10-01,0,last_above_0,last_above,0
+NJOY,,2023-12-01,0,last_above_0,last_above,0
+VUSE,,2023-12-01,0,last_above_0,last_above,0
+21ST CENTURY SMOKE,2023-05-01,2023-04-01,0,last_above_100,last_above,100
+BLU,,2023-12-01,0,last_above_100,last_above,100
+FINITI,2019-09-01,2019-08-01,0,last_above_100,last_above,100
+JUUL,,2023-12-01,0,last_above_100,last_above,100
+LOGIC,,2023-12-01,0,last_above_100,last_above,100
+MARKTEN,2020-03-01,2020-02-01,0,last_above_100,last_above,100
+MISTIC,2020-06-01,2020-05-01,0,last_above_100,last_above,100
+NJOY,,2023-12-01,0,last_above_100,last_above,100
+VUSE,,2023-12-01,0,last_above_100,last_above,100
+21ST CENTURY SMOKE,2019-08-01,2019-07-01,0,last_above_1000,last_above,1000
+BLU,,2023-12-01,0,last_above_1000,last_above,1000
+FINITI,2018-10-01,2018-09-01,0,last_above_1000,last_above,1000
+JUUL,,2023-12-01,0,last_above_1000,last_above,1000
+LOGIC,,2023-12-01,0,last_above_1000,last_above,1000
+MARKTEN,2019-09-01,2019-08-01,0,last_above_1000,last_above,1000
+MISTIC,2020-03-01,2020-02-01,0,last_above_1000,last_above,1000
+NJOY,,2023-12-01,0,last_above_1000,last_above,1000
+VUSE,,2023-12-01,0,last_above_1000,last_above,1000
+21ST CENTURY SMOKE,2019-07-01,2019-06-01,0,last_above_5000,last_above,5000
+BLU,,2023-12-01,0,last_above_5000,last_above,5000
+FINITI,2017-11-01,2017-10-01,0,last_above_5000,last_above,5000
+JUUL,,2023-12-01,0,last_above_5000,last_above,5000
+LOGIC,,2023-12-01,0,last_above_5000,last_above,5000
+MARKTEN,2019-07-01,2019-06-01,0,last_above_5000,last_above,5000
+MISTIC,2020-02-01,2020-01-01,0,last_above_5000,last_above,5000
+NJOY,,2023-12-01,0,last_above_5000,last_above,5000
+VUSE,,2023-12-01,0,last_above_5000,last_above,5000
+21ST CENTURY SMOKE,2019-07-01,2019-06-01,0,last_above_10000,last_above,10000
+BLU,,2023-12-01,0,last_above_10000,last_above,10000
+FINITI,2017-10-01,2017-09-01,0,last_above_10000,last_above,10000
+JUUL,,2023-12-01,0,last_above_10000,last_above,10000
+LOGIC,,2023-12-01,0,last_above_10000,last_above,10000
+MARKTEN,2019-07-01,2019-06-01,0,last_above_10000,last_above,10000
+MISTIC,2020-02-01,2020-01-01,0,last_above_10000,last_above,10000
+NJOY,,2023-12-01,0,last_above_10000,last_above,10000
+VUSE,,2023-12-01,0,last_above_10000,last_above,10000
+21ST CENTURY SMOKE,2019-07-01,2019-06-01,0,last_above_25000,last_above,25000
+BLU,,2023-12-01,0,last_above_25000,last_above,25000
+FINITI,2017-10-01,2017-09-01,0,last_above_25000,last_above,25000
+JUUL,,2023-12-01,0,last_above_25000,last_above,25000
+LOGIC,,2023-12-01,0,last_above_25000,last_above,25000
+MARKTEN,2019-05-01,2019-04-01,0,last_above_25000,last_above,25000
+MISTIC,2020-02-01,2020-01-01,0,last_above_25000,last_above,25000
+NJOY,,2023-12-01,0,last_above_25000,last_above,25000
+VUSE,,2023-12-01,0,last_above_25000,last_above,25000
+21ST CENTURY SMOKE,2018-10-01,2018-09-01,0,last_above_50000,last_above,50000
+BLU,,2023-12-01,0,last_above_50000,last_above,50000
+FINITI,2017-09-01,2017-08-01,0,last_above_50000,last_above,50000
+JUUL,,2023-12-01,0,last_above_50000,last_above,50000
+LOGIC,,2023-12-01,0,last_above_50000,last_above,50000
+MARKTEN,2019-05-01,2019-04-01,0,last_above_50000,last_above,50000
+MISTIC,2019-10-01,2019-09-01,0,last_above_50000,last_above,50000
+NJOY,,2023-12-01,0,last_above_50000,last_above,50000
+VUSE,,2023-12-01,0,last_above_50000,last_above,50000
+21ST CENTURY SMOKE,2018-05-01,2018-04-01,0,last_above_1e+05,last_above,1e+05
+BLU,,2023-12-01,0,last_above_1e+05,last_above,1e+05
+FINITI,2017-06-01,2017-05-01,0,last_above_1e+05,last_above,1e+05
+JUUL,,2023-12-01,0,last_above_1e+05,last_above,1e+05
+LOGIC,,2023-12-01,0,last_above_1e+05,last_above,1e+05
+MARKTEN,2019-04-01,2019-03-01,0,last_above_1e+05,last_above,1e+05
+MISTIC,2019-10-01,2019-09-01,0,last_above_1e+05,last_above,1e+05
+NJOY,,2023-12-01,0,last_above_1e+05,last_above,1e+05
+VUSE,,2023-12-01,0,last_above_1e+05,last_above,1e+05
+21ST CENTURY SMOKE,,,0,three_low_0,three_low,0
+BLU,,,0,three_low_0,three_low,0
+FINITI,2021-04-01,2021-03-01,8,three_low_0,three_low,0
+JUUL,,,0,three_low_0,three_low,0
+LOGIC,,,0,three_low_0,three_low,0
+MARKTEN,2022-11-01,2022-10-01,0,three_low_0,three_low,0
+MISTIC,2022-04-01,2022-03-01,7,three_low_0,three_low,0
+NJOY,,,0,three_low_0,three_low,0
+VUSE,,,0,three_low_0,three_low,0
+21ST CENTURY SMOKE,2021-09-01,2021-08-01,4,three_low_100,three_low,100
+BLU,,,0,three_low_100,three_low,100
+FINITI,2019-12-01,2019-11-01,0,three_low_100,three_low,100
+JUUL,,,0,three_low_100,three_low,100
+LOGIC,,,0,three_low_100,three_low,100
+MARKTEN,2020-06-01,2020-05-01,0,three_low_100,three_low,100
+MISTIC,2020-09-01,2020-08-01,0,three_low_100,three_low,100
+NJOY,,,0,three_low_100,three_low,100
+VUSE,,,0,three_low_100,three_low,100
+21ST CENTURY SMOKE,2019-11-01,2019-10-01,0,three_low_1000,three_low,1000
+BLU,,,0,three_low_1000,three_low,1000
+FINITI,2018-06-01,2018-05-01,4,three_low_1000,three_low,1000
+JUUL,2016-01-01,2015-12-01,90,three_low_1000,three_low,1000
+LOGIC,,,0,three_low_1000,three_low,1000
+MARKTEN,2013-11-01,2013-10-01,68,three_low_1000,three_low,1000
+MISTIC,2020-06-01,2020-05-01,0,three_low_1000,three_low,1000
+NJOY,,,0,three_low_1000,three_low,1000
+VUSE,,,0,three_low_1000,three_low,1000
+21ST CENTURY SMOKE,2019-10-01,2019-09-01,0,three_low_5000,three_low,5000
+BLU,,,0,three_low_5000,three_low,5000
+FINITI,2018-02-01,2018-01-01,0,three_low_5000,three_low,5000
+JUUL,2016-01-01,2015-12-01,84,three_low_5000,three_low,5000
+LOGIC,2013-04-01,2013-03-01,129,three_low_5000,three_low,5000
+MARKTEN,2013-11-01,2013-10-01,64,three_low_5000,three_low,5000
+MISTIC,2020-05-01,2020-04-01,0,three_low_5000,three_low,5000
+NJOY,,,0,three_low_5000,three_low,5000
+VUSE,2013-10-01,2013-09-01,123,three_low_5000,three_low,5000
+21ST CENTURY SMOKE,2019-10-01,2019-09-01,0,three_low_10000,three_low,10000
+BLU,,,0,three_low_10000,three_low,10000
+FINITI,2018-01-01,2017-12-01,0,three_low_10000,three_low,10000
+JUUL,2016-01-01,2015-12-01,84,three_low_10000,three_low,10000
+LOGIC,2013-04-01,2013-03-01,129,three_low_10000,three_low,10000
+MARKTEN,2013-11-01,2013-10-01,61,three_low_10000,three_low,10000
+MISTIC,2020-05-01,2020-04-01,0,three_low_10000,three_low,10000
+NJOY,,,0,three_low_10000,three_low,10000
+VUSE,2013-10-01,2013-09-01,123,three_low_10000,three_low,10000
+21ST CENTURY SMOKE,2019-10-01,2019-09-01,0,three_low_25000,three_low,25000
+BLU,,,0,three_low_25000,three_low,25000
+FINITI,2018-01-01,2017-12-01,0,three_low_25000,three_low,25000
+JUUL,2016-01-01,2015-12-01,84,three_low_25000,three_low,25000
+LOGIC,2013-04-01,2013-03-01,128,three_low_25000,three_low,25000
+MARKTEN,2013-11-01,2013-10-01,56,three_low_25000,three_low,25000
+MISTIC,2013-06-01,2013-05-01,78,three_low_25000,three_low,25000
+NJOY,,,0,three_low_25000,three_low,25000
+VUSE,2013-10-01,2013-09-01,116,three_low_25000,three_low,25000
+21ST CENTURY SMOKE,2019-01-01,2018-12-01,0,three_low_50000,three_low,50000
+BLU,,,0,three_low_50000,three_low,50000
+FINITI,2017-12-01,2017-11-01,0,three_low_50000,three_low,50000
+JUUL,2016-01-01,2015-12-01,84,three_low_50000,three_low,50000
+LOGIC,2013-04-01,2013-03-01,127,three_low_50000,three_low,50000
+MARKTEN,2013-11-01,2013-10-01,37,three_low_50000,three_low,50000
+MISTIC,2013-05-01,2013-04-01,71,three_low_50000,three_low,50000
+NJOY,,,0,three_low_50000,three_low,50000
+VUSE,2013-10-01,2013-09-01,108,three_low_50000,three_low,50000
+21ST CENTURY SMOKE,2018-08-01,2018-07-01,0,three_low_1e+05,three_low,1e+05
+BLU,,,0,three_low_1e+05,three_low,1e+05
+FINITI,2017-09-01,2017-08-01,0,three_low_1e+05,three_low,1e+05
+JUUL,2016-01-01,2015-12-01,81,three_low_1e+05,three_low,1e+05
+LOGIC,2013-04-01,2013-03-01,121,three_low_1e+05,three_low,1e+05
+MARKTEN,2013-11-01,2013-10-01,15,three_low_1e+05,three_low,1e+05
+MISTIC,2013-04-01,2013-03-01,62,three_low_1e+05,three_low,1e+05
+NJOY,,,0,three_low_1e+05,three_low,1e+05
+VUSE,2013-10-01,2013-09-01,91,three_low_1e+05,three_low,1e+05

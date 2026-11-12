@@ -1,0 +1,4 @@
+brand,decision_month,activation_month,unrestricted_start_count,capped_start_count,eligible_unrestricted,eligible_capped,one_entrant_limit_ok
+VUSE,2013-06-01,2013-07-01,4,4,TRUE,TRUE,TRUE
+MARKTEN,2013-07-01,2013-08-01,5,5,FALSE,FALSE,TRUE
+JUUL,2015-09-01,2015-10-01,6,5,FALSE,FALSE,TRUE

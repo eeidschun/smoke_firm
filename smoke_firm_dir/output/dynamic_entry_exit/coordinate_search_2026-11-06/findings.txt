@@ -1,0 +1,13 @@
+Provisional coordinate calibration results
+Original loss: 0.0537273
+Selected loss: 0.0215363
+Relative loss reduction: 59.92 percent
+Selected FC: 0 entry mean: 3e+08 scrap SD: 5e+06
+Unique candidates: 9 converged: 9
+Fixed January 2013 M/fringe; 2000 shared simulation paths. Selected on this loss and grid, not a global optimum or structural estimate.
+Simulation sampling error, grid order, warm-start equilibrium branch, fixed primitives and retrospective focal selection limit interpretation.
+
+Interpretation: FC and mean entry cost are grid-boundary choices. No precise optimum or economic zero-cost conclusion.
+The $1m and $5m scrap cases tie on the search paths at selected FC/entry mean; retaining $5m is a tie convention, not identification.
+Monthly curve MSE can improve by retaining incumbents even while missing the rare late MISTIC exit. Alternative target weights/event likelihoods may change selection.
+Larger independent-simulation check (10,000 paths, separate seed) loss: original  0.0539338 , selected  0.02112954 . This is simulation validation, not a held-out historical sample.

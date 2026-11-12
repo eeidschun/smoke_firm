@@ -1,0 +1,46 @@
+brand,transitions,crossings,candidate
+21ST CENTURY SMOKE,23,0,terciles
+BLU,71,7,terciles
+FINITI,47,0,terciles
+JUUL,71,0,terciles
+LOGIC,59,4,terciles
+MARKTEN,11,0,terciles
+MISTIC,47,0,terciles
+NJOY,131,6,terciles
+VUSE,71,3,terciles
+21ST CENTURY SMOKE,23,0,higher_15_30
+BLU,71,2,higher_15_30
+FINITI,47,0,higher_15_30
+JUUL,71,5,higher_15_30
+LOGIC,59,2,higher_15_30
+MARKTEN,11,0,higher_15_30
+MISTIC,47,0,higher_15_30
+NJOY,131,21,higher_15_30
+VUSE,71,0,higher_15_30
+21ST CENTURY SMOKE,23,0,higher_20_30
+BLU,71,0,higher_20_30
+FINITI,47,0,higher_20_30
+JUUL,71,5,higher_20_30
+LOGIC,59,0,higher_20_30
+MARKTEN,11,0,higher_20_30
+MISTIC,47,0,higher_20_30
+NJOY,131,13,higher_20_30
+VUSE,71,0,higher_20_30
+21ST CENTURY SMOKE,23,0,quartiles
+BLU,71,0,quartiles
+FINITI,47,0,quartiles
+JUUL,71,0,quartiles
+LOGIC,59,6,quartiles
+MARKTEN,11,0,quartiles
+MISTIC,47,6,quartiles
+NJOY,131,12,quartiles
+VUSE,71,4,quartiles
+21ST CENTURY SMOKE,23,1,quintiles
+BLU,71,13,quintiles
+FINITI,47,4,quintiles
+JUUL,71,4,quintiles
+LOGIC,59,2,quintiles
+MARKTEN,11,0,quintiles
+MISTIC,47,3,quintiles
+NJOY,131,11,quintiles
+VUSE,71,2,quintiles

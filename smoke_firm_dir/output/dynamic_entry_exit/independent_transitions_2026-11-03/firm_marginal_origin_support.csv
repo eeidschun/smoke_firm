@@ -1,0 +1,55 @@
+brand,state,departures,variable
+21ST CENTURY SMOKE,1,23,quality
+21ST CENTURY SMOKE,2,0,quality
+21ST CENTURY SMOKE,3,0,quality
+BLU,1,9,quality
+BLU,2,62,quality
+BLU,3,0,quality
+FINITI,1,47,quality
+FINITI,2,0,quality
+FINITI,3,0,quality
+JUUL,1,0,quality
+JUUL,2,0,quality
+JUUL,3,71,quality
+LOGIC,1,48,quality
+LOGIC,2,11,quality
+LOGIC,3,0,quality
+MARKTEN,1,0,quality
+MARKTEN,2,11,quality
+MARKTEN,3,0,quality
+MISTIC,1,47,quality
+MISTIC,2,0,quality
+MISTIC,3,0,quality
+NJOY,1,1,quality
+NJOY,2,76,quality
+NJOY,3,54,quality
+VUSE,1,0,quality
+VUSE,2,19,quality
+VUSE,3,52,quality
+21ST CENTURY SMOKE,1,1,xi
+21ST CENTURY SMOKE,2,22,xi
+21ST CENTURY SMOKE,3,0,xi
+BLU,1,0,xi
+BLU,2,0,xi
+BLU,3,71,xi
+FINITI,1,9,xi
+FINITI,2,30,xi
+FINITI,3,8,xi
+JUUL,1,26,xi
+JUUL,2,16,xi
+JUUL,3,29,xi
+LOGIC,1,32,xi
+LOGIC,2,16,xi
+LOGIC,3,11,xi
+MARKTEN,1,2,xi
+MARKTEN,2,9,xi
+MARKTEN,3,0,xi
+MISTIC,1,46,xi
+MISTIC,2,1,xi
+MISTIC,3,0,xi
+NJOY,1,61,xi
+NJOY,2,48,xi
+NJOY,3,22,xi
+VUSE,1,1,xi
+VUSE,2,35,xi
+VUSE,3,35,xi

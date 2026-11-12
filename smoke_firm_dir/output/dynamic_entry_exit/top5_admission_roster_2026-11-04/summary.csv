@@ -1,0 +1,3 @@
+sample,total_admitted,max_cumulative,max_last_sale_proxy,months_proxy_above5,months_proxy_above6,months_proxy_above7,final_last_sale_proxy,boundary_ties
+demand_eligible,13,13,12,131,121,80,9,0
+all_positive_sales,13,13,12,131,121,80,9,0

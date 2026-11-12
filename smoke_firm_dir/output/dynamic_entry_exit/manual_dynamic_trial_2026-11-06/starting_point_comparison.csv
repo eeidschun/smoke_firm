@@ -1,0 +1,5 @@
+check,value
+max_scaled_value_difference,3.98813848415168e-06
+max_probability_difference,3.58514745890659e-07
+alternative_scaled_Bellman_residual,9.97918605122565e-07
+alternative_policy_residual,3.05401850475562e-08

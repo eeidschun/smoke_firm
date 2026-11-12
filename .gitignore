@@ -27,3 +27,6 @@ smoke_firm_dir/raw/demand_side_first_stage_data/
 # Large reproducible fitted-model caches: retain locally, commit coefficient tables.
 smoke_firm_dir/output/demand_estimation/firm_state_month_2026-10-26/models.rds
 smoke_firm_dir/output/demand_estimation/sales_weighted_tax_2026-10-27/**/models.rds
+
+# Reference-paper PDFs stay local.
+/smoke_firm_dir/literature/**/*.[pP][dD][fF]

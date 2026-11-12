@@ -1,0 +1,5 @@
+check,value
+scaled_Bellman_residual,9.97066002821999e-07
+policy_residual,2.66567170559284e-08
+max_explicit_transition_error,4.57921208755105e-15
+active_firm_count_max,5

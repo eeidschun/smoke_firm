@@ -1,0 +1,13 @@
+{
+  "focal_brands": [
+    "VUSE",
+    "JUUL",
+    "NJOY",
+    "BLU",
+    "MISTIC"
+  ],
+  "rule": "2013\u20132023 cumulative-volume top four union annual volume leaders",
+  "fringe": "All remaining brands, including LOGIC",
+  "supersedes": "Anonymous five-slot industry-entry benchmark",
+  "implementation_status": "Roster decision only; supply panels, fringe utility and initial roster require rebuilding"
+}

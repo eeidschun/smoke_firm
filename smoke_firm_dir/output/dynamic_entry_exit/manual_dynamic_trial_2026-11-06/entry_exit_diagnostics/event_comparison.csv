@@ -1,0 +1,6 @@
+brand,observed_first_sales,observed_exit_month,simulated_entry_by_observed_month,simulated_entry_in_observed_month,simulated_exit_by_sample_end
+BLU,2013-01-01,,,,0.7089
+MISTIC,2013-01-01,2023-11-01,,,0
+NJOY,2013-01-01,,,,0
+JUUL,2015-10-01,,0.8765,0.0052,0
+VUSE,2013-07-01,,0.9632,0.0258,0

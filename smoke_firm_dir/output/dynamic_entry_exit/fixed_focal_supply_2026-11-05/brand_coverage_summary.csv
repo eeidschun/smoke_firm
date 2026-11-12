@@ -1,0 +1,6 @@
+brand,observed_months,first_sales,last_sales,outside_original_roster,negative_costs,median_full_history_mc,quality_outside_old_bins,xi_outside_old_bins
+BLU,132,2013-01-01,2023-12-01,60,0,6.23785953813468,0,1
+JUUL,98,2015-11-01,2023-12-01,26,0,7.01676787982217,0,10
+MISTIC,88,2013-01-01,2020-11-01,40,10,0.992833332633388,1,2
+NJOY,132,2013-01-01,2023-12-01,0,0,3.32034921650358,0,0
+VUSE,126,2013-07-01,2023-12-01,54,0,5.54770202035677,0,2
