@@ -1,0 +1,3 @@
+Iteration 1
+Expectation calls 12682
+Elapsed seconds 7171.5

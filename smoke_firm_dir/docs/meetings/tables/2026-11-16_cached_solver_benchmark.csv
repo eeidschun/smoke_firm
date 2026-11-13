@@ -1,0 +1,2 @@
+"types","cap","states","reference_seconds","cold_cache_seconds","warm_median_seconds","speedup","cache_keys","cache_entries","cache_payload_bytes"
+27,2,406,3.8,4.47,0.130000000000001,29.2307692307691,784,79731,2441136

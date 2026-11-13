@@ -1,0 +1,33 @@
+List of 16
+ $ converged           : logi FALSE
+ $ phase               : chr "stopped"
+ $ started             : chr "2026-11-12 18:09:57"
+ $ settings            :List of 10
+  ..$ beta                        : num 0.996
+  ..$ FC                          : num 1e+05
+  ..$ mu_E                        : num 1e+08
+  ..$ sigma_S                     : num 5e+06
+  ..$ damping                     : num 0.5
+  ..$ max_iter                    : int 4000
+  ..$ value_tol                   : num 1e-06
+  ..$ policy_tol                  : num 1e-07
+  ..$ bellman_update_limit_seconds: num 7200
+  ..$ cache_max_entries           : num 5e+06
+ $ geometry_seconds    : num 4.84
+ $ states              : int 201376
+ $ tagged_values       : int 849555
+ $ geometry_bytes      : num 7e+07
+ $ delta_F             : num -7.37
+ $ M                   : num 2.04e+09
+ $ pricing_seconds     : num 10.6
+ $ max_static_foc      : num 5.66e-12
+ $ iterations_completed: int 0
+ $ error               : chr "reached elapsed time limit"
+ $ cache               :List of 6
+  ..$ evictions    : int 15
+  ..$ keys         : int 207
+  ..$ entries      : num 2501967
+  ..$ hits         : num 0
+  ..$ misses       : num 12710
+  ..$ payload_bytes: num 31815256
+ $ failed_phase        : chr "Bellman iteration"
